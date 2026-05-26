@@ -1,0 +1,16 @@
+pydantic>=2.0.0
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.1.0
+langchain-openai>=0.1.0
+langchain-ollama>=0.1.0
+langchain-chroma>=0.1.0
+chromadb>=0.4.0
+pandas>=2.0.0
+openpyxl>=3.0.0
+python-docx>=1.0.0
+pymupdf>=1.22.0
+pymupdf4llm>=0.0.1
+renumics-spotlight>=1.0.0
+numpy>=1.20.0
+python-dotenv>=1.0.0
