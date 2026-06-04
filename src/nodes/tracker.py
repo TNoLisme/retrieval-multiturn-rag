@@ -3,9 +3,49 @@ from src.core.schema import ConversationState, TrackerOutput
 from src.services.llm import get_llm, TRACKER_PROMPT
 from langchain_core.prompts import ChatPromptTemplate
 
+# Đại từ thay thế tiếng Việt cần theo dõi (đồng bộ với boundary.py)
+VIETNAMESE_PRONOUNS = {
+    # Số ít
+    "nó", "hắn", "y",
+    # Số nhiều
+    "chúng", "họ", "bọn đó", "chúng nó",
+    # Chỉ định thay thế
+    "đó", "kia", "ấy", "cái đó", "khoản đó", "loại này", "cái này",
+    "phương pháp đó", "chuẩn mực đó", "đối tượng này", "mục này",
+    "loại đó", "khoản này", "hạng mục này", "phần đó",
+    "điều đó", "điều này", "vấn đề đó", "trường hợp đó",
+    "chúng đó", "những đó", "các đó",
+}
+
+def _sanitize_output(query: str, state: ConversationState, need_retrieval_from_llm: bool) -> TrackerOutput:
+    """
+    Post-processing bắt buộc sau khi LLM trả về kết quả:
+    1. Lọc unresolved_references: chỉ giữ các từ THỰC SỰ xuất hiện trong câu hỏi.
+    2. Tính lại need_retrieval dựa trên logic đúng: entities rỗng = cần truy xuất.
+       (Không dùng giá trị need_retrieval của LLM vì model nhỏ hay sai)
+    """
+    query_lower = query.lower()
+    
+    # Lọc unresolved_references: chỉ giữ lại từ/cụm từ có trong query thực tế
+    validated_refs = [
+        ref for ref in state.unresolved_references
+        if ref.lower() in query_lower
+    ]
+    state.unresolved_references = validated_refs
+    
+    # Tính lại need_retrieval theo logic đúng: True ↔ entities rỗng
+    actual_need_retrieval = len(state.entities) == 0
+    
+    return TrackerOutput(
+        state=state,
+        need_retrieval=actual_need_retrieval,
+        confidence=1.0 if not actual_need_retrieval else 0.8
+    )
+
 def state_tracker_node(query: str, old_state: ConversationState) -> TrackerOutput:
     """
     Node trích xuất thực thể, thuộc tính và cập nhật trạng thái hội thoại.
+    Sau khi LLM trả về, áp dụng post-processing để đảm bảo logic đúng.
     """
     import os
     llm = get_llm(temperature=0.0)
@@ -19,7 +59,8 @@ def state_tracker_node(query: str, old_state: ConversationState) -> TrackerOutpu
             structured_llm = llm.with_structured_output(TrackerOutput)
             chain = prompt | structured_llm
             output = chain.invoke({"query": query, "old_state": old_state.model_dump_json()})
-            print(f"[Tracker Node] Đã cập nhật State thành công bằng structured output OpenAI. Need retrieval: {output.need_retrieval}")
+            output = _sanitize_output(query, output.state, output.need_retrieval)
+            print(f"[Tracker Node] Đã cập nhật State (OpenAI). Need retrieval: {output.need_retrieval}")
             return output
         except Exception as e:
             print(f"[Tracker Node] Gặp lỗi structured output OpenAI: {e}. Fallback sang parse JSON...")
@@ -51,11 +92,8 @@ def state_tracker_node(query: str, old_state: ConversationState) -> TrackerOutpu
             constraints=state_data.get("constraints", []),
             unresolved_references=state_data.get("unresolved_references", [])
         )
-        output = TrackerOutput(
-            state=state,
-            need_retrieval=bool(data.get("need_retrieval", False)),
-            confidence=float(data.get("confidence", 1.0))
-        )
+        # Áp dụng post-processing để đảm bảo logic đúng
+        output = _sanitize_output(query, state, bool(data.get("need_retrieval", False)))
         print(f"[Tracker Node (Local/Fallback)] Đã parse JSON thành công. Need retrieval: {output.need_retrieval}")
         return output
     except Exception as json_err:
@@ -63,6 +101,6 @@ def state_tracker_node(query: str, old_state: ConversationState) -> TrackerOutpu
         # Trả về trạng thái cũ làm mặc định an toàn để không làm gãy pipeline
         return TrackerOutput(
             state=old_state,
-            need_retrieval=False,
+            need_retrieval=len(old_state.entities) == 0,
             confidence=0.5
         )

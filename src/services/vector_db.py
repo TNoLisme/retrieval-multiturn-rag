@@ -8,7 +8,7 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents import Document
 
 # Bộ lưu trữ RAM (In-Memory) để lưu trữ các memos hội thoại cũ, tránh ghi đĩa SQLite/ChromaDB
-# Định dạng: { session_id: [{"summary": str, "topic": str, "entities": dict}] }
+# Định dạng: { session_id: [{"summary": str, "topic": str, "entities": dict, "attributes": dict}] }
 SESSION_MEMOS: Dict[str, List[Dict[str, Any]]] = {}
 
 # Biến toàn cục để cache kết nối database (Singleton Pattern)
@@ -76,12 +76,14 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         return []
         
     try:
-        # Tách tập hợp từ của câu hỏi hiện tại để so khớp Jaccard với topic/summary của memo
+        # Tách tập hợp từ của câu hỏi hiện tại để so khớp Jaccard với topic/summary/attributes của memo
         query_words = set(query_text.lower().split())
         matched_memos = []
         
         for memo in memos:
-            memo_text = f"{memo.get('topic', '')} {memo.get('summary', '')}"
+            # Bao gồm cả attributes values trong văn bản so khớp
+            attr_text = " ".join(memo.get("attributes", {}).values()) if isinstance(memo.get("attributes"), dict) else ""
+            memo_text = f"{memo.get('topic', '')} {memo.get('summary', '')} {attr_text}"
             memo_words = set(memo_text.lower().split())
             intersection = query_words.intersection(memo_words)
             
@@ -92,15 +94,15 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         # Sắp xếp các memos theo số lượng từ trùng khớp giảm dần
         matched_memos.sort(key=lambda x: x[1], reverse=True)
         
-        # Chỉ trả về các memo có ít nhất 1 từ trùng khớp hoặc lấy mặc định nếu danh sách nhỏ
-        results = [x[0] for x in matched_memos]
-        print(f"[VectorDB Service (RAM)] Tìm thấy {len(results)} memos trong RAM cho session {session_id}.")
+        # Trả về top_k memos có ít nhất 1 từ trùng khớp
+        results = [x[0] for x in matched_memos if x[1] > 0]
+        print(f"[VectorDB Service (RAM)] Tìm thấy {len(results)} memos khớp trong RAM cho session {session_id}.")
         return results[:top_k]
     except Exception as e:
         print(f"[VectorDB Service (RAM)] Lỗi truy vấn Memo trên RAM: {e}")
         return []
 
-def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str, Any]):
+def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str, Any], attributes: Dict[str, Any] = None):
     """
     Lưu bối cảnh hội thoại cũ (Memo) trực tiếp vào bộ nhớ RAM của phiên hiện tại.
     """
@@ -111,7 +113,8 @@ def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str
         SESSION_MEMOS[session_id].append({
             "summary": summary,
             "topic": topic,
-            "entities": entities
+            "entities": entities,
+            "attributes": attributes or {}
         })
         print(f"[VectorDB Service (RAM)] Đã ghi nhớ cuộc hội thoại cũ vào RAM cho phiên {session_id} - Topic: {topic}")
     except Exception as e:

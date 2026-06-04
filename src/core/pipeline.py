@@ -13,15 +13,19 @@ from src.core.state import (
 )
 from src.services.vector_db import search_memo_db
 
-def vector_db_search(state: ConversationState, session_id: str):
+def vector_db_search(state: ConversationState, session_id: str, query: str = ""):
     """
-    Tìm kiếm ký ức cũ (memos) trong Memo DB dựa trên các thực thể hoặc đại từ chưa giải quyết.
+    Tìm kiếm ký ức cũ (memos) trong Memo DB.
+    Ưu tiên dùng entity values để tìm kiếm, fallback về attributes rồi câu hỏi gốc.
+    KHÔNG dùng unresolved_references (đại từ như 'nó') làm query — vì pronoun
+    không có nghĩa trong vector search.
     """
-    query_term = ""
-    if state.unresolved_references:
-        query_term = " ".join(state.unresolved_references)
-    elif state.entities:
+    if state.entities:
         query_term = " ".join(state.entities.values())
+    elif state.attributes:
+        query_term = " ".join(state.attributes.values())
+    elif query:
+        query_term = query
     else:
         query_term = "Kế toán VAS"
         
@@ -65,8 +69,8 @@ def run_pipeline(user_query: str, session_id: str) -> str:
     # 4. Lớp Truy xuất & Hợp nhất (Retrieval & Fusion Layer)
     retrieved_empty = False
     if tracker_out.need_retrieval:
-        print("[3. Retrieval & Fusion (Retrieve Memo)] Cần truy xuất ký ức quá khứ từ Memo DB...")
-        memos = vector_db_search(new_state, session_id)
+        print("[3. Retrieval & Fusion (Retrieve Memo)] State chưa đủ thông tin (entities rỗng). Cần truy xuất ký ức quá khứ từ Memo DB...")
+        memos = vector_db_search(new_state, session_id, query=user_query)
         if not memos:
             print("[3. Retrieval & Fusion (Retrieve Memo)] Kết quả: Không tìm thấy ký ức nào phù hợp (retrieved_empty = True).")
             retrieved_empty = True
@@ -74,9 +78,9 @@ def run_pipeline(user_query: str, session_id: str) -> str:
             print(f"[3. Retrieval & Fusion (Retrieve Memo)] Kết quả: Tìm thấy {len(memos)} memo phù hợp.")
             print("[3. Retrieval & Fusion (Memory Fusion / Safe Merge)] Đang thực hiện Safe Merge ký ức vào trạng thái...")
             new_state = safe_merge(new_state, memos)
-            print(f"[3. Retrieval & Fusion (Memory Fusion / Safe Merge)] Trạng thái sau Safe Merge: Entities={new_state.entities}, Unresolved={new_state.unresolved_references}")
+            print(f"[3. Retrieval & Fusion (Memory Fusion / Safe Merge)] Trạng thái sau Safe Merge: Entities={new_state.entities}")
     else:
-        print("[3. Retrieval & Fusion] Bỏ qua bước truy xuất ký ức (không có đại từ mơ hồ cần giải nghĩa).")
+        print("[3. Retrieval & Fusion] Bỏ qua bước truy xuất ký ức (State đã đủ thông tin — entities không rỗng).")
 
     # 5. Lớp Tái cấu trúc & Đầu ra (Generation Layer)
     print("[4. Generation Layer (Controlled Rewrite)] Đang sinh câu hỏi độc lập ($Q_final$)...")

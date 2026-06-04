@@ -10,11 +10,16 @@ def controlled_rewrite(query: str, state: ConversationState, retrieved_empty: bo
     """
     llm = get_llm(temperature=0.2)
     
-    # Graceful Fallback: Nếu hệ thống cần thông tin cũ nhưng không tìm thấy gì trong Memo DB
-    if retrieved_empty and state.unresolved_references:
-        ref = state.unresolved_references[0]
-        print(f"[Rewriter Node] Không tìm thấy ký ức tương ứng cho '{ref}'. Trả về Clarification Request.")
-        return f"Hệ thống không tìm thấy thông tin hoặc ngữ cảnh cũ về '{ref}' mà bạn nhắc đến. Vui lòng cung cấp thêm thông tin chi tiết."
+    # Graceful Fallback: Nếu cần truy xuất memo (entities rỗng) nhưng không tìm thấy gì
+    # → Pipeline không có đủ ngữ cảnh để rewrite → hỏi lại người dùng
+    if retrieved_empty and not state.entities:
+        ref_hint = state.unresolved_references[0] if state.unresolved_references else "đối tượng bạn đề cập"
+        print(f"[Rewriter Node] Không tìm thấy ngữ cảnh phù hợp. Trả về Clarification Request (ref: '{ref_hint}').")
+        return (
+            f"Câu hỏi của bạn chưa rõ đang đề cập đến đối tượng kế toán nào "
+            f"(có thể là '{ref_hint}'). Vui lòng nêu rõ tên cụ thể của tài sản, "
+            f"chuẩn mực hoặc khoản mục kế toán bạn muốn hỏi."
+        )
 
     prompt = ChatPromptTemplate.from_template(REWRITE_PROMPT)
     

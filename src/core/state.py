@@ -109,7 +109,8 @@ def archive_to_memo(session_id: str, active_chat: List[Union[str, Dict[str, str]
             session_id=session_id,
             summary=summary,
             topic=topic,
-            entities=old_state.entities
+            entities=old_state.entities,
+            attributes=old_state.attributes
         )
         print(f"[State Service] Đã lưu lưu trữ cuộc hội thoại cũ thành Memo: Topic='{topic}'")
     except Exception as e:
@@ -120,7 +121,8 @@ def archive_to_memo(session_id: str, active_chat: List[Union[str, Dict[str, str]
                 session_id=session_id,
                 summary=f"Lịch sử hội thoại thô dài {len(formatted_lines)} lượt.",
                 topic="Hội thoại cũ",
-                entities=old_state.entities
+                entities=old_state.entities,
+                attributes=old_state.attributes
             )
         except Exception as add_err:
             print(f"[State Service] Thất bại hoàn toàn khi tạo Memo: {add_err}")
