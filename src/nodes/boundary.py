@@ -1,23 +1,7 @@
 from typing import List, Dict, Union
-from src.services.llm import get_llm
+from src.services.llm import get_llm, FALLBACK_PROMPT
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-
-FALLBACK_PROMPT = """
-Bạn là một trợ lý kiểm tra biên hội thoại (Boundary Detection) cho RAG Kế toán VAS.
-Dưới đây là lịch sử hội thoại gần đây và một câu hỏi mới của người dùng.
-Nhiệm vụ của bạn là xác định xem câu hỏi mới có chuyển sang một chủ đề hoàn toàn khác không liên quan (hard_shift) hay tiếp tục/đào sâu chủ đề hiện tại (continue).
-
-Lịch sử hội thoại:
-{context}
-
-Câu hỏi mới:
-"{query}"
-
-Hãy trả lời chính xác bằng một trong hai từ dưới đây (không viết gì thêm):
-- hard_shift (nếu câu hỏi chuyển sang chủ đề hoàn toàn khác)
-- continue (nếu câu hỏi tiếp tục làm rõ hoặc hỏi tiếp chủ đề cũ)
-"""
 
 def fallback_slm(query: str, active_chat: List[Union[str, Dict[str, str]]]) -> str:
     """

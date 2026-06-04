@@ -1,0 +1,23 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Chat history data
+data/chat_history/
+
+# Vector database (ChromaDB / SQLite files)
+# vas_vector_db/
+
+# # Excel verification outputs
+# data/Kiem_tra_tri_thuc_VAS.xlsx
+
+# Editor settings
+.vscode/
+.idea/

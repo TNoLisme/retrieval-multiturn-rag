@@ -14,3 +14,4 @@ pymupdf4llm>=0.0.1
 renumics-spotlight>=1.0.0
 numpy>=1.20.0
 python-dotenv>=1.0.0
+streamlit>=1.20.0

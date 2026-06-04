@@ -1,7 +1,14 @@
-import pandas as pd
 import os
+import sys
+import pandas as pd
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
+
+# Thiết lập encoding xuất ra terminal hỗ trợ tiếng Việt trên Windows
+if sys.platform.startswith('win'):
+    os.system('chcp 65001 > nul')
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
 
 def export_db_to_excel(storage_path=None):
     if storage_path is None:
@@ -16,10 +23,12 @@ def export_db_to_excel(storage_path=None):
         print(f"Không tìm thấy thư mục database tại: {storage_path}")
         return
 
+    # Thêm collection_metadata để đồng bộ hóa cấu hình bỏ qua HNSW trên Windows
     db = Chroma(
         persist_directory=storage_path, 
         embedding_function=embeddings, 
-        collection_name="vas_expert_db"
+        collection_name="vas_expert_db",
+        collection_metadata={"hnsw:sync_threshold": 10000}
     )
     
     data = db.get(include=['metadatas', 'documents'])

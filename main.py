@@ -1,99 +1,38 @@
 import sys
-from src.core.schema import ConversationState
-from src.nodes.boundary import hinge_mem_check
-from src.nodes.tracker import state_tracker_node
-from src.nodes.retriever import safe_merge
-from src.nodes.rewriter import controlled_rewrite
-from src.core.state import (
-    load_state_from_redis, 
-    save_state_to_redis, 
-    load_history, 
-    save_history, 
-    archive_to_memo,
-    clear_session_cache
-)
-from src.services.vector_db import query_vector_db, search_memo_db
+import os
+import uuid
+from src.core.rag_system import VASRAGSystem, build_source_path
+from src.core.state import clear_session_cache, load_history
+from src.modules.chat_manager import ChatManager
 
-def vector_db_search(state: ConversationState, session_id: str):
-    """
-    Tìm kiếm ký ức cũ (memos) trong Memo DB dựa trên các thực thể hoặc đại từ chưa giải quyết.
-    """
-    # Sử dụng các đại từ chưa giải quyết hoặc thực thể để tìm kiếm
-    query_term = ""
-    if state.unresolved_references:
-        query_term = " ".join(state.unresolved_references)
-    elif state.entities:
-        query_term = " ".join(state.entities.values())
-    else:
-        query_term = "Kế toán VAS"
-        
-    print(f"[Pipeline] Đang tìm kiếm ký ức trong Memo DB cho từ khóa: '{query_term}'...")
-    return search_memo_db(query_term, session_id)
+# Tắt warning socket của pydantic nếu có
+import warnings
+warnings.filterwarnings("ignore", category=ResourceWarning)
 
-def run_pipeline(user_query: str, session_id: str) -> str:
-    """
-    Đầu vào: Câu hỏi thô của người dùng tại lượt t và session_id
-    Đầu ra: Câu truy vấn độc lập hoàn chỉnh Q_final (hoặc câu hỏi làm rõ)
-    """
-    print(f"\n⚡ Chạy pipeline cho Session '{session_id}' - Query: '{user_query}'")
-    
-    # 1. Nạp trạng thái cũ và lịch sử từ bộ nhớ đệm
-    old_state = load_state_from_redis(session_id) or ConversationState()
-    active_chat = load_history(session_id)
-    
-    print(f"[Pipeline] State cũ: Entities={old_state.entities}, Unresolved={old_state.unresolved_references}")
-    print(f"[Pipeline] Số lượt chat trong lịch sử: {len(active_chat)}")
-
-    # 2. Kiểm tra biên hội thoại (Boundary Check)
-    boundary = hinge_mem_check(user_query, active_chat)
-    if boundary == "hard_shift":
-        print("[Pipeline] Phát hiện ĐỔI CHỦ ĐỀ. Đang nén lịch sử cũ vào Memo DB và Reset State...")
-        archive_to_memo(session_id, active_chat, old_state)
-        old_state = ConversationState()  # Khởi tạo lại trạng thái mới
-        active_chat = []  # Làm sạch lịch sử ngắn hạn
-        clear_session_cache(session_id)
-
-    # 3. Theo dõi trạng thái hội thoại (State Tracking)
-    tracker_out = state_tracker_node(user_query, old_state)
-    new_state = tracker_out.state
-    print(f"[Pipeline] State mới cập nhật: Entities={new_state.entities}, Unresolved={new_state.unresolved_references}")
-    
-    # 4. Truy xuất và Hợp nhất ký ức cũ (Retrieval & Fusion)
-    retrieved_empty = False
-    if tracker_out.need_retrieval:
-        print("[Pipeline] Cần truy xuất ký ức quá khứ...")
-        memos = vector_db_search(new_state, session_id)
-        if not memos:
-            print("[Pipeline] Không tìm thấy ký ức nào phù hợp trong Memo DB.")
-            retrieved_empty = True
-        else:
-            print(f"[Pipeline] Tìm thấy {len(memos)} memo phù hợp. Đang thực hiện Safe Merge...")
-            new_state = safe_merge(new_state, memos)
-            print(f"[Pipeline] State sau Safe Merge: Entities={new_state.entities}, Unresolved={new_state.unresolved_references}")
-
-    # 5. Viết lại truy vấn cuối cùng (Final Rewrite)
-    q_final = controlled_rewrite(user_query, new_state, retrieved_empty)
-    
-    # 6. Lưu trữ trạng thái và lịch sử cho lượt kế tiếp
-    save_state_to_redis(session_id, new_state)
-    save_history(session_id, user_query, q_final)
-    
-    return q_final
+def clean_source_text(raw_text):
+    content = str(raw_text or "").strip()
+    return content.split("NỘI DUNG:", 1)[-1].strip() if "NỘI DUNG:" in content else content
 
 if __name__ == "__main__":
     # Thiết lập encoding xuất ra terminal hỗ trợ tiếng Việt trên Windows
     if sys.platform.startswith('win'):
-        import os
         os.system('chcp 65001 > nul')
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
         
     print("=" * 60)
-    print(" HỆ THỐNG TỐI ƯU TRUY VẤN RAG MULTI-TURN - KẾ TOÁN VAS")
-    print(" Giao diện CLI tương tác (Nhập 'exit' để thoát, 'reset' để làm mới session)")
+    print(" HỆ THỐNG TRUY VẤN RAG MULTI-TURN - KẾ TOÁN VAS (CLI RUNNER)")
+    print(" (Mô phỏng hoàn toàn hoạt động của app.py)")
     print("=" * 60)
     
-    session_id = "test_cli_session"
-    # Đảm bảo dọn dẹp sạch cache khi khởi động CLI
+    session_id = str(uuid.uuid4())
     clear_session_cache(session_id)
+    chat_manager = ChatManager()
+    
+    db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "vas_vector_db")
+    bot = VASRAGSystem(db_path)
+    
+    print(f"🔄 Đã tạo phiên làm việc mới: {session_id}")
     
     while True:
         try:
@@ -104,37 +43,53 @@ if __name__ == "__main__":
                 print("👋 Tạm biệt!")
                 break
             if user_input.lower() == 'reset':
+                session_id = str(uuid.uuid4())
                 clear_session_cache(session_id)
-                print("🔄 Đã làm mới session hiện tại.")
+                print(f"🔄 Đã làm mới session. Tạo phiên làm việc mới: {session_id}")
                 continue
                 
-            # Chạy pipeline để sinh câu truy vấn tối ưu Q_final
-            q_final = run_pipeline(user_input, session_id)
-            print(f"\n🔍 [Q_final] Câu hỏi tối ưu: {q_final}")
+            # 1. Nạp lịch sử ngắn hạn
+            history = load_history(session_id)
             
-            # Nếu không phải là câu hỏi làm rõ, tiến hành thử truy xuất tri thức thật từ vas_vector_db
-            is_clarification = q_final.startswith("Hệ thống không tìm thấy") or q_final.startswith("Xin lỗi")
-            if not is_clarification:
-                print("\n📖 [RAG] Đang truy xuất tài liệu chuẩn mực kế toán VAS...")
-                doc_results = query_vector_db(q_final, collection_name="vas_expert_db", top_k=1)
-                if doc_results:
-                    best_match = doc_results[0]
-                    metadata = best_match["metadata"]
-                    source = metadata.get("source", "Không rõ")
-                    chapter = metadata.get("Chapter", "Không rõ")
-                    article = metadata.get("Article", "Không rõ")
-                    print(f"📍 Nguồn tài liệu: {source} ➔ {chapter} ➔ {article}")
-                    print(f"📄 Nội dung trích dẫn:")
-                    print("-" * 50)
-                    print(best_match["content"])
-                    print("-" * 50)
-                    print(f"📊 Score tương đồng: {best_match['score']:.4f}")
-                else:
-                    print("❌ Không tìm thấy tài liệu nào tương ứng trong cơ sở dữ liệu tri thức.")
+            # 2. Chạy RAG system (Q_final rewriter + retrieval + generation)
+            print("\n⚙️ Hệ thống đang xử lý...")
+            result = bot.run(user_input, history, session_id)
+            
+            # 3. Hiển thị các bước trung gian của pipeline
+            print(f"  └─ Câu hỏi gốc: '{result.get('original_query')}'")
+            print(f"  └─ Truy vấn tối ưu ($Q_final$): '{result.get('standalone_query')}'")
+            print(f"  └─ Từ khóa/Thực thể: {', '.join(result.get('keywords', []))}")
+            print("-" * 50)
+            
+            # 4. Hiển thị nguồn trích dẫn
+            sources = result.get("sources", [])
+            if sources:
+                print("📖 Cơ sở tri thức tìm thấy:")
+                for idx, src in enumerate(sources, start=1):
+                    meta = src.get("metadata", {})
+                    path = build_source_path(meta)
+                    print(f"  📍 Nguồn {idx}: {path}")
+                    snippet = clean_source_text(src.get("content", ""))[:150].replace("\n", " ").strip() + "..."
+                    print(f"     Nội dung: {snippet}")
+                print("-" * 50)
             else:
-                # Nếu là câu hỏi làm rõ, hiển thị cho người dùng biết
-                print(f"💬 Phản hồi làm rõ: {q_final}")
+                print("⚠️ Không có chunk nào được truy xuất từ cơ sở tri thức.")
+                print("-" * 50)
                 
+            # 5. Hiển thị câu trả lời chính
+            print(f"🤖 Trợ lý: {result['answer']}")
+            print("=" * 60)
+            
+            # 6. Lưu chat sử dụng ChatManager
+            # Tạo lịch sử dạng tin nhắn giống st.session_state.messages
+            history.append({"role": "user", "content": user_input})
+            history.append({
+                "role": "assistant",
+                "content": result["answer"],
+                "sources": sources
+            })
+            chat_manager.save_chat(session_id, history, "Local RAG")
+            
         except KeyboardInterrupt:
             print("\n👋 Thoát chương trình.")
             break

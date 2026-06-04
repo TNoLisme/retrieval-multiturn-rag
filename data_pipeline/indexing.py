@@ -1,7 +1,8 @@
-﻿import os
+import os
 import shutil
 import hashlib
 import re
+import chromadb
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
@@ -37,7 +38,15 @@ class VASMasterIndexer:
             shutil.rmtree(self.storage_path)
 
         md_files = [f for f in os.listdir(md_dir) if f.endswith(".md")]
-        vector_db = None
+        
+        # Khởi tạo client trực tiếp và đưa vào wrapper LangChain
+        client = chromadb.PersistentClient(path=self.storage_path)
+        vector_db = Chroma(
+            client=client,
+            embedding_function=self.embeddings,
+            collection_name="vas_expert_db",
+            collection_metadata={"hnsw:sync_threshold": 10000}
+        )
 
         for file_name in md_files:
             print(f"📂 Indexing tri thức: {file_name}")
@@ -70,22 +79,23 @@ class VASMasterIndexer:
                     
                     final_chunks.append(sub)
 
-            # Nạp vào ChromaDB
+            # Nạp vào ChromaDB theo từng batch nhỏ (100 docs) để tránh crash Ollama do quá tải bộ nhớ
             if final_chunks:
                 ids = [hashlib.md5(f"{file_name}_{idx}_{c.page_content[:40]}".encode()).hexdigest() 
                        for idx, c in enumerate(final_chunks)]
                 
-                if vector_db is None:
-                    vector_db = Chroma.from_documents(
-                        documents=final_chunks,
-                        embedding=self.embeddings,
-                        persist_directory=self.storage_path,
-                        collection_name="vas_expert_db",
-                        ids=ids
-                    )
-                else:
-                    vector_db.add_documents(documents=final_chunks, ids=ids)
-                print(f"Đã nạp {len(final_chunks)} chunks chuẩn hóa.")
+                batch_size = 100
+                for i in range(0, len(final_chunks), batch_size):
+                    batch_chunks = final_chunks[i:i + batch_size]
+                    batch_ids = ids[i:i + batch_size]
+                    print(f"Đang nạp batch {i//batch_size + 1} ({len(batch_chunks)} chunks)...")
+                    vector_db.add_documents(documents=batch_chunks, ids=batch_ids)
+                print(f"Đã nạp thành công toàn bộ {len(final_chunks)} chunks chuẩn hóa.")
+
+        # Đóng client để giải phóng khóa file và bắt buộc compactor ghi HNSW index files ra đĩa
+        print("Đang đóng kết nối database và lưu trữ HNSW index...")
+        client.close()
+        print("Lưu trữ thành công.")
 
 if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))

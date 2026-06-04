@@ -1,26 +1,7 @@
 from src.core.schema import ConversationState
-from src.services.llm import get_llm
+from src.services.llm import get_llm, REWRITE_PROMPT
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-
-REWRITE_PROMPT = """
-Bạn là một AI Query Rewriter cho hệ thống RAG kế toán VAS (Vietnam Accounting Standards).
-Hãy sử dụng ngữ cảnh (chứa các thực thể, thuộc tính và ràng buộc hiện tại) để viết lại câu hỏi thô của người dùng thành một câu hỏi độc lập (Q_final) đầy đủ thực thể và ngữ nghĩa.
-Câu hỏi được viết lại này phải sẵn sàng để truy xuất chính xác thông tin từ kho tài liệu chuẩn mực kế toán Việt Nam.
-
-Ngữ cảnh hiện tại:
-- Thực thể (Entities): {entities}
-- Thuộc tính (Attributes): {attributes}
-- Ràng buộc (Constraints): {constraints}
-
-Câu hỏi thô của người dùng:
-"{query}"
-
-Lưu ý quan trọng:
-1. Câu hỏi độc lập được viết lại PHẢI rõ ràng, mạch lạc, sử dụng các thuật ngữ chuyên môn kế toán chính xác, và KHÔNG chứa các đại từ thay thế mơ hồ ("nó", "khoản đó", "đối tượng đó", "điều kiện đó").
-2. Đừng cố gắng tự trả lời câu hỏi, mục tiêu của bạn chỉ là viết lại câu hỏi thành dạng đầy đủ thông tin để đem đi tìm kiếm tài liệu.
-3. Chỉ trả về duy nhất câu hỏi độc lập được viết lại, không viết thêm lời dẫn hay giải thích gì khác.
-"""
 
 def controlled_rewrite(query: str, state: ConversationState, retrieved_empty: bool) -> str:
     """
@@ -51,7 +32,6 @@ def controlled_rewrite(query: str, state: ConversationState, retrieved_empty: bo
             "constraints": constraints_str
         })
         q_final = res.strip()
-        print(f"[Rewriter Node] Đã viết lại câu hỏi: '{query}' -> '{q_final}'")
         return q_final
     except Exception as e:
         print(f"[Rewriter Node] Lỗi khi viết lại câu hỏi: {e}. Trả về câu hỏi gốc làm fallback.")
