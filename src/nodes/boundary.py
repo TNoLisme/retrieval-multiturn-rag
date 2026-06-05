@@ -56,6 +56,11 @@ def _contains_referring_pronoun(query: str) -> str | None:
             return pronoun
     return None
 
+def _content_words(text: str) -> set:
+    """Tách từ và loại bỏ stop words để chỉ giữ lại từ mang nội dung."""
+    words = set(text.lower().split())
+    return words - VIETNAMESE_STOP_WORDS
+
 def fallback_slm(query: str, active_chat: List[Union[str, Dict[str, str]]]) -> str:
     """
     Sử dụng LLM/SLM để thẩm định ý định đổi chủ đề nếu logic rule-based nghi ngờ.

@@ -64,7 +64,7 @@ Bạn thực hiện 2 bước theo thứ tự:
 
 BƯỚC 1 - TRACKING (Cập nhật Trạng thái):
 - Nếu Trạng thái cũ có "entities" (ví dụ: {{"tài_sản": "Hàng tồn kho"}}): BẮT BUỘC phải giữ lại các entities đó trong State_t mới, kết hợp với bất kỳ thực thể mới nào từ Câu hỏi mới.
-- Trích xuất "intent", "attributes", "constraints" mới từ Câu hỏi mới.
+- Trích xuất "intent", "entities", "attributes", "constraints" mới từ Câu hỏi mới.
 - Điền vào "unresolved_references" nếu Câu hỏi mới chứa đại từ thay thế ("nó", "chúng", "họ", "hắn", "đó", "kia", "cái đó", "khoản đó"...) — chỉ ghi từ đó vào nếu nó THỰC SỰ XUẤT HIỆN trong câu chữ của câu hỏi.
 
 BƯỚC 2 - CHECKING (Kiểm tra sự đầy đủ):

@@ -17,20 +17,31 @@ VIETNAMESE_PRONOUNS = {
     "chúng đó", "những đó", "các đó",
 }
 
+def _clean_and_tokenize(text: str) -> list:
+    import re
+    cleaned = re.sub(r'[^\w\s\d]', ' ', text.lower())
+    return cleaned.split()
+
 def _sanitize_output(query: str, state: ConversationState, need_retrieval_from_llm: bool) -> TrackerOutput:
     """
     Post-processing bắt buộc sau khi LLM trả về kết quả:
-    1. Lọc unresolved_references: chỉ giữ các từ THỰC SỰ xuất hiện trong câu hỏi.
+    1. Lọc unresolved_references: chỉ giữ các từ THỰC SỰ xuất hiện trong câu hỏi làm đại từ độc lập.
     2. Tính lại need_retrieval dựa trên logic đúng: entities rỗng = cần truy xuất.
        (Không dùng giá trị need_retrieval của LLM vì model nhỏ hay sai)
     """
-    query_lower = query.lower()
+    q_tokens = _clean_and_tokenize(query)
+    q_str = " " + " ".join(q_tokens) + " " if q_tokens else ""
     
-    # Lọc unresolved_references: chỉ giữ lại từ/cụm từ có trong query thực tế
-    validated_refs = [
-        ref for ref in state.unresolved_references
-        if ref.lower() in query_lower
-    ]
+    # Lọc unresolved_references: chỉ giữ lại từ/cụm từ thực sự xuất hiện độc lập trong query
+    validated_refs = []
+    for ref in state.unresolved_references:
+        ref_tokens = _clean_and_tokenize(ref)
+        if not ref_tokens:
+            continue
+        ref_str = " " + " ".join(ref_tokens) + " "
+        if ref_str in q_str:
+            validated_refs.append(ref)
+            
     state.unresolved_references = validated_refs
     
     # Tính lại need_retrieval theo logic đúng: True ↔ entities rỗng

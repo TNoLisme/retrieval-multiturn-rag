@@ -1,121 +1,151 @@
-# Tối ưu hóa truy vấn RAG Multi-turn (Vietnam Accounting Standards - VAS)
+# TÀI LIỆU ĐẶC TẢ KIẾN TRÚC HỆ THỐNG: STATE-CENTRIC ADAPTIVE PIPELINE
+*(Dự án: Retrieval-Multiturn-RAG)*
 
-Dự án này triển khai hệ thống **State-Centric Adaptive Pipeline** nhằm tối ưu hóa câu truy vấn trong hội thoại đa lượt (multi-turn), ứng dụng vào kho tài liệu **Chuẩn mực Kế toán Việt Nam (VAS)**. Hệ thống giải quyết các bài toán về đại từ mơ hồ ("nó", "khoản đó"), tham chiếu ẩn ý và chuyển đổi chủ đề đột ngột (`hard_shift`) của người dùng trong các phiên chat liên tục.
+Dự án này là một hệ thống RAG (Retrieval-Augmented Generation) tiên tiến, chuyên giải quyết các vấn đề phức tạp trong **hội thoại nhiều lượt (Multi-turn RAG)** thông qua cơ chế quản lý trạng thái (State-Centric) và duy trì trí nhớ dài hạn (Long-term Memory / Memos). 
 
----
-
-## 1. Kiến trúc Hệ thống
-
-Quy trình xử lý của hệ thống được chia làm 5 lớp cốt lõi:
-1. **Lớp Biên Ngữ Cảnh (Boundary Detection)**: Sử dụng so khớp Jaccard kết hợp mô hình ngôn ngữ nhỏ (SLM) để nhận diện chuyển chủ đề (`hard_shift` / `continue`). Khi có `hard_shift`, hệ thống tự động nén lịch sử trò chuyện cũ thành một Memo lưu vào cơ sở dữ liệu vector và xóa sạch trạng thái phiên cũ.
-2. **Lớp Quản Lý Trạng Thái (State Management)**: Sử dụng LLM để trích xuất Intent, Entities, Attributes, Constraints và Unresolved References để cập nhật vào `ConversationState`.
-3. **Lớp Hợp Nhất Ký Ức (Retrieval & Fusion)**: Khi phát hiện thiếu ngữ cảnh (`need_retrieval` = True), hệ thống truy tìm các Memo tương ứng trong quá khứ và điền vào các ô trống (Safe Merge) trong State hiện tại.
-4. **Lớp Viết Lại Truy Vấn (Generation Layer)**: Tái cấu trúc câu hỏi thô thành câu hỏi độc lập ($Q_{final}$) hoàn chỉnh ngữ nghĩa hoặc phản hồi yêu cầu người dùng làm rõ (Clarification Request) nếu thông tin bị thiếu hụt hoàn toàn.
-5. **Lớp Truy Xuất Tri Thức (RAG Retrieval)**: Dùng $Q_{final}$ để tìm kiếm tài liệu chuẩn xác nhất từ cơ sở dữ liệu tri thức VAS.
+Hệ thống cho phép duy trì câu chuyện từ tuần trước, giải quyết triệt để vấn đề "nó", "cái kia" (tĩnh lược đại từ), và chống "ảo giác" khi bị mất dấu ngữ cảnh.
 
 ---
 
-## 2. Quy trình Xử lý Dữ liệu (Data Pipeline)
+## 1. Dữ Liệu Đầu Vào & Đầu Ra Tổng Thể (System I/O)
 
-Hệ thống xử lý tài liệu thô kế toán và xây dựng cơ sở dữ liệu tri thức thông qua 4 bước tự động hóa trong thư mục `data_pipeline/`:
+* **ĐẦU VÀO (System Input):**
+  - `user_query` (String): Câu hỏi thô của người dùng ở lượt hiện tại (Ví dụ: *"Nó có giá bao nhiêu?"*).
+  - `session_id` (String): Định danh duy nhất của phiên chat, dùng để móc nối dữ liệu trong in-memory/Redis và Vector DB.
+
+* **ĐẦU RA (System Output):**
+  - `q_final` (String): Câu truy vấn độc lập, hoàn chỉnh, đã được giải quyết đại từ và đầy đủ ngữ cảnh để đưa vào hệ thống Search/RAG (Ví dụ: *"iPhone 15 Pro Max có giá bao nhiêu?"*). 
+  - **HOẶC** một **Clarification Request** (Câu hỏi làm rõ) nếu hệ thống phát hiện mất thông tin không thể cứu vãn (Anti-Hallucination).
+
+---
+
+## 2. Sơ đồ Luồng Hoạt Động Chi Tiết (Pipeline Flowchart)
+
+Dưới đây là sơ đồ chi tiết về vòng đời của một câu hỏi khi đi qua hệ thống.
 
 ```mermaid
 graph TD
-    A[Tài liệu thô .docx trong data/raw] -->|convert_to_markdown.py| B[Markdown cấu trúc hóa trong data/processed]
-    B -->|indexing.py| C[Tách mảnh Header & Bơm Ngữ cảnh]
-    C -->|nomic-embed-text| D[Lưu trữ ChromaDB vas_expert_db]
-    D -->|inspect_db.py| E[Xuất file Excel báo cáo tri thức]
-    D -->|visualize_space.py| F[Trực quan 3D bằng Renumics Spotlight]
-```
+    %% Input Layer
+    Start((User Query + Session ID)) --> Init[Tải Old State & Lịch sử ngắn từ Redis]
+    Init --> Boundary
 
-### Bước 1: Cấu trúc hóa tài liệu thô (`convert_to_markdown.py`)
-* Đọc các tài liệu Word (`.docx`) thô trong `data/raw/` (ví dụ: Chuẩn mực 26 về Thông tin các bên liên quan).
-* Phân tích thuộc tính XML của file Word (Outline Level) để ánh xạ chính xác các đề mục từ lớn đến nhỏ thành Heading Markdown tương ứng (`#` đến `####`).
-* Sử dụng Regex nhận diện các điều khoản/điểm số dạng số thứ tự (ví dụ: `1.`, `a)`, `1.1.`) để đưa vào cấp độ H5 (`#####`).
-* Tự động chuyển đổi các bảng biểu dạng lưới Word sang bảng biểu Markdown tiêu chuẩn.
+    %% Layer 1
+    subgraph Layer 1: Boundary Detection
+        Boundary{"Kiểm tra Biên ngữ cảnh<br>(HingeMem / Fallback)"}
+        Boundary -- "hard_shift" --> Archive["Đóng gói Lịch sử thành Memo<br>Lưu vào VectorDB"]
+        Archive --> Reset["Reset State & Xóa Lịch sử ngắn"]
+        Boundary -- "continue" --> Tracker
+        Reset --> Tracker
+    end
 
-### Bước 2: Phân tách tầng tri thức và Đánh chỉ mục (`indexing.py`)
-* Sử dụng `MarkdownHeaderTextSplitter` để chia nhỏ file `.md` thành các mảnh tri thức dựa trên cấu trúc các Heading:
-  * `#` ➔ Standard (Chuẩn mực)
-  * `##` ➔ Chapter (Chương)
-  * `###` ➔ Section (Mục)
-  * `####` ➔ Article (Điều)
-  * `#####` ➔ Point (Khoản/Điểm)
-* Đối với các mục quá dài (> 2000 ký tự), hệ thống băm nhỏ bằng `RecursiveCharacterTextSplitter` (overlap 200 ký tự để giữ tính liên tục).
-* **Bơm Ngữ cảnh (Context Injection):** Bổ sung tiền tố `【NGỮ CẢNH: Standard > Chapter > Section > Article】` vào đầu từng chunk để tránh mất thông tin điều khoản gốc khi tìm kiếm đơn lẻ.
-* Vector hóa các chunk thông qua model `nomic-embed-text` của Ollama và nạp vào collection `vas_expert_db` trong database Chroma.
+    %% Layer 2
+    subgraph Layer 2: State Management
+        Tracker["State Tracker Node<br>(LLM Extraction)"]
+        Tracker --> Checker{"Checker:<br>Entities bị rỗng?"}
+        Checker -- Yes --> SetRetrieve["need_retrieval = True"]
+        Checker -- No --> SetSkip["need_retrieval = False"]
+    end
 
-### Bước 3: Trích xuất & Kiểm tra Tri thức (`inspect_db.py`)
-* Kết nối tới database Chroma, giải nén các metadata và tài liệu chunk.
-* Xuất toàn bộ cấu trúc tri thức (tên chuẩn mực, chương, điều, khoản, độ dài và nội dung text) ra file Excel tiện dụng [Kiem_tra_tri_thuc_VAS.xlsx](file:///d:/school/C%C3%A1c%20v%E1%BA%A5n%20%C4%91%E1%BB%81/retrieval-multiturn-rag/data/Kiem_tra_tri_thuc_VAS.xlsx) để kiểm tra chất lượng phân mảnh bằng mắt thường.
+    %% Layer 3
+    subgraph Layer 3: Retrieval & Fusion
+        SetRetrieve --> Retrieve["Search Vector DB<br>bằng State/Query"]
+        SetSkip --> Rewrite
+        Retrieve --> CheckRetrieve{"Tìm thấy Memos?"}
+        CheckRetrieve -- Yes --> Merge["Safe Merge:<br>Bơm Entity/Attribute từ Memo vào State"]
+        CheckRetrieve -- No --> SetEmpty["retrieved_empty = True"]
+        Merge --> Rewrite
+        SetEmpty --> Rewrite
+    end
 
-### Bước 4: Bản đồ hóa không gian Vector (`visualize_space.py`)
-* Kết nối tới database Chroma để lấy cả vector embeddings, metadata và nội dung văn bản.
-* Khởi chạy thư viện trực quan hóa `renumics spotlight` tại địa chỉ `http://localhost:8000` để vẽ bản đồ phân bố các chunk tri thức dưới dạng 3D, giúp phân tích mật độ phân bố và kiểm tra độ tương đồng ngữ nghĩa trực quan.
+    %% Layer 4
+    subgraph Layer 4: Generation / Rewriter
+        Rewrite["Controlled Rewriter Node<br>(Q_final Generation)"]
+        Rewrite --> CheckFallback{"need_retrieval == True<br>AND retrieved_empty == True?"}
+        CheckFallback -- Yes --> Clarify["Sinh Câu hỏi làm rõ<br>(Clarification Request)"]
+        CheckFallback -- No --> QFinal["Sinh Câu hỏi độc lập<br>(Standalone Q_final)"]
+    end
 
----
-
-## 3. Cấu trúc Thư mục Dự án
-
-```text
-retrieval-multiturn-rag/
-├── data/                             # Dữ liệu nguồn và kết quả kiểm thử
-│   ├── raw/                          # Tài liệu gốc (.docx, .doc, .pdf)
-│   ├── processed/                    # File Markdown (.md) sau khi parse cấu trúc
-│   ├── test_dataset.xlsx             # Bộ 35 câu hỏi đánh giá hội thoại đa lượt
-│   └── evaluation_results.xlsx       # Kết quả đánh giá chạy tự động
-├── data_pipeline/                    # Pipeline xử lý dữ liệu & index Vector DB
-│   ├── convert_to_markdown.py        # Parse Word sang Markdown cấu trúc
-│   ├── indexing.py                   # Chunking và nạp ChromaDB
-│   ├── inspect_db.py                 # Xuất DB ra Excel
-│   └── visualize_space.py            # Trực quan hóa vector space
-├── src/                              # Mã nguồn cốt lõi của RAG Pipeline
-│   ├── core/
-│   │   ├── schema.py                 # Pydantic schemas (ConversationState, TrackerOutput)
-│   │   └── state.py                  # Quản lý State, history cache và logic Memo
-│   ├── nodes/
-│   │   ├── boundary.py               # Node phát hiện biên ngữ cảnh (HingeMem/SLM)
-│   │   ├── tracker.py                # Node theo dõi trạng thái thực thể (LLM Tracker)
-│   │   ├── retriever.py              # Node Safe Merge điền ô trống từ Memo
-│   │   └── rewriter.py               # Node Controlled Rewrite sinh ra Q_final
-│   └── services/
-│   │   ├── llm.py                    # Khởi tạo LLM Client (OpenAI / Ollama Local)
-│   │   └── vector_db.py              # Thao tác tìm kiếm Chroma DB & Memo DB
-├── tests/
-│   └── test_pipeline.py              # Bộ kiểm thử tự động đọc dataset và chấm điểm
-├── main.py                           # Giao diện CLI tương tác RAG Multi-turn
-├── requirements.txt                  # Danh sách thư viện phụ thuộc
-└── README.md                         # Hướng dẫn dự án này
+    %% Output
+    Clarify --> Save["Lưu State mới & History vào Redis"]
+    QFinal --> Save
+    Save --> Out((Trả về Output Cuối cùng))
 ```
 
 ---
 
-## 4. Hướng dẫn Thiết lập và Vận hành
+## 3. Chi Tiết Từng Node Trong Pipeline
 
-### Yêu cầu hệ thống
-* Python 3.10 trở lên
-* Ollama (đã cài đặt và tải sẵn model `nomic-embed-text` và `qwen2.5:3b`)
+Pipeline hoạt động tuyến tính qua 4 lớp cốt lõi. Dưới đây là mô tả cấu trúc JSON của State và chi tiết cơ chế của mỗi Node.
 
-### Cài đặt
-1. Cài đặt các thư viện phụ thuộc:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. (Tùy chọn) Nếu muốn dùng OpenAI API, tạo file `.env` ở thư mục gốc và cấu hình khóa API:
-   ```env
-   OPENAI_API_KEY=your-api-key-here
-   ```
-   *Nếu không cấu hình, hệ thống sẽ tự động dùng local model `qwen2.5:3b` qua Ollama.*
+### Cấu trúc dữ liệu: `ConversationState` (Lõi của hệ thống)
+Mọi thông tin hội thoại được LLM bóc tách và duy trì dưới định dạng JSON Schema:
+- `intent` (String): Mục đích của câu hỏi (inquiry, compare, ...).
+- `entities` (Dict): Thực thể cốt lõi (VD: `{"tài_sản": "Hàng tồn kho"}`). **Đây là biến quyết định xem có cần bật `need_retrieval` hay không.**
+- `attributes` (Dict): Khía cạnh của thực thể (VD: `{"khái_niệm": "Giá gốc"}`).
+- `constraints` (List): Các điều kiện giới hạn (VD: `["áp dụng cho doanh nghiệp vừa"]`).
+- `unresolved_references` (List): Các đại từ đang nằm chờ giải quyết (VD: `["nó", "đó"]`).
 
-### Vận hành
-* **Trò chuyện trực tiếp trên Terminal:**
-   ```bash
-   python main.py
-   ```
-   *Nhập câu hỏi để bắt đầu hội thoại đa lượt, nhập `reset` để xóa phiên trò chuyện hiện tại, nhập `exit` để thoát.*
+---
 
-* **Chạy đánh giá tự động trên tập dữ liệu kiểm thử:**
-   ```bash
-   python -m unittest tests/test_pipeline.py
-   ```
-   *Kết quả đánh giá chi tiết của 35 test case sẽ được lưu lại trong file `data/evaluation_results.xlsx`.*
+### Lớp 1: Boundary Detection Layer (Phát hiện Ranh giới Chủ đề)
+*Mã nguồn: `src/nodes/boundary.py`*
+
+- **Bản chất (What it is):** Một bộ lọc (filter) gồm nhiều lớp để đánh giá ý định chuyển chủ đề.
+- **Mục đích (What it does):** Ngăn chặn hệ thống mang nhầm ngữ cảnh (Constraints, Entities) của câu chuyện cũ sang câu chuyện mới, tránh hiện tượng "râu ông nọ cắm cằm bà kia".
+- **I/O Của Node:**
+  - *Input:* `user_query`, `active_chat` (Lịch sử N tin nhắn gần nhất).
+  - *Output:* Quyết định `"hard_shift"` (đổi chủ đề) hoặc `"continue"` (tiếp tục).
+- **Luồng logic bên trong (3 Layer):**
+  1. **Layer 0 (Rule-based / Pronouns):** Quét câu hỏi xem có chứa các đại từ thay thế tiếng Việt ("nó", "đó", "kia", "họ"...) không. Nếu có $\rightarrow$ Rõ ràng là đang ám chỉ chuyện cũ $\rightarrow$ Trả về `continue` (đại từ không thể mở đầu 1 topic hoàn toàn mới). Tiết kiệm chi phí gọi LLM.
+  2. **Layer 1 (Rule-based / Jaccard):** Loại bỏ stop-words (từ nối, hư từ) khỏi câu hỏi và lượt chat trước đó. Nếu tìm thấy ít nhất 2 từ vựng nội dung (content words) giống nhau $\rightarrow$ Cùng chủ đề $\rightarrow$ `continue`.
+  3. **Layer 2 (LLM Fallback):** Nếu 2 rule trên không thỏa mãn, gọi một mô hình LLM siêu nhẹ (SLM) để đọc ngữ nghĩa và phán quyết `hard_shift` hay `continue`.
+- **Hành động sau Node:** Nếu kết quả là `hard_shift`, hệ thống gọi hàm `archive_to_memo` để dùng LLM tóm tắt đoạn chat cũ thành một Memo đẩy vào Vector DB, rồi Xóa sạch (Reset) State để nhường chỗ cho chủ đề mới.
+
+### Lớp 2: State Management Layer (Trích xuất và Quản lý Trạng thái)
+*Mã nguồn: `src/nodes/tracker.py`*
+
+- **Bản chất:** Một Agent (LLM) đóng vai trò làm người ghi chép biên bản cuộc họp.
+- **Mục đích:** Cập nhật bảng JSON Schema để theo dõi người dùng đang nói về cái gì.
+- **I/O Của Node:**
+  - *Input:* `user_query`, `old_state` (JSON của lượt $t-1$).
+  - *Output:* `new_state` (JSON cập nhật), `need_retrieval` (Boolean).
+- **Luồng logic bên trong:**
+  - **Tracker:** Hợp nhất `user_query` và `old_state` để ghi đè hoặc thêm mới `Entities`, `Attributes`, `Constraints`.
+  - **Checker:** Kiểm tra bản ghi `new_state`. Nếu trường `Entities` hoàn toàn rỗng `{}`, hệ thống nhận ra nó đã "mất dấu" đối tượng thảo luận $\rightarrow$ Bật cờ `need_retrieval = True` để kích hoạt tìm kiếm trong quá khứ. Ngược lại, gán `False`.
+
+### Lớp 3: Retrieval & Fusion Layer (Tìm kiếm và Hợp nhất Ký ức)
+*Mã nguồn: `src/services/vector_db.py` & `src/nodes/retriever.py`*
+
+- **Bản chất:** Cầu nối liên kết Trí nhớ ngắn hạn với Trí nhớ dài hạn (Memos).
+- **Mục đích:** Lấy lại dữ liệu của các phiên chat từ trước đó (đã bị xóa khỏi active_chat).
+- **I/O Của Node:**
+  - *Input:* `new_state`, cờ `need_retrieval`, `session_id`.
+  - *Output:* `new_state` (có thể được bổ sung), cờ `retrieved_empty` (Boolean).
+- **Luồng logic bên trong:**
+  - Bỏ qua toàn bộ nếu `need_retrieval == False`.
+  - Nếu `True`, sử dụng `new_state.entities` (hoặc raw query) để search trong Vector DB.
+  - **Tìm thấy:** Chạy hàm **Safe Merge** (`safe_merge`). Thuật toán cẩn thận đắp các `Entities` từ Memo tìm được vào chỗ trống trong `new_state`, nhưng giữ nguyên các `Constraints` mới mà người dùng vừa đặt ra ở lượt này.
+  - **Không tìm thấy:** Bật cờ `retrieved_empty = True` để báo hiệu cơ sở dữ liệu đã cạn kiệt thông tin.
+
+### Lớp 4: Generation Layer (Viết lại câu hỏi & Anti-Hallucination)
+*Mã nguồn: `src/nodes/rewriter.py`*
+
+- **Bản chất:** LLM tổng hợp thông tin, xử lý các góc chết.
+- **Mục đích:** Trả về đầu ra an toàn tuyệt đối. Đảm bảo câu hỏi có đủ ý nghĩa để hệ thống RAG下游 (downstream) search chuẩn xác.
+- **I/O Của Node:**
+  - *Input:* `user_query`, `new_state` (đã hợp nhất), `retrieved_empty` (Boolean).
+  - *Output:* Câu hỏi `q_final` hoàn chỉnh HOẶC một câu phản hồi yêu cầu làm rõ (Clarification).
+- **Luồng logic bên trong:**
+  - **Controlled Rewrite:** LLM thay thế toàn bộ đại từ (nó, cái kia, công ty ấy) bằng cụm từ chỉ đích danh lấy từ bảng `Entities`. Xóa bỏ các nhiễu loạn để tạo ra Standalone Query ($Q_{final}$).
+  - **Graceful Fallback (Xử lý Ngoại lệ):** 
+    - *Điều kiện kích hoạt:* Nếu `need_retrieval == True` (mất dấu) VÀ `retrieved_empty == True` (Vector DB không có dữ liệu).
+    - *Cơ chế Anti-Hallucination:* Hệ thống **chủ động từ chối tự biên tự diễn (hallucinate)**. Thay vào đó, nó sinh ra một Clarification Request.
+    - *Ví dụ output:* *"Tôi không tìm thấy thông tin về 'sản phẩm cũ' mà bạn đang nhắc đến trong lịch sử trò chuyện. Bạn có thể nói rõ tên sản phẩm để tôi tìm kiếm không?"*
+
+---
+
+## 4. Cơ chế Persistence (Bền vững Dữ liệu)
+
+Sau khi Lớp 4 hoàn thành, hệ thống thực hiện hai thao tác lưu trữ (tại `src/core/state.py`):
+1. **Save State:** Lưu toàn bộ `new_state` vào Redis theo `session_id`. Trạng thái này sẽ tái sinh thành `old_state` cho lần trò chuyện tiếp theo.
+2. **Save History:** Nạp câu `user_query` và `q_final` vào danh sách `active_chat` (Lịch sử ngắn hạn) để cấp ngữ cảnh cho Lớp 1 (Boundary) trong lượt tới.
