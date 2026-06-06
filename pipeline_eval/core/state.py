@@ -105,7 +105,8 @@ def archive_to_memo(session_id: str, active_chat: List[Union[str, Dict[str, str]
             summary=summary,
             topic=topic,
             entities=old_state.entities,
-            attributes=old_state.attributes
+            attributes=old_state.attributes,
+            history=active_chat
         )
         print(f"[State Service] Archived conversation into memo: Topic='{topic}'")
     except Exception as e:
@@ -116,7 +117,8 @@ def archive_to_memo(session_id: str, active_chat: List[Union[str, Dict[str, str]
                 summary=f"Raw history spanning {len(formatted_lines)} turns.",
                 topic="Previous discussion",
                 entities=old_state.entities,
-                attributes=old_state.attributes
+                attributes=old_state.attributes,
+                history=active_chat
             )
         except Exception as add_err:
             print(f"[State Service] Critical memo archival failure: {add_err}")

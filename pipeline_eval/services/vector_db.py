@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Any
 
 # In-Memory RAM storage for old conversational memos to avoid disk I/O and SQL database locks
-# Format: { session_id: [{"summary": str, "topic": str, "entities": dict, "attributes": dict}] }
+# Format: { session_id: [{"summary": str, "metadata": {"topic", "entities", "attributes"}, "history": [...]}] }
 SESSION_MEMOS: Dict[str, List[Dict[str, Any]]] = {}
 
 def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dict[str, Any]]:
@@ -20,8 +20,9 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         matched_memos = []
         
         for memo in memos:
-            attr_text = " ".join(memo.get("attributes", {}).values()) if isinstance(memo.get("attributes"), dict) else ""
-            memo_text = f"{memo.get('topic', '')} {memo.get('summary', '')} {attr_text}"
+            meta = memo.get("metadata", {})
+            attr_text = " ".join(meta.get("attributes", {}).values()) if isinstance(meta.get("attributes"), dict) else ""
+            memo_text = f"{meta.get('topic', '')} {memo.get('summary', '')} {attr_text}"
             memo_words = set(memo_text.lower().split())
             intersection = query_words.intersection(memo_words)
             
@@ -39,9 +40,20 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         print(f"[VectorDB Service (RAM)] Error querying memos: {e}")
         return []
 
-def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str, Any], attributes: Dict[str, Any] = None):
+def add_memo_to_db(
+    session_id: str,
+    summary: str,
+    topic: str,
+    entities: Dict[str, Any],
+    attributes: Dict[str, Any] = None,
+    history: List[Dict[str, str]] = None
+):
     """
     Save conversational memo to RAM for the current session.
+    Memo schema:
+      - summary  : Text summary (used for keyword search)
+      - metadata : Dict with topic, entities, attributes
+      - history  : List of raw chat turns in chronological order [{role, content}]
     """
     try:
         if session_id not in SESSION_MEMOS:
@@ -49,9 +61,12 @@ def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str
             
         SESSION_MEMOS[session_id].append({
             "summary": summary,
-            "topic": topic,
-            "entities": entities,
-            "attributes": attributes or {}
+            "metadata": {
+                "topic": topic,
+                "entities": entities,
+                "attributes": attributes or {}
+            },
+            "history": history or []
         })
         print(f"[VectorDB Service (RAM)] Archived old conversation to memo: Topic='{topic}'")
     except Exception as e:

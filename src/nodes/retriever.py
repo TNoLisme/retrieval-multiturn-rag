@@ -17,7 +17,8 @@ def safe_merge(current_state: ConversationState, retrieved_memos: List[Dict[str,
     memo = retrieved_memos[0]
     
     # Gap-fill entities từ memo
-    memo_entities = memo.get("entities", {})
+    memo_meta = memo.get("metadata", {})
+    memo_entities = memo_meta.get("entities", {})
     if isinstance(memo_entities, dict):
         for key, value in memo_entities.items():
             if key not in current_state.entities:
@@ -25,7 +26,7 @@ def safe_merge(current_state: ConversationState, retrieved_memos: List[Dict[str,
                 print(f"[Retriever Node] Gap-fill entities: '{key}' = '{value}' (từ Memo).")
     
     # Gap-fill attributes từ memo (nếu state hiện tại chưa có)
-    memo_attributes = memo.get("attributes", {})
+    memo_attributes = memo_meta.get("attributes", {})
     if isinstance(memo_attributes, dict):
         for key, value in memo_attributes.items():
             if key not in current_state.attributes:

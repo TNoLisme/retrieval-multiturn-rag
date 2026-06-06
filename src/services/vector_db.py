@@ -8,7 +8,7 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents import Document
 
 # Bộ lưu trữ RAM (In-Memory) để lưu trữ các memos hội thoại cũ, tránh ghi đĩa SQLite/ChromaDB
-# Định dạng: { session_id: [{"summary": str, "topic": str, "entities": dict, "attributes": dict}] }
+# Định dạng: { session_id: [{"summary": str, "metadata": {"topic", "entities", "attributes"}, "history": [...]}] }
 SESSION_MEMOS: Dict[str, List[Dict[str, Any]]] = {}
 
 # Biến toàn cục để cache kết nối database (Singleton Pattern)
@@ -81,9 +81,10 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         matched_memos = []
         
         for memo in memos:
-            # Bao gồm cả attributes values trong văn bản so khớp
-            attr_text = " ".join(memo.get("attributes", {}).values()) if isinstance(memo.get("attributes"), dict) else ""
-            memo_text = f"{memo.get('topic', '')} {memo.get('summary', '')} {attr_text}"
+            # Bao gồm cả attributes values trong văn bản so khớp từ metadata
+            meta = memo.get("metadata", {})
+            attr_text = " ".join(meta.get("attributes", {}).values()) if isinstance(meta.get("attributes"), dict) else ""
+            memo_text = f"{meta.get('topic', '')} {memo.get('summary', '')} {attr_text}"
             memo_words = set(memo_text.lower().split())
             intersection = query_words.intersection(memo_words)
             
@@ -102,9 +103,20 @@ def search_memo_db(query_text: str, session_id: str, top_k: int = 3) -> List[Dic
         print(f"[VectorDB Service (RAM)] Lỗi truy vấn Memo trên RAM: {e}")
         return []
 
-def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str, Any], attributes: Dict[str, Any] = None):
+def add_memo_to_db(
+    session_id: str,
+    summary: str,
+    topic: str,
+    entities: Dict[str, Any],
+    attributes: Dict[str, Any] = None,
+    history: List[Dict[str, str]] = None
+):
     """
-    Lưu bối cảnh hội thoại cũ (Memo) trực tiếp vào bộ nhớ RAM của phiên hiện tại.
+    Lưu bối cảnh hội thoại cũ (Memo) vào RAM của phiên hiện tại.
+    Cấu trúc Memo:
+      - summary  : Văn bản tóm tắt nội dung chính (dùng để vector search)
+      - metadata : Dict chứa topic, entities, attributes (metadata mô tả)
+      - history  : Mảng các lượt chat gốc theo thứ tự thời gian [{role, content}]
     """
     try:
         if session_id not in SESSION_MEMOS:
@@ -112,9 +124,12 @@ def add_memo_to_db(session_id: str, summary: str, topic: str, entities: Dict[str
             
         SESSION_MEMOS[session_id].append({
             "summary": summary,
-            "topic": topic,
-            "entities": entities,
-            "attributes": attributes or {}
+            "metadata": {
+                "topic": topic,
+                "entities": entities,
+                "attributes": attributes or {}
+            },
+            "history": history or []
         })
         print(f"[VectorDB Service (RAM)] Đã ghi nhớ cuộc hội thoại cũ vào RAM cho phiên {session_id} - Topic: {topic}")
     except Exception as e:
