@@ -4,10 +4,10 @@
     "sample_id": "conv-44",
     "total_qa": 158,
     "bm25_hit_rate_at1": 0.5557,
-    "bm25_hit_rate_at3": 0.7419,
-    "bm25_hit_rate_at5": 0.8198,
-    "llm_judge_accuracy": 0.6519,
-    "llm_judge_passes": 103
+    "bm25_hit_rate_at3": 0.7435,
+    "bm25_hit_rate_at5": 0.8268,
+    "llm_judge_accuracy": 0.6709,
+    "llm_judge_passes": 106
   },
   "results": [
     {
@@ -15,7 +15,7 @@
       "category": 2,
       "original_question": "Which year did Audrey adopt the first three of her dogs?",
       "ambiguous_query": "Which year did she adopt the first three of her dogs?",
-      "q_final": "Which year did Melanie adopt the first three of her dogs?",
+      "q_final": "Which year did Audrey adopt the first three of her dogs?",
       "evidence": [
         "D1:7"
       ],
@@ -25,21 +25,21 @@
       "retrieved_sections": [
         2,
         28,
-        5,
         24,
+        5,
         12
       ],
       "recall_at1": 0.0,
       "recall_at3": 0.0,
       "recall_at5": 0.0,
-      "llm_judge_pass": false
+      "llm_judge_pass": true
     },
     {
       "qa_index": 1,
       "category": 2,
       "original_question": "When did Andrew start his new job as a financial analyst?",
       "ambiguous_query": "When did he start his new job as a financial analyst?",
-      "q_final": "When did he start his new job as a financial analyst?",
+      "q_final": "When did Andrew start his new job as a financial analyst?",
       "evidence": [
         "D1:2"
       ],
@@ -49,9 +49,9 @@
       "retrieved_sections": [
         1,
         28,
-        10,
-        4,
-        9
+        26,
+        25,
+        4
       ],
       "recall_at1": 1.0,
       "recall_at3": 1.0,
@@ -63,7 +63,7 @@
       "category": 1,
       "original_question": "What kind of indoor activities has Andrew pursued with his girlfriend?",
       "ambiguous_query": "What kind of indoor activities has he pursued with his girlfriend?",
-      "q_final": "What kind of indoor activities has Melanie pursued with her girlfriend?",
+      "q_final": "What kind of indoor activities has Andrew pursued with his girlfriend?",
       "evidence": [
         "D13:1",
         "D23:1",
@@ -77,23 +77,23 @@
         25
       ],
       "retrieved_sections": [
+        9,
+        19,
+        26,
         27,
-        8,
-        14,
-        18,
-        3
+        14
       ],
       "recall_at1": 0.0,
-      "recall_at3": 0.0,
-      "recall_at5": 0.0,
-      "llm_judge_pass": false
+      "recall_at3": 0.25,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
     },
     {
       "qa_index": 3,
       "category": 1,
       "original_question": "What kind of places have Andrew and his girlfriend checked out around the city?",
       "ambiguous_query": "What kind of places have him and his girlfriend checked out around the city?",
-      "q_final": "What kind of places have Andrew and his girlfriend checked out around the city?",
+      "q_final": "What kind of places has Andrew and his girlfriend checked out around the city?",
       "evidence": [
         "D3:1",
         "D3:11",
@@ -115,14 +115,14 @@
       ],
       "retrieved_sections": [
         3,
-        7,
         23,
+        7,
         20,
-        27
+        19
       ],
       "recall_at1": 0.14285714285714285,
       "recall_at3": 0.2857142857142857,
-      "recall_at5": 0.42857142857142855,
+      "recall_at5": 0.2857142857142857,
       "llm_judge_pass": true
     },
     {
@@ -138,14 +138,14 @@
         3
       ],
       "retrieved_sections": [
-        22,
-        20,
+        5,
+        17,
+        28,
         3,
-        21,
-        2
+        26
       ],
       "recall_at1": 0.0,
-      "recall_at3": 1.0,
+      "recall_at3": 0.0,
       "recall_at5": 1.0,
       "llm_judge_pass": false
     },
@@ -162,13 +162,13 @@
         4
       ],
       "retrieved_sections": [
-        11,
         4,
+        11,
         1,
-        18,
-        28
+        26,
+        18
       ],
-      "recall_at1": 0.0,
+      "recall_at1": 1.0,
       "recall_at3": 1.0,
       "recall_at5": 1.0,
       "llm_judge_pass": true
@@ -178,7 +178,7 @@
       "category": 2,
       "original_question": "When did Audrey adopt Pixie?",
       "ambiguous_query": "When did she adopt Pixie?",
-      "q_final": "When did Pixie get adopted?",
+      "q_final": "When did Audrey adopt Pixie?",
       "evidence": [
         "D2:1"
       ],
@@ -188,21 +188,21 @@
       "retrieved_sections": [
         2,
         28,
-        5,
         24,
+        5,
         12
       ],
       "recall_at1": 1.0,
       "recall_at3": 1.0,
       "recall_at5": 1.0,
-      "llm_judge_pass": false
+      "llm_judge_pass": true
     },
     {
       "qa_index": 7,
       "category": 2,
       "original_question": "How many years passed between Audrey adopting Pixie and her other three dogs?",
       "ambiguous_query": "How many years passed between her adopting Pixie and her other three dogs?",
-      "q_final": "How many years passed between Pixie's adoption and the adoption of her other three dogs?",
+      "q_final": "How many years passed between Audrey adopting Pixie and her other three dogs?",
       "evidence": [
         "D2:1",
         "D1:7"
@@ -213,10 +213,10 @@
       ],
       "retrieved_sections": [
         2,
-        26,
         28,
-        23,
-        15
+        24,
+        5,
+        12
       ],
       "recall_at1": 0.5,
       "recall_at3": 0.5,
@@ -228,7 +228,7 @@
       "category": 2,
       "original_question": "Did Andrew have a pet dog during March 2023?",
       "ambiguous_query": "Did he have a pet dog during March 2023?",
-      "q_final": "Did he have a pet dog during March 2023?",
+      "q_final": "Did Andrew have a pet dog during March 2023?",
       "evidence": [
         "D2:8"
       ],
@@ -236,15 +236,15 @@
         2
       ],
       "retrieved_sections": [
-        28,
         6,
-        5,
-        4,
+        1,
+        2,
+        28,
         15
       ],
       "recall_at1": 0.0,
-      "recall_at3": 0.0,
-      "recall_at5": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
       "llm_judge_pass": true
     },
     {
@@ -270,9 +270,9 @@
       "retrieved_sections": [
         27,
         8,
-        17,
+        26,
         19,
-        26
+        17
       ],
       "recall_at1": 0.2,
       "recall_at3": 0.2,
@@ -292,13 +292,13 @@
         6
       ],
       "retrieved_sections": [
-        6,
         10,
-        16,
         8,
+        6,
+        16,
         20
       ],
-      "recall_at1": 1.0,
+      "recall_at1": 0.0,
       "recall_at3": 1.0,
       "recall_at5": 1.0,
       "llm_judge_pass": true

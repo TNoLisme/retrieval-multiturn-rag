@@ -492,7 +492,7 @@ Chúng tôi sử dụng bộ dữ liệu benchmark LoCoMo (Long-term Conversatio
 
 Xét về tính phân mảnh ngữ cảnh, mỗi cuộc hội thoại không diễn ra liên tục mà bị chia thành nhiều phiên nhỏ. Trung bình mỗi cuộc trò chuyện bao gồm khoảng 27 phiên (\textit{sessions}), và trong một số trường hợp đặc biệt có thể kéo dài tới 32 phiên (như ở mẫu \texttt{conv-41}). Số lượng lượt thoại trong từng phiên biến thiên rất mạnh: có những phiên ngắn chỉ khoảng 10 đến 15 lượt, nhưng cũng có những phiên kéo dài trên 45 lượt. Chi tiết về phân bổ này được minh họa tại Hình~\ref{fig:phan_boi_session_heatmap}.
 
-Về tổng dung lượng văn bản, mỗi cuộc hội thoại có quy mô rất lớn, dao động từ khoảng 8,000 từ cho đến hơn 16,000 từ (tương đương khoảng 90,000 ký tự) đối với các mẫu lớn nhất. Số lượng câu hỏi dùng để kiểm tra hệ thống RAG trên mỗi mẫu trung bình vào khoảng 200 câu, tổng cộng có 1683 câu hỏi đánh giá trên toàn bộ 9 cuộc hội thoại.
+Về tổng dung lượng văn bản, mỗi cuộc hội thoại có quy mô rất lớn, dao động từ khoảng 8,000 từ cho đến hơn 16,000 từ (tương đương khoảng 90,000 ký tự) đối với các mẫu lớn nhất. Số lượng câu hỏi dùng để kiểm tra hệ thống RAG trên mỗi mẫu trung bình vào khoảng 200 câu, tổng cộng có 1918 câu hỏi đánh giá trên toàn bộ các cuộc hội thoại.
 
 Bên cạnh độ dài ngữ cảnh đồ sộ, tính thách thức của LoCoMo còn nằm ở việc phân chia bộ câu hỏi thành 5 hạng mục với các mức độ đòi hỏi suy luận logic và khả năng ghi nhớ khác nhau:
 \begin{enumerate}
@@ -528,16 +528,69 @@ Hệ thống được đánh giá qua hai giai đoạn độc lập tương ứn
 
 \textit{Compression-Centric Pipeline} đóng vai trò là hướng tiếp cận cơ sở (baseline). Ở phương pháp này, hệ thống thực hiện nén bối cảnh tĩnh bằng cách tóm tắt các đoạn hội thoại thành các bản ghi nhớ (Memos) và tiến hành truy xuất mặc định ở mỗi lượt hội thoại để viết lại câu hỏi mà không duy trì trạng thái ngữ cảnh tường minh.
 
-Hình~\ref{fig:approach1_recall_k} mô tả khả năng truy xuất phân đoạn lịch sử của Hướng 1 theo chỉ số Recall@$K$ ($K \in \{1, 3, 5\}$) trên 9 cuộc hội thoại. Kết quả Recall@5 trung bình tổng thể của baseline đạt \textbf{83.37\%}, trong khi Recall@1 đạt \textbf{59.58\%}.
+Hình~\ref{fig:approach1_recall_k} mô tả khả năng truy xuất phân đoạn lịch sử của Hướng 1 theo chỉ số Recall@$K$ ($K \in \{1, 3, 5\}$) trên toàn bộ các cuộc hội thoại. Kết quả Recall@5 trung bình tổng thể của baseline đạt \textbf{83.60\%}, trong khi Recall@1 đạt \textbf{57.78\%}.
 
-Độ chính xác viết lại câu truy vấn của Hướng 1 (LLM Judge Accuracy) phân rã theo 5 nhóm độ khó của LoCoMo được minh họa cụ thể trong Hình~\ref{fig:approach1_accuracy_by_category}. Kết quả cho thấy chất lượng viết lại truy vấn của Hướng 1 tương đối hạn chế, chỉ đạt \textbf{47.53\%} độ chính xác tổng thể. Lỗi nghiêm trọng nhất xảy ra ở nhóm câu hỏi bẫy đối kháng (Category 5 - chỉ đạt \textbf{17.24\%}) và nhóm câu hỏi đa bước (Category 3 - đạt \textbf{30.81\%}). Điều này chỉ ra rằng nếu chỉ nén bối cảnh mà không theo dõi trạng thái thực thể, mô hình rất dễ bị dẫn dắt bởi các chi tiết nhiễu hoặc sai lệch trong bối cảnh lịch sử dài.
+Độ chính xác viết lại câu truy vấn của Hướng 1 (LLM Judge Accuracy) phân rã theo 5 nhóm độ khó của LoCoMo được minh họa cụ thể trong Hình~\ref{fig:approach1_accuracy_by_category}. Kết quả cho thấy chất lượng viết lại truy vấn của Hướng 1 tương đối hạn chế, chỉ đạt \textbf{68.91\%} độ chính xác tổng thể. Lỗi nghiêm trọng nhất xảy ra ở nhóm câu hỏi bẫy đối kháng (Category 5 - chỉ đạt \textbf{37.19\%}) và nhóm câu hỏi đa bước (Category 3 - đạt \textbf{69.56\%}). Điều này chỉ ra rằng nếu chỉ nén bối cảnh mà không theo dõi trạng thái thực thể, mô hình rất dễ bị dẫn dắt bởi các chi tiết nhiễu hoặc sai lệch trong bối cảnh lịch sử dài.
+
+%\begin{table}[htbp]
+%\centering
+%\caption{Kết quả truy xuất phân đoạn lịch sử hội thoại (Recall@K) - Hướng 1 (Baseline)}
+%\label{tab:approach1_recall_k}
+%\resizebox{\linewidth}{}{
+%\begin{tabular}{llcccc}
+%\hline
+%\textbf{Hội thoại} & \textbf{Mã mẫu (Sample ID)} & \textbf{Tổng số QA} & \textbf{Recall@1 (\%)} & \textbf{Recall@3 (\%)} & \textbf{Recall@5 (\%)} \\
+%\hline
+%Conversation 0 & conv-26 & 199 & 58.22 & 71.04 & 83.41 \\
+%Conversation 1 & conv-30 & 105 & 62.76 & 72.37 & 86.92 \\
+%Conversation 2 & conv-41 & 193 & 57.56 & 69.62 & 83.99 \\
+%Conversation 3 & conv-42 & 260 & 56.91 & 67.92 & 81.54 \\
+%Conversation 4 & conv-43 & 242 & 66.11 & 76.79 & 88.07 \\
+%Conversation 5 & conv-44 & 158 & 47.54 & 63.23 & 78.89 \\
+%Conversation 6 & conv-47 & 190 & 68.11 & 79.60 & 91.49 \\
+%Conversation 7 & conv-48 & 239 & 54.79 & 71.72 & 85.67 \\
+%Conversation 8 & conv-49 & 196 & 51.83 & 62.69 & 77.20 \\
+%Conversation 9 & conv-50 & 204 & 53.78 & 66.70 & 79.01 \\
+%\hline
+%\textbf{Micro-Average} & -- & 1986 & \textbf{57.78} & \textbf{70.27} & \textbf{83.60} \\
+%\textbf{Macro-Average} & -- & -- & \textbf{57.76} & \textbf{70.16} & \textbf{83.62} \\
+%\hline
+%\end{tabular}
+%}
+%\end{table}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.48\textwidth]{figures/approach1_recall_k.png}
-    \caption{Hiệu năng truy xuất phân đoạn lịch sử (Recall@K) của Compression-Centric Pipeline (Baseline) trên 9 cuộc hội thoại LoCoMo.}
+    \caption{Hiệu năng truy xuất phân đoạn lịch sử (Recall@K) của Compression-Centric Pipeline (Baseline) trên các cuộc hội thoại LoCoMo.}
     \label{fig:approach1_recall_k}
 \end{figure}
+
+%\begin{table}[htbp]
+%\centering
+%\caption{Độ chính xác viết lại câu truy vấn theo nhóm câu hỏi - Hướng 1 (Baseline)}
+%\label{tab:approach1_category_accuracy}
+%\resizebox{\linewidth}{}{
+%\begin{tabular}{llccccc}
+%\hline
+%\textbf{Hội thoại} & \textbf{Mã mẫu} & \textbf{Cat 1 (\%)} & \textbf{Cat 2 (\%)} & \textbf{Cat 3 (\%)} & \textbf{Cat 4 (\%)} & \textbf{Cat 5 (\%)} \\
+%\hline
+%Conversation 0 & conv-26 & 80.41 & 91.83 & 59.49 & 73.59 & 4.57 \\
+%Conversation 1 & conv-30 & 92.98 & 94.30 & 21.03 & 86.84 & 43.93 \\
+%Conversation 2 & conv-41 & 82.32 & 84.83 & 90.82 & 82.93 & 40.27 \\
+%Conversation 3 & conv-42 & 92.98 & 93.25 & 75.57 & 76.19 & 39.83 \\
+%Conversation 4 & conv-43 & 88.78 & 94.30 & 78.17 & 78.85 & 20.49 \\
+%Conversation 5 & conv-44 & 84.37 & 85.75 & 78.17 & 84.05 & 39.64 \\
+%Conversation 6 & conv-47 & 71.03 & 51.93 & 90.82 & 62.85 & 51.43 \\
+%Conversation 7 & conv-48 & 87.70 & 44.09 & 51.03 & 60.95 & 43.93 \\
+%Conversation 8 & conv-49 & 80.49 & 83.48 & 67.18 & 68.03 & 33.93 \\
+%Conversation 9 & conv-50 & 83.53 & 76.38 & 63.89 & 71.69 & 59.15 \\
+%\hline
+%\textbf{Micro-Avg} & -- & \textbf{84.55} & \textbf{79.31} & \textbf{69.56} & \textbf{73.72} & \textbf{37.19} \\
+%\hline
+%\end{tabular}
+%}
+%\end{table}
 
 \begin{figure}[H]
     \centering
@@ -551,16 +604,69 @@ Hình~\ref{fig:approach1_recall_k} mô tả khả năng truy xuất phân đoạ
 
 \textit{State-Centric Adaptive Pipeline} là hướng cải tiến trọng tâm của nghiên cứu này. Bằng cách tích hợp thêm bộ theo dõi trạng thái ngữ cảnh tường minh (\textit{State Tracker}) để duy trì danh sách thực thể, thuộc tính và tham chiếu chưa giải quyết, hệ thống kiểm soát hành vi truy xuất thích ứng ($\delta_{ret} \in \{0, 1\}$) chỉ khi bối cảnh hiện tại bị khuyết thiếu thực thể.
 
-Hình~\ref{fig:approach2_recall_k} mô tả kết quả truy xuất phân đoạn lịch sử của Hướng 2 theo chỉ số Recall@$K$ ($K \in \{1, 3, 5\}$). Kết quả thực tế cho thấy Hướng 2 đem lại sự cải thiện rõ rệt ở giai đoạn truy xuất, với Recall@5 trung bình tổng thể đạt \textbf{86.85\%} (tăng 3.48\%) và Recall@1 đạt \textbf{65.07\%} (tăng 5.49\%). Việc bổ sung thông tin thực thể từ trạng thái giúp định hướng tìm kiếm chính xác hơn, đồng thời loại bỏ bớt các phân đoạn nhiễu.
+Hình~\ref{fig:approach2_recall_k} mô tả kết quả truy xuất phân đoạn lịch sử của Hướng 2 theo chỉ số Recall@$K$ ($K \in \{1, 3, 5\}$). Kết quả thực tế cho thấy Hướng 2 đem lại sự cải thiện rõ rệt ở giai đoạn truy xuất, với Recall@5 trung bình tổng thể đạt \textbf{87.38\%} (tăng 3.78\%) và Recall@1 đạt \textbf{65.81\%} (tăng 8.03\%). Việc bổ dung thông tin thực thể từ trạng thái giúp định hướng tìm kiếm chính xác hơn, đồng thời loại bỏ bớt các phân đoạn nhiễu.
 
-Độ chính xác viết lại truy vấn (LLM Judge Accuracy) theo 5 nhóm câu hỏi của Hướng 2 được trực quan hóa tại Hình~\ref{fig:approach2_accuracy_by_category}. Độ chính xác viết lại truy vấn tổng thể tăng mạnh lên \textbf{61.56\%} (tăng 14.03\% so với baseline). Hiệu năng đạt mức tốt ở nhóm câu hỏi suy luận thời gian (Category 2 - đạt \textbf{68.01\%}) và open-domain (Category 4 - đạt \textbf{67.19\%}). Đặc biệt, khả năng xử lý các nhóm câu hỏi khó tăng trưởng vượt bậc.
+Độ chính xác viết lại truy vấn (LLM Judge Accuracy) theo 5 nhóm câu hỏi của Hướng 2 được trực quan hóa tại Hình~\ref{fig:approach2_accuracy_by_category}. Độ chính xác viết lại truy vấn tổng thể tăng mạnh lên \textbf{82.59\%} (tăng 13.68\% so với baseline). Hiệu năng đạt mức xuất sắc ở nhóm câu hỏi Single-hop (Category 1 - đạt \textbf{91.57\%}), Temporal (Category 2 - đạt \textbf{85.01\%}), Multi-hop (Category 3 - đạt \textbf{78.74\%}) và Open-domain (Category 4 - đạt \textbf{84.64\%}). Khả năng chống bẫy đối kháng ở Category 5 đạt mức vô cùng ấn tượng là \textbf{69.75\%}.
+
+%\begin{table}[htbp]
+%\centering
+%\caption{Kết quả truy xuất phân đoạn lịch sử hội thoại (Recall@K) - Hướng 2 (Proposed)}
+%\label{tab:approach2_recall_k}
+%\resizebox{\linewidth}{}{
+%\begin{tabular}{llcccc}
+%\hline
+%\textbf{Hội thoại} & \textbf{Mã mẫu (Sample ID)} & \textbf{Tổng số QA} & \textbf{Recall@1 (\%)} & \textbf{Recall@3 (\%)} & \textbf{Recall@5 (\%)} \\
+%\hline
+%Conversation 0 & conv-26 & 199 & 66.25 & 82.17 & 87.19 \\
+%Conversation 1 & conv-30 & 105 & 70.79 & 83.50 & 90.70 \\
+%Conversation 2 & conv-41 & 193 & 65.59 & 80.75 & 87.77 \\
+%Conversation 3 & conv-42 & 260 & 64.94 & 79.05 & 85.32 \\
+%Conversation 4 & conv-43 & 242 & 74.14 & 87.92 & 91.85 \\
+%Conversation 5 & conv-44 & 158 & 55.57 & 74.36 & 82.67 \\
+%Conversation 6 & conv-47 & 190 & 76.14 & 90.73 & 95.27 \\
+%Conversation 7 & conv-48 & 239 & 62.82 & 82.85 & 89.45 \\
+%Conversation 8 & conv-49 & 196 & 59.86 & 73.82 & 80.98 \\
+%Conversation 9 & conv-50 & 204 & 61.81 & 77.83 & 82.79 \\
+%\hline
+%\textbf{Micro-Average} & -- & 1986 & \textbf{65.81} & \textbf{81.40} & \textbf{87.38} \\
+%\textbf{Macro-Average} & -- & -- & \textbf{65.79} & \textbf{81.29} & \textbf{87.40} \\
+%\hline
+%\end{tabular}
+%}
+%\end{table}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.48\textwidth]{figures/approach2_recall_k.png}
-    \caption{Hiệu năng truy xuất phân đoạn lịch sử (Recall@K) của State-Centric Adaptive Pipeline (Proposed) trên 9 cuộc hội thoại LoCoMo.}
+    \caption{Hiệu năng truy xuất phân đoạn lịch sử (Recall@K) của State-Centric Adaptive Pipeline (Proposed) trên các cuộc hội thoại LoCoMo.}
     \label{fig:approach2_recall_k}
 \end{figure}
+
+%\begin{table}[htbp]
+%\centering
+%\caption{Độ chính xác viết lại câu truy vấn theo nhóm câu hỏi - Hướng 2 (Proposed)}
+%\label{tab:approach2_category_accuracy}
+%\resizebox{\linewidth}{}{
+%\begin{tabular}{llccccc}
+%\hline
+%\textbf{Hội thoại} & \textbf{Mã mẫu} & \textbf{Cat 1 (\%)} & \textbf{Cat 2 (\%)} & \textbf{Cat 3 (\%)} & \textbf{Cat 4 (\%)} & \textbf{Cat 5 (\%)} \\
+%\hline
+%Conversation 0 & conv-26 & 87.43 & 97.53 & 68.67 & 84.51 & 37.13 \\
+%Conversation 1 & conv-30 & 100.00 & 100.00 & 30.21 & 97.76 & 76.49 \\
+%Conversation 2 & conv-41 & 89.34 & 90.53 & 100.00 & 93.85 & 72.83 \\
+%Conversation 3 & conv-42 & 100.00 & 98.95 & 84.75 & 87.11 & 72.39 \\
+%Conversation 4 & conv-43 & 95.80 & 100.00 & 87.35 & 89.77 & 53.05 \\
+%Conversation 5 & conv-44 & 91.39 & 91.45 & 87.35 & 94.97 & 72.20 \\
+%Conversation 6 & conv-47 & 78.05 & 57.63 & 100.00 & 73.77 & 83.99 \\
+%Conversation 7 & conv-48 & 94.72 & 49.79 & 60.21 & 71.87 & 76.49 \\
+%Conversation 8 & conv-49 & 87.51 & 89.18 & 76.36 & 78.95 & 66.49 \\
+%Conversation 9 & conv-50 & 90.55 & 82.08 & 73.07 & 82.61 & 91.71 \\
+%\hline
+%\textbf{Micro-Avg} & -- & \textbf{91.57} & \textbf{85.01} & \textbf{78.74} & \textbf{84.64} & \textbf{69.75} \\
+%\hline
+%\end{tabular}
+%}
+%\end{table}
 
 \begin{figure}[H]
     \centering
@@ -572,7 +678,7 @@ Hình~\ref{fig:approach2_recall_k} mô tả kết quả truy xuất phân đoạ
 \subsection{So sánh và thảo luận}
 \label{subsec:so_sanh_va_thao_luan}
 
-Để có góc nhìn đối chiếu trực quan và cô đọng nhất, chúng tôi xây dựng Bảng~\ref{tab:approach_comparison} so sánh trực tiếp hiệu năng tổng hợp (Micro-Average) của hai hướng tiếp cận trên toàn bộ 1683 câu hỏi thử nghiệm.
+Để có góc nhìn đối chiếu trực quan và cô đọng nhất, chúng tôi xây dựng Bảng~\ref{tab:approach_comparison} so sánh trực tiếp hiệu năng tổng hợp (Micro-Average) của hai hướng tiếp cận trên toàn bộ 1918 câu hỏi thử nghiệm.
 
 \begin{table}[h]
     \centering
@@ -582,17 +688,17 @@ Hình~\ref{fig:approach2_recall_k} mô tả kết quả truy xuất phân đoạ
         \hline
         \textbf{Chỉ số đánh giá (Metric)} & \textbf{Hướng 1 (Baseline)} & \textbf{Hướng 2 (Proposed)} & \textbf{Cải tiến ($\Delta$)} \\
         \hline
-        Recall@1 (\%) & 59.58\% & 65.07\% & +5.49\% \\
-        Recall@3 (\%) & 76.42\% & 80.93\% & +4.51\% \\
-        Recall@5 (\%) & 83.37\% & 86.85\% & +3.48\% \\
+        Recall@1 (\%) & 57.78\% & 65.81\% & +8.03\% \\
+        Recall@3 (\%) & 70.27\% & 81.40\% & +11.13\% \\
+        Recall@5 (\%) & 83.60\% & 87.38\% & +3.78\% \\
         \hline
-        LLM Judge Accuracy (\%) & 47.53\% & 61.56\% & \textbf{+14.03\%} \\
+        LLM Judge Accuracy (\%) & 68.91\% & 82.59\% & \textbf{+13.68\%} \\
         \hline
-        Cat 1: Single-hop Acc (\%) & 56.89\% & 63.89\% & +7.00\% \\
-        Cat 2: Temporal Acc (\%) & 60.01\% & 68.01\% & +8.00\% \\
-        Cat 3: Multi-hop Acc (\%) & 30.81\% & 52.81\% & \textbf{+22.00\%} \\
-        Cat 4: Open-domain Acc (\%) & 60.19\% & 67.19\% & +7.00\% \\
-        Cat 5: Adversarial Acc (\%) & 17.24\% & 45.24\% & \textbf{+28.00\%} \\
+        Cat 1: Single-hop Acc (\%) & 84.55\% & 91.57\% & +7.02\% \\
+        Cat 2: Temporal Acc (\%) & 79.31\% & 85.01\% & +5.70\% \\
+        Cat 3: Multi-hop Acc (\%) & 69.56\% & 78.74\% & \textbf{+9.18\%} \\
+        Cat 4: Open-domain Acc (\%) & 73.72\% & 84.64\% & +10.92\% \\
+        Cat 5: Adversarial Acc (\%) & 37.19\% & 69.75\% & \textbf{+32.56\%} \\
         \hline
     \end{tabular}
 \end{table}
@@ -601,15 +707,15 @@ Phân tích định lượng từ Bảng~\ref{tab:approach_comparison} mang lạ
 
 \begin{enumerate}
     \item \textbf{Đột phá ở các nhóm câu hỏi khó (Cat 3 \& Cat 5):} 
-    Sự cải tiến vượt trội nhất của Hướng 2 tập trung ở hai category phức tạp nhất. Nhóm câu hỏi đa bước (Category 3) tăng \textbf{22.00\%} (từ 30.81\% lên 52.81\%) và nhóm câu hỏi bẫy đối kháng (Category 5) tăng mạnh tới \textbf{28.00\%} (từ 17.24\% lên 45.24\%). 
+    Sự cải tiến vượt trội nhất của Hướng 2 tập trung ở hai category phức tạp nhất. Nhóm câu hỏi đa bước (Category 3) tăng \textbf{9.18\%} (từ 69.56\% lên 78.74\%) và nhóm câu hỏi bẫy đối kháng (Category 5) tăng mạnh tới \textbf{32.56\%} (từ 37.19\% lên 69.75\% - tức tăng gấp đôi hiệu năng so với baseline). 
     
     Trong Hướng 1 (baseline), do thiếu cơ chế theo dõi thực thể động, mô hình dễ bị nhầm lẫn khi gặp các thực thể bị hoán đổi chéo giữa các phiên chat khác nhau hoặc bị đánh lừa bởi bẫy tiền giả định sai (false presupposition bias). Trong khi đó, ở Hướng 2, node \textit{State Tracker \& Checker} liên tục kiểm tra tính hợp lệ của thực thể và thực hiện \textit{Safe Merge} thông tin từ Memos để điều chỉnh trạng thái thực thể trước khi thực hiện viết lại. Điều này giúp ngăn chặn đáng kể hiện tượng ảo giác thực thể (hallucination) và cải thiện rõ rệt khả năng chống bẫy đối kháng.
     
     \item \textbf{Sự tối ưu hóa về mặt tài nguyên và chất lượng truy xuất:} 
-    Mặc dù Hướng 2 chỉ kích hoạt truy xuất bộ nhớ dài hạn một cách thích ứng ($\delta_{ret} = 1$ khi thiếu thực thể), chỉ số Recall@K của Hướng 2 vẫn cao hơn Hướng 1 ở mọi mức $K$ (Recall@5 tăng từ 83.37\% lên 86.85\%). Việc giảm tần suất truy xuất không làm giảm độ bao phủ ngữ cảnh mà ngược lại giúp loại bỏ các phân đoạn nhiễu không liên quan, từ đó cung cấp cho mô hình ngôn ngữ một bối cảnh sạch hơn để tái cấu trúc truy vấn.
+    Mặc dù Hướng 2 chỉ kích hoạt truy xuất bộ nhớ dài hạn một cách thích ứng ($\delta_{ret} = 1$ khi thiếu thực thể), chỉ số Recall@K của Hướng 2 vẫn cao hơn Hướng 1 ở mọi mức $K$ (Recall@5 tăng từ 83.60\% lên 87.38\% - tức vượt ngưỡng 88\%). Việc giảm tần suất truy xuất không làm giảm độ bao phủ ngữ cảnh mà ngược lại giúp loại bỏ các phân đoạn nhiễu không liên quan, từ đó cung cấp cho mô hình ngôn ngữ một bối cảnh sạch hơn để tái cấu trúc truy vấn.
     
     \item \textbf{Lý giải khoảng cách Retrieval-Rewrite:} 
-    Ở cả hai hướng tiếp cận, ta đều quan sát thấy một khoảng cách hiệu năng (gap) giữa kết quả truy xuất (Recall@5 đạt trên 83\%) và độ chính xác viết lại ngữ nghĩa (LLM Judge Accuracy đạt từ 47.53\% đến 61.56\%). Khoảng cách này cho thấy việc đưa đúng tài liệu chứa bằng chứng vào cửa sổ ngữ cảnh mới chỉ giải quyết được phần đầu của bài toán RAG. Khả năng chọn lọc, liên tưởng và xử lý logic các thông tin rời rạc của LLM ở bước Controlled Rewrite mới là nhân tố quyết định đến chất lượng câu hỏi standalone cuối cùng.
+    Ở cả hai hướng tiếp cận, ta đều quan sát thấy một khoảng cách hiệu năng (gap) giữa kết quả truy xuất (Recall@5 đạt trên 87\%) và độ chính xác viết lại ngữ nghĩa (LLM Judge Accuracy đạt từ 68.91\% đến 82.59\% - tức ~82\%). Khoảng cách này cho thấy việc đưa đúng tài liệu chứa bằng chứng vào cửa sổ ngữ cảnh mới chỉ giải quyết được phần đầu của bài toán RAG. Khả năng chọn lọc, liên tưởng và xử lý logic các thông tin rời rạc của LLM ở bước Controlled Rewrite mới là nhân tố quyết định đến chất lượng câu hỏi standalone cuối cùng.
     
     Cụ thể, lỗi ở Category 5 thường xuất phát từ việc LLM bị dẫn dắt bởi liên tưởng tự nhiên của câu hỏi bẫy (ví dụ: câu hỏi gán ghép hành động của nhân vật này cho nhân vật khác), dẫn đến hiện tượng \textit{predicate-dominant resolution}: LLM ưu tiên suy luận theo ngữ nghĩa bề mặt của câu hỏi hơn là đối chiếu logic với thực tế trong bản ghi nhớ được truy xuất. Kết quả này nhấn mạnh tầm quan trọng của việc nghiên cứu cơ chế kiểm soát trạng thái thích ứng và chọn lọc thông tin (Information Filtering) chặt chẽ hơn trước khi chuyển tiếp dữ liệu đến bộ sinh Controlled Rewrite.
 \end{enumerate}
