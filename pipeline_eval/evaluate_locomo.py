@@ -102,76 +102,121 @@ def phase1_inject_memos(conv_data: dict, session_id: str) -> List[Dict]:
     corpus = []  # BM25 downstream corpus
     injected_count = 0
 
-    for session_key in session_keys:
+    # Method 1: Check if memo store file already exists on disk
+    memo_file = os.path.join(MEMO_DB_DIR, f"{session_id}.json")
+    loaded_from_disk = False
+    loaded_memos = []
+    if os.path.exists(memo_file):
+        print(f"  [OK] Found existing memo store at {memo_file}. Loading directly...")
+        try:
+            with open(memo_file, "r", encoding="utf-8") as f:
+                loaded_memos = json.load(f)
+            SESSION_MEMOS[session_id] = loaded_memos
+            loaded_from_disk = True
+            print(f"  [OK] Loaded {len(loaded_memos)} session memos from disk.")
+        except Exception as e:
+            print(f"  [WARN] Failed to load memo store from disk: {e}. Regenerating...")
+
+    for idx, session_key in enumerate(session_keys):
         turns = conversation.get(session_key, [])
         if not turns:
             continue
 
-        # Build history list [{role, content, dia_id}]
-        history = []
-        for turn in turns:
-            speaker = turn.get("speaker", "User")
-            role = "user" if turn.get("speaker") == conversation.get("speaker_a") else "assistant"
-            history.append({
-                "role": role,
-                "speaker": speaker,
-                "content": turn.get("text", ""),
-                "dia_id": turn.get("dia_id", "")
-            })
-            # Add to BM25 corpus
-            corpus.append({
-                "dia_id": turn.get("dia_id", ""),
-                "text": turn.get("text", ""),
-                "session": session_key
-            })
-
-        # Build summary from event_summary map which has format:
-        # { "events_session_1": {"PersonA": ["event1", ...], "PersonB": [...], "date": "..."} }
         session_num = session_key.split("_")[-1]
-        event_key = f"events_session_{session_num}"
-        event_block = event_summary_map.get(event_key, {})
 
-        # Extract named entities and events
-        entities_extracted = []
-        attributes_extracted = []
-        summary_parts = []
-        
-        if event_block:
-            for person, events in event_block.items():
-                if person == "date":
-                    continue
-                if isinstance(events, list) and events:
-                    # Add person to entities
+        if loaded_from_disk and idx < len(loaded_memos):
+            # Load metadata and history from the disk memo to keep corpus in sync
+            memo = loaded_memos[idx]
+            summary_text = memo.get("summary", "")
+            meta = memo.get("metadata", {})
+            entities_extracted = meta.get("entities", [])
+            attributes_extracted = meta.get("attributes", [])
+            
+            # Format history from the memo turns
+            history = []
+            for turn in memo.get("history", []):
+                history.append({
+                    "role": turn.get("role", "user"),
+                    "speaker": turn.get("speaker", ""),
+                    "content": turn.get("content", turn.get("text", "")),
+                    "dia_id": turn.get("dia_id", "")
+                })
+        else:
+            # Method 2: Extract clean session summary directly from dataset
+            # Build history list [{role, content, dia_id}]
+            history = []
+            for turn in turns:
+                speaker = turn.get("speaker", "User")
+                role = "user" if turn.get("speaker") == conversation.get("speaker_a") else "assistant"
+                history.append({
+                    "role": role,
+                    "speaker": speaker,
+                    "content": turn.get("text", ""),
+                    "dia_id": turn.get("dia_id", "")
+                })
+
+            event_key = f"events_session_{session_num}"
+            event_block = event_summary_map.get(event_key, {})
+
+            # Extract clean session summary directly from dataset
+            session_summary_map = conv_data.get("session_summary", {})
+            session_summary_key = f"session_{session_num}_summary"
+            summary_text = session_summary_map.get(session_summary_key, "")
+
+            # Extract named entities and events
+            entities_extracted = []
+            attributes_extracted = []
+            
+            if event_block:
+                for person, events in event_block.items():
+                    if person == "date":
+                        continue
+                    if isinstance(events, list) and events:
+                        # Add person to entities
+                        if person not in entities_extracted:
+                            entities_extracted.append(person)
+                        # Add the whole event descriptions as attributes to ensure maximum keyword coverage
+                        attributes_extracted.extend(events)
+                        
+            # Extract from observations (facts mentioned in this session)
+            observation_key = f"{session_key}_observation"
+            observation_block = conv_data.get("observation", {}).get(observation_key, {})
+            if observation_block:
+                for person, obs_list in observation_block.items():
+                    # Add person to entities if not already there
                     if person not in entities_extracted:
                         entities_extracted.append(person)
-                    
-                    events_str = " ".join(events)
-                    summary_parts.append(f"{person}: {events_str}")
-                    
-                    # Add the whole event descriptions as attributes to ensure maximum keyword coverage
-                    # This captures places, objects, and actions as attributes of the session
-                    attributes_extracted.extend(events)
-                    
-        # Extract from observations (facts mentioned in this session)
-        observation_key = f"{session_key}_observation"
-        observation_block = conv_data.get("observation", {}).get(observation_key, {})
-        if observation_block:
-            for person, obs_list in observation_block.items():
-                # Add person to entities if not already there
-                if person not in entities_extracted:
-                    entities_extracted.append(person)
-                for obs in obs_list:
-                    if isinstance(obs, list) and obs:
-                        fact_text = obs[0]
-                        attributes_extracted.append(fact_text)
-                        summary_parts.append(f"{person}: {fact_text}")
-                        
-        summary_text = " ".join(summary_parts)
+                    for obs in obs_list:
+                        if isinstance(obs, list) and obs:
+                            fact_text = obs[0]
+                            attributes_extracted.append(fact_text)
 
-        # Fallback: concatenate first 3 turns if event_summary is empty and no observations
-        if not summary_text:
-            summary_text = " | ".join([t["content"] for t in history[:3]])
-            attributes_extracted.append(summary_text)
+            # Fallback 1: if session_summary is empty, construct from events
+            if not summary_text:
+                summary_parts = []
+                if event_block:
+                    for person, events in event_block.items():
+                        if person != "date" and isinstance(events, list) and events:
+                            summary_parts.append(f"{person}: {' '.join(events)}")
+                if observation_block:
+                    for person, obs_list in observation_block.items():
+                        for obs in obs_list:
+                            if isinstance(obs, list) and obs:
+                                summary_parts.append(f"{person}: {obs[0]}")
+                summary_text = " ".join(summary_parts)
+
+            # Fallback 2: concatenate first 3 turns if still empty
+            if not summary_text:
+                summary_text = " | ".join([t["content"] for t in history[:3]])
+                attributes_extracted.append(summary_text)
+
+        # Build corpus turns for BM25 search
+        for turn in history:
+            corpus.append({
+                "dia_id": turn["dia_id"],
+                "text": turn["content"],
+                "session": session_key
+            })
 
         # Add metadata documents to BM25 corpus for this session
         # Add Topic
@@ -214,24 +259,27 @@ def phase1_inject_memos(conv_data: dict, session_id: str) -> List[Dict]:
                 "session": session_key
             })
 
-        # Inject into in-memory Memo DB
-        add_memo_to_db(
-            session_id=session_id,
-            summary=summary_text,
-            topic=f"Session {session_num}",
-            entities=entities_extracted,
-            attributes=attributes_extracted,
-            history=history
-        )
-        injected_count += 1
+        # Inject into in-memory Memo DB only if not loaded from disk
+        if not loaded_from_disk:
+            add_memo_to_db(
+                session_id=session_id,
+                summary=summary_text,
+                topic=f"Session {session_num}",
+                entities=entities_extracted,
+                attributes=attributes_extracted,
+                history=history
+            )
+            injected_count += 1
 
-    # Persist memo store to disk for inspection
-    memo_file = os.path.join(MEMO_DB_DIR, f"{session_id}.json")
-    with open(memo_file, "w", encoding="utf-8") as f:
-        json.dump(SESSION_MEMOS.get(session_id, []), f, indent=2, ensure_ascii=False)
+    if not loaded_from_disk:
+        # Persist memo store to disk for inspection
+        with open(memo_file, "w", encoding="utf-8") as f:
+            json.dump(SESSION_MEMOS.get(session_id, []), f, indent=2, ensure_ascii=False)
+        print(f"  [OK] Injected {injected_count} session memos into RAM DB.")
+        print(f"  [OK] Saved memo store -> {memo_file}")
+    else:
+        print(f"  [OK] Loaded {len(SESSION_MEMOS.get(session_id, []))} session memos from existing file on disk (skipped write).")
 
-    print(f"  [OK] Injected {injected_count} session memos into RAM DB.")
-    print(f"  [OK] Saved memo store -> {memo_file}")
     print(f"  [OK] BM25 corpus built: {len(corpus)} turns.")
     return corpus
 

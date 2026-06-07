@@ -1,0 +1,3268 @@
+{
+  "summary": {
+    "conversation_index": 2,
+    "sample_id": "conv-41",
+    "total_qa": 131,
+    "bm25_hit_rate_at1": 0.6228,
+    "bm25_hit_rate_at3": 0.785,
+    "bm25_hit_rate_at5": 0.8658,
+    "llm_judge_accuracy": 0.7328,
+    "llm_judge_passes": 96
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 2,
+      "original_question": "Who did Maria have dinner with on May 3, 2023?",
+      "ambiguous_query": "Who did she have dinner with on May 3, 2023?",
+      "q_final": "Who did Maria have dinner with on May 3, 2023?",
+      "evidence": [
+        "D13:16"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        3,
+        23,
+        2,
+        6,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 1,
+      "category": 2,
+      "original_question": "When did Maria donate her car?",
+      "ambiguous_query": "When did she donate her car?",
+      "q_final": "When did John donate his car?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        21,
+        11,
+        4,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 2,
+      "category": 1,
+      "original_question": "What martial arts has John done?",
+      "ambiguous_query": "What martial arts has he done?",
+      "q_final": "What martial arts has John done?",
+      "evidence": [
+        "D2:28",
+        "D1:4"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        25,
+        2,
+        24,
+        1,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "What type of volunteering have John and Maria both done?",
+      "ambiguous_query": "What type of volunteering have he and Maria both done?",
+      "q_final": "What type of volunteering has John and Maria both done?",
+      "evidence": [
+        "D3:5",
+        "D2:1"
+      ],
+      "gold_sections": [
+        2,
+        3
+      ],
+      "retrieved_sections": [
+        5,
+        8,
+        7,
+        1,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 4,
+      "category": 2,
+      "original_question": "When did John join the online support group?",
+      "ambiguous_query": "When did he join the online support group?",
+      "q_final": "When did John join the online support group?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        27,
+        15,
+        21,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 5,
+      "category": 2,
+      "original_question": "When did Maria go to the beach?",
+      "ambiguous_query": "When did she go to the beach?",
+      "q_final": "When did John go to the beach?",
+      "evidence": [
+        "D3:15"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        16,
+        19,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 6,
+      "category": 1,
+      "original_question": "Where has Maria made friends?",
+      "ambiguous_query": "Where has she made friends?",
+      "q_final": "Where has Maria made friends?",
+      "evidence": [
+        "D4:1",
+        "D2:1",
+        "D19:1",
+        "D14:10"
+      ],
+      "gold_sections": [
+        2,
+        4,
+        14,
+        19
+      ],
+      "retrieved_sections": [
+        4,
+        23,
+        6,
+        20,
+        29
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.25,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 7,
+      "category": 1,
+      "original_question": "What items des John mention having as a child?",
+      "ambiguous_query": "What items des he mention having as a child?",
+      "q_final": "What items does John mention having as a child?",
+      "evidence": [
+        "D5:13",
+        "D3:15"
+      ],
+      "gold_sections": [
+        3,
+        5
+      ],
+      "retrieved_sections": [
+        23,
+        9,
+        19,
+        5,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 3,
+      "original_question": "What might John's financial status be?",
+      "ambiguous_query": "What might his financial status be?",
+      "q_final": "What might John's financial status be?",
+      "evidence": [
+        "D5:5"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        11,
+        21,
+        16,
+        25,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 1,
+      "original_question": "Who gave Maria's family money when she was younger and her family was going through tough times?",
+      "ambiguous_query": "Who gave her family money when she was younger and her family was going through tough times?",
+      "q_final": "Who gave her family money when Melanie was younger and her family was going through tough times?",
+      "evidence": [
+        "D6:9",
+        "D5:8"
+      ],
+      "gold_sections": [
+        5,
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        18,
+        2,
+        13,
+        17
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When did Maria meet Jean?",
+      "ambiguous_query": "When did she meet Jean?",
+      "q_final": "When did John meet Jean?",
+      "evidence": [
+        "D7:1"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        23,
+        4,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 11,
+      "category": 1,
+      "original_question": "What people has Maria met and helped while volunteering?",
+      "ambiguous_query": "What people has she met and helped while volunteering?",
+      "q_final": "What people has Maria met and helped while volunteering?",
+      "evidence": [
+        "D7:5",
+        "D6:5",
+        "D27:8",
+        "D21:19"
+      ],
+      "gold_sections": [
+        6,
+        7,
+        21,
+        27
+      ],
+      "retrieved_sections": [
+        21,
+        7,
+        26,
+        24,
+        10
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 12,
+      "category": 1,
+      "original_question": "What test has John taken multiple times?",
+      "ambiguous_query": "What test has he taken multiple times?",
+      "q_final": "What test has John taken multiple times?",
+      "evidence": [
+        "D8:18",
+        "D3:11"
+      ],
+      "gold_sections": [
+        3,
+        8
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        13,
+        18,
+        11
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 2,
+      "original_question": "When did Maria's grandmother pass away?",
+      "ambiguous_query": "When did her grandmother pass away?",
+      "q_final": "When did Maria's grandmother pass away?",
+      "evidence": [
+        "D8:1"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        17,
+        18,
+        20,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 3,
+      "original_question": "Would John be considered a patriotic person?",
+      "ambiguous_query": "Would he be considered a patriotic person?",
+      "q_final": "Would John be considered a patriotic person?",
+      "evidence": [
+        "D8:18",
+        "D8:20"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        9,
+        17,
+        8,
+        4,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 1,
+      "original_question": "What writing classes has Maria taken?",
+      "ambiguous_query": "What writing classes has she taken?",
+      "q_final": "What writing classes has John taken?",
+      "evidence": [
+        "D9:1",
+        "D7:1"
+      ],
+      "gold_sections": [
+        7,
+        9
+      ],
+      "retrieved_sections": [
+        7,
+        25,
+        10,
+        9,
+        12
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "When did John get his degree?",
+      "ambiguous_query": "When did he get his degree?",
+      "q_final": "When did John get his degree?",
+      "evidence": [
+        "D9:2"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        1,
+        19,
+        2,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 3,
+      "original_question": "What might John's degree be in?",
+      "ambiguous_query": "What might his degree be in?",
+      "q_final": "What might John's degree be in?",
+      "evidence": [
+        "D9:6"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        21,
+        16,
+        25,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "Who did John go to yoga with?",
+      "ambiguous_query": "Who did he go to yoga with?",
+      "q_final": "Who did John go to yoga with?",
+      "evidence": [
+        "D7:16",
+        "D10:1"
+      ],
+      "gold_sections": [
+        7,
+        10
+      ],
+      "retrieved_sections": [
+        25,
+        10,
+        7,
+        18,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 19,
+      "category": 1,
+      "original_question": "What damages have happened to John's car?",
+      "ambiguous_query": "What damages have happened to his car?",
+      "q_final": "What damages have happened to John's car?",
+      "evidence": [
+        "D11:1",
+        "D4:2"
+      ],
+      "gold_sections": [
+        4,
+        11
+      ],
+      "retrieved_sections": [
+        14,
+        21,
+        2,
+        4,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 20,
+      "category": 2,
+      "original_question": "When did John take a road trip to the Pacific Northwest?",
+      "ambiguous_query": "When did he take a road trip to the Pacific Northwest?",
+      "q_final": "When did John take a road trip to the Pacific Northwest?",
+      "evidence": [
+        "D11:3",
+        "D11:5"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        18,
+        11,
+        1,
+        12,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 1,
+      "original_question": "What areas of the U.S. has John been to or is planning to go to?",
+      "ambiguous_query": "What areas of the U.S. has he been to or is planning to go to?",
+      "q_final": "What areas of the U.S. has John been to or is planning to go to?",
+      "evidence": [
+        "D11:5",
+        "D12:17"
+      ],
+      "gold_sections": [
+        11,
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        23,
+        14,
+        15,
+        2
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 22,
+      "category": 2,
+      "original_question": "When did John go to a convention with colleagues?",
+      "ambiguous_query": "When did he go to a convention with colleagues?",
+      "q_final": "When did John go to a convention with colleagues?",
+      "evidence": [
+        "D12:9"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        10,
+        18,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 1,
+      "original_question": "What desserts has Maria made?",
+      "ambiguous_query": "What desserts has she made?",
+      "q_final": "What desserts has John made?",
+      "evidence": [
+        "D2:25",
+        "D13:18"
+      ],
+      "gold_sections": [
+        2,
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 24,
+      "category": 2,
+      "original_question": "When did John start boot camp with his family?",
+      "ambiguous_query": "When did he start boot camp with his family?",
+      "q_final": "When did John start boot camp with his family?",
+      "evidence": [
+        "D13:3"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        18,
+        27,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 1,
+      "original_question": "What European countries has Maria been to?",
+      "ambiguous_query": "What European countries has she been to?",
+      "q_final": "What European countries has John been to?",
+      "evidence": [
+        "D13:24",
+        "D8:15"
+      ],
+      "gold_sections": [
+        8,
+        13
+      ],
+      "retrieved_sections": [
+        8,
+        6,
+        3,
+        24,
+        27
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 26,
+      "category": 1,
+      "original_question": "What has Maria done to feel closer to her faith?",
+      "ambiguous_query": "What has she done to feel closer to her faith?",
+      "q_final": "What has Maria done to feel closer to her faith?",
+      "evidence": [
+        "D14:10",
+        "D11:10"
+      ],
+      "gold_sections": [
+        11,
+        14
+      ],
+      "retrieved_sections": [
+        11,
+        14,
+        2,
+        5,
+        30
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 27,
+      "category": 2,
+      "original_question": "When did John have a party with veterans?",
+      "ambiguous_query": "When did he have a party with veterans?",
+      "q_final": "When did John have a party with veterans?",
+      "evidence": [
+        "D15:11"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        24,
+        29,
+        21,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 28,
+      "category": 1,
+      "original_question": "What causes does John feel passionate about supporting?",
+      "ambiguous_query": "What causes does he feel passionate about supporting?",
+      "q_final": "What causes does John feel passionate about supporting?",
+      "evidence": [
+        "D15:3",
+        "D12:5",
+        "D9:8",
+        "D1:8"
+      ],
+      "gold_sections": [
+        1,
+        9,
+        12,
+        15
+      ],
+      "retrieved_sections": [
+        29,
+        15,
+        5,
+        16,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.25,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 1,
+      "original_question": "What events is Maria planning for the homeless shelter funraiser?",
+      "ambiguous_query": "What events is she planning for the homeless shelter funraiser?",
+      "q_final": "What events is John planning for the homeless shelter funraiser?",
+      "evidence": [
+        "D16:4",
+        "D15:18"
+      ],
+      "gold_sections": [
+        15,
+        16
+      ],
+      "retrieved_sections": [
+        6,
+        15,
+        11,
+        5,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 30,
+      "category": 1,
+      "original_question": "What shelters does Maria volunteer at?",
+      "ambiguous_query": "What shelters does she volunteer at?",
+      "q_final": "What shelters does John volunteer at?",
+      "evidence": [
+        "D2:1",
+        "D11:10",
+        "D17:12"
+      ],
+      "gold_sections": [
+        2,
+        11,
+        17
+      ],
+      "retrieved_sections": [
+        8,
+        7,
+        26,
+        1,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "When did John get his dog Max?",
+      "ambiguous_query": "When did he get his dog Max?",
+      "q_final": "When did John get his dog Max?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        31,
+        30,
+        18,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 1,
+      "original_question": "What outdoor activities has John done with his colleagues?",
+      "ambiguous_query": "What outdoor activities has he done with his colleagues?",
+      "q_final": "What outdoor activities has John done with his colleagues?",
+      "evidence": [
+        "D18:2",
+        "D16:2"
+      ],
+      "gold_sections": [
+        16,
+        18
+      ],
+      "retrieved_sections": [
+        31,
+        12,
+        10,
+        18,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 1,
+      "original_question": "What types of yoga has Maria practiced?",
+      "ambiguous_query": "What types of yoga has she practiced?",
+      "q_final": "What types of yoga has John practiced?",
+      "evidence": [
+        "D1:3",
+        "D18:15",
+        "D19:3"
+      ],
+      "gold_sections": [
+        1,
+        18,
+        19
+      ],
+      "retrieved_sections": [
+        1,
+        18,
+        2,
+        25,
+        10
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 34,
+      "category": 2,
+      "original_question": "When did Maria join a gym?",
+      "ambiguous_query": "When did she join a gym?",
+      "q_final": "When did Maria join a gym?",
+      "evidence": [
+        "D19:1"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        23,
+        19,
+        26,
+        21,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 35,
+      "category": 1,
+      "original_question": "What states has Maria vacationed at?",
+      "ambiguous_query": "What states has she vacationed at?",
+      "q_final": "What states has John vacationed at?",
+      "evidence": [
+        "D19:23",
+        "D18:3"
+      ],
+      "gold_sections": [
+        18,
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        13,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 36,
+      "category": 1,
+      "original_question": "What music events has John attended?",
+      "ambiguous_query": "What music events has he attended?",
+      "q_final": "What music events has John attended?",
+      "evidence": [
+        "D20:4",
+        "D8:12"
+      ],
+      "gold_sections": [
+        8,
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        22,
+        5,
+        8,
+        25
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 37,
+      "category": 1,
+      "original_question": "What events for veterans has John participated in?",
+      "ambiguous_query": "What events for veterans has he participated in?",
+      "q_final": "What events for veterans has John participated in?",
+      "evidence": [
+        "D15:1",
+        "D15:11",
+        "D21:22",
+        "D24:1",
+        "D29:4"
+      ],
+      "gold_sections": [
+        15,
+        21,
+        24,
+        29
+      ],
+      "retrieved_sections": [
+        21,
+        6,
+        29,
+        15,
+        24
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 38,
+      "category": 2,
+      "original_question": "When did Maria get in a car accident?",
+      "ambiguous_query": "When did she get in a car accident?",
+      "q_final": "When did John get into a car accident?",
+      "evidence": [
+        "D21:3"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        4,
+        2,
+        11,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 39,
+      "category": 3,
+      "original_question": "Around which US holiday did Maria get into a car accident?",
+      "ambiguous_query": "Around which US holiday did she get into a car accident?",
+      "q_final": "Around which US holiday did John get into a car accident?",
+      "evidence": [
+        "D21:3"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        4,
+        2,
+        11,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 40,
+      "category": 1,
+      "original_question": "What are the names of John's children?",
+      "ambiguous_query": "What are the names of his children?",
+      "q_final": "What are the names of John's children?",
+      "evidence": [
+        "D8:4",
+        "D22:7"
+      ],
+      "gold_sections": [
+        8,
+        22
+      ],
+      "retrieved_sections": [
+        30,
+        31,
+        7,
+        8,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 41,
+      "category": 3,
+      "original_question": "Does John live close to a beach or the mountains?",
+      "ambiguous_query": "Does he live close to a beach or the mountains?",
+      "q_final": "Does John live close to a beach or the mountains?",
+      "evidence": [
+        "D22:15"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        3,
+        18,
+        20,
+        16,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 42,
+      "category": 1,
+      "original_question": "What area was hit by a flood?",
+      "ambiguous_query": "What area was hit by a flood?",
+      "q_final": "What area was hit by a flood?",
+      "evidence": [
+        "D14:21",
+        "D23:1"
+      ],
+      "gold_sections": [
+        14,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        21,
+        14,
+        2,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 2,
+      "original_question": "When was John's old area hit with a flood?",
+      "ambiguous_query": "When was his old area hit with a flood?",
+      "q_final": "When was John's old area hit with a flood?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        2,
+        21,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 44,
+      "category": 1,
+      "original_question": "What activities has Maria done with her church friends?",
+      "ambiguous_query": "What activities has she done with her church friends?",
+      "q_final": "What activities has John done with his church friends?",
+      "evidence": [
+        "D25:2",
+        "D24:6",
+        "D28:5"
+      ],
+      "gold_sections": [
+        24,
+        25,
+        28
+      ],
+      "retrieved_sections": [
+        24,
+        8,
+        28,
+        25,
+        18
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 45,
+      "category": 3,
+      "original_question": "Would John be open to moving to another country?",
+      "ambiguous_query": "Would he be open to moving to another country?",
+      "q_final": "Would John be open to moving to another country?",
+      "evidence": [
+        "D24:3",
+        "D7:2"
+      ],
+      "gold_sections": [
+        7,
+        24
+      ],
+      "retrieved_sections": [
+        27,
+        8,
+        31,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 46,
+      "category": 2,
+      "original_question": "When did Maria go hiking with her church friends?",
+      "ambiguous_query": "When did she go hiking with her church friends?",
+      "q_final": "When did Maria go hiking with her church friends?",
+      "evidence": [
+        "D25:2"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        24,
+        25,
+        18,
+        28,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 47,
+      "category": 1,
+      "original_question": "What exercises has John done?",
+      "ambiguous_query": "What exercises has he done?",
+      "q_final": "What exercises has John done?",
+      "evidence": [
+        "D25:17",
+        "D25:13",
+        "D10:1",
+        "D1:4"
+      ],
+      "gold_sections": [
+        1,
+        10,
+        25
+      ],
+      "retrieved_sections": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 48,
+      "category": 2,
+      "original_question": "When did John have his first firefighter call-out?",
+      "ambiguous_query": "When did he have his first firefighter call-out?",
+      "q_final": "When did John have his first firefighter call-out?",
+      "evidence": [
+        "D26:4"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        13,
+        32,
+        16,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 49,
+      "category": 1,
+      "original_question": "What food item did Maria drop off at the homeless shelter?",
+      "ambiguous_query": "What food item did she drop off at the homeless shelter?",
+      "q_final": "What food item did John drop off at the homeless shelter?",
+      "evidence": [
+        "D26:1",
+        "D25:19"
+      ],
+      "gold_sections": [
+        25,
+        26
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        32,
+        3,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 50,
+      "category": 3,
+      "original_question": "What attributes describe John?",
+      "ambiguous_query": "What attributes describe he?",
+      "q_final": "What attributes describe John?",
+      "evidence": [
+        "D26:6",
+        "D2:14",
+        "D3:5",
+        "D4:6"
+      ],
+      "gold_sections": [
+        2,
+        3,
+        4,
+        26
+      ],
+      "retrieved_sections": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.75,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 51,
+      "category": 2,
+      "original_question": "When did Maria start volunteering at the homeless shelter?",
+      "ambiguous_query": "When did she start volunteering at the homeless shelter?",
+      "q_final": "When did John start volunteering at the homeless shelter?",
+      "evidence": [
+        "D27:4"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        1,
+        8,
+        7,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 52,
+      "category": 1,
+      "original_question": "Who have written notes of gratitude to Maria?",
+      "ambiguous_query": "Who have written notes of gratitude to her?",
+      "q_final": "Who has written notes of gratitude to John?",
+      "evidence": [
+        "D27:8",
+        "D21:19"
+      ],
+      "gold_sections": [
+        21,
+        27
+      ],
+      "retrieved_sections": [
+        4,
+        27,
+        7,
+        21,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 53,
+      "category": 2,
+      "original_question": "When did John help renovate his hometown community center?",
+      "ambiguous_query": "When did he help renovate his hometown community center?",
+      "q_final": "When did John help renovate his hometown community center?",
+      "evidence": [
+        "D28:11"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        2,
+        23,
+        4,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 54,
+      "category": 2,
+      "original_question": "When did Maria take up community work with her church friends?",
+      "ambiguous_query": "When did she take up community work with her church friends?",
+      "q_final": "When did John take up community work with his church friends?",
+      "evidence": [
+        "D28:8"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        24,
+        28,
+        14,
+        25,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "When did Maria receive a medal from the homeless shelter?",
+      "ambiguous_query": "When did she receive a medal from the homeless shelter?",
+      "q_final": "When did Maria receive a medal from the homeless shelter?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        27,
+        11,
+        1,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 56,
+      "category": 2,
+      "original_question": "When did John participate in a 5K charity run?",
+      "ambiguous_query": "When did he participate in a 5K charity run?",
+      "q_final": "When did John participate in a 5K charity run?",
+      "evidence": [
+        "D29:2",
+        "D29:4"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        16,
+        6,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 57,
+      "category": 1,
+      "original_question": "What causes has John done events for?",
+      "ambiguous_query": "What causes has he done events for?",
+      "q_final": "What causes has John done events for?",
+      "evidence": [
+        "D3:5",
+        "D6:12",
+        "D29:4",
+        "D29:10"
+      ],
+      "gold_sections": [
+        3,
+        6,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        6,
+        21,
+        8,
+        11
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 58,
+      "category": 2,
+      "original_question": "When did Maria get Coco?",
+      "ambiguous_query": "When did she get Coco?",
+      "q_final": "When did Maria get Coco?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        1,
+        19,
+        2,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 59,
+      "category": 2,
+      "original_question": "When did John go on a camping trip with Max?",
+      "ambiguous_query": "When did he go on a camping trip with Max?",
+      "q_final": "When did John go on a camping trip with Max?",
+      "evidence": [
+        "D30:6"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        18,
+        17,
+        13,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 1,
+      "original_question": "What are Maria's dogs' names?",
+      "ambiguous_query": "What are her dogs' names?",
+      "q_final": "What are John and Maria's dogs' names?",
+      "evidence": [
+        "D30:1",
+        "D31:4"
+      ],
+      "gold_sections": [
+        30,
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        17,
+        30,
+        7,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 61,
+      "category": 2,
+      "original_question": "When did Maria adopt Shadow?",
+      "ambiguous_query": "When did she adopt Shadow?",
+      "q_final": "When did Maria adopt Shadow?",
+      "evidence": [
+        "D31:2"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        17,
+        30,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 1,
+      "original_question": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+      "ambiguous_query": "How many dogs has she adopted from the dog shelter she volunteers at?",
+      "q_final": "How many dogs has Maria adopted from the dog shelter she volunteers at?",
+      "evidence": [
+        "D30:1",
+        "D31:2"
+      ],
+      "gold_sections": [
+        30,
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        17,
+        30,
+        8,
+        7
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 2,
+      "original_question": "How many weeks passed between Maria adopting Coco and Shadow?",
+      "ambiguous_query": "How many weeks passed between her adopting Coco and Shadow?",
+      "q_final": "How many weeks passed between John adopting Coco and Shadow?",
+      "evidence": [
+        "D30:1",
+        "D31:2"
+      ],
+      "gold_sections": [
+        30,
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        30,
+        8,
+        23,
+        17
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 64,
+      "category": 3,
+      "original_question": "What job might Maria pursue in the future?",
+      "ambiguous_query": "What job might she pursue in the future?",
+      "q_final": "What job might John pursue in the future?",
+      "evidence": [
+        "D32:14",
+        "D5:8",
+        "D11:10",
+        "D27:4"
+      ],
+      "gold_sections": [
+        5,
+        11,
+        27,
+        32
+      ],
+      "retrieved_sections": [
+        28,
+        9,
+        25,
+        7,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 65,
+      "category": 4,
+      "original_question": "What is John's main focus in local politics?",
+      "ambiguous_query": "What is his main focus in local politics?",
+      "q_final": "What is John's main focus in local politics?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        4,
+        30,
+        2,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 4,
+      "original_question": "What sparked John's interest in improving education and infrastructure in the community?",
+      "ambiguous_query": "What sparked his interest in improving education and infrastructure in the community?",
+      "q_final": "What sparked John's interest in improving education and infrastructure in the community?",
+      "evidence": [
+        "D1:10"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        9,
+        1,
+        12,
+        22,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 67,
+      "category": 4,
+      "original_question": "How did the extra funding help the school shown in the photo shared by John?",
+      "ambiguous_query": "How did the extra funding help the school shown in the photo shared by him?",
+      "q_final": "How did the extra funding help John's school shown in the photo shared by him?",
+      "evidence": [
+        "D1:12"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        16,
+        10,
+        26,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 4,
+      "original_question": "What type of workout class did Maria start doing in December 2023?",
+      "ambiguous_query": "What type of workout class did she start doing in December 2023?",
+      "q_final": "What type of workout class did John start doing in December 2023?",
+      "evidence": [
+        "D1:3"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        25,
+        19,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 69,
+      "category": 4,
+      "original_question": "What did Maria donate to a homeless shelter in December 2023?",
+      "ambiguous_query": "What did she donate to a homeless shelter in December 2023?",
+      "q_final": "What did John donate to a homeless shelter in December 2023?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        11,
+        2,
+        1,
+        8,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 70,
+      "category": 4,
+      "original_question": "What kind of meal did John and his family make together in the photo shared by John?",
+      "ambiguous_query": "What kind of meal did he and his family make together in the photo shared by him?",
+      "q_final": "What kind of meal did John and his family make together in the photo shared by him?",
+      "evidence": [
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        26,
+        13,
+        11,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "What kind of online group did John join?",
+      "ambiguous_query": "What kind of online group did he join?",
+      "q_final": "What kind of online group did John join?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        27,
+        30,
+        14,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "What kind of activities did John and his mates from the online group do as part of their service efforts?",
+      "ambiguous_query": "What kind of activities did he and his mates from the online group do as part of their service efforts?",
+      "q_final": "What kind of activities did John and his mates from the online group do as part of their service efforts?",
+      "evidence": [
+        "D3:5"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        27,
+        15,
+        24,
+        31
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "Who inspired Maria to start volunteering?",
+      "ambiguous_query": "Who inspired she to start volunteering?",
+      "q_final": "Who inspired Maria to start volunteering?",
+      "evidence": [
+        "D5:8"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        27,
+        22,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "Why did Maria sit with the little girl at the shelter event in February 2023?",
+      "ambiguous_query": "Why did she sit with the little girl at the shelter event in February 2023?",
+      "q_final": "Why did Maria sit with the little girl at the shelter event in February 2023?",
+      "evidence": [
+        "D5:10"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        29,
+        5,
+        6,
+        16,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What did Jean go through before meeting Maria?",
+      "ambiguous_query": "What did Jean go through before meeting she?",
+      "q_final": "What did Jean go through before meeting her?",
+      "evidence": [
+        "D7:7"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        23,
+        4,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "Why did John decide to run for office again?",
+      "ambiguous_query": "Why did he decide to run for office again?",
+      "q_final": "Why did John decide to run for office again?",
+      "evidence": [
+        "D7:4"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        14,
+        29,
+        10,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What activity did John's colleague, Rob, invite him to?",
+      "ambiguous_query": "What activity did his colleague, Rob, invite him to?",
+      "q_final": "What activity did John's colleague Rob invite him to?",
+      "evidence": [
+        "D7:16"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        31,
+        10,
+        24,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "What is the name of John's one-year-old child?",
+      "ambiguous_query": "What is the name of his one-year-old child?",
+      "q_final": "What is the name of John's one-year-old child?",
+      "evidence": [
+        "D8:4"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        17,
+        31,
+        2,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 79,
+      "category": 4,
+      "original_question": "How often does John take his kids to the park?",
+      "ambiguous_query": "How often does he take his kids to the park?",
+      "q_final": "How often does John take his kids to the park?",
+      "evidence": [
+        "D8:8"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        22,
+        5,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "What did Maria make for her home to remind her of a trip to England?",
+      "ambiguous_query": "What did she make for her home to remind her of a trip to England?",
+      "q_final": "What did John make for his home to remind him of a trip to England?",
+      "evidence": [
+        "D8:15"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        11,
+        4,
+        18,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "Where did Maria get the idea for the castle shadow box in her home?",
+      "ambiguous_query": "Where did she get the idea for the castle shadow box in her home?",
+      "q_final": "Where did John get the idea for the castle shadow box in his home?",
+      "evidence": [
+        "D8:15"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        31,
+        4,
+        1,
+        8,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "What did John receive a certificate for?",
+      "ambiguous_query": "What did he receive a certificate for?",
+      "q_final": "What certificate did John receive?",
+      "evidence": [
+        "D9:2"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        4,
+        27,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What areas is John particularly interested in for policymaking?",
+      "ambiguous_query": "What areas is he particularly interested in for policymaking?",
+      "q_final": "[STANDALONE QUERY]: What areas is John particularly interested in for policymaking?",
+      "evidence": [
+        "D9:8"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        23,
+        14,
+        2,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "What did Maria participate in last weekend before April 10, 2023?",
+      "ambiguous_query": "What did she participate in last weekend before April 10, 2023?",
+      "q_final": "What did John participate in last weekend before April 10, 2023?",
+      "evidence": [
+        "D10:10"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        8,
+        25,
+        11,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What event did John volunteer at last weekend?",
+      "ambiguous_query": "What event did he volunteer at last weekend?",
+      "q_final": "What event did John volunteer at last weekend?",
+      "evidence": [
+        "D10:13"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        6,
+        29,
+        20,
+        8,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "What did John do that put a strain on his wallet?",
+      "ambiguous_query": "What did he do that put a strain on his wallet?",
+      "q_final": "What did John do that put a strain on his wallet?",
+      "evidence": [
+        "D11:1"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        9,
+        19,
+        31,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "Where did John explore on a road trip last year?",
+      "ambiguous_query": "Where did he explore on a road trip last year?",
+      "q_final": "Where did John explore on a road trip last year?",
+      "evidence": [
+        "D11:5"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        18,
+        12,
+        1,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "What topic has John been blogging about recently?",
+      "ambiguous_query": "What topic has he been blogging about recently?",
+      "q_final": "What topic has John been blogging about recently?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        1,
+        2,
+        7,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "Why did John start blogging about politics and policies?",
+      "ambiguous_query": "Why did he start blogging about politics and policies?",
+      "q_final": "Why did John start blogging about politics and policies?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        1,
+        4,
+        6,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "What was the focus of John's recent research and writing on his blog?",
+      "ambiguous_query": "What was the focus of his recent research and writing on his blog?",
+      "q_final": "What was John's recent research and writing focus on his blog?",
+      "evidence": [
+        "D12:5"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        30,
+        7,
+        1,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 2,
+      "original_question": "What did John attend with his colleagues in March 2023?",
+      "ambiguous_query": "What did he attend with his colleagues in March 2023?",
+      "q_final": "What did John attend with his colleagues in March 2023?",
+      "evidence": [
+        "D12:9"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        21,
+        10,
+        18,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "How often does John work out with his family?",
+      "ambiguous_query": "How often does he work out with his family?",
+      "q_final": "How often does John work out with his family?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        8,
+        13,
+        25,
+        22,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "How has John's fitness improved since starting boot camps with his family?",
+      "ambiguous_query": "How has his fitness improved since starting boot camps with his family?",
+      "q_final": "How has John's fitness improved since starting boot camps with his family?",
+      "evidence": [
+        "D13:5"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        19,
+        25,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "What kind of food did Maria have on her dinner spread iwth her mother?",
+      "ambiguous_query": "What kind of food did she have on her dinner spread iwth her mother?",
+      "q_final": "What kind of food did John's family have on their dinner spread with her mother?",
+      "evidence": [
+        "D13:18"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        6,
+        2,
+        32,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "What activity did Maria and her mom do together in May 2023?",
+      "ambiguous_query": "What activity did she and her mom do together in May 2023?",
+      "q_final": "What activity did John and his family do together in May 2023?",
+      "evidence": [
+        "D13:16"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        31,
+        8,
+        2,
+        13,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "What did Maria do to feel closer to a community and her faith?",
+      "ambiguous_query": "What did she do to feel closer to a community and her faith?",
+      "q_final": "What did Maria do to feel closer to a community and her faith?",
+      "evidence": [
+        "D14:10"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        11,
+        22,
+        4,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "Why did Maria join a nearby church recently?",
+      "ambiguous_query": "Why did she join a nearby church recently?",
+      "q_final": "Why did Maria join a nearby church recently?",
+      "evidence": [
+        "D14:10"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        8,
+        24,
+        18,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "What did John host for the veterans in May 2023 as part of the project?",
+      "ambiguous_query": "What did he host for the veterans in May 2023 as part of the project?",
+      "q_final": "What did John host for the veterans in May 2023 as part of his project?",
+      "evidence": [
+        "D15:13"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        27,
+        24,
+        32,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What did John and the veterans do during the small party?",
+      "ambiguous_query": "What did he and the veterans do during the small party?",
+      "q_final": "What did John and the veterans do during the small party?",
+      "evidence": [
+        "D15:13"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        21,
+        24,
+        29,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "What emotions did John feel during the small party with the veterans?",
+      "ambiguous_query": "What emotions did he feel during the small party with the veterans?",
+      "q_final": "What emotions did John feel during the small party with the veterans?",
+      "evidence": [
+        "D15:13"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        21,
+        30,
+        9,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "What event is Maria getting ready for at the shelter on May 25, 2023?",
+      "ambiguous_query": "What event is she getting ready for at the shelter on May 25, 2023?",
+      "q_final": "What event is John getting ready for at the shelter on May 25, 2023?",
+      "evidence": [
+        "D16:2"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        11,
+        25,
+        16,
+        29,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "What does Maria need to spread the word about for the fundraiser for the volunteer shelter?",
+      "ambiguous_query": "What does she need to spread the word about for the fundraiser for the volunteer shelter?",
+      "q_final": "What does Maria need to spread the word about for the fundraiser for the volunteer shelter?",
+      "evidence": [
+        "D16:4"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        5,
+        30,
+        12,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What was the name of the pet that John had to say goodbye to on 3 June, 2023?",
+      "ambiguous_query": "What was the name of the pet that he had to say goodbye to on 3 June, 2023?",
+      "q_final": "What was the name of the pet that John had to say goodbye to on 3 June, 2023?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        31,
+        30,
+        18,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "How long was Max a part of John's family?",
+      "ambiguous_query": "How long was Max a part of his family?",
+      "q_final": "How long was John a part of Max's family?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        13,
+        26,
+        1,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "How does John plan to honor the memories of his beloved pet?",
+      "ambiguous_query": "How does he plan to honor the memories of his beloved pet?",
+      "q_final": "How does John plan to honor the memories of his beloved pet?",
+      "evidence": [
+        "D17:11"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        30,
+        31,
+        18,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "What important values does John want to teach his kids through adopting a rescue dog?",
+      "ambiguous_query": "What important values does he want to teach his kids through adopting a rescue dog?",
+      "q_final": "What important values does John want to teach his kids through adopting a rescue dog?",
+      "evidence": [
+        "D17:11"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        27,
+        31,
+        30,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What new activity did Maria start recently, as mentioned on 3 June, 2023?",
+      "ambiguous_query": "What new activity did she start recently, as mentioned on 3 June, 2023?",
+      "q_final": "What new activity did Maria start recently, as mentioned on 3 June, 2023?",
+      "evidence": [
+        "D17:12"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        3,
+        31,
+        1,
+        25,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "What did Maria say it was like being at the waterfall in Oregon?",
+      "ambiguous_query": "What did she say it was like being at the waterfall in Oregon?",
+      "q_final": "What did Maria say it was like being at the waterfall in Oregon?",
+      "evidence": [
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        27,
+        17,
+        8,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What does Maria say she feels when doing upside-down yoga poses?",
+      "ambiguous_query": "What does she say she feels when doing upside-down yoga poses?",
+      "q_final": "What does Maria say she feels when doing upside-down yoga poses?",
+      "evidence": [
+        "D18:17"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        27,
+        25,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What exciting news did Maria share on 16 June, 2023?",
+      "ambiguous_query": "What exciting news did she share on 16 June, 2023?",
+      "q_final": "What exciting news did John share on 16 June, 2023?",
+      "evidence": [
+        "D19:1"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        16,
+        13,
+        31,
+        15,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "What yoga activity has Maria been trying to improve her strength and endurance?",
+      "ambiguous_query": "What yoga activity has she been trying to improve her strength and endurance?",
+      "q_final": "What yoga activity has [John] been trying to improve his strength and endurance?",
+      "evidence": [
+        "D19:3"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        13,
+        24,
+        10,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What did John recently get promoted to?",
+      "ambiguous_query": "What did he recently get promoted to?",
+      "q_final": "What position did John recently get promoted to?",
+      "evidence": [
+        "D19:8"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        14,
+        1,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+      "ambiguous_query": "What was one of the biggest challenges he faced in his journey to becoming assistant manager?",
+      "q_final": "What was one of the biggest challenges John faced in his journey to becoming assistant manager?",
+      "evidence": [
+        "D19:12"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        4,
+        29,
+        13,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "How does John describe the support he received during his journey to becoming assistant manager?",
+      "ambiguous_query": "How does he describe the support he received during his journey to becoming assistant manager?",
+      "q_final": "How does John describe the support he received during his journey to becoming assistant manager?",
+      "evidence": [
+        "D19:12"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        20,
+        4,
+        29,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "What kind of event did John and his family attend in June 2023?",
+      "ambiguous_query": "What kind of event did he and his family attend in June 2023?",
+      "q_final": "What kind of event did John and his family attend in June 2023?",
+      "evidence": [
+        "D20:4"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        2,
+        8,
+        13,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "Why did Maria need to help her cousin find a new place to live?",
+      "ambiguous_query": "Why did she need to help her cousin find a new place to live?",
+      "q_final": "Why did [ENTITY_NAME] need to help her cousin find a new place to live?",
+      "evidence": [
+        "D21:5"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        6,
+        25,
+        16,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What event did John participate in to show support for veterans' rights?",
+      "ambiguous_query": "What event did he participate in to show support for veterans' rights?",
+      "q_final": "What event did John participate in to show support for veterans' rights?",
+      "evidence": [
+        "D21:22"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        15,
+        21,
+        16,
+        5,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What inspired John to join the marching event for veterans' rights?",
+      "ambiguous_query": "What inspired he to join the marching event for veterans' rights?",
+      "q_final": "What inspired John to join the marching event for veterans' rights?",
+      "evidence": [
+        "D21:24"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        29,
+        15,
+        24,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "How often does John get to see sunsets like the one he shared with Maria?",
+      "ambiguous_query": "How often does he get to see sunsets like the one he shared with Maria?",
+      "q_final": "How often does John get to see sunsets like the one he shared with Maria?",
+      "evidence": [
+        "D22:17"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        4,
+        18,
+        24,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "What natural disaster affected John's old area on 7 July, 2023?",
+      "ambiguous_query": "What natural disaster affected his old area on 7 July, 2023?",
+      "q_final": "What natural disaster affected John's old area on 7 July, 2023?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        14,
+        23,
+        18,
+        2,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "How did the flood impact the homes in John's old area?",
+      "ambiguous_query": "How did the flood impact the homes in his old area?",
+      "q_final": "How did the flood impact John's old area?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        2,
+        8,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "What motivated Maria and John to discuss potential solutions for their community on 7 July, 2023?",
+      "ambiguous_query": "What motivated Maria and him to discuss potential solutions for their community on 7 July, 2023?",
+      "q_final": "What motivated John and Maria to discuss potential solutions for their community on 7 July, 2023?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        9,
+        4,
+        7,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "What did Maria plan to do later on the evening of 7 July, 2023?",
+      "ambiguous_query": "What did she plan to do later on the evening of 7 July, 2023?",
+      "q_final": "What did John plan to do later on the evening of 7 July, 2023?",
+      "evidence": [
+        "D23:14"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        7,
+        9,
+        29,
+        15,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "What kind of activities did Maria do at the picnic with her church friends?",
+      "ambiguous_query": "What kind of activities did she do at the picnic with her church friends?",
+      "q_final": "What kind of activities did John's church friends do at their picnic?",
+      "evidence": [
+        "D24:8"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        8,
+        31,
+        18,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "What does John appreciate about the veteran's hospital visit?",
+      "ambiguous_query": "What does he appreciate about the veteran's hospital visit?",
+      "q_final": "What does John appreciate about the veteran's hospital visit?",
+      "evidence": [
+        "D24:3"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        27,
+        15,
+        21,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "What did John take away from visiting the veteran's hospital?",
+      "ambiguous_query": "What did he take away from visiting the veteran's hospital?",
+      "q_final": "What did John take away from visiting the veteran's hospital?",
+      "evidence": [
+        "D24:1"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        8,
+        15,
+        18,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "Why did John feel inspired to join the military after the visit to the hospital?",
+      "ambiguous_query": "Why did he feel inspired to join the military after the visit to the hospital?",
+      "q_final": "Why did John feel inspired to join the military after visiting the veteran's hospital?",
+      "evidence": [
+        "D24:3"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        27,
+        21,
+        15,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "In what activity did Maria and her church friends participate in July 2023?",
+      "ambiguous_query": "In what activity did she and her church friends participate in July 2023?",
+      "q_final": "In what activity did John and his church friends participate in July 2023?",
+      "evidence": [
+        "D25:2"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        24,
+        28,
+        18,
+        8,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "What does John think about trying new classes at the yoga studio?",
+      "ambiguous_query": "What does he think about trying new classes at the yoga studio?",
+      "q_final": "What does John think about trying new classes at the yoga studio?",
+      "evidence": [
+        "D25:14"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        10,
+        7,
+        13,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "Which activity has John done apart from yoga at the studio?",
+      "ambiguous_query": "Which activity has he done apart from yoga at the studio?",
+      "q_final": "Which activity has John done apart from attending yoga classes at the studio?",
+      "evidence": [
+        "D25:17"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        10,
+        7,
+        19,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    }
+  ]
+}

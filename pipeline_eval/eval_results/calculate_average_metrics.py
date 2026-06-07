@@ -26,13 +26,23 @@ def calculate_averages(results_dir):
         # Lấy row đầu tiên vì các cột Summary được gán cho mọi dòng
         first_row = df.iloc[0]
         
+        # Calculate absolute hits from rates
+        qa_count = first_row.get("Summary_total_qa", 0)
+        rate_at1 = first_row.get("Summary_bm25_hit_rate_at1", 0)
+        rate_at3 = first_row.get("Summary_bm25_hit_rate_at3", 0)
+        rate_at5 = first_row.get("Summary_bm25_hit_rate_at5", 0)
+        
         summary_list.append({
             "File": os.path.basename(file),
             "Conversation": first_row.get("Summary_conversation_index", "N/A"),
-            "Total QA": first_row.get("Summary_total_qa", 0),
-            "BM25 Hits": first_row.get("Summary_bm25_hits", 0),
+            "Total QA": qa_count,
+            "Hits@1": round(rate_at1 * qa_count, 1),
+            "Hits@3": round(rate_at3 * qa_count, 1),
+            "Hits@5": round(rate_at5 * qa_count, 1),
             "LLM Judge Passes": first_row.get("Summary_llm_judge_passes", 0),
-            "BM25 Hit Rate": first_row.get("Summary_bm25_hit_rate", 0),
+            "Hit Rate@1": rate_at1,
+            "Hit Rate@3": rate_at3,
+            "Hit Rate@5": rate_at5,
             "LLM Judge Accuracy": first_row.get("Summary_llm_judge_accuracy", 0)
         })
 
@@ -45,14 +55,20 @@ def calculate_averages(results_dir):
     
     # Tính tổng (Micro-average)
     global_total_qa = df_summaries["Total QA"].sum()
-    global_bm25_hits = df_summaries["BM25 Hits"].sum()
+    global_hits_at1 = df_summaries["Hits@1"].sum()
+    global_hits_at3 = df_summaries["Hits@3"].sum()
+    global_hits_at5 = df_summaries["Hits@5"].sum()
     global_llm_passes = df_summaries["LLM Judge Passes"].sum()
     
-    global_bm25_hit_rate = global_bm25_hits / global_total_qa if global_total_qa > 0 else 0
+    global_hr_at1 = global_hits_at1 / global_total_qa if global_total_qa > 0 else 0
+    global_hr_at3 = global_hits_at3 / global_total_qa if global_total_qa > 0 else 0
+    global_hr_at5 = global_hits_at5 / global_total_qa if global_total_qa > 0 else 0
     global_llm_judge_accuracy = global_llm_passes / global_total_qa if global_total_qa > 0 else 0
     
     # Macro-average (Trung bình của các tỷ lệ)
-    macro_bm25_hit_rate = df_summaries["BM25 Hit Rate"].mean()
+    macro_hr_at1 = df_summaries["Hit Rate@1"].mean()
+    macro_hr_at3 = df_summaries["Hit Rate@3"].mean()
+    macro_hr_at5 = df_summaries["Hit Rate@5"].mean()
     macro_llm_judge_accuracy = df_summaries["LLM Judge Accuracy"].mean()
 
     # Tạo nội dung báo cáo Markdown
@@ -62,26 +78,29 @@ def calculate_averages(results_dir):
     report_lines.append("## 1. Kết quả Trung bình Toàn cục (Global Averages)\n")
     report_lines.append(f"- **Tổng số Samples (Conversations)**: {len(df_summaries)}")
     report_lines.append(f"- **Tổng số câu QA (Total QA)**: {global_total_qa}")
-    report_lines.append(f"- **Tổng BM25 Hits**: {global_bm25_hits}")
-    report_lines.append(f"- **Tổng LLM Judge Passes**: {global_llm_passes}")
+    report_lines.append(f"- **Tổng số câu đúng (LLM Judge Passes)**: {global_llm_passes}")
     report_lines.append("")
     report_lines.append("| Metric | Macro-Average (Trung bình các Sample) | Micro-Average (Tổng thể) |")
     report_lines.append("|---|---|---|")
-    report_lines.append(f"| **BM25 Hit Rate** | {macro_bm25_hit_rate:.2%} | {global_bm25_hit_rate:.2%} |")
+    report_lines.append(f"| **BM25 Hit Rate @1** | {macro_hr_at1:.2%} | {global_hr_at1:.2%} |")
+    report_lines.append(f"| **BM25 Hit Rate @3** | {macro_hr_at3:.2%} | {global_hr_at3:.2%} |")
+    report_lines.append(f"| **BM25 Hit Rate @5** | {macro_hr_at5:.2%} | {global_hr_at5:.2%} |")
     report_lines.append(f"| **LLM Judge Accuracy** | {macro_llm_judge_accuracy:.2%} | {global_llm_judge_accuracy:.2%} |")
     report_lines.append("\n*Ghi chú:*\n")
     report_lines.append("*- **Macro-Average**: Tính tỷ lệ cho từng Conversation, sau đó cộng lại chia đều.*")
     report_lines.append("*- **Micro-Average**: Tính tổng số câu đúng trên tổng số câu hỏi của toàn bộ tập dữ liệu.*")
     
     report_lines.append("\n## 2. Chi tiết từng Sample (Conversation)\n")
-    report_lines.append("| File | Conv Index | Total QA | BM25 Hits | LLM Passes | BM25 Hit Rate | LLM Accuracy |")
-    report_lines.append("|---|---|---|---|---|---|---|")
+    report_lines.append("| File | Conv Index | Total QA | Hits@1 | Hits@3 | Hits@5 | LLM Passes | Hit Rate@1 | Hit Rate@3 | Hit Rate@5 | LLM Accuracy |")
+    report_lines.append("|---|---|---|---|---|---|---|---|---|---|---|")
     
     for _, row in df_summaries.iterrows():
         report_lines.append(
             f"| {row['File']} | {row['Conversation']} | {row['Total QA']} | "
-            f"{row['BM25 Hits']} | {row['LLM Judge Passes']} | "
-            f"{row['BM25 Hit Rate']:.2%} | {row['LLM Judge Accuracy']:.2%} |"
+            f"{row['Hits@1']:.1f} | {row['Hits@3']:.1f} | {row['Hits@5']:.1f} | "
+            f"{row['LLM Judge Passes']} | "
+            f"{row['Hit Rate@1']:.2%} | {row['Hit Rate@3']:.2%} | {row['Hit Rate@5']:.2%} | "
+            f"{row['LLM Judge Accuracy']:.2%} |"
         )
 
     report_content = "\n".join(report_lines)
@@ -99,17 +118,19 @@ def calculate_averages(results_dir):
     df_global = pd.DataFrame([{
         "Tổng số Samples": len(df_summaries),
         "Tổng số câu QA": global_total_qa,
-        "Tổng BM25 Hits": global_bm25_hits,
         "Tổng LLM Passes": global_llm_passes,
-        "Macro-Average BM25 Hit Rate": macro_bm25_hit_rate,
+        "Macro-Average BM25 Hit Rate@1": macro_hr_at1,
+        "Macro-Average BM25 Hit Rate@3": macro_hr_at3,
+        "Macro-Average BM25 Hit Rate@5": macro_hr_at5,
         "Macro-Average LLM Accuracy": macro_llm_judge_accuracy,
-        "Micro-Average BM25 Hit Rate": global_bm25_hit_rate,
+        "Micro-Average BM25 Hit Rate@1": global_hr_at1,
+        "Micro-Average BM25 Hit Rate@3": global_hr_at3,
+        "Micro-Average BM25 Hit Rate@5": global_hr_at5,
         "Micro-Average LLM Accuracy": global_llm_judge_accuracy
     }])
     df_global.to_excel(writer, sheet_name='Global Averages', index=False)
     
     # Sheet 2: Chi tiết từng Conversation
-    # Đổi tên cột cho đẹp
     df_detail = df_summaries.rename(columns={
         "File": "Tên File",
         "Conversation": "Conv Index"

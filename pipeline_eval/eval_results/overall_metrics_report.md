@@ -4,12 +4,13 @@
 
 - **Tổng số Samples (Conversations)**: 2
 - **Tổng số câu QA (Total QA)**: 304
-- **Tổng BM25 Hits**: 0
-- **Tổng LLM Judge Passes**: 188
+- **Tổng số câu đúng (LLM Judge Passes)**: 188
 
 | Metric | Macro-Average (Trung bình các Sample) | Micro-Average (Tổng thể) |
 |---|---|---|
-| **BM25 Hit Rate** | 0.00% | 0.00% |
+| **BM25 Hit Rate @1** | 68.52% | 67.80% |
+| **BM25 Hit Rate @3** | 82.82% | 82.63% |
+| **BM25 Hit Rate @5** | 88.96% | 88.39% |
 | **LLM Judge Accuracy** | 65.45% | 61.84% |
 
 *Ghi chú:*
@@ -19,7 +20,7 @@
 
 ## 2. Chi tiết từng Sample (Conversation)
 
-| File | Conv Index | Total QA | BM25 Hits | LLM Passes | BM25 Hit Rate | LLM Accuracy |
-|---|---|---|---|---|---|---|
-| eval_conv_0.xlsx | 0 | 199 | 0 | 107 | 0.00% | 53.77% |
-| eval_conv_1.xlsx | 1 | 105 | 0 | 81 | 0.00% | 77.14% |
+| File | Conv Index | Total QA | Hits@1 | Hits@3 | Hits@5 | LLM Passes | Hit Rate@1 | Hit Rate@3 | Hit Rate@5 | LLM Accuracy |
+|---|---|---|---|---|---|---|---|---|---|---|
+| eval_conv_0.xlsx | 0 | 199 | 131.8 | 163.5 | 173.5 | 107 | 66.25% | 82.16% | 87.20% | 53.77% |
+| eval_conv_1.xlsx | 1 | 105 | 74.3 | 87.7 | 95.2 | 81 | 70.79% | 83.49% | 90.71% | 77.14% |
