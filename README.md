@@ -1,151 +1,99 @@
-# TÀI LIỆU ĐẶC TẢ KIẾN TRÚC HỆ THỐNG: STATE-CENTRIC ADAPTIVE PIPELINE
+# HỆ THỐNG TRỢ LÝ KẾ TOÁN VAS: STATE-CENTRIC ADAPTIVE PIPELINE
 *(Dự án: Retrieval-Multiturn-RAG)*
 
-Dự án này là một hệ thống RAG (Retrieval-Augmented Generation) tiên tiến, chuyên giải quyết các vấn đề phức tạp trong **hội thoại nhiều lượt (Multi-turn RAG)** thông qua cơ chế quản lý trạng thái (State-Centric) và duy trì trí nhớ dài hạn (Long-term Memory / Memos). 
-
-Hệ thống cho phép duy trì câu chuyện từ tuần trước, giải quyết triệt để vấn đề "nó", "cái kia" (tĩnh lược đại từ), và chống "ảo giác" khi bị mất dấu ngữ cảnh.
+Dự án này là một hệ thống RAG (Retrieval-Augmented Generation) tiên tiến, chuyên giải quyết các vấn đề phức tạp trong **hội thoại nhiều lượt (Multi-turn RAG)** đối với lĩnh vực Chuẩn mực Kế toán Việt Nam (VAS). Hệ thống áp dụng cơ chế quản lý trạng thái động (State-Centric) và duy trì trí nhớ dài hạn thích ứng (Adaptive Long-term Memory / Memos) để xử lý triệt để các vấn đề tĩnh lược đại từ ("nó", "cái đó") và phòng chống hiện tượng ảo giác (hallucination) trong các phiên hội thoại kéo dài.
 
 ---
 
-## 1. Dữ Liệu Đầu Vào & Đầu Ra Tổng Thể (System I/O)
+## 1. Sơ đồ Kiến trúc Hệ thống (System Architecture)
 
-* **ĐẦU VÀO (System Input):**
-  - `user_query` (String): Câu hỏi thô của người dùng ở lượt hiện tại (Ví dụ: *"Nó có giá bao nhiêu?"*).
-  - `session_id` (String): Định danh duy nhất của phiên chat, dùng để móc nối dữ liệu trong in-memory/Redis và Vector DB.
+Dưới đây là sơ đồ kiến trúc luồng xử lý chi tiết của hệ thống:
 
-* **ĐẦU RA (System Output):**
-  - `q_final` (String): Câu truy vấn độc lập, hoàn chỉnh, đã được giải quyết đại từ và đầy đủ ngữ cảnh để đưa vào hệ thống Search/RAG (Ví dụ: *"iPhone 15 Pro Max có giá bao nhiêu?"*). 
-  - **HOẶC** một **Clarification Request** (Câu hỏi làm rõ) nếu hệ thống phát hiện mất thông tin không thể cứu vãn (Anti-Hallucination).
+![Sơ đồ kiến trúc State-Centric Adaptive Pipeline](pipeline.png)
 
 ---
 
-## 2. Sơ đồ Luồng Hoạt Động Chi Tiết (Pipeline Flowchart)
+## 2. Chi Tiết Từng Node Trong Pipeline
 
-Dưới đây là sơ đồ chi tiết về vòng đời của một câu hỏi khi đi qua hệ thống.
+Hệ thống hoạt động theo luồng tuyến tính đi qua 4 tầng xử lý cốt lõi:
 
-```mermaid
-graph TD
-    %% Input Layer
-    Start((User Query + Session ID)) --> Init[Tải Old State & Lịch sử ngắn từ Redis]
-    Init --> Boundary
+### Layer 1: Boundary Detection (Phát hiện vùng biên hội thoại)
+* **Nhiệm vụ**: Xác định xem câu hỏi mới của người dùng đang tiếp tục chủ đề cũ (`continue`) hay đã chuyển sang một chủ đề hoàn toàn mới (`hard_shift`).
+* **Cơ chế hoạt động**:
+  1. **Token/Length Limit**: Nếu bộ nhớ ngắn hạn vượt quá dung lượng (~2000 tokens / 8000 ký tự), hệ thống tự động ngắt biên để tránh tràn cửa sổ ngữ cảnh, trả về `hard_shift`.
+  2. **Pronoun Check (Bộ lọc đại từ)**: Kiểm tra nhanh nếu câu hỏi mới chứa các đại từ chỉ định/thay thế tiếng Việt ("nó", "đó", "cái đó", "khoản đó", "cái này"...) -> Có tính liên kết ngữ cảnh -> Tự động xác định là `continue` mà không cần gọi LLM (giúp tối ưu chi phí và độ trễ).
+  3. **Entity & Semantic Shift (Độ lệch thực thể & Ngữ nghĩa)**: Sử dụng khoảng cách Jaccard để tính toán độ lệch thực thể và khoảng cách cosine cho độ lệch ngữ nghĩa. Nếu cả hai độ lệch vượt ngưỡng thiết lập -> Xác định là `hard_shift`.
+  4. **LLM Fallback**: Trong trường hợp không kích hoạt được các luật trên, gọi một mô hình ngôn ngữ nhỏ (SLM) để phán quyết.
+* **Hành động khi Hard Shift**: Đóng gói toàn bộ lịch sử ngắn hạn trước đó thành một **Memo** (Trí nhớ dài hạn) đưa vào Vector DB, sau đó xóa sạch lịch sử ngắn và reset trạng thái (`State`).
 
-    %% Layer 1
-    subgraph Layer 1: Boundary Detection
-        Boundary{"Kiểm tra Biên ngữ cảnh<br>(HingeMem / Fallback)"}
-        Boundary -- "hard_shift" --> Archive["Đóng gói Lịch sử thành Memo<br>Lưu vào VectorDB"]
-        Archive --> Reset["Reset State & Xóa Lịch sử ngắn"]
-        Boundary -- "continue" --> Tracker
-        Reset --> Tracker
-    end
+### Layer 2: State Tracker & Checker (Quản lý trạng thái ngữ cảnh)
+* **Nhiệm vụ**: Theo dõi và cập nhật liên tục các thông tin cốt lõi đang thảo luận trong bảng trạng thái `ConversationState` (bao gồm: Intent, Entities, Attributes, Constraints, Unresolved References).
+* **Cơ chế hoạt động**: 
+  * Gọi LLM để trích xuất thông tin từ câu hỏi mới và hợp nhất (`merge`) với trạng thái cũ.
+  * **Checker Logic**: Kiểm tra xem trường `entities` trong trạng thái mới có bị rỗng hay không. Nếu rỗng (hệ thống bị mất dấu đối tượng thảo luận do câu hỏi lấp lửng khi vừa chuyển cảnh) -> Gán cờ `need_retrieval = True`. Ngược lại, gán `need_retrieval = False`.
 
-    %% Layer 2
-    subgraph Layer 2: State Management
-        Tracker["State Tracker Node<br>(LLM Extraction)"]
-        Tracker --> Checker{"Checker:<br>Entities bị rỗng?"}
-        Checker -- Yes --> SetRetrieve["need_retrieval = True"]
-        Checker -- No --> SetSkip["need_retrieval = False"]
-    end
+### Layer 3: Retrieval & Fusion (Truy xuất và Hợp nhất ký ức)
+* **Nhiệm vụ**: Bù đắp các khoảng trống thông tin trong trạng thái hiện tại bằng cách truy hồi các Memos liên quan từ Vector DB.
+* **Cơ chế hoạt động**: 
+  * Sử dụng từ khóa thực thể hiện tại hoặc câu hỏi gốc để tìm kiếm các Memos trong Vector DB.
+  * **Safe Merge (Dung hợp an toàn)**: Nếu cờ `need_retrieval == True` và tìm thấy Memos, hệ thống sẽ tiến hành "bơm" (điền vào chỗ trống) các thực thể/thuộc tính tương thích từ Memo vào trạng thái hiện tại. Thuật toán đảm bảo không ghi đè lên các thực thể/ràng buộc đã được xác định tường minh ở lượt hội thoại hiện tại.
 
-    %% Layer 3
-    subgraph Layer 3: Retrieval & Fusion
-        SetRetrieve --> Retrieve["Search Vector DB<br>bằng State/Query"]
-        SetSkip --> Rewrite
-        Retrieve --> CheckRetrieve{"Tìm thấy Memos?"}
-        CheckRetrieve -- Yes --> Merge["Safe Merge:<br>Bơm Entity/Attribute từ Memo vào State"]
-        CheckRetrieve -- No --> SetEmpty["retrieved_empty = True"]
-        Merge --> Rewrite
-        SetEmpty --> Rewrite
-    end
-
-    %% Layer 4
-    subgraph Layer 4: Generation / Rewriter
-        Rewrite["Controlled Rewriter Node<br>(Q_final Generation)"]
-        Rewrite --> CheckFallback{"need_retrieval == True<br>AND retrieved_empty == True?"}
-        CheckFallback -- Yes --> Clarify["Sinh Câu hỏi làm rõ<br>(Clarification Request)"]
-        CheckFallback -- No --> QFinal["Sinh Câu hỏi độc lập<br>(Standalone Q_final)"]
-    end
-
-    %% Output
-    Clarify --> Save["Lưu State mới & History vào Redis"]
-    QFinal --> Save
-    Save --> Out((Trả về Output Cuối cùng))
-```
+### Layer 4: Controlled Query Rewriter (Viết lại câu hỏi có kiểm soát)
+* **Nhiệm vụ**: Chuyển đổi câu hỏi thô lấp lửng của người dùng thành một câu hỏi độc lập ($Q_{final}$) chứa đầy đủ thực thể và ngữ cảnh, sẵn sàng cho việc tìm kiếm tài liệu RAG phía sau.
+* **Cơ chế hoạt động**:
+  * LLM thay thế toàn bộ các đại từ thay thế bằng tên thực thể chính xác được duy trì trong trạng thái đã dung hợp.
+  * **Graceful Fallback (Cơ chế phản hồi an toàn)**: Nếu hệ thống mất dấu thực thể (`need_retrieval == True`) nhưng Vector DB không tìm thấy Memos phù hợp (`retrieved_empty == True`), hệ thống sẽ chủ động từ chối tự suy đoán bừa bãi (Anti-Hallucination) và sinh ra một **Clarification Request** (Câu hỏi làm rõ hướng tới người dùng).
 
 ---
 
-## 3. Chi Tiết Từng Node Trong Pipeline
+## 3. Tóm Tắt Kết Quả Cải Tiến (Performance Evaluation)
 
-Pipeline hoạt động tuyến tính qua 4 lớp cốt lõi. Dưới đây là mô tả cấu trúc JSON của State và chi tiết cơ chế của mỗi Node.
+Hiệu năng của hệ thống được đánh giá chi tiết trên bộ dữ liệu benchmark LoCoMo (gồm 9 cuộc hội thoại cực dài, tổng cộng 1918 câu hỏi kiểm thử được chia thành 5 phân loại từ dễ đến đối kháng). Kết quả so sánh giữa **Hướng 1 (Baseline - Nén bối cảnh tĩnh không duy trì trạng thái)** và **Hướng 2 (Proposed - State-Centric Adaptive Pipeline)** như sau:
 
-### Cấu trúc dữ liệu: `ConversationState` (Lõi của hệ thống)
-Mọi thông tin hội thoại được LLM bóc tách và duy trì dưới định dạng JSON Schema:
-- `intent` (String): Mục đích của câu hỏi (inquiry, compare, ...).
-- `entities` (Dict): Thực thể cốt lõi (VD: `{"tài_sản": "Hàng tồn kho"}`). **Đây là biến quyết định xem có cần bật `need_retrieval` hay không.**
-- `attributes` (Dict): Khía cạnh của thực thể (VD: `{"khái_niệm": "Giá gốc"}`).
-- `constraints` (List): Các điều kiện giới hạn (VD: `["áp dụng cho doanh nghiệp vừa"]`).
-- `unresolved_references` (List): Các đại từ đang nằm chờ giải quyết (VD: `["nó", "đó"]`).
+| Chỉ số đánh giá (Metric) | Hướng 1 (Baseline) | Hướng 2 (Proposed) | Cải tiến ($\Delta$) |
+| :--- | :---: | :---: | :---: |
+| **Recall@1 (%)** | 57.78% | 65.81% | **+8.03%** |
+| **Recall@3 (%)** | 70.27% | 81.40% | **+11.13%** |
+| **Recall@5 (%)** | 83.60% | 87.38% | **+3.78%** |
+| **LLM Accuracy (%)** | **68.91%** | **82.59%** | **+13.68%** |
+| - Cat 1: Single-hop Acc (%) | 84.55% | 91.57% | **+7.02%** |
+| - Cat 2: Temporal Acc (%) | 79.31% | 85.01% | **+5.70%** |
+| - Cat 3: Multi-hop Acc (%) | 69.56% | 78.74% | **+9.18%** |
+| - Cat 4: Open-domain Acc (%) | 73.72% | 84.64% | **+10.92%** |
+| - Cat 5: Adversarial Acc (%) | 37.19% | 69.75% | **+32.56%** |
 
----
 
-### Lớp 1: Boundary Detection Layer (Phát hiện Ranh giới Chủ đề)
-*Mã nguồn: `src/nodes/boundary.py`*
+## 4. Hướng Dẫn Cài Đặt & Chạy Ứng Dụng (Streamlit UI)
 
-- **Bản chất (What it is):** Một bộ lọc (filter) gồm nhiều lớp để đánh giá ý định chuyển chủ đề.
-- **Mục đích (What it does):** Ngăn chặn hệ thống mang nhầm ngữ cảnh (Constraints, Entities) của câu chuyện cũ sang câu chuyện mới, tránh hiện tượng "râu ông nọ cắm cằm bà kia".
-- **I/O Của Node:**
-  - *Input:* `user_query`, `active_chat` (Lịch sử N tin nhắn gần nhất).
-  - *Output:* Quyết định `"hard_shift"` (đổi chủ đề) hoặc `"continue"` (tiếp tục).
-- **Luồng logic bên trong (3 Layer):**
-  1. **Layer 0 (Rule-based / Pronouns):** Quét câu hỏi xem có chứa các đại từ thay thế tiếng Việt ("nó", "đó", "kia", "họ"...) không. Nếu có $\rightarrow$ Rõ ràng là đang ám chỉ chuyện cũ $\rightarrow$ Trả về `continue` (đại từ không thể mở đầu 1 topic hoàn toàn mới). Tiết kiệm chi phí gọi LLM.
-  2. **Layer 1 (Rule-based / Jaccard):** Loại bỏ stop-words (từ nối, hư từ) khỏi câu hỏi và lượt chat trước đó. Nếu tìm thấy ít nhất 2 từ vựng nội dung (content words) giống nhau $\rightarrow$ Cùng chủ đề $\rightarrow$ `continue`.
-  3. **Layer 2 (LLM Fallback):** Nếu 2 rule trên không thỏa mãn, gọi một mô hình LLM siêu nhẹ (SLM) để đọc ngữ nghĩa và phán quyết `hard_shift` hay `continue`.
-- **Hành động sau Node:** Nếu kết quả là `hard_shift`, hệ thống gọi hàm `archive_to_memo` để dùng LLM tóm tắt đoạn chat cũ thành một Memo đẩy vào Vector DB, rồi Xóa sạch (Reset) State để nhường chỗ cho chủ đề mới.
+### Yêu cầu hệ thống
+* Python 3.9 trở lên
+* [Ollama](https://ollama.com/) cài đặt sẵn cục bộ
+* Redis (không bắt buộc - hệ thống mặc định tự động fallback sang lưu trữ cache in-memory nếu không kết nối được Redis)
 
-### Lớp 2: State Management Layer (Trích xuất và Quản lý Trạng thái)
-*Mã nguồn: `src/nodes/tracker.py`*
+### Các bước cài đặt và vận hành
 
-- **Bản chất:** Một Agent (LLM) đóng vai trò làm người ghi chép biên bản cuộc họp.
-- **Mục đích:** Cập nhật bảng JSON Schema để theo dõi người dùng đang nói về cái gì.
-- **I/O Của Node:**
-  - *Input:* `user_query`, `old_state` (JSON của lượt $t-1$).
-  - *Output:* `new_state` (JSON cập nhật), `need_retrieval` (Boolean).
-- **Luồng logic bên trong:**
-  - **Tracker:** Hợp nhất `user_query` và `old_state` để ghi đè hoặc thêm mới `Entities`, `Attributes`, `Constraints`.
-  - **Checker:** Kiểm tra bản ghi `new_state`. Nếu trường `Entities` hoàn toàn rỗng `{}`, hệ thống nhận ra nó đã "mất dấu" đối tượng thảo luận $\rightarrow$ Bật cờ `need_retrieval = True` để kích hoạt tìm kiếm trong quá khứ. Ngược lại, gán `False`.
+1. **Di chuyển vào thư mục gốc của dự án**:
+   ```bash
+   cd retrieval-multiturn-rag
+   ```
 
-### Lớp 3: Retrieval & Fusion Layer (Tìm kiếm và Hợp nhất Ký ức)
-*Mã nguồn: `src/services/vector_db.py` & `src/nodes/retriever.py`*
+2. **Cài đặt các thư viện phụ thuộc**:
+   Cài đặt toàn bộ các package cần thiết thông qua pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- **Bản chất:** Cầu nối liên kết Trí nhớ ngắn hạn với Trí nhớ dài hạn (Memos).
-- **Mục đích:** Lấy lại dữ liệu của các phiên chat từ trước đó (đã bị xóa khỏi active_chat).
-- **I/O Của Node:**
-  - *Input:* `new_state`, cờ `need_retrieval`, `session_id`.
-  - *Output:* `new_state` (có thể được bổ sung), cờ `retrieved_empty` (Boolean).
-- **Luồng logic bên trong:**
-  - Bỏ qua toàn bộ nếu `need_retrieval == False`.
-  - Nếu `True`, sử dụng `new_state.entities` (hoặc raw query) để search trong Vector DB.
-  - **Tìm thấy:** Chạy hàm **Safe Merge** (`safe_merge`). Thuật toán cẩn thận đắp các `Entities` từ Memo tìm được vào chỗ trống trong `new_state`, nhưng giữ nguyên các `Constraints` mới mà người dùng vừa đặt ra ở lượt này.
-  - **Không tìm thấy:** Bật cờ `retrieved_empty = True` để báo hiệu cơ sở dữ liệu đã cạn kiệt thông tin.
+3. **Cài đặt và cấu hình mô hình với Ollama**:
+   * Tải xuống và cài đặt Ollama từ [trang chủ Ollama](https://ollama.com/).
+   * Tải mô hình ngôn ngữ lớn `Qwen-2.5 3B` (được sử dụng làm engine chính xử lý cho RAG):
+     ```bash
+     ollama pull qwen2.5:3b
+     ```
 
-### Lớp 4: Generation Layer (Viết lại câu hỏi & Anti-Hallucination)
-*Mã nguồn: `src/nodes/rewriter.py`*
+4. **Chạy ứng dụng Streamlit**:
+   Khởi động giao diện web UI của Trợ lý Kế toán VAS bằng câu lệnh:
+   ```bash
+   streamlit run app.py
+   ```
 
-- **Bản chất:** LLM tổng hợp thông tin, xử lý các góc chết.
-- **Mục đích:** Trả về đầu ra an toàn tuyệt đối. Đảm bảo câu hỏi có đủ ý nghĩa để hệ thống RAG下游 (downstream) search chuẩn xác.
-- **I/O Của Node:**
-  - *Input:* `user_query`, `new_state` (đã hợp nhất), `retrieved_empty` (Boolean).
-  - *Output:* Câu hỏi `q_final` hoàn chỉnh HOẶC một câu phản hồi yêu cầu làm rõ (Clarification).
-- **Luồng logic bên trong:**
-  - **Controlled Rewrite:** LLM thay thế toàn bộ đại từ (nó, cái kia, công ty ấy) bằng cụm từ chỉ đích danh lấy từ bảng `Entities`. Xóa bỏ các nhiễu loạn để tạo ra Standalone Query ($Q_{final}$).
-  - **Graceful Fallback (Xử lý Ngoại lệ):** 
-    - *Điều kiện kích hoạt:* Nếu `need_retrieval == True` (mất dấu) VÀ `retrieved_empty == True` (Vector DB không có dữ liệu).
-    - *Cơ chế Anti-Hallucination:* Hệ thống **chủ động từ chối tự biên tự diễn (hallucinate)**. Thay vào đó, nó sinh ra một Clarification Request.
-    - *Ví dụ output:* *"Tôi không tìm thấy thông tin về 'sản phẩm cũ' mà bạn đang nhắc đến trong lịch sử trò chuyện. Bạn có thể nói rõ tên sản phẩm để tôi tìm kiếm không?"*
-
----
-
-## 4. Cơ chế Persistence (Bền vững Dữ liệu)
-
-Sau khi Lớp 4 hoàn thành, hệ thống thực hiện hai thao tác lưu trữ (tại `src/core/state.py`):
-1. **Save State:** Lưu toàn bộ `new_state` vào Redis theo `session_id`. Trạng thái này sẽ tái sinh thành `old_state` cho lần trò chuyện tiếp theo.
-2. **Save History:** Nạp câu `user_query` và `q_final` vào danh sách `active_chat` (Lịch sử ngắn hạn) để cấp ngữ cảnh cho Lớp 1 (Boundary) trong lượt tới.
+Sau khi khởi chạy thành công, ứng dụng sẽ tự động mở trên trình duyệt tại địa chỉ mặc định `http://localhost:8501`. Tại đây, bạn có thể gửi câu hỏi và theo dõi quá trình phân tích trực tiếp của hệ thống (Original Query, Standalone Query, trích xuất thực thể, tài liệu tham chiếu được tìm thấy và câu trả lời cuối cùng từ hệ thống).

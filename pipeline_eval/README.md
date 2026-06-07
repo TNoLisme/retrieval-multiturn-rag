@@ -1,4 +1,4 @@
-# Đánh giá Đường ống Viết lại Truy vấn (Query Rewriter Pipeline Evaluation)
+# Đánh giá Pipeline Viết lại Truy vấn (Query Rewriter Pipeline Evaluation)
 
 Thư mục này chứa môi trường và mã nguồn dùng để **đánh giá tự động (Automated Evaluation)** cho *State-Centric Query Rewriting Pipeline* sử dụng bộ dữ liệu **LoCoMo** (Long-Context Multi-Turn RAG).
 
