@@ -2,11 +2,12 @@
   "summary": {
     "conversation_index": 0,
     "sample_id": "conv-26",
-    "total_qa": 1,
-    "bm25_hit_rate": 1.0,
-    "llm_judge_accuracy": 1.0,
-    "bm25_hits": 1,
-    "llm_judge_passes": 1
+    "total_qa": 199,
+    "bm25_hit_rate_at1": 0.6625,
+    "bm25_hit_rate_at3": 0.8216,
+    "bm25_hit_rate_at5": 0.872,
+    "llm_judge_accuracy": 0.5377,
+    "llm_judge_passes": 107
   },
   "results": [
     {
@@ -14,17 +15,4862 @@
       "category": 2,
       "original_question": "When did Caroline go to the LGBTQ support group?",
       "ambiguous_query": "When did she go to the LGBTQ support group?",
-      "q_final": "When did Caroline go to the LGBTQ support group?",
+      "q_final": "When did Caroline attend an LGBTQ support group?",
       "evidence": [
         "D1:3"
       ],
-      "bm25_top3_ids": [
-        "D13:7",
-        "D1:3",
-        "D9:10"
+      "gold_sections": [
+        1
       ],
-      "bm25_hit": true,
+      "retrieved_sections": [
+        1,
+        13,
+        10,
+        11,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
       "llm_judge_pass": true
+    },
+    {
+      "qa_index": 1,
+      "category": 2,
+      "original_question": "When did Melanie paint a sunrise?",
+      "ambiguous_query": "When did she paint a sunrise?",
+      "q_final": "When did Melanie paint a sunrise?",
+      "evidence": [
+        "D1:12"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        16,
+        17,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 3,
+      "original_question": "What fields would Caroline be likely to pursue in her educaton?",
+      "ambiguous_query": "What fields would she be likely to pursue in her educaton?",
+      "q_final": "What fields would Caroline be likely to pursue in her education?",
+      "evidence": [
+        "D1:9",
+        "D1:11"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        7,
+        4,
+        2,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "What did Caroline research?",
+      "ambiguous_query": "What did she research?",
+      "q_final": "What did Caroline research?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        17,
+        1,
+        19,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 4,
+      "category": 1,
+      "original_question": "What is Caroline's identity?",
+      "ambiguous_query": "What is her identity?",
+      "q_final": "What is Caroline's identity?",
+      "evidence": [
+        "D1:5"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        9,
+        10,
+        14,
+        1,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 5,
+      "category": 2,
+      "original_question": "When did Melanie run a charity race?",
+      "ambiguous_query": "When did she run a charity race?",
+      "q_final": "When did Melanie run a charity race?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        7,
+        4,
+        1,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 6,
+      "category": 2,
+      "original_question": "When is Melanie planning on going camping?",
+      "ambiguous_query": "When is she planning on going camping?",
+      "q_final": "When is Melanie planning on going camping?",
+      "evidence": [
+        "D2:7"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        12,
+        4,
+        9,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 7,
+      "category": 1,
+      "original_question": "What is Caroline's relationship status?",
+      "ambiguous_query": "What is her relationship status?",
+      "q_final": "What is Caroline's relationship status?",
+      "evidence": [
+        "D3:13",
+        "D2:14"
+      ],
+      "gold_sections": [
+        2,
+        3
+      ],
+      "retrieved_sections": [
+        16,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 2,
+      "original_question": "When did Caroline give a speech at a school?",
+      "ambiguous_query": "When did she give a speech at a school?",
+      "q_final": "When did Caroline give a speech at a school?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        18,
+        2,
+        5,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 2,
+      "original_question": "When did Caroline meet up with her friends, family, and mentors?",
+      "ambiguous_query": "When did she meet up with her friends, family, and mentors?",
+      "q_final": "When did Caroline meet up with her friends, family, and mentors?",
+      "evidence": [
+        "D3:11"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        2,
+        8,
+        19,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "How long has Caroline had her current group of friends for?",
+      "ambiguous_query": "How long has she had her current group of friends for?",
+      "q_final": "How long have Caroline's current group of friends been for?",
+      "evidence": [
+        "D3:13"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        1,
+        10,
+        3,
+        13,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 1,
+      "original_question": "Where did Caroline move from 4 years ago?",
+      "ambiguous_query": "Where did she move from 4 years ago?",
+      "q_final": "Where did Caroline move from 4 years ago?",
+      "evidence": [
+        "D3:13",
+        "D4:3"
+      ],
+      "gold_sections": [
+        3,
+        4
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        15,
+        4,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 12,
+      "category": 2,
+      "original_question": "How long ago was Caroline's 18th birthday?",
+      "ambiguous_query": "How long ago was her 18th birthday?",
+      "q_final": "How long ago was Caroline's 18th birthday?",
+      "evidence": [
+        "D4:5"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        3,
+        15,
+        11,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 1,
+      "original_question": "What career path has Caroline decided to persue?",
+      "ambiguous_query": "What career path has she decided to persue?",
+      "q_final": "What career path has Caroline decided to pursue?",
+      "evidence": [
+        "D4:13",
+        "D1:11"
+      ],
+      "gold_sections": [
+        1,
+        4
+      ],
+      "retrieved_sections": [
+        7,
+        4,
+        1,
+        5,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 3,
+      "original_question": "Would Caroline still want to pursue counseling as a career if she hadn't received support growing up?",
+      "ambiguous_query": "Would she still want to pursue counseling as a career if she hadn't received support growing up?",
+      "q_final": "Would Melanie still want to pursue counseling as a career if she hadn't received support growing up?",
+      "evidence": [
+        "D4:15",
+        "D3:5"
+      ],
+      "gold_sections": [
+        3,
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        7,
+        1,
+        5,
+        19
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 15,
+      "category": 1,
+      "original_question": "What activities does Melanie partake in?",
+      "ambiguous_query": "What activities does she partake in?",
+      "q_final": "What activities does [ENTITY_NAME] partake in? [ENTITY_NAME] being either Caroline or Melanie based on context.",
+      "evidence": [
+        "D5:4",
+        "D9:1",
+        "D1:12",
+        "D1:18"
+      ],
+      "gold_sections": [
+        1,
+        5,
+        9
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        5,
+        19,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "When did Melanie sign up for a pottery class?",
+      "ambiguous_query": "When did she sign up for a pottery class?",
+      "q_final": "When did Melanie sign up for a pottery class?",
+      "evidence": [
+        "D5:4"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        14,
+        16,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 2,
+      "original_question": "When is Caroline going to the transgender conference?",
+      "ambiguous_query": "When is she going to the transgender conference?",
+      "q_final": "When is Caroline going to the transgender conference?",
+      "evidence": [
+        "D5:13"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        7,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "Where has Melanie camped?",
+      "ambiguous_query": "Where has she camped?",
+      "q_final": "Where has Melanie camped?",
+      "evidence": [
+        "D6:16",
+        "D4:6",
+        "D8:32"
+      ],
+      "gold_sections": [
+        4,
+        6,
+        8
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        18,
+        9,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 19,
+      "category": 1,
+      "original_question": "What do Melanie's kids like?",
+      "ambiguous_query": "What do her kids like?",
+      "q_final": "What do Caroline's kids like?",
+      "evidence": [
+        "D6:6",
+        "D4:8"
+      ],
+      "gold_sections": [
+        4,
+        6
+      ],
+      "retrieved_sections": [
+        8,
+        9,
+        17,
+        10,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 20,
+      "category": 2,
+      "original_question": "When did Melanie go to the museum?",
+      "ambiguous_query": "When did she go to the museum?",
+      "q_final": "When did Melanie go to the museum?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 2,
+      "original_question": "When did Caroline have a picnic?",
+      "ambiguous_query": "When did she have a picnic?",
+      "q_final": "Your question is unclear because it refers to 'she' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D6:11"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 22,
+      "category": 3,
+      "original_question": "Would Caroline likely have Dr. Seuss books on her bookshelf?",
+      "ambiguous_query": "Would she likely have Dr. Seuss books on her bookshelf?",
+      "q_final": "Would Melanie likely have Dr. Seuss books on her bookshelf?",
+      "evidence": [
+        "D6:9"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 23,
+      "category": 1,
+      "original_question": "What books has Melanie read?",
+      "ambiguous_query": "What books has she read?",
+      "q_final": "What books has Caroline read?",
+      "evidence": [
+        "D7:8",
+        "D6:10"
+      ],
+      "gold_sections": [
+        6,
+        7
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "What does Melanie do to destress?",
+      "ambiguous_query": "What does she do to destress?",
+      "q_final": "What does Melanie do to destress?",
+      "evidence": [
+        "D7:22",
+        "D5:4"
+      ],
+      "gold_sections": [
+        5,
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 2,
+      "original_question": "When did Caroline go to the LGBTQ conference?",
+      "ambiguous_query": "When did she go to the LGBTQ conference?",
+      "q_final": "When did Caroline attend an LGBTQ conference?",
+      "evidence": [
+        "D7:1"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        5,
+        1,
+        13,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 2,
+      "original_question": "When did Melanie read the book \"nothing is impossible\"?",
+      "ambiguous_query": "When did she read the book?",
+      "q_final": "When did Caroline read the book?",
+      "evidence": [
+        "D7:8"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 27,
+      "category": 3,
+      "original_question": "Would Caroline pursue writing as a career option?",
+      "ambiguous_query": "Would she pursue writing as a career option?",
+      "q_final": "Would Melanie pursue writing as a career option?",
+      "evidence": [
+        "D7:5",
+        "D7:9"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        1,
+        7,
+        14,
+        4,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 28,
+      "category": 2,
+      "original_question": "When did Caroline go to the adoption meeting?",
+      "ambiguous_query": "When did she go to the adoption meeting?",
+      "q_final": "When did Caroline attend an adoption council meeting?",
+      "evidence": [
+        "D8:9"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        13,
+        5,
+        2,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 2,
+      "original_question": "When did Melanie go to the pottery workshop?",
+      "ambiguous_query": "When did she go to the pottery workshop?",
+      "q_final": "When did Melanie go to the pottery workshop?",
+      "evidence": [
+        "D8:2"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        4,
+        14,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 3,
+      "original_question": "Would Melanie be considered a member of the LGBTQ community?",
+      "ambiguous_query": "Would she be considered a member of the LGBTQ community?",
+      "q_final": "Would Melanie be considered a member of the LGBTQ community?",
+      "evidence": [],
+      "gold_sections": [],
+      "retrieved_sections": [
+        3,
+        5,
+        16,
+        14,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "When did Melanie go camping in June?",
+      "ambiguous_query": "When did she go camping in June?",
+      "q_final": "When did Melanie go camping in June?",
+      "evidence": [
+        "D4:8"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        18,
+        9,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 1,
+      "original_question": "What LGBTQ+ events has Caroline participated in?",
+      "ambiguous_query": "What LGBTQ+ events has she participated in?",
+      "q_final": "What LGBTQ+ events has Caroline participated in?",
+      "evidence": [
+        "D5:1",
+        "D8:17",
+        "D3:1",
+        "D1:3"
+      ],
+      "gold_sections": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "retrieved_sections": [
+        7,
+        9,
+        17,
+        10,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 2,
+      "original_question": "When did Caroline go to a pride parade during the summer?",
+      "ambiguous_query": "When did she go to a pride parade during the summer?",
+      "q_final": "When did Melanie go to a pride parade during the summer?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        8,
+        5,
+        10,
+        11,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 34,
+      "category": 1,
+      "original_question": "What events has Caroline participated in to help children?",
+      "ambiguous_query": "What events has she participated in to help children?",
+      "q_final": "What events has Caroline participated in to help children?",
+      "evidence": [
+        "D9:2",
+        "D3:3"
+      ],
+      "gold_sections": [
+        3,
+        9
+      ],
+      "retrieved_sections": [
+        8,
+        17,
+        7,
+        9,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 35,
+      "category": 2,
+      "original_question": "When did Melanie go camping in July?",
+      "ambiguous_query": "When did she go camping in July?",
+      "q_final": "When did Melanie go camping in July?",
+      "evidence": [
+        "D9:1"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        18,
+        9,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 2,
+      "original_question": "When did Caroline join a mentorship program?",
+      "ambiguous_query": "When did she join a mentorship program?",
+      "q_final": "When did Caroline join a mentorship program?",
+      "evidence": [
+        "D9:2"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        10,
+        14,
+        8,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 37,
+      "category": 1,
+      "original_question": "What did Melanie paint recently?",
+      "ambiguous_query": "What did she paint recently?",
+      "q_final": "What did Melanie paint recently?",
+      "evidence": [
+        "D8:6; D9:17"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        14,
+        13,
+        11,
+        1,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 38,
+      "category": 1,
+      "original_question": "What activities has Melanie done with her family?",
+      "ambiguous_query": "What activities has she done with her family?",
+      "q_final": "What activities has Caroline done with her family?",
+      "evidence": [
+        "D8:4",
+        "D8:6",
+        "D9:1",
+        "D6:4",
+        "D1:18",
+        "D3:14"
+      ],
+      "gold_sections": [
+        1,
+        3,
+        6,
+        8,
+        9
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        5,
+        18,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.2,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 39,
+      "category": 1,
+      "original_question": "In what ways is Caroline participating in the LGBTQ community?",
+      "ambiguous_query": "In what ways is she participating in the LGBTQ community?",
+      "q_final": "In what ways does Caroline participate in the LGBTQ community?",
+      "evidence": [
+        "D10:3",
+        "D5:1",
+        "D9:12",
+        "D9:2"
+      ],
+      "gold_sections": [
+        5,
+        9,
+        10
+      ],
+      "retrieved_sections": [
+        3,
+        16,
+        14,
+        11,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 40,
+      "category": 1,
+      "original_question": "How many times has Melanie gone to the beach in 2023?",
+      "ambiguous_query": "How many times has she gone to the beach in 2023?",
+      "q_final": "How many times has Caroline gone to the beach in 2023?",
+      "evidence": [
+        "D10:8",
+        "D6:16"
+      ],
+      "gold_sections": [
+        6,
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        8,
+        14,
+        6,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 41,
+      "category": 2,
+      "original_question": "When did Caroline join a new activist group?",
+      "ambiguous_query": "When did she join a new activist group?",
+      "q_final": "When did Caroline join a new activist group?",
+      "evidence": [
+        "D10:3"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        1,
+        9,
+        13,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 42,
+      "category": 3,
+      "original_question": "Would Melanie be more interested in going to a national park or a theme park?",
+      "ambiguous_query": "Would she be more interested in going to a national park or a theme park?",
+      "q_final": "Would Melanie be more interested in going to a national park or a theme park?",
+      "evidence": [
+        "D10:12",
+        "D10:14"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        18,
+        15,
+        16,
+        11,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 1,
+      "original_question": "What kind of art does Caroline make?",
+      "ambiguous_query": "What kind of art does she make?",
+      "q_final": "What kind of art does Melanie make?",
+      "evidence": [
+        "D11:12",
+        "D11:8",
+        "D9:14"
+      ],
+      "gold_sections": [
+        9,
+        11
+      ],
+      "retrieved_sections": [
+        17,
+        16,
+        14,
+        11,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 44,
+      "category": 2,
+      "original_question": "When is Melanie's daughter's birthday?",
+      "ambiguous_query": "When is her daughter's birthday?",
+      "q_final": "When is Melanie's daughter's birthday?",
+      "evidence": [
+        "D11:1"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        5,
+        4,
+        12,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 45,
+      "category": 2,
+      "original_question": "When did Caroline attend a pride parade in August?",
+      "ambiguous_query": "When did she attend a pride parade in August?",
+      "q_final": "When did Caroline attend a pride parade in August?",
+      "evidence": [
+        "D11:4"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        5,
+        11,
+        8,
+        10,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 46,
+      "category": 3,
+      "original_question": "Would Melanie be considered an ally to the transgender community?",
+      "ambiguous_query": "Would she be considered an ally to the transgender community?",
+      "q_final": "Would Caroline be considered an ally to the transgender community?",
+      "evidence": [],
+      "gold_sections": [],
+      "retrieved_sections": [
+        14,
+        3,
+        5,
+        2,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 1,
+      "original_question": "Who supports Caroline when she has a negative experience?",
+      "ambiguous_query": "Who supports her when she has a negative experience?",
+      "q_final": "Who supports her when she has a negative experience?",
+      "evidence": [
+        "D12:1",
+        "D3:11"
+      ],
+      "gold_sections": [
+        3,
+        12
+      ],
+      "retrieved_sections": [
+        14,
+        12,
+        8,
+        15,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 48,
+      "category": 1,
+      "original_question": "What types of pottery have Melanie and her kids made?",
+      "ambiguous_query": "What types of pottery have she and her kids made?",
+      "q_final": "What types of pottery have Caroline and her kids made?",
+      "evidence": [
+        "D12:14",
+        "D8:4",
+        "D5:6"
+      ],
+      "gold_sections": [
+        5,
+        8,
+        12
+      ],
+      "retrieved_sections": [
+        8,
+        14,
+        11,
+        5,
+        16
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 49,
+      "category": 2,
+      "original_question": "When did Caroline and Melanie go to a pride fesetival together?",
+      "ambiguous_query": "When did she and Melanie go to a pride fesetival together?",
+      "q_final": "When did Caroline and Melanie go to a pride festival together?",
+      "evidence": [
+        "D12:15"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        8,
+        10,
+        12,
+        14,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 50,
+      "category": 3,
+      "original_question": "What would Caroline's political leaning likely be?",
+      "ambiguous_query": "What would her political leaning likely be?",
+      "q_final": "Your question is unclear because it refers to 'her' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 51,
+      "category": 1,
+      "original_question": "What has Melanie painted?",
+      "ambiguous_query": "What has she painted?",
+      "q_final": "What has Caroline painted?",
+      "evidence": [
+        "D13:8",
+        "D8:6",
+        "D1:12"
+      ],
+      "gold_sections": [
+        1,
+        8,
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        16,
+        17,
+        13,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 52,
+      "category": 1,
+      "original_question": "What are Melanie's pets' names?",
+      "ambiguous_query": "What are her pets' names?",
+      "q_final": "What are Melanie's pets' names?",
+      "evidence": [
+        "D13:4",
+        "D7:18"
+      ],
+      "gold_sections": [
+        7,
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        7,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 53,
+      "category": 2,
+      "original_question": "When did Caroline apply to adoption agencies?",
+      "ambiguous_query": "When did she apply to adoption agencies?",
+      "q_final": "When did Caroline apply to adoption agencies?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        19,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 54,
+      "category": 2,
+      "original_question": "When did Caroline draw a self-portrait?",
+      "ambiguous_query": "When did she draw a self-portrait?",
+      "q_final": "Your question is unclear because it refers to 'she' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D13:11"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 55,
+      "category": 1,
+      "original_question": "What subject have Caroline and Melanie both painted?",
+      "ambiguous_query": "What subject have they both painted?",
+      "q_final": "What subject has Caroline and Melanie painted?",
+      "evidence": [
+        "D14:5",
+        "D8:6"
+      ],
+      "gold_sections": [
+        8,
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        16,
+        17,
+        13,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 56,
+      "category": 1,
+      "original_question": "What symbols are important to Caroline?",
+      "ambiguous_query": "What symbols are important to her?",
+      "q_final": "What symbols are important to Caroline?",
+      "evidence": [
+        "D14:15",
+        "D4:1"
+      ],
+      "gold_sections": [
+        4,
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        7,
+        3,
+        12,
+        4
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 57,
+      "category": 2,
+      "original_question": "When did Caroline encounter people on a hike and have a negative experience?",
+      "ambiguous_query": "When did she encounter people on a hike and have a negative experience?",
+      "q_final": "When did Caroline encounter people on a hike and have a negative experience?",
+      "evidence": [
+        "D14:1"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        12,
+        15,
+        8,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 58,
+      "category": 2,
+      "original_question": "When did Melanie make a plate in pottery class?",
+      "ambiguous_query": "When did she make a plate in pottery class?",
+      "q_final": "When did Melanie make a plate in pottery class?",
+      "evidence": [
+        "D14:4"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        5,
+        16,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 59,
+      "category": 3,
+      "original_question": "Would Caroline be considered religious?",
+      "ambiguous_query": "Would she be considered religious?",
+      "q_final": "Would [ENTITY_NAME] be considered religious?",
+      "evidence": [
+        "D14:19",
+        "D12:1"
+      ],
+      "gold_sections": [
+        12,
+        14
+      ],
+      "retrieved_sections": [
+        12,
+        5,
+        2,
+        4,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 60,
+      "category": 1,
+      "original_question": "What instruments does Melanie play?",
+      "ambiguous_query": "What instruments does she play?",
+      "q_final": "What instruments does Melanie play?",
+      "evidence": [
+        "D15:26",
+        "D2:5"
+      ],
+      "gold_sections": [
+        2,
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        2,
+        3,
+        1,
+        4
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 61,
+      "category": 1,
+      "original_question": "What musical artists/bands has Melanie seen?",
+      "ambiguous_query": "What musical artists/bands has she seen?",
+      "q_final": "Your question is unclear because it refers to 'she' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D15:16",
+        "D11:3"
+      ],
+      "gold_sections": [
+        11,
+        15
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 62,
+      "category": 2,
+      "original_question": "When did Melanie go to the park?",
+      "ambiguous_query": "When did she go to the park?",
+      "q_final": "When did Melanie take her kids to the park?",
+      "evidence": [
+        "D15:2"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        16,
+        18,
+        6,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 63,
+      "category": 2,
+      "original_question": "When is Caroline's youth center putting on a talent show?",
+      "ambiguous_query": "When is her youth center putting on a talent show?",
+      "q_final": "When is Caroline putting on a talent show for kids at her youth center?",
+      "evidence": [
+        "D15:11"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        9,
+        14,
+        11,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 64,
+      "category": 3,
+      "original_question": "Would Melanie likely enjoy the song \"The Four Seasons\" by Vivaldi?",
+      "ambiguous_query": "Would she likely enjoy the song?",
+      "q_final": "Would Melanie likely enjoy the song?",
+      "evidence": [
+        "D15:28"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        9,
+        10,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 65,
+      "category": 1,
+      "original_question": "What are some changes Caroline has faced during her transition journey?",
+      "ambiguous_query": "What are some changes she has faced during her transition journey?",
+      "q_final": "What are some changes Caroline has faced during her transition journey?",
+      "evidence": [
+        "D16:15",
+        "D11:14"
+      ],
+      "gold_sections": [
+        11,
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        3,
+        19,
+        14,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 1,
+      "original_question": "What does Melanie do with her family on hikes?",
+      "ambiguous_query": "What does she do with her family on hikes?",
+      "q_final": "What does Melanie do with her family on hikes?",
+      "evidence": [
+        "D16:4",
+        "D10:12"
+      ],
+      "gold_sections": [
+        10,
+        16
+      ],
+      "retrieved_sections": [
+        4,
+        8,
+        16,
+        14,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 67,
+      "category": 2,
+      "original_question": "When did Caroline go biking with friends?",
+      "ambiguous_query": "When did she go biking with friends?",
+      "q_final": "When did Caroline go biking with friends?",
+      "evidence": [
+        "D16:1"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        3,
+        6,
+        19,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 2,
+      "original_question": "How long has Melanie been practicing art?",
+      "ambiguous_query": "How long has she been practicing art?",
+      "q_final": "How long has [ENTITY] been practicing art? [ENTITY]",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        14,
+        11,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 3,
+      "original_question": "What personality traits might Melanie say Caroline has?",
+      "ambiguous_query": "What personality traits might she say Caroline has?",
+      "q_final": "What personality traits might Caroline have?",
+      "evidence": [
+        "D16:18",
+        "D13:16",
+        "D7:4"
+      ],
+      "gold_sections": [
+        7,
+        13,
+        16
+      ],
+      "retrieved_sections": [
+        14,
+        15,
+        18,
+        16,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 70,
+      "category": 1,
+      "original_question": "What transgender-specific events has Caroline attended?",
+      "ambiguous_query": "What transgender-specific events has she attended?",
+      "q_final": "What transgender-specific events has Melanie attended?",
+      "evidence": [
+        "D17:19",
+        "D15:13"
+      ],
+      "gold_sections": [
+        15,
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        7,
+        9,
+        11,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 71,
+      "category": 1,
+      "original_question": "What book did Melanie read from Caroline's suggestion?",
+      "ambiguous_query": "What book did she read from her suggestion?",
+      "q_final": "What book did Melanie read from her suggestion?",
+      "evidence": [
+        "D7:11",
+        "D17:10"
+      ],
+      "gold_sections": [
+        7,
+        17
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 2,
+      "original_question": "When did Melanie's friend adopt a child?",
+      "ambiguous_query": "When did her friend adopt a child?",
+      "q_final": "When did Melanie adopt a child?",
+      "evidence": [
+        "D17:3"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        10,
+        17,
+        8,
+        13,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 73,
+      "category": 2,
+      "original_question": "When did Melanie get hurt?",
+      "ambiguous_query": "When did she get hurt?",
+      "q_final": "When did Melanie get hurt?",
+      "evidence": [
+        "D17:8"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        5,
+        18,
+        17,
+        3,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 2,
+      "original_question": "When did Melanie's family go on a roadtrip?",
+      "ambiguous_query": "When did her family go on a roadtrip?",
+      "q_final": "When did Melanie's family go on a roadtrip?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        8,
+        10,
+        4,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 75,
+      "category": 1,
+      "original_question": "How many children does Melanie have?",
+      "ambiguous_query": "How many children does she have?",
+      "q_final": "Your question is unclear because it refers to 'the object' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D18:1",
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 76,
+      "category": 1,
+      "original_question": "When did Melanie go on a hike after the roadtrip?",
+      "ambiguous_query": "When did she go on a hike after the roadtrip?",
+      "q_final": "When did Melanie go on a hike after the roadtrip?",
+      "evidence": [
+        "D18:17"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        12,
+        14,
+        4,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 3,
+      "original_question": "Would Melanie go on another roadtrip soon?",
+      "ambiguous_query": "Would she go on another roadtrip soon?",
+      "q_final": "Would Melanie go on another roadtrip soon?",
+      "evidence": [
+        "D18:3",
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        1,
+        12,
+        13,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 78,
+      "category": 1,
+      "original_question": "What items has Melanie bought?",
+      "ambiguous_query": "What items has she bought?",
+      "q_final": "What items has Caroline bought?",
+      "evidence": [
+        "D19:2",
+        "D7:18"
+      ],
+      "gold_sections": [
+        7,
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        4,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 79,
+      "category": 2,
+      "original_question": "When did Caroline pass the adoption interview?",
+      "ambiguous_query": "When did she pass the adoption interview?",
+      "q_final": "When did Caroline pass the adoption interview?",
+      "evidence": [
+        "D19:1"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        17,
+        13,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 2,
+      "original_question": "When did Melanie buy the figurines?",
+      "ambiguous_query": "When did she buy the figurines?",
+      "q_final": "When did Melanie buy the figurines?",
+      "evidence": [
+        "D19:2"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 3,
+      "original_question": "Would Caroline want to move back to her home country soon?",
+      "ambiguous_query": "Would she want to move back to her home country soon?",
+      "q_final": "Would Caroline want to move back to her home country soon?",
+      "evidence": [
+        "D19:1",
+        "D19:3"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        19,
+        4,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "What did the charity race raise awareness for?",
+      "ambiguous_query": "What did it raise awareness for?",
+      "q_final": "What did Caroline raise awareness for?",
+      "evidence": [
+        "D2:2"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        3,
+        7,
+        2,
+        1,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What did Melanie realize after the charity race?",
+      "ambiguous_query": "What did she realize after the charity race?",
+      "q_final": "What did Melanie realize after the charity race?",
+      "evidence": [
+        "D2:3"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        7,
+        4,
+        1,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "How does Melanie prioritize self-care?",
+      "ambiguous_query": "How does she prioritize self-care?",
+      "q_final": "How does Melanie prioritize self-care?",
+      "evidence": [
+        "D2:5"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        13,
+        7,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What are Caroline's plans for the summer?",
+      "ambiguous_query": "What are her plans for the summer?",
+      "q_final": "What are Caroline's plans for the summer?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        12,
+        10,
+        15,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "What type of individuals does the adoption agency Caroline is considering support?",
+      "ambiguous_query": "What type of individuals does the adoption agency she is considering support?",
+      "q_final": "What type of individuals does Caroline's considered adoption agency support?",
+      "evidence": [
+        "D2:12"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        19,
+        13,
+        15,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "Why did Caroline choose the adoption agency?",
+      "ambiguous_query": "Why did she choose the adoption agency?",
+      "q_final": "Why did Caroline choose the adoption agency?",
+      "evidence": [
+        "D2:12"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        19,
+        13,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "What is Caroline excited about in the adoption process?",
+      "ambiguous_query": "What is she excited about in the adoption process?",
+      "q_final": "What is Caroline excited about in the adoption process?",
+      "evidence": [
+        "D2:14"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        13,
+        17,
+        19,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What does Melanie think about Caroline's decision to adopt?",
+      "ambiguous_query": "What does she think about her decision to adopt?",
+      "q_final": "What does Caroline think about her decision to adopt?",
+      "evidence": [
+        "D2:15"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        13,
+        12,
+        8,
+        17,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "How long have Mel and her husband been married?",
+      "ambiguous_query": "How long have she and her husband been married?",
+      "q_final": "How long have Melanie and her husband been married?",
+      "evidence": [
+        "D3:16"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        15,
+        1,
+        4,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "What does Caroline's necklace symbolize?",
+      "ambiguous_query": "What does her necklace symbolize?",
+      "q_final": "What does Caroline's necklace symbolize?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "What country is Caroline's grandma from?",
+      "ambiguous_query": "What country is her grandma from?",
+      "q_final": "What country is Caroline's grandma from?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        3,
+        1,
+        2,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "What was grandma's gift to Caroline?",
+      "ambiguous_query": "What was grandma's gift to her?",
+      "q_final": "What was Melanie's grandma's gift to her?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        19,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "What is Melanie's hand-painted bowl a reminder of?",
+      "ambiguous_query": "What is her hand-painted bowl a reminder of?",
+      "q_final": "What is Caroline's hand-painted bowl a reminder of?",
+      "evidence": [
+        "D4:5"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        12,
+        5,
+        16,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "What did Melanie and her family do while camping?",
+      "ambiguous_query": "What did she and her family do while camping?",
+      "q_final": "What did Melanie and her family do while camping?",
+      "evidence": [
+        "D4:8"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        18,
+        6,
+        10,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+      "ambiguous_query": "What kind of counseling and mental health services is she interested in pursuing?",
+      "q_final": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+      "evidence": [
+        "D4:13"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        7,
+        5,
+        1,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "What workshop did Caroline attend recently?",
+      "ambiguous_query": "What workshop did she attend recently?",
+      "q_final": "What workshop did Caroline attend recently?",
+      "evidence": [
+        "D4:13"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        11,
+        7,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "What was discussed in the LGBTQ+ counseling workshop?",
+      "ambiguous_query": "What was discussed in the workshop?",
+      "q_final": "What was discussed at Caroline's LGBTQ+ counseling workshop?",
+      "evidence": [
+        "D4:13"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        18,
+        8,
+        5,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What motivated Caroline to pursue counseling?",
+      "ambiguous_query": "What motivated her to pursue counseling?",
+      "q_final": "What motivated Melanie to pursue counseling?",
+      "evidence": [
+        "D4:15"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        7,
+        3,
+        5,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "What kind of place does Caroline want to create for people?",
+      "ambiguous_query": "What kind of place does she want to create for people?",
+      "q_final": "What kind of place does Caroline want to create for people?",
+      "evidence": [
+        "D4:15"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        8,
+        19,
+        14,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "Did Melanie make the black and white bowl in the photo?",
+      "ambiguous_query": "Did she make the black and white bowl in the photo?",
+      "q_final": "Did Melanie make the black and white bowl in the photo?",
+      "evidence": [
+        "D5:8"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        12,
+        4,
+        16,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "What kind of books does Caroline have in her library?",
+      "ambiguous_query": "What kind of books does she have in her library?",
+      "q_final": "What kind of books does Caroline have in her library?",
+      "evidence": [
+        "D6:9"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What was Melanie's favorite book from her childhood?",
+      "ambiguous_query": "What was her favorite book from her childhood?",
+      "q_final": "What was Melanie's favorite book from her childhood?",
+      "evidence": [
+        "D6:10"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        8,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "What book did Caroline recommend to Melanie?",
+      "ambiguous_query": "What book did she recommend to her?",
+      "q_final": "What book did Melanie recommend to her?",
+      "evidence": [
+        "D7:11"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        6,
+        17,
+        7,
+        2,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "What did Caroline take away from the book \"Becoming Nicole\"?",
+      "ambiguous_query": "What did she take away from the book?",
+      "q_final": "What did Caroline take away from the book?",
+      "evidence": [
+        "D7:13"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        6,
+        7,
+        17,
+        2,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "What are the new shoes that Melanie got used for?",
+      "ambiguous_query": "What are the new shoes that she got used for?",
+      "q_final": "What are the new running shoes that Melanie got used for?",
+      "evidence": [
+        "D7:19"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        18,
+        4,
+        2,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What is Melanie's reason for getting into running?",
+      "ambiguous_query": "What is her reason for getting into running?",
+      "q_final": "What is Melanie's reason for getting into running?",
+      "evidence": [
+        "D7:21"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        2,
+        8,
+        17,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "What does Melanie say running has been great for?",
+      "ambiguous_query": "What does she say running has been great for?",
+      "q_final": "What does Melanie say running has been great for?",
+      "evidence": [
+        "D7:24"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        10,
+        2,
+        3,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What did Mel and her kids make during the pottery workshop?",
+      "ambiguous_query": "What did she and her kids make during the pottery workshop?",
+      "q_final": "What did Melanie and her kids make during the pottery workshop?",
+      "evidence": [
+        "D8:2"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        4,
+        14,
+        11,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What kind of pot did Mel and her kids make with clay?",
+      "ambiguous_query": "What kind of pot did she and her kids make with clay?",
+      "q_final": "What kind of pot did Melanie and her kids make with clay?",
+      "evidence": [
+        "D8:4"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        2,
+        5,
+        6,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "What creative project do Mel and her kids do together besides pottery?",
+      "ambiguous_query": "What creative project do she and her kids do together besides pottery?",
+      "q_final": "What creative project do Caroline and her kids do together besides pottery?",
+      "evidence": [
+        "D8:5"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        12,
+        14,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What did Mel and her kids paint in their latest project in July 2023?",
+      "ambiguous_query": "What did she and her kids paint in their latest project?",
+      "q_final": "What did Melanie and her kids paint in their latest project?",
+      "evidence": [
+        "D8:6"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        12,
+        14,
+        9,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "What did Caroline see at the council meeting for adoption?",
+      "ambiguous_query": "What did she see at the council meeting for adoption?",
+      "q_final": "What did Caroline see at the council meeting for adoption?",
+      "evidence": [
+        "D8:9"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        13,
+        2,
+        17,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "What do sunflowers represent according to Caroline?",
+      "ambiguous_query": "What do sunflowers represent according to her?",
+      "q_final": "What do sunflowers represent according to Melanie?",
+      "evidence": [
+        "D8:11"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        7,
+        8,
+        16,
+        11,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "Why are flowers important to Melanie?",
+      "ambiguous_query": "Why are flowers important to her?",
+      "q_final": "Why are flowers important to Caroline?",
+      "evidence": [
+        "D8:12"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        7,
+        14,
+        3,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "What inspired Caroline's painting for the art show?",
+      "ambiguous_query": "What inspired her painting for the art show?",
+      "q_final": "What inspired Caroline's painting for the art show?",
+      "evidence": [
+        "D9:16"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        17,
+        9,
+        16,
+        13,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "How often does Melanie go to the beach with her kids?",
+      "ambiguous_query": "How often does she go to the beach with her kids?",
+      "q_final": "How often does Melanie go to the beach with her kids?",
+      "evidence": [
+        "D10:10"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        6,
+        14,
+        15,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What did Melanie and her family see during their camping trip last year?",
+      "ambiguous_query": "What did she and her family see during their camping trip last year?",
+      "q_final": "What did Caroline and her family see during their camping trip last year?",
+      "evidence": [
+        "D10:14"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        18,
+        8,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "How did Melanie feel while watching the meteor shower?",
+      "ambiguous_query": "How did she feel while watching the meteor shower?",
+      "q_final": "How did Melanie feel while watching the meteor shower?",
+      "evidence": [
+        "D10:18"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        8,
+        14,
+        15,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "Whose birthday did Melanie celebrate recently?",
+      "ambiguous_query": "Whose birthday did she celebrate recently?",
+      "q_final": "Whose birthday did Melanie celebrate recently?",
+      "evidence": [
+        "D11:1"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        13,
+        10,
+        5,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "Who performed at the concert at Melanie's daughter's birthday?",
+      "ambiguous_query": "Who performed at the concert at her daughter's birthday?",
+      "q_final": "Who performed at Melanie's daughter's birthday concert?",
+      "evidence": [
+        "D11:3"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        5,
+        4,
+        9,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "Why did Melanie choose to use colors and patterns in her pottery project?",
+      "ambiguous_query": "Why did she choose to use colors and patterns in her pottery project?",
+      "q_final": "Why did Melanie choose to use colors and patterns in her pottery project?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        14,
+        17,
+        11,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "What pet does Caroline have?",
+      "ambiguous_query": "What pet does she have?",
+      "q_final": "What pet does Melanie have?",
+      "evidence": [
+        "D13:3"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        7,
+        13,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "What pets does Melanie have?",
+      "ambiguous_query": "What pets does she have?",
+      "q_final": "What pets does Melanie have?",
+      "evidence": [
+        "D13:4"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        7,
+        13,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "Where did Oliver hide his bone once?",
+      "ambiguous_query": "Where did he hide his bone once?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "What activity did Caroline used to do with her dad?",
+      "ambiguous_query": "What activity did she used to do with her dad?",
+      "q_final": "What activity did Caroline used to do with her dad?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        15,
+        8,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "What did Caroline make for a local church?",
+      "ambiguous_query": "What did she make for a local church?",
+      "q_final": "What did Caroline make for a local church?",
+      "evidence": [
+        "D14:17"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        15,
+        6,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "What did Caroline find in her neighborhood during her walk?",
+      "ambiguous_query": "What did she find in her neighborhood during her walk?",
+      "q_final": "What did Melanie find in her neighborhood during her walk?",
+      "evidence": [
+        "D14:23"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        7,
+        19,
+        8,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "Which song motivates Caroline to be courageous?",
+      "ambiguous_query": "Which song motivates her to be courageous?",
+      "q_final": "Which song motivates Caroline to be courageous?",
+      "evidence": [
+        "D15:23"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        3,
+        7,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "Which  classical musicians does Melanie enjoy listening to?",
+      "ambiguous_query": "Which classical musicians does she enjoy listening to?",
+      "q_final": "Which classical musicians does Melanie enjoy listening to?",
+      "evidence": [
+        "D15:28"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        8,
+        18,
+        9,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 131,
+      "category": 4,
+      "original_question": "Who is Melanie a fan of in terms of modern music?",
+      "ambiguous_query": "Who is she a fan of in terms of modern music?",
+      "q_final": "Who is she a fan of in terms of modern music?",
+      "evidence": [
+        "D15:28"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        5,
+        11,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 132,
+      "category": 4,
+      "original_question": "How long has Melanie been creating art?",
+      "ambiguous_query": "How long has she been creating art?",
+      "q_final": "How long has Melanie been creating art?",
+      "evidence": [
+        "D16:7"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        14,
+        13,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 133,
+      "category": 4,
+      "original_question": "What precautionary sign did Melanie see at the café?",
+      "ambiguous_query": "What precautionary sign did she see at the café?",
+      "q_final": "What precautionary sign did Melanie see at the café?",
+      "evidence": [
+        "D16:16"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        5,
+        15,
+        6,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 134,
+      "category": 4,
+      "original_question": "What advice does Caroline give for getting started with adoption?",
+      "ambiguous_query": "What advice does she give for getting started with adoption?",
+      "q_final": "What advice does Caroline give for getting started with adoption?",
+      "evidence": [
+        "D17:7"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        13,
+        2,
+        8,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 135,
+      "category": 4,
+      "original_question": "What setback did Melanie face in October 2023?",
+      "ambiguous_query": "What setback did she face in October 2023?",
+      "q_final": "What setback did Melanie face in October 2023?",
+      "evidence": [
+        "D17:8"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        9,
+        15,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 136,
+      "category": 4,
+      "original_question": "What does Melanie do to keep herself busy during her pottery break?",
+      "ambiguous_query": "What does she do to keep herself busy during her pottery break?",
+      "q_final": "What does Melanie do to keep herself busy during her pottery break?",
+      "evidence": [
+        "D17:10"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        14,
+        8,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 137,
+      "category": 4,
+      "original_question": "What painting did Melanie show to Caroline on October 13, 2023?",
+      "ambiguous_query": "What painting did she show to her on October 13?",
+      "q_final": "What painting did Melanie show to her on October 13?",
+      "evidence": [
+        "D17:12"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        13,
+        9,
+        14,
+        17,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 138,
+      "category": 4,
+      "original_question": "What kind of painting did Caroline share with Melanie on October 13, 2023?",
+      "ambiguous_query": "What kind of painting did she share with her on October 13?",
+      "q_final": "What kind of painting did Melanie share with her on October 13?",
+      "evidence": [
+        "D17:14"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        13,
+        11,
+        4,
+        9,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 139,
+      "category": 4,
+      "original_question": "What was the poetry reading that Caroline attended about?",
+      "ambiguous_query": "What was the poetry reading that she attended about?",
+      "q_final": "What was the poetry reading that Caroline attended about?",
+      "evidence": [
+        "D17:18"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        7,
+        6,
+        8,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 140,
+      "category": 4,
+      "original_question": "What did the posters at the poetry reading say?",
+      "ambiguous_query": "What did the posters at the poetry reading say?",
+      "q_final": "What did Melanie's posters at the poetry reading say?",
+      "evidence": [
+        "D17:19"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        10,
+        6,
+        7,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 141,
+      "category": 4,
+      "original_question": "What does Caroline's drawing symbolize for her?",
+      "ambiguous_query": "What does her drawing symbolize for her?",
+      "q_final": "What does Caroline's drawing symbolize for her?",
+      "evidence": [
+        "D17:23"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        14,
+        11,
+        16,
+        17,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 142,
+      "category": 4,
+      "original_question": "How do Melanie and Caroline describe their journey through life together?",
+      "ambiguous_query": "How do they describe their journey through life together?",
+      "q_final": "How do Melanie and Caroline describe their journey through life together?",
+      "evidence": [
+        "D17:25"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        16,
+        4,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 143,
+      "category": 4,
+      "original_question": "What happened to Melanie's son on their road trip?",
+      "ambiguous_query": "What happened to her son on their road trip?",
+      "q_final": "What happened to Melanie's son on their road trip?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        14,
+        8,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 144,
+      "category": 4,
+      "original_question": "How did Melanie's son handle the accident?",
+      "ambiguous_query": "How did her son handle the accident?",
+      "q_final": "How did Melanie's son handle the accident?",
+      "evidence": [
+        "D18:6",
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        16,
+        8,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 145,
+      "category": 4,
+      "original_question": "How did Melanie feel about her family after the accident?",
+      "ambiguous_query": "How did she feel about her family after the accident?",
+      "q_final": "How did Melanie feel about her family after the accident?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        3,
+        8,
+        14,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 146,
+      "category": 4,
+      "original_question": "How did Melanie's children handle the accident?",
+      "ambiguous_query": "How did her children handle the accident?",
+      "q_final": "How did Melanie's children handle the accident?",
+      "evidence": [
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        11,
+        16,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 147,
+      "category": 4,
+      "original_question": "How did Melanie feel after the accident?",
+      "ambiguous_query": "How did she feel after the accident?",
+      "q_final": "How did Melanie feel after the accident?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        8,
+        14,
+        3,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 148,
+      "category": 4,
+      "original_question": "What was Melanie's reaction to her children enjoying the Grand Canyon?",
+      "ambiguous_query": "What was her reaction to her children enjoying the Grand Canyon?",
+      "q_final": "What was Melanie's reaction to her children enjoying the Grand Canyon?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        9,
+        6,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 149,
+      "category": 4,
+      "original_question": "What do Melanie's family give her?",
+      "ambiguous_query": "What do her family give her?",
+      "q_final": "What do Melanie give her family?",
+      "evidence": [
+        "D18:9"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        3,
+        2,
+        18,
+        8,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 150,
+      "category": 4,
+      "original_question": "How did Melanie feel about her family supporting her?",
+      "ambiguous_query": "How did she feel about her family supporting her?",
+      "q_final": "How did Caroline feel about her friends and mentors supporting her?",
+      "evidence": [
+        "D18:13"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        3,
+        2,
+        1,
+        16,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 151,
+      "category": 4,
+      "original_question": "What did Melanie do after the road trip to relax?",
+      "ambiguous_query": "What did she do after the road trip to relax?",
+      "q_final": "What did Melanie do after the road trip to relax?",
+      "evidence": [
+        "D18:17"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        15,
+        8,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 152,
+      "category": 5,
+      "original_question": "What did Caroline realize after her charity race?",
+      "ambiguous_query": "What did she realize after her charity race?",
+      "q_final": "What did Melanie realize after her charity race?",
+      "evidence": [
+        "D2:3"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        7,
+        4,
+        1,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 153,
+      "category": 5,
+      "original_question": "What are Melanie's plans for the summer with respect to adoption?",
+      "ambiguous_query": "What are her plans for the summer with respect to adoption?",
+      "q_final": "What are Caroline's plans for the summer with respect to adoption?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        12,
+        19,
+        17,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 154,
+      "category": 5,
+      "original_question": "What type of individuals does the adoption agency Melanie is considering support?",
+      "ambiguous_query": "What type of individuals does the adoption agency she is considering support?",
+      "q_final": "What type of individuals does Caroline's considered adoption agency support?",
+      "evidence": [
+        "D2:12"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        19,
+        13,
+        15,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 5,
+      "original_question": "Why did Melanie choose the adoption agency?",
+      "ambiguous_query": "Why did she choose the adoption agency?",
+      "q_final": "Why did Caroline choose the adoption agency?",
+      "evidence": [
+        "D2:12"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        19,
+        13,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 156,
+      "category": 5,
+      "original_question": "What is Melanie excited about in her adoption process?",
+      "ambiguous_query": "What is she excited about in her adoption process?",
+      "q_final": "What is Caroline excited about in her adoption process?",
+      "evidence": [
+        "D2:14"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        13,
+        17,
+        19,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 157,
+      "category": 5,
+      "original_question": "What does Melanie's necklace symbolize?",
+      "ambiguous_query": "What does her necklace symbolize?",
+      "q_final": "What does Caroline's necklace symbolize?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 158,
+      "category": 5,
+      "original_question": "What country is Melanie's grandma from?",
+      "ambiguous_query": "What country is her grandma from?",
+      "q_final": "What country is Caroline's grandma from?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        3,
+        1,
+        2,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 159,
+      "category": 5,
+      "original_question": "What was grandma's gift to Melanie?",
+      "ambiguous_query": "What was grandma's gift to her?",
+      "q_final": "What was Melanie's grandma's gift to her?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        19,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 160,
+      "category": 5,
+      "original_question": "What was grandpa's gift to Caroline?",
+      "ambiguous_query": "What was grandpa's gift to her?",
+      "q_final": "What was Melanie's grandpa's gift to her?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        19,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 161,
+      "category": 5,
+      "original_question": "What is Caroline's hand-painted bowl a reminder of?",
+      "ambiguous_query": "What is her hand-painted bowl a reminder of?",
+      "q_final": "What is Caroline's hand-painted bowl a reminder of?",
+      "evidence": [
+        "D4:5"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        12,
+        5,
+        16,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 162,
+      "category": 5,
+      "original_question": "What did Caroline and her family do while camping?",
+      "ambiguous_query": "What did she and her family do while camping?",
+      "q_final": "What did Melanie and her family do while camping?",
+      "evidence": [
+        "D4:8"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        18,
+        6,
+        10,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 163,
+      "category": 5,
+      "original_question": "What kind of counseling and mental health services is Melanie interested in pursuing?",
+      "ambiguous_query": "What kind of counseling and mental health services is she interested in pursuing?",
+      "q_final": "What kind of counseling and mental health services is Caroline interested in pursuing?",
+      "evidence": [
+        "D4:13"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        7,
+        5,
+        1,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 164,
+      "category": 5,
+      "original_question": "What kind of counseling workshop did Melanie attend recently?",
+      "ambiguous_query": "What kind of counseling workshop did she attend recently?",
+      "q_final": "What kind of counseling workshop did Caroline attend recently?",
+      "evidence": [
+        "D4:13"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        11,
+        7,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 165,
+      "category": 5,
+      "original_question": "What motivated Melanie to pursue counseling?",
+      "ambiguous_query": "What motivated her to pursue counseling?",
+      "q_final": "What motivated Caroline to pursue counseling?",
+      "evidence": [
+        "D4:15"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        7,
+        3,
+        5,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 166,
+      "category": 5,
+      "original_question": "What kind of place does Melanie want to create for people?",
+      "ambiguous_query": "What kind of place does she want to create for people?",
+      "q_final": "What kind of place does Caroline want to create for people?",
+      "evidence": [
+        "D4:15"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        8,
+        19,
+        14,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 167,
+      "category": 5,
+      "original_question": "Did Caroline make the black and white bowl in the photo?",
+      "ambiguous_query": "Did she make the black and white bowl in the photo?",
+      "q_final": "Did Melanie make the black and white bowl in the photo?",
+      "evidence": [
+        "D5:8"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        12,
+        4,
+        16,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 168,
+      "category": 5,
+      "original_question": "What are the new shoes that Caroline got used for?",
+      "ambiguous_query": "What are the new shoes that she got used for?",
+      "q_final": "What are the new running shoes that Melanie got used for?",
+      "evidence": [
+        "D7:19"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        18,
+        4,
+        2,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 169,
+      "category": 5,
+      "original_question": "What is Caroline's reason for getting into running?",
+      "ambiguous_query": "What is her reason for getting into running?",
+      "q_final": "What is Melanie's reason for getting into running?",
+      "evidence": [
+        "D7:21"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        2,
+        8,
+        17,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 170,
+      "category": 5,
+      "original_question": "What does Caroline say running has been great for?",
+      "ambiguous_query": "What does she say running has been great for?",
+      "q_final": "What does Melanie say running has been great for?",
+      "evidence": [
+        "D7:24"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        10,
+        2,
+        3,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 171,
+      "category": 5,
+      "original_question": "What did Melanie see at the council meeting for adoption?",
+      "ambiguous_query": "What did she see at the council meeting for adoption?",
+      "q_final": "What did Caroline see at the council meeting for adoption?",
+      "evidence": [
+        "D8:9"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        13,
+        2,
+        17,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 172,
+      "category": 5,
+      "original_question": "What inspired Melanie's painting for the art show?",
+      "ambiguous_query": "What inspired her painting for the art show?",
+      "q_final": "What inspired Caroline's painting for the art show?",
+      "evidence": [
+        "D9:16"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        17,
+        9,
+        16,
+        13,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 173,
+      "category": 5,
+      "original_question": "What inspired Caroline's sculpture for the art show?",
+      "ambiguous_query": "What inspired her sculpture for the art show?",
+      "q_final": "What inspired Caroline's sculpture for the art show?",
+      "evidence": [
+        "D9:16"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        17,
+        16,
+        9,
+        14,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 174,
+      "category": 5,
+      "original_question": "How often does Caroline go to the beach with her kids?",
+      "ambiguous_query": "How often does she go to the beach with her kids?",
+      "q_final": "How often does Melanie go to the beach with her kids?",
+      "evidence": [
+        "D10:10"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        6,
+        14,
+        15,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 175,
+      "category": 5,
+      "original_question": "What did Caroline and her family see during their camping trip last year?",
+      "ambiguous_query": "What did she and her family see during their camping trip last year?",
+      "q_final": "What did Caroline and her family see during their camping trip last year?",
+      "evidence": [
+        "D10:14"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        18,
+        8,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 176,
+      "category": 5,
+      "original_question": "How did Caroline feel while watching the meteor shower?",
+      "ambiguous_query": "How did she feel while watching the meteor shower?",
+      "q_final": "How did Melanie feel while watching the meteor shower?",
+      "evidence": [
+        "D10:18"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        8,
+        14,
+        15,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 177,
+      "category": 5,
+      "original_question": "Why did Caroline choose to use colors and patterns in her pottery project?",
+      "ambiguous_query": "Why did she choose to use colors and patterns in her pottery project?",
+      "q_final": "Why did Melanie choose to use colors and patterns in her pottery project?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        14,
+        17,
+        11,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 178,
+      "category": 5,
+      "original_question": "Is Oscar Melanie's pet?",
+      "ambiguous_query": "Is Oscar her pet?",
+      "q_final": "Is [ENTITY_NAME] her pet?",
+      "evidence": [
+        "D13:3"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        7,
+        13,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 179,
+      "category": 5,
+      "original_question": "Where did Oscar hide his bone once?",
+      "ambiguous_query": "Where did he hide his bone once?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        1,
+        9,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 180,
+      "category": 5,
+      "original_question": "What activity did Melanie used to do with her dad?",
+      "ambiguous_query": "What activity did she used to do with her dad?",
+      "q_final": "What activity did Caroline used to do with her dad?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        15,
+        8,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 181,
+      "category": 5,
+      "original_question": "What did Melanie make for a local church?",
+      "ambiguous_query": "What did she make for a local church?",
+      "q_final": "What did Caroline make for a local church?",
+      "evidence": [
+        "D14:17"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        15,
+        6,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 182,
+      "category": 5,
+      "original_question": "What did Melanie find in her neighborhood during her walk?",
+      "ambiguous_query": "What did she find in her neighborhood during her walk?",
+      "q_final": "What did Melanie find in her neighborhood during her walk?",
+      "evidence": [
+        "D14:23"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        7,
+        19,
+        8,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 183,
+      "category": 5,
+      "original_question": "Which song motivates Melanie to be courageous?",
+      "ambiguous_query": "Which song motivates her to be courageous?",
+      "q_final": "Which song motivates Caroline to be courageous?",
+      "evidence": [
+        "D15:23"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        3,
+        7,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 184,
+      "category": 5,
+      "original_question": "What type of instrument does Caroline play?",
+      "ambiguous_query": "What type of instrument does she play?",
+      "q_final": "What type of instrument does Melanie play?",
+      "evidence": [
+        "D15:26"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        2,
+        14,
+        3,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 185,
+      "category": 5,
+      "original_question": "Which classical musicians does Caroline enjoy listening to?",
+      "ambiguous_query": "Which classical musicians does she enjoy listening to?",
+      "q_final": "Which classical musicians does Melanie enjoy listening to?",
+      "evidence": [
+        "D15:28"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        8,
+        18,
+        9,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 186,
+      "category": 5,
+      "original_question": "Who is Caroline a fan of in terms of modern music?",
+      "ambiguous_query": "Who is she a fan of in terms of modern music?",
+      "q_final": "Who is she a fan of in terms of modern music?",
+      "evidence": [
+        "D15:28"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        5,
+        11,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 187,
+      "category": 5,
+      "original_question": "What precautionary sign did Caroline see at the café?",
+      "ambiguous_query": "What precautionary sign did she see at the café?",
+      "q_final": "What precautionary sign did Melanie see at the café?",
+      "evidence": [
+        "D16:16"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        5,
+        15,
+        6,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 188,
+      "category": 5,
+      "original_question": "What setback did Caroline face recently?",
+      "ambiguous_query": "What setback did she face recently?",
+      "q_final": "What setback did Melanie face recently?",
+      "evidence": [
+        "D17:8"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        9,
+        13,
+        6,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 189,
+      "category": 5,
+      "original_question": "What does Caroline do to keep herself busy during her pottery break?",
+      "ambiguous_query": "What does she do to keep herself busy during her pottery break?",
+      "q_final": "What does Melanie do to keep herself busy during her pottery break?",
+      "evidence": [
+        "D17:10"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        14,
+        8,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 190,
+      "category": 5,
+      "original_question": "What was the poetry reading that Melanie attended about?",
+      "ambiguous_query": "What was the poetry reading that she attended about?",
+      "q_final": "What was Melanie's poetry reading about?",
+      "evidence": [
+        "D17:18"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        6,
+        7,
+        2,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 191,
+      "category": 5,
+      "original_question": "What happened to Caroline's son on their road trip?",
+      "ambiguous_query": "What happened to her son on their road trip?",
+      "q_final": "What happened to Melanie's son on their road trip?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        14,
+        8,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 192,
+      "category": 5,
+      "original_question": "How did Caroline's son handle the accident?",
+      "ambiguous_query": "How did her son handle the accident?",
+      "q_final": "How did Melanie's son handle the accident?",
+      "evidence": [
+        "D18:6",
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        16,
+        8,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 193,
+      "category": 5,
+      "original_question": "How did Caroline feel about her family after the accident?",
+      "ambiguous_query": "How did she feel about her family after the accident?",
+      "q_final": "How did Melanie feel about her family after the accident?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        3,
+        8,
+        14,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 194,
+      "category": 5,
+      "original_question": "How did Caroline's children handle the accident?",
+      "ambiguous_query": "How did her children handle the accident?",
+      "q_final": "How did Melanie's children handle the accident?",
+      "evidence": [
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        11,
+        16,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 195,
+      "category": 5,
+      "original_question": "How did Caroline feel after the accident?",
+      "ambiguous_query": "How did she feel after the accident?",
+      "q_final": "How did Melanie feel after the accident?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        8,
+        14,
+        3,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 196,
+      "category": 5,
+      "original_question": "What was Caroline's reaction to her children enjoying the Grand Canyon?",
+      "ambiguous_query": "What was her reaction to her children enjoying the Grand Canyon?",
+      "q_final": "What was Melanie's reaction to her children enjoying the Grand Canyon?",
+      "evidence": [
+        "D18:5"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        9,
+        6,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 197,
+      "category": 5,
+      "original_question": "What did Caroline do after the road trip to relax?",
+      "ambiguous_query": "What did she do after the road trip to relax?",
+      "q_final": "What did Melanie do after the road trip to relax?",
+      "evidence": [
+        "D18:17"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        15,
+        8,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 198,
+      "category": 5,
+      "original_question": "What does Caroline love most about camping with her family?",
+      "ambiguous_query": "What does she love most about camping with her family?",
+      "q_final": "What does Melanie love most about camping with her family?",
+      "evidence": [
+        "D18:21"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        6,
+        18,
+        4,
+        8,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
     }
   ]
 }

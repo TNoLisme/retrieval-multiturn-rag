@@ -6,15 +6,21 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
+USE_QWEN = True
+
 def get_llm(temperature: float = 0.0):
     """
     Initialize and return the appropriate LLM client.
     """
-    openai_key = os.getenv("OPENAI_API_KEY")
-    if openai_key:
-        return ChatOpenAI(model="gpt-4o-mini", temperature=temperature)
-    
-    return ChatOllama(model="qwen2.5:3b", temperature=temperature)
+    if USE_QWEN:
+        return ChatOllama(model="qwen2.5:3b", temperature=temperature)
+    else:
+        return ChatOpenAI(
+            model="all", # The router will likely ignore this or use the default
+            api_key="sk-b22c9e763fd33c03-vv59g6-32ef6714",
+            base_url="http://localhost:20128/v1",
+            temperature=temperature
+        )
 
 
 # =====================================================================
@@ -65,47 +71,49 @@ TRACKER_PROMPT = """[ROLE] You are an AI State Tracker for a conversational assi
 Follow these 2 steps in order:
 
 STEP 1 - TRACKING (State Update):
-- If the old state contains "entities" (e.g., {{"person": "Caroline"}}), you MUST keep those entities in the new State_t, merging them with any new entities extracted from the New Query.
-- Extract new "intent", "entities", "attributes", "constraints" from the New Query.
+- If the old state contains "entities" (e.g., ["Caroline"]), you MUST keep those entities in the new State_t, merging them with any new entities extracted from the New Query.
+- Extract new "intent", "entities", "attributes" from the New Query.
+- "entities": A flat list of all people, places, objects, events mentioned.
+- "attributes": A flat list of properties, characteristics, colors, and time mentioned inside the chat for the entities.
 - Fill in "unresolved_references" if the New Query contains referring pronouns ("it", "they", "them", "that", "this", "he", "she", "his", "her", "these", "those", "here", "there", "then"...) — only add them if they ACTUALLY APPEAR in the query text.
 
 STEP 2 - CHECKING (Completeness Check):
-- After updating, check the new State_t: is the "entities" dictionary empty {{}}?
-- Set "need_retrieval" = true: IF and ONLY IF "entities" is empty {{}} after merging. This means the pipeline does not know what entity/subject is being discussed and must retrieve memos.
+- After updating, check the new State_t: is the "entities" list empty []?
+- Set "need_retrieval" = true: IF and ONLY IF "entities" is empty [] after merging. This means the pipeline does not know what entity/subject is being discussed and must retrieve memos.
 - Set "need_retrieval" = false: IF "entities" has at least 1 entry (even if the query uses a pronoun, if the old state has entities, they are merged, so entities is not empty).
 
 [VÍ DỤ 1 — Continue + Clear query (no pronouns)]
-State_t-1: {{"intent": "inquiry", "entities": {{}}, "attributes": {{}}, "constraints": [], "unresolved_references": []}}
+State_t-1: {{"intent": "inquiry", "entities": [], "attributes": [], "unresolved_references": []}}
 New Query: "What is astrophysics?"
-→ Tracking: new entities = {{"subject": "astrophysics"}}
+→ Tracking: new entities = ["astrophysics"]
 → Checking: entities not empty → need_retrieval = false
 JSON Output:
 {{
-  "state": {{"intent": "inquiry", "entities": {{"subject": "astrophysics"}}, "attributes": {{}}, "constraints": [], "unresolved_references": []}},
+  "state": {{"intent": "inquiry", "entities": ["astrophysics"], "attributes": [], "unresolved_references": []}},
   "need_retrieval": false,
   "confidence": 1.0
 }}
 
 [VÍ DỤ 2 — Continue + Query uses pronoun "it" + State_t-1 has entities]
-State_t-1: {{"intent": "inquiry", "entities": {{"subject": "astrophysics"}}, "attributes": {{}}, "constraints": [], "unresolved_references": []}}
+State_t-1: {{"intent": "inquiry", "entities": ["astrophysics"], "attributes": [], "unresolved_references": []}}
 New Query: "Why is it so interesting?"
-→ Tracking: MERGE entities from State_t-1 → entities = {{"subject": "astrophysics"}}, add attributes = {{"property": "interesting"}}, unresolved_references = ["it"] (since "it" appears in the query)
+→ Tracking: MERGE entities from State_t-1 → entities = ["astrophysics"], add attributes = ["interesting"], unresolved_references = ["it"] (since "it" appears in the query)
 → Checking: entities not empty (has "astrophysics" merged from old state) → need_retrieval = false
 JSON Output:
 {{
-  "state": {{"intent": "inquiry", "entities": {{"subject": "astrophysics"}}, "attributes": {{"property": "interesting"}}, "constraints": [], "unresolved_references": ["it"]}},
+  "state": {{"intent": "inquiry", "entities": ["astrophysics"], "attributes": ["interesting"], "unresolved_references": ["it"]}},
   "need_retrieval": false,
   "confidence": 1.0
 }}
 
 [VÍ DỤ 3 — Hard shift happened (State_t-1 empty) + Query uses pronoun "it"]
-State_t-1: {{"intent": "inquiry", "entities": {{}}, "attributes": {{}}, "constraints": [], "unresolved_references": []}}
+State_t-1: {{"intent": "inquiry", "entities": [], "attributes": [], "unresolved_references": []}}
 New Query: "Why is it so interesting?"
-→ Tracking: State_t-1 has no entities. Query doesn't name any entity. entities = {{}}, unresolved_references = ["it"]
+→ Tracking: State_t-1 has no entities. Query doesn't name any entity. entities = [], unresolved_references = ["it"]
 → Checking: entities empty → need_retrieval = true (must search memos to resolve what "it" refers to)
 JSON Output:
 {{
-  "state": {{"intent": "inquiry", "entities": {{}}, "attributes": {{"property": "interesting"}}, "constraints": [], "unresolved_references": ["it"]}},
+  "state": {{"intent": "inquiry", "entities": [], "attributes": ["interesting"], "unresolved_references": ["it"]}},
   "need_retrieval": true,
   "confidence": 0.8
 }}
@@ -119,23 +127,30 @@ JSON Output:
 
 # 3. Controlled Rewrite
 REWRITE_PROMPT = """[ROLE] You are a query reformulation expert.
-[TASK] Based on the current conversation state and any retrieved long-term memories (memos), rewrite the user's raw query into a Standalone Query (Q_final) that can be executed independently against a search index.
+[TASK] Based on the current conversation state, retrieved long-term memories (memos with their histories), and recent active chat history, rewrite the user's raw query into a Standalone Query (Q_final) that can be executed independently against a search index.
 
 [CURRENT CONVERSATION STATE]
 - Entities: {entities}
 - Attributes: {attributes}
-- Constraints: {constraints}
 
-[RETRIEVED MEMOS (Long-term Context)]
+[RETRIEVED MEMOS (Long-term Context & Histories)]
 {memos}
 
-[USER'S RAW QUERY]
+[RECENT CHAT HISTORY (Active Session)]
+{active_chat}
+
+[USER'S NEW QUERY]
 {query}
 
+[CRITICAL REASONING RULES]
+- Before replacing any pronoun (like "she", "he", "it", "they", "her", "his"), identify the specific action or event in the query (e.g. "paint a sunrise" or "continue her education").
+- Search the retrieved memos' summary, attributes, and chat histories to find the EXACT person who is associated with this action or event (e.g., if Melanie painted a lake sunrise, then "she" -> "Melanie").
+- Do NOT simply select the first entity listed. Match the action/verb precisely to the correct entity.
+
 [STRICT REQUIREMENTS]
-1. FULL SEMANTICS: Replace all referring pronouns ("it", "they", "them", "that", "this", "he", "she", "his", "her", "these", "those") with the SPECIFIC Entity Name from the [State] or [Retrieved Memos]. The rewritten query must stand on its own without any conversational history.
+1. FULL SEMANTICS: Replace all referring pronouns ("it", "they", "them", "that", "this", "he", "she", "his", "her", "these", "those") with the SPECIFIC Entity Name from the [State], [Retrieved Memos], or [Recent Chat History]. The rewritten query must stand on its own without any conversational history.
 2. PRESERVE ENTITY NAMES: DO NOT replace specific entity names with generic category names. Keep the exact names.
-3. USE MEMOS IF NEEDED: If the state is empty but the Memos provide the missing context, use the Memos to resolve pronouns.
+3. USE CONTEXT: Carefully read both the retrieved memos' histories and the recent active chat history to determine who/what the pronouns in the new query refer to.
 4. DO NOT ANSWER: Your only job is to rewrite the query. Do not answer it.
 5. FORMAT: Return ONLY the rewritten query. No greetings, no explanations.
 [STANDALONE QUERY]:"""

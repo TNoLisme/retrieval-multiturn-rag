@@ -1,0 +1,3715 @@
+[
+  {
+    "summary": "Sam and Evan met at 1:47 pm on 18 May, 2023. Evan mentioned his recent trip to the Rockies in his new Prius and shared about his passion for watercolor painting. Sam reminisced about hiking with his dad and expressed an interest in trying painting. Evan encouraged Sam to explore different hobbies until he found one he was passionate about. They both agreed to catch up soon to discuss Sam's new hobbies. The conversation ended with Evan wishing Sam well, and Sam looking forward to trying out new activities.",
+    "metadata": {
+      "topic": "Session 1",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan buys a new Prius after he repairs and sells his old Prius when it breaks down.",
+        "Evan takes his family on a road trip to the Rockies in the Prius and they hike some trails together.",
+        "Sam takes up painting as a new hobby and buys a set of colors to kickstart the hobby.",
+        "Sam went hiking with his dad when he was ten, which was a special and fun memory for them.",
+        "Sam is considering trying painting as a new hobby.",
+        "Sam has not tried painting yet but is keen to give it a go as a way to chill and get creative.",
+        "Evan has a new Prius after his old one broke down, which he got repaired and sold.",
+        "Evan went on a trip to the Rockies with his family.",
+        "Evan enjoys watercolor painting as a hobby, which he started a few years back.",
+        "Evan got into watercolor painting because a friend introduced him to it and gave him advice."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, good to see you! What's new since we last met? Anything cool happening?",
+        "dia_id": "D1:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! Good to see you! Yeah, I just got back from a trip with my family in my new Prius.",
+        "dia_id": "D1:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, not bad, what happened to the old one? Where'd you go, by the way?",
+        "dia_id": "D1:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "My old prius broke down, decided to get it repaired and sell it. Glad you asked, we went to Rockies, check it out.",
+        "dia_id": "D1:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow! Looks amazing. When did you get to go there?",
+        "dia_id": "D1:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "We all hiked the trails last week - the views were amazing!",
+        "dia_id": "D1:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that's cool. I love hiking, but it's been ages since I've done it. I did this hike with my dad way back when I was ten. Going hiking together was great fun, and really special for us.",
+        "dia_id": "D1:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Aww, that's cute. How far did you two hike?",
+        "dia_id": "D1:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "We hiked a good distance - quite a feat for me back then. It's definitely a great memory.",
+        "dia_id": "D1:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "What other hobbies have you found for yourself?",
+        "dia_id": "D1:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Nothing so far, but I was thinking about trying painting. Do you have any hobbies you love?",
+        "dia_id": "D1:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Cool idea, Sam! I love it. Have you tried it before?",
+        "dia_id": "D1:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Not yet, but I'm keen to give it a go. It looks like a nice way to chill and get creative.",
+        "dia_id": "D1:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, it's a great stress-buster. I started doing this a few years back.",
+        "dia_id": "D1:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that's impressive! How did you get into watercolor painting?",
+        "dia_id": "D1:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "My friend got me into it and gave me some advice, and I was hooked right away!",
+        "dia_id": "D1:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow! I hope I can find something I'm as passionate about as you are with watercolor painting.",
+        "dia_id": "D1:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "You'll find it, just keep trying new things until something sparks your excitement.",
+        "dia_id": "D1:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! I'm excited to try new things, should be fun!",
+        "dia_id": "D1:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, Sam! Super pumped for you! Let's catch up soon and see how you're enjoying your new hobbies!",
+        "dia_id": "D1:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, I'll keep you posted. See you soon!",
+        "dia_id": "D1:21"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Take it easy, Evan! Can't wait to see you. Have a good one!",
+        "dia_id": "D1:22"
+      }
+    ]
+  },
+  {
+    "summary": "Evan and Sam spoke at 7:11 pm on 24 May, 2023. Evan shared about his recent road trip to Jasper, which he found peaceful and rejuvenating. Sam, who had a tough week and a concerning doctor's visit about his weight, sought advice on starting a healthier lifestyle. Evan suggested finding enjoyable fitness routines and making smarter food choices. Sam mentioned considering painting as a hobby to de-stress, and Evan encouraged him to try it out alongside exercising. They ended the conversation with Evan asking Sam to keep him updated as he starts this journey.",
+    "metadata": {
+      "topic": "Session 2",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan goes on a roadtrip to Jasper with this family where they drive through Icefield Parkways and stay in a cozy cabin in the mountains.",
+        "Sam has a check up with his doctor and finds that his current weight is not ideal.",
+        "Sam decides to take up hobbies to improve his weight and stay motivated.",
+        "Evan took his family on a road trip to Jasper last weekend, driving through the Icefields Parkway.",
+        "Evan described the road trip to Jasper as having fresh air, peacefulness, and a cozy cabin surrounded by mountains and forests.",
+        "Evan recommended finding a fitness routine that is enjoyable and making smarter choices in diet for maintaining a healthier lifestyle.",
+        "Evan has been painting for a few years as a way to find peace and relieve stress.",
+        "Sam had a tough week and had a check-up with the doctor where the weight wasn't great.",
+        "Sam expressed interest in trying painting as a hobby to stay motivated and de-stress."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, good to hear from you! Since we last talked, lots has been happening! Last weekend, I took my family on a road trip to Jasper. It was amazing! We drove through the Icefields Parkway and the glaciers and lakes were gorgeous. I got a shot of a glacier, check it out!",
+        "dia_id": "D2:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, looks amazing! I've never been to Jasper, but it looks breathtaking. Tell me more about your road trip. Was it relaxing?",
+        "dia_id": "D2:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, thanks for asking! It was great - fresh air, peacefulness and a cozy cabin surrounded by mountains and forests made it feel like a real retreat.",
+        "dia_id": "D2:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That sounds great, Evan! It's so important to take time for ourselves and find peace, especially after a hard week. Mine's been tough.",
+        "dia_id": "D2:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sorry to hear that, Sam. Is there anything I can do to help?",
+        "dia_id": "D2:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. Appreciate the offer, but had a check-up with my doctor a few days ago and, yikes, the weight wasn't great. It was pretty eye-opening.",
+        "dia_id": "D2:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That must have been a challenging experience, Sam. It's tough when we have to confront our own health challenges. Remember, it's never too late to make positive changes for a healthier lifestyle. Is there anything I can do to support you in this journey?",
+        "dia_id": "D2:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. Breaking old habits isn't easy. Do you have any tips for starting the process?",
+        "dia_id": "D2:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, what worked for me was finding a fitness routine I really enjoy. It's my go-to, I love the feeling of being healthy and strong. Making it fun and finding little ways to make smarter choices in my diet really added up. Don't forget, you got this!",
+        "dia_id": "D2:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. Like you said, I've been looking for a hobby to stay motivated. I've been thinking about trying painting. Do you think it will help me de-stress?",
+        "dia_id": "D2:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Of course, Sam! Painting is a great way to relieve stress and be creative. It gives you the freedom to explore colors and textures and express feelings. I've been doing it for a few years now and it helps me find peace. But unfortunately it won't help you with your weight problem, besides painting I recommend exercising!",
+        "dia_id": "D2:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Appreciate the encouragement. I'll give it a go and let you know how it turns out.",
+        "dia_id": "D2:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Awesome, Sam! Have fun with it and don't put too much pressure on yourself. Can't wait to hear how it's going!",
+        "dia_id": "D2:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cheers, Evan! I won't stress - just gonna enjoy it.",
+        "dia_id": "D2:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Alright Sam, have fun with it! Keep me updated!",
+        "dia_id": "D2:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Will do. Bye for now.",
+        "dia_id": "D2:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Take care, Sam! I'll catch up with you later.",
+        "dia_id": "D2:17"
+      }
+    ]
+  },
+  {
+    "summary": "At 3:55 pm on 6 June 2023, Evan and Sam caught up after a while. Evan shared about a recent health scare and his decision to focus on a healthier lifestyle, discussing dietary changes and suggesting healthier alternatives to Sam. Sam mentioned sticking to soda and candy but agreed to try Evan's suggestions. Evan emphasized the importance of small changes for better health and offered support to Sam on their health journeys. They planned to work out together, and Sam shared a frustrating experience at the supermarket. Evan empathized, and they ended the conversation with well wishes.",
+    "metadata": {
+      "topic": "Session 3",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan experiences heart palpitations and is motivated by the health scare to make some changes to his lifestyle.",
+        "Sam starts eating salads to support his goal for better health.",
+        "Sam gets frustrated during shopping because all of the self-checkout machines were broken.",
+        "Evan had a health scare involving sudden heart palpitations last week.",
+        "Evan is making an effort to be extra careful with his health and is trying to eat less processed food and sugary snacks.",
+        "Evan suggested swapping soda for flavored seltzer water and candy for dark chocolate with high cocoa content as healthier options to Sam.",
+        "Sam is trying to eat healthier and recently trying to eat less processed food, but has made no changes yet.",
+        "Sam still enjoys soda and candy, although knowing it's not the best habit.",
+        "Sam agreed to give swapping soda for flavored seltzer water and candy for dark chocolate a try.",
+        "Sam had a frustrating experience at the supermarket as the self-checkout machines were all broken."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! Long time no talk! How're you doing? Life's been quite the rollercoaster lately. I had a health scare last week – a sudden heart palpitation incident that really shook me up. It's been a serious wake-up call about my lifestyle.",
+        "dia_id": "D3:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, great hearing from you! Sorry about that, glad you're feeling better now. Trying to eat healthier these days.",
+        "dia_id": "D3:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That salad looks yummy! I'm being extra careful with my health lately. I'm trying to eat less processed food and sugary snacks, even though I love ginger snaps. Have you made any changes to your diet recently?",
+        "dia_id": "D3:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Nah, no changes for me. Still enjoying my soda and candy, although I know it's not the best habit to have.",
+        "dia_id": "D3:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, breaking habits can be tough. Making small changes can have a big impact later on. Have you considered swapping soda for flavored seltzer water? It's still bubbly and tasty, but without the sugar. And instead of candy, you could try dark chocolate with high cocoa content - it's a healthier option. What do you think?",
+        "dia_id": "D3:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, good idea! I'll give it a try.",
+        "dia_id": "D3:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Awesome, Sam! Let me know how it goes. Making small changes can really help you live a healthier life. Don't forget - every step matters!",
+        "dia_id": "D3:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, thanks! Appreciate it. I'll definitely keep you posted.",
+        "dia_id": "D3:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I'm here for you, Sam. Let's continue supporting each other on our health journeys. It's important to remember that progress takes time.",
+        "dia_id": "D3:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, you're right. It takes time, but I'm up for keep trying and making those tiny changes.",
+        "dia_id": "D3:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "C'mon, keep it up! Every little bit counts, you'll get there!",
+        "dia_id": "D3:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! I appreciate your support, it means a lot to me to have you in my corner.",
+        "dia_id": "D3:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yes, Sam! I'm here for you. Let's rock our workouts and reach our goals! Exercise clears the mind - it's amazing!",
+        "dia_id": "D3:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that's awesome! Could you give me a hand with getting started?",
+        "dia_id": "D3:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sure Sam, I'd be glad to help. Let's get together and I'll show you some basic exercises. We'll reach our goals!",
+        "dia_id": "D3:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cool, can't wait! Thank you. By the way, I'm coming from the shop and I had a frustrating issue at the supermarket. The self-checkout machines were all broken, my mood is terrible now!",
+        "dia_id": "D3:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sorry you were in that situation, hopefully it won't happen again!",
+        "dia_id": "D3:17"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, I hope so, take care of yourself.",
+        "dia_id": "D3:18"
+      }
+    ]
+  },
+  {
+    "summary": "At 10:52 am on 27 July, 2023, Sam confided in Evan about being teased for his weight, prompting him to make health changes. Evan offered support, sharing his own health journey and tips. They discussed dietary changes, with Evan suggesting flavored seltzer water and snacks. Evan recommended exercise, and Sam committed to starting the next day. They shared mutual appreciation before parting ways, with Evan promising ongoing support for Sam's health journey.",
+    "metadata": {
+      "topic": "Session 4",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan starts reading The Great Gatsby novel.",
+        "Sam's friends make fun of his heavy build as a result of his eating habits.",
+        "Sam joins a gym and starts exercising regularly to reduce his weight.",
+        "Sam's friends mocked his weight last Friday, which hurt him.",
+        "Sam is working on his health and getting active.",
+        "Sam is determined to make changes in his lifestyle, like reducing soda and candy intake.",
+        "Sam will start going to the gym and exercising regularly starting tomorrow.",
+        "Sam values and appreciates Evan's support throughout their conversation.",
+        "Evan offers to work on improving health together with Sam.",
+        "Evan struggled with his health a few years ago, focusing on exercise, diet, and lifestyle changes, which made a positive impact.",
+        "Evan made dietary changes like cutting down on sugary snacks and eating more veggies and fruit for his health.",
+        "Evan enjoys reading the mystery novel 'The Great Gatsby' and finds it gripping.",
+        "Evan suggests flavored seltzer water as a healthier alternative to soda.",
+        "Evan advises Sam to focus on healthy swaps and taking small steps towards progress.",
+        "Evan suggests low-calorie snacks like air-popped popcorn or fruit to pair with flavored seltzer water."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, I need to talk to you. My friends were mocking my weight last Friday and it hurt. That made me realize I need to make changes.",
+        "dia_id": "D4:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, sorry about that. Don't worry, progress takes time. Let's work on it together.",
+        "dia_id": "D4:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the support, Evan. I'm working on my health and getting active!",
+        "dia_id": "D4:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's great, Sam! I struggled with my health a few years ago, but stuck with it. Here's a reminder of my commitment - my gym membership card. It's not just about exercise, diet and lifestyle changes also play a big role.",
+        "dia_id": "D4:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's awesome, Evan! What do you think made the biggest impact on your health journey?",
+        "dia_id": "D4:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I made some dietary changes, like cutting down on sugary snacks and eating more veggies and fruit, and it made a big impact on my health. Have you considered any changes?",
+        "dia_id": "D4:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yep, I'm reducing my soda and candy intake. It's tough, but I'm determined to make a change.",
+        "dia_id": "D4:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Go for it, Sam! It's tough at first, but you got this. Try flavored seltzer water instead. It can be a great alternative to soda. Btw I can't stop thinking about that new mystery novel I started. It's so gripping!",
+        "dia_id": "D4:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds good, Evan. I've tried it before and it was nice. Do you have any ideas for low-calorie snacks to pair with it? And what's the novel?",
+        "dia_id": "D4:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Definitely, how about some flavored seltzer with some air-popped popcorn or fruit? It's yum and healthy! The novel I'm reading is \"The Great Gatsby\".",
+        "dia_id": "D4:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yum, that sounds good! Thanks! And I'll definitely read that novel sometime.",
+        "dia_id": "D4:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, Sam! Focus on healthy swaps and taking small steps. Stay upbeat!",
+        "dia_id": "D4:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That reminder is inspiring. Thanks for reminding me to focus on progress, not perfection.",
+        "dia_id": "D4:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "By the way, have you thought about exercising? Trust me, it's just as important as eating right.",
+        "dia_id": "D4:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Starting tomorrow, I will go to the gym and exercise regularly. The sooner I start, the sooner I will see the rewards of this activity.",
+        "dia_id": "D4:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's awesome, Sam! It's such a rewarding and tough activity - keep going and have fun!",
+        "dia_id": "D4:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Your support means a lot. I really appreciate it.",
+        "dia_id": "D4:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, you've got this!",
+        "dia_id": "D4:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I really appreciate it.",
+        "dia_id": "D4:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, Sam. I'm here if you need me. Keep going!",
+        "dia_id": "D4:20"
+      }
+    ]
+  },
+  {
+    "summary": "At 7:52 pm on 7th August 2023, Evan shared with Sam about meeting an amazing Canadian woman, feeling alive, and dealing with health issues. Sam expressed understanding and discussed the challenges of health problems. They also talked about Evan's health journey, motivation from family and tools, like a health tracker, to stay on track. Evan mentioned being motivated by adventure and resilience. Sam agreed on the importance of finding motivation and the power of small steps. They concluded that consistency and perseverance are key. The conversation ended with mutual well-wishes.",
+    "metadata": {
+      "topic": "Session 5",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan falls in love with a Canadian woman during a trip to Canada.",
+        "Evan recently went on a trip to Canada where he met an awesome Canadian woman and feels alive when he's with her.",
+        "Evan has been dealing with health issues lately that have made him appreciate good moments more.",
+        "Evan has been working on prioritizing his health for two years, with ups and downs.",
+        "Evan is motivated to stay healthy by his family and uses a tool that tracks his progress well.",
+        "Evan is motivated by a thirst for adventure and interesting hikes.",
+        "Evan got a symbol that represents strength and resilience to motivate him through tough times.",
+        "Sam acknowledges that dealing with health issues can take away from enjoyable experiences.",
+        "Sam is interested in ordering something similar to what Evan uses to prioritize health.",
+        "Sam thinks it's key to find something that keeps you motivated."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, how's it going? Last week I went on a trip to Canada and something unreal happened - I met this awesome Canadian woman and it was like something out of a movie. She's incredible and being with her makes me feel alive.",
+        "dia_id": "D5:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Congrats Evan! She must be something special! Being with someone who makes you feel alive is amazing. I'm sorry to hear that you're dealing with health issues lately, it can be really tough. It's hard to fully enjoy things sometimes.",
+        "dia_id": "D5:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Woah. such a nice view! Thanks, Sam! She's definitely great. Every moment with her is really fun and energizing. It's a nice change, especially after dealing with health issues. But you never know what life's gonna throw at you. Btw look what life has thrown for me right now haha.",
+        "dia_id": "D5:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Looks good to eat! Dealing with health problems can be challenging and take away from enjoyable experiences.",
+        "dia_id": "D5:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Ginger snaps are my weakness for sure! Dealing with health issues has been tough, but it's made me appreciate the good moments more. These are the ones who bring lots of joy even through the hard times.",
+        "dia_id": "D5:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "It looks like your kids are having a great time! And how long have you been prioritizing your health?",
+        "dia_id": "D5:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yes, they bring me such joy. My healthy road has been a long one. I've been working on it for two years now, so there have been ups and downs, but I'm doing my best.",
+        "dia_id": "D5:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I wish your motivation never goes anywhere! I'm thinking of ordering myself some similar ones too, what do you think, are they worth it?",
+        "dia_id": "D5:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks Sam! My family motivates me to stay healthy. Well, it helps a lot with my health goals. It tracks my progress really well and serves as a constant reminder to keep going.",
+        "dia_id": "D5:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cool! It sounds like a really good tool to stay on track. How has it been working out for you?",
+        "dia_id": "D5:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's been awesome, Sam! That visual reminder has been really motivating.",
+        "dia_id": "D5:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the recommendation, what else motivates you?",
+        "dia_id": "D5:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I'm motivated by a thirst for adventure on interesting hikes, that's pretty cool!",
+        "dia_id": "D5:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "What an amazing view! The key is to find something that keeps you motivated.",
+        "dia_id": "D5:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, that's it. Find something that motivates you and makes you happy, whether it's large or tiny. It'll help us conquer the struggles we encounter.",
+        "dia_id": "D5:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Nice! What made you decide to get that?",
+        "dia_id": "D5:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I got this because it symbolizes strength and resilience. Taking care of it motivates me to keep going through tough times.",
+        "dia_id": "D5:17"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, it's amazing! So powerful yet so simple.",
+        "dia_id": "D5:18"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. It's a reminder that even in little things, we can be tough.",
+        "dia_id": "D5:19"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Little stuff matters - it builds our resilience over time.",
+        "dia_id": "D5:20"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, every little thing we do for ourselves helps us in the long run.",
+        "dia_id": "D5:21"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yep, small steps add up. Stay consistent and don't give up!",
+        "dia_id": "D5:22"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, Sam! Consistency and perseverance will get us far. Great chat!",
+        "dia_id": "D5:23"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Great chatting with you, Sam! Take care, talk soon!",
+        "dia_id": "D5:24"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Catch ya later!",
+        "dia_id": "D5:25"
+      }
+    ]
+  },
+  {
+    "summary": "Evan and Sam catch up at 4:09 pm on 13 August, 2023. Evan shares about his recent vacation in Canada with his new partner filled with outdoor activities. Sam mentions health struggles. Evan offers support, and they discuss the importance of progress over perfection. Sam shares a motivating quote with Evan. They encourage each other to celebrate small wins. Evan jokes about losing his keys, and Sam talks about an intriguing dream. They exchange good wishes and encouragement, concluding with Evan reminding Sam to get some rest.",
+    "metadata": {
+      "topic": "Session 6",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan takes a Canadian vacation with his new love where they hiked, biked and explored the outdoors together.",
+        "Evan loses his keys and spends a great deal of time looking for it.",
+        "Sam has a dream about soaring over skyscrapers.",
+        "Evan went on a vacation in Canada with their new significant other where they did activities like hiking and biking.",
+        "Evan values the importance of progress over perfection.",
+        "Evan acknowledges the importance of surrounding oneself with caring people.",
+        "Evan struggles to find his keys frequently and spends time looking for them.",
+        "Sam has been facing health challenges recently.",
+        "Sam finds motivation in a quote that emphasizes taking small steps towards a healthier life.",
+        "Sam appreciates small victories and staying motivated amidst challenges and setbacks.",
+        "Sam had an amazing dream where they were soaring over skyscrapers and wants to explore its possible significance."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, long time no talk! Hope you're doing great. I just got back from a rad vacay with my new SO in Canada. Tried some awesome activities too - think hiking, biking... all that cool stuff. We loved exploring the outdoors together, it was so awesome!",
+        "dia_id": "D6:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Good to hear from you. Wow, Canada sounds amazing! That photo looks stunning. Wish I could do something like that. Things have been a bit challenging for me lately; some stuff has been hard on my health.",
+        "dia_id": "D6:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sorry to hear that things haven't been going well. Dealing with health issues can be tough. Is there anything I can do to help?",
+        "dia_id": "D6:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. Your support means a lot to me. It's tough staying positive, but knowing I have people like you in my corner makes it easier.",
+        "dia_id": "D6:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Glad to support you, Sam. Surrounding ourselves with people who care is key. What's on that note? A reminder or quote to stay motivated?",
+        "dia_id": "D6:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, it's actually a quote that's been helping me stay motivated. It reminds me that progress is more important than perfection. Taking small steps towards a healthier life is still progress.",
+        "dia_id": "D6:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Cool mindset, Sam! I totally agree, progress over perfection. Mind sharing the quote with me? I would love to get something out of it too.",
+        "dia_id": "D6:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "\"Don't fear it, just take the first step. It's been helping me move forward to healthier habits!\"",
+        "dia_id": "D6:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Love the quote, Sam. That mindset really helps me too. Thanks!",
+        "dia_id": "D6:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "You're welcome! Glad it helps. These times can be challenging.",
+        "dia_id": "D6:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "They can be tough, but remember to celebrate the small wins - every step forward counts!",
+        "dia_id": "D6:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "You're absolutely right! Celebrating those small wins is crucial. It's easy to get caught up in the challenges and setbacks, but those little victories are what keep me motivated. Thanks for the reminder, it's much appreciated.",
+        "dia_id": "D6:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Absolutely, Sam. Remember, every small victory is a step forward, so keep up the good work! I'm cheering for you! And hey, I could use some cheering too - I've been searching for my keys for the last half hour with no luck! I'm losing it every week..",
+        "dia_id": "D6:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Oh, I'll definitely be your cheerleader once I get some sleep, Evan! Funny you mention that, I had this amazing dream last night where I was soaring over skyscrapers. It felt incredible! Makes me wonder what it signifies...",
+        "dia_id": "D6:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That does sound like an amazing dream! Maybe you should check out a dream interpretation book; it could offer some insights. Sweet dreams, Sam!",
+        "dia_id": "D6:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the suggestion, Evan. I'll look into it. This journey feels endless at times, but I'm convinced it's going to be rewarding in the end. So good luck with your keys, Evan!",
+        "dia_id": "D6:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I'll just keep going, step by step, and I'll definitely find those keys!",
+        "dia_id": "D6:17"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's for sure!",
+        "dia_id": "D6:18"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Go to bed already, bud! And take care!",
+        "dia_id": "D6:19"
+      }
+    ]
+  },
+  {
+    "summary": "At 4:20 pm on 15 August 2023, Evan and Sam caught up after a few days. Evan shared about his son's soccer accident, while Sam mentioned a tough week and a wake-up call for self-care. Sam talked about taking a cooking class for healthier meals and shared a yummy grilled dish recipe with Evan. Evan asked for recipes with more vegetables, and Sam promised to share a roasted veg recipe. They also discussed post-accident well-being and the importance of self-care. Sam admitted to feeling a mix of concern and motivation for positive changes, with Evan providing encouraging words. They agreed to take things one step at a time, supporting each other along the way.",
+    "metadata": {
+      "topic": "Session 7",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan's son hurts his akle while playing soccer but it isn't a serious accident.",
+        "Sam enrolls in a cooking class to help him learn to cook healthier meals.",
+        "Sam cooks a grilled salmon meal with vegetables that he learned from the cooking class.",
+        "Sam has another doctor's appointment where he receives a health scare about his weight.",
+        "Evan's son had a soccer accident last Saturday and hurt his ankle, requiring care and a doctor visit.",
+        "Evan is concerned about taking care of his son who was hurt in the soccer accident.",
+        "Evan wants to eat healthy and is interested in learning about healthier recipes.",
+        "Evan is looking to add more vegetables to his meals.",
+        "Evan encourages Sam to look after himself and his health.",
+        "Evan reminds Sam to take care of himself and advocates for looking after health.",
+        "Sam had a tough week and had a doctor's appointment which served as a wake-up call to take better care of himself.",
+        "Sam is taking a cooking class to learn how to make healthier meals and has learned awesome recipes from it.",
+        "Sam is willing to share recipes from his cooking class with Evan.",
+        "Sam is concerned about Evan and his son's well-being after the soccer incident.",
+        "Sam feels a mix of emotions, somewhat concerned about his health but motivated to make positive changes.",
+        "Sam appreciates Evan's encouragement and expresses gratitude for it.",
+        "Sam expresses gratitude to Evan for his support and encouragement."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, what's up? It's been a few days since we talked. How have you been? Life's been tough lately - my son had a soccer accident last Saturday and hurt his ankle, it was tough seeing him hurt! I just been looking after him and taking him to the doctor. As a dad, it's hard to watch your kid go through something like that.",
+        "dia_id": "D7:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, sorry to hear about what happened. I can imagine how hard it must have been for you. Things haven't been easy for me either. Had a tough week and a doc's appointment, so it was kinda like a wake-up call to take better care of myself. On a bright side, I'm taking a cooking class to learn how to make healthier meals.",
+        "dia_id": "D7:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, sorry to hear you had a rough week. At least it's forcing us both to take better care of ourselves, right? I hear the class you're taking is packed with healthy recipes. How's it been going? Have you picked up any yummy new meals?",
+        "dia_id": "D7:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "The cooking class has been great, I've learned awesome recipes. Last night I made this yummy grilled dish, so good!",
+        "dia_id": "D7:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Mmm, it looks delicious! What did you put in it? I want to eat healthy, so what kind of recipes do you suggest?",
+        "dia_id": "D7:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! I marinated it with a few different ingredients and grilled it with some veggies. It turned out really flavorful! If you want, I can share more recipes from my cooking class. Just let me know what you're looking for!",
+        "dia_id": "D7:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That'd be great, Sam! I'm looking to add more vegetables to my meals. Do you have any recipes for that?",
+        "dia_id": "D7:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah definitely, Evan. I have a tasty and easy roasted veg recipe that I can share with you. Oh, by the way, how have you been doing after the soccer incident? Must've been tough.",
+        "dia_id": "D7:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. His ankle is getting better, but still sore. It was rough at first, but thank goodness it was nothing serious.",
+        "dia_id": "D7:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Glad to hear his ankle is getting better. It's hard seeing someone we care about hurt. Look after yourself too, yeah? We gotta look after our health.",
+        "dia_id": "D7:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, taking care of ourselves is a must. How have you been feeling lately?",
+        "dia_id": "D7:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I have been feeling a mix of emotions - somewhat concerned about my health but also motivated to make positive changes. Taking things one step at a time.",
+        "dia_id": "D7:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's okay to feel overwhelmed, Sam. Just keep moving forward slowly and taking small steps. You're doing awesome.",
+        "dia_id": "D7:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan, your encouragement means a lot to me. I'll keep going and take it one step at a time!",
+        "dia_id": "D7:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, just keep going and taking it one step at a time! You'll get there.",
+        "dia_id": "D7:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I really appreciate that. It means a lot.",
+        "dia_id": "D7:16"
+      }
+    ]
+  },
+  {
+    "summary": "On 19th August 2023 at 6:17 pm, Sam shared with Evan that he was on a diet and living healthier, finding it tough but staying determined. Evan praised Sam's efforts and asked about any positive changes. Sam mentioned feeling more energized and less sluggish after meals. They discussed a grilled chicken and veggie stir-fry recipe. Evan talked about starting painting classes and finding peace through art. Evan shared his love for painting landscapes with bright colors. They also discussed winter activities like skiing, with Sam expressing interest but unsure if his body can handle it. Evan encouraged Sam to join in the fun someday. Sam expressed appreciation for Evan's understanding and friendship.",
+    "metadata": {
+      "topic": "Session 8",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan joins a painting class to improve his skills and meet like-minded people.",
+        "Sam decides to make an effort to change his diet and lifestyle.",
+        "Sam is on a diet and determined to live healthier.",
+        "Sam has noticed positive changes from the diet, such as more energy and less sluggishness after eating.",
+        "Sam enjoys cooking and shared a healthy grilled chicken and veggie stir-fry recipe with Evan.",
+        "Sam's homemade sauce for the stir-fry is not a family secret.",
+        "Evan is trying out new recipes and finds it a great way to stay busy and creative.",
+        "Evan recently started taking painting classes and enjoys expressing himself through art.",
+        "Evan has been learning about watercolors in his painting classes and finds it a relaxing way to take a break from everyday stress.",
+        "Evan loves painting landscapes as it brings him peace and captivates him with nature's beauty.",
+        "Evan likes to capture the tranquil beauty of nature in his paintings by conveying the peacefulness of being outdoors.",
+        "Evan enjoys fun winter activities like skiing, snowboarding, and ice skating."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, some big news: I'm on a diet and living healthier! Been tough, but I'm determined.",
+        "dia_id": "D8:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Wow, Sam, that's great news! Making changes to live healthier can be challenging, how has it been going?",
+        "dia_id": "D8:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "It's tough, but I'm sticking with it.",
+        "dia_id": "D8:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Nice work, Sam! Proud of you sticking to it. Have you noticed any positive changes?",
+        "dia_id": "D8:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yes, there are many, such as more energy and less sluggishness after eating. This is really encouraging!",
+        "dia_id": "D8:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Wow, Sam, that's great to hear! Feeling more energized after meals is such a positive change. Keep up the good work! And speaking of healthy meals, do you have any favorite recipes you'd like to share?",
+        "dia_id": "D8:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sure, I'm loving this recipe I found. It's a flavorful and healthy grilled chicken and veggie stir-fry. Wanna give it a go?",
+        "dia_id": "D8:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Mmm, looks yummy! Is the sauce a family secret? I'm always down to try new recipes!",
+        "dia_id": "D8:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Nah, it's just my homemade sauce. Want the recipe?",
+        "dia_id": "D8:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, I'd love to! Thanks for sharing the recipe.",
+        "dia_id": "D8:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sure thing! Here's the recipe. Let me know how it went!",
+        "dia_id": "D8:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks Sam! I'll give it a shot and let you know how it went. Trying out new recipes is a great way to stay busy and creative. By the way, I also started taking a painting classes few days ago and I'm really enjoying it. It's all about trying new things, right?",
+        "dia_id": "D8:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "You're already good at drawing, why did you decide to join a class? And why did you start painting then years ago anyway?",
+        "dia_id": "D8:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! It all started when a friend of mine gave me this painting one day, it inspired me a lot and that's when I started painting. And I joined the classes to find like-minded people and show them what I can do, you can always improve your skills.",
+        "dia_id": "D8:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that's awesome! You're really talented. Did you take any other classes?",
+        "dia_id": "D8:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! Just been painting with these for now, but might look into other classes. It's awesome for finding my peace and expressing myself!",
+        "dia_id": "D8:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cool, Evan! What have you been learning in those classes?",
+        "dia_id": "D8:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "In painting classes, we've been learning about watercolors. The instructor stresses observing nature and painting what we see. It's a relaxing way to take a break from everyday stress.",
+        "dia_id": "D8:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan! What type of nature do you enjoy painting the most?",
+        "dia_id": "D8:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I love painting landscapes. Nature's beauty captivates me and brings me peace. Here's one of my recent works.",
+        "dia_id": "D8:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan! The colors are so bright. How do you capture the tranquil beauty of nature in your paintings?",
+        "dia_id": "D8:21"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks Sam! I aim to capture the vibe of nature in my paintings, conveying the peacefulness of being outdoors.",
+        "dia_id": "D8:22"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that pic is great! Do you often spend time in places like this?",
+        "dia_id": "D8:23"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks! I love being in places like this - it brings back memories of road tripping in my trusty car.",
+        "dia_id": "D8:24"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that's cool! Have you been to any fun places in that ride?",
+        "dia_id": "D8:25"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, last month I drove somewhere fun. The views were amazing!",
+        "dia_id": "D8:26"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Did you take advantage of the skiing opportunities in Banff? Sounds like it would have been a lot of fun!",
+        "dia_id": "D8:27"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, it was great for skiing! The snow was amazing and I had a lot of fun. Can't wait to go back next year! Did you try any winter sports, Sam?",
+        "dia_id": "D8:28"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Ooh, skiing looks like a blast! I'd love to try it but I'm not sure my body can take it. What about you? What winter activities do you enjoy?",
+        "dia_id": "D8:29"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Skiing, snowboarding, and ice skating are all fun winter activities I enjoy.",
+        "dia_id": "D8:30"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wish I could join in on the fun! It sounds awesome.",
+        "dia_id": "D8:31"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I'd like you to join me, too. Winter activities are a blast - hopefully someday you will!",
+        "dia_id": "D8:32"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, maybe. It's hard with that, you know. But who knows? Thanks for the understanding, Evan - it really means a lot.",
+        "dia_id": "D8:33"
+      }
+    ]
+  },
+  {
+    "summary": "Sam informed Evan about his successful new diet and exercise routine, which started the previous Monday and made him feel great. Evan, however, mentioned twisting his knee the previous Friday, which hindered his fitness routine. Evan appreciated Sam's concern, citing life's unpredictability. Evan expressed interest in a book and discussed potential physical therapy for his knee. Sam recommended low-impact exercises and swimming. Evan also shared his recent road trip to the Rocky Mountains and love for hiking. Sam expressed interest in hiking and the need to become healthier. Evan recommended a nearby lake for hiking and nature exploration. Sam decided to plan a day trip to the lake. The conversation ended with friendly goodbyes at 10:24 am on 27 August, 2023.",
+    "metadata": {
+      "topic": "Session 9",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan twists his ankle and is not able to stay consistent in his fitness routine.",
+        "Evan engages in swimming to stay healthy until his ankle gets better and looks for physical therapy appointments.",
+        "Sam begins to feel more motivated and energized due to his new diet and exercise routine.",
+        "Sam started a new diet and exercise routine last Monday and it has made a huge difference.",
+        "Sam suggested low-impact exercises or physical therapy to help Evan with his twisted knee.",
+        "Sam enjoys being surrounded by nature as it is tranquil and refreshing.",
+        "Sam loves exploring nature and mentioned an interest in going on hikes.",
+        "Sam expressed an interest in going on a road trip and mentioned working on becoming healthier.",
+        "Evan twisted his knee last Friday and is finding it tough to stay consistent with his usual fitness routine.",
+        "Evan is considering physical therapy for his knee and in the meantime is keeping it low-key and swimming to stay active.",
+        "Evan took a road trip to the Rocky Mountains last month and found the scenery stunning and nature calming.",
+        "Evan recommended going for hikes to Sam as a calming and fun activity in nature.",
+        "Evan shared a picture from his road trip to the Rocky Mountains with stunning views.",
+        "Evan recommended a nearby lake for Sam to explore with many trails nearby."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Exciting news: I started a new diet and exercise routine last Monday and it's made a huge difference. I feel great! What about you, what changes have you made recently?",
+        "dia_id": "D9:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Wow, Sam, great! Glad your new diet/exercise is going well. As for me, I've hit a sore spot lately. Twisted my knee last Friday and it's really painful, so it's been tough to stay consistent with my usual fitness routine. It's really frustrating because staying active is like, mega-important to me.",
+        "dia_id": "D9:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Oh no, sorry to hear about that, Evan. It's frustrating when our bodies don't cooperate, isn't it? Is there anything I can do to help?",
+        "dia_id": "D9:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. I appreciate the concern. Life throws us curveballs - that's life, right? By the way, remember that book I was talking about? It just gets better with every page, can't let it out of my hands!",
+        "dia_id": "D9:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Life sure can be unpredictable and tough. Being adaptable and finding other ways to stay active is key when you're facing an obstacle. Maybe look into low-impact exercises or physical therapy to help with that? And damn, you really got me interested in this book haha!",
+        "dia_id": "D9:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, PT for my knee is on the cards. Hopefully I'll get an appointment soon. Till then, just keeping it low-key and swimming to stay active.",
+        "dia_id": "D9:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Swimming is a good choice, Evan. It's low-impact and easy on the joints, plus it's refreshing. Keep up with the active lifestyle!",
+        "dia_id": "D9:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, thanks for the push, Sam. Oh, hey, I came across this pic when I was tidying up. I took a road trip last month - the scenery was stunning and nature really chilled me out.",
+        "dia_id": "D9:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, looks great! Where did you go? Bet it was nice to get away.",
+        "dia_id": "D9:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks! I went up to the Rocky Mountains, it was so refreshing! The views were stunning and I felt so relaxed. Do you enjoy road trips and exploring nature?",
+        "dia_id": "D9:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I haven't gone on a road trip in ages, but I love being surrounded by nature. It's so tranquil and refreshing. I'd love to go hiking more, but it can be a bit challenging sometimes. However, I am working on becoming healthier, so maybe a road trip and a hike will be possible soon.",
+        "dia_id": "D9:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's cool, Sam. Nature can be really peaceful. I'd suggest going for more hikes, like I do. It's always been calming and fun. We should definitely do one together sometime.",
+        "dia_id": "D9:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds like fun! Which lake do you recommend? I'd love to explore some of the local trails.",
+        "dia_id": "D9:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Check out this one! It's gorgeous and there are lots of trails nearby. You'll love it!",
+        "dia_id": "D9:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, it looks great! Is it nearby? What a view!",
+        "dia_id": "D9:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's only a two-hour drive from here, but trust me, it's worth every minute for the incredible views and peaceful atmosphere.",
+        "dia_id": "D9:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cool, a day trip's doable. Nature's calling me, so I'm gonna go check it out! Thanks!",
+        "dia_id": "D9:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, enjoy your time in nature. Take care! Bye!",
+        "dia_id": "D9:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks Evan. Have a good one. See ya!",
+        "dia_id": "D9:19"
+      }
+    ]
+  },
+  {
+    "summary": "On 11 September 2023 at 9:28 am, Evan and Sam caught up after a long time. Sam shared a before and after body picture due to a diet, aiming to motivate others. Stress triggers cravings for sugary treats for Sam. Evan suggested painting as a stress-relieving hobby and offered to help Sam get started. They planned a painting session for the upcoming Saturday and both were excited about it.",
+    "metadata": {
+      "topic": "Session 10",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan finishes painting a colorful sunset.",
+        "Sam posts a before and after photo of himself on social media, hoping to inspire others too.",
+        "Evan supports Sam in making healthier choices.",
+        "Evan turns to painting or going for a drive to de-stress.",
+        "Evan is willing to help Sam get started with painting by recommending supplies and planning a painting session.",
+        "Evan suggests acrylic paints, brushes, a canvas/paper, and a palette as basic supplies to start painting.",
+        "Evan plans a painting session with Sam for next Saturday.",
+        "Sam posted a before and after body pic as a result of a diet, aiming to motivate others to make better choices.",
+        "Sam struggles with occasional cravings for sugary drinks and snacks, especially during times of stress, boredom, or seeking comfort.",
+        "Sam expresses interest in trying painting as a calming hobby.",
+        "Sam plans a painting session with Evan for next Saturday."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! Long time no talk! Hope all is good. What have I been doing these past few weeks?",
+        "dia_id": "D10:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Nice to hear from you. Life has been an up and down ride. Have you seen the pic I posted of my before and after body as a result of the diet? Working to motivate others to make better choices.",
+        "dia_id": "D10:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! Loving it. Making healthier choices has definitely made a difference for me. It's amazing how small changes can have such a big impact. How about you? Is it making a difference for you too?",
+        "dia_id": "D10:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, thanks for the support! Handling all this has been kinda wild. I'm trying to make healthier choices, but there are still the occasional cravings for sugary drinks and snacks... it's a real struggle.",
+        "dia_id": "D10:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, breaking bad habits can be hard. Cravings can be tough too, but little victories count. What do you think sets off those cravings for you?",
+        "dia_id": "D10:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "It's usually stress, boredom, or just wanting comfort. You know, those sugary treats are so tempting, right?",
+        "dia_id": "D10:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, I get it. When I'm stressed, I always turn to something comforting. But I've found that painting or going for a drive helps too!",
+        "dia_id": "D10:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow Evan, that's an awesome painting! Good on you for finding a way to de-stress. I could really use something like that - maybe I'll give painting a go or find another calming hobby.",
+        "dia_id": "D10:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, painting is super chill for calming down. Wanna give it a try? I can help you get started and recommend some supplies if you're interested. Let me know!",
+        "dia_id": "D10:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds great, Evan! I want to give it a go and see if it relaxes me. Can you suggest some basic supplies for me to get started?",
+        "dia_id": "D10:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, painting is awesome! Get some acrylic paints, brushes, a canvas/paper, and a palette to mix colors. I can give you some recommendations if you want. Just let me know when you're ready and we can plan a painting session!",
+        "dia_id": "D10:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds great, Evan! Can you help me pick out the stuff? Let's plan a painting session soon. I'm really excited!",
+        "dia_id": "D10:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, Sam - let's do it! Let's get everything ready and paint next Saturday. Can't wait!",
+        "dia_id": "D10:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds good, Evan! Can't wait to paint with you next Saturday. It'll be a fun and creative activity.",
+        "dia_id": "D10:14"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan caught up at 8:57 pm on 6 October, 2023. Evan, recovering from a knee injury, shared his love for watercolor painting and recent adventure with a lost tourist. He mentioned using painting as a stress reliever and a form of self-expression. Sam expressed interest in writing as a way to express himself and mentioned frustrations with his phone's navigation app. Both agreed on the importance of having outlets to express thoughts and feelings.",
+    "metadata": {
+      "topic": "Session 11",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan messes up his knee while playing baseball with this kids and takes physical therapy to recover from the injury.",
+        "Evan helps a lost tourist find their way and ends up taking an adventuruous tour of the city with them.",
+        "Sam begins to incorporate healthy snacks like fruit bowls into his diet.",
+        "Sam faces issues with the navigation app in his new phone.",
+        "Sam has started eating healthier.",
+        "Sam is interested in fun indoor activities or hobbies.",
+        "Sam enjoys expressing themselves through writing.",
+        "Sam does creative writing and journals to express their innermost thoughts and feelings.",
+        "Evan messed up their knee playing basketball and is doing easy exercises to keep it strong.",
+        "Evan finds watercolor painting to be a stress reliever and a way to express emotions.",
+        "Evan paints what's on their mind or how they feel, including good memories or places they want to go to.",
+        "Evan enjoys expressing themselves through art and finds it a powerful form of self-expression."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, long time no see! I've started eating healthier - what's new with you? Picked up any new hobbies?",
+        "dia_id": "D11:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! That's awesome about your healthier eating! For me, I had a setback last week - messed up my knee playing b-ball with the kids. It's been tough to stay active since. I really miss going on adventures like we did last year - good times with the family!",
+        "dia_id": "D11:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, sorry to hear about your knee. It must be tough. Are there any ways to stay active while you heal up?",
+        "dia_id": "D11:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. PT has helped some. I can't do intense workouts, but I'm doing easy exercises to keep it strong. Not as good as being active outdoors, but still something.",
+        "dia_id": "D11:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Glad PT is helping, Evan! Taking care of yourself is key – have you explored any fun indoor activities or hobbies?",
+        "dia_id": "D11:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I do my favorite watercolor painting to keep me busy. It's a chill way to relax and get into the colors. By the way, something happened two weeks ago! You're not gonna believe this, I had a bit of an adventure recently. Helped a lost tourist find their way, and we ended up taking an unexpected tour around the city. It was a blast!",
+        "dia_id": "D11:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, that sounds like a fun and unexpected event! It's always interesting how helping someone can turn into a little adventure of its own. And how's your watercolor painting going?",
+        "dia_id": "D11:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's been great! I find painting to be a great stress reliever. Here's what I did last week.",
+        "dia_id": "D11:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, those are awesome! So cool. Where did you get the inspiration for them?",
+        "dia_id": "D11:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! The sunset painting was inspired by a vacation a few years back. The colors were so stunning. The cactus painting came from a road trip last month. Such cool places!",
+        "dia_id": "D11:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan, your paintings are awesome! How do you decide what to paint?",
+        "dia_id": "D11:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! I usually paint what's on my mind or something I'm feeling. It can be good memories or places I wanna go to. It's more like expressing myself through art.",
+        "dia_id": "D11:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's really amazing, Evan. Expressing yourself through art is such a powerful form of self-expression.",
+        "dia_id": "D11:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. Yeah, it's really a great way to express myself and my emotions. It's a cool way to communicate without using words. So, do you have any other ways in which you express yourself?",
+        "dia_id": "D11:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Drawing is cool. I'm still just learning how to draw, but I love expressing myself through writing. It's therapeutic and helps me sort out my feelings. Though, I've been a bit frustrated lately with my new phone. Its navigation app keeps malfunctioning, making getting around a bit of a challenge.",
+        "dia_id": "D11:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Cool, Sam! Writing is a great way to express yourself. What kind of writing do you enjoy? And about the phone, I recommend trying to update it, it usually works for me!",
+        "dia_id": "D11:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the tip, Evan! Writing in my journal and doing creative writing is a good way for me to express my innermost thoughts and feelings.",
+        "dia_id": "D11:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It can be super therapeutic. It gives you a place to express yourself. Keep it up!",
+        "dia_id": "D11:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! It really helps me make sense of things and express my feelings. It's like having a conversation with myself.",
+        "dia_id": "D11:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Gotcha, it's like having a place to figure stuff out and make sense of it all. We all need an outlet to express our thoughts and feelings.",
+        "dia_id": "D11:20"
+      }
+    ]
+  },
+  {
+    "summary": "On 8 October 2023, at 3:09 pm, Sam told Evan about his weight concerns after a check-up. Evan suggested lifting weights, sharing his own progress and advice. Sam expressed interest and Evan encouraged him to focus on form and consistency. Sam vowed to update Evan on his progress and Evan cheered him on, advising patience and positivity. Sam found Evan's support inspiring and promised to believe in himself. Evan emphasized motivation and progress, and Sam appreciated the support, committing to taking one step at a time.",
+    "metadata": {
+      "topic": "Session 12",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Sam has another health checkup where the doctor warns him about health risks due to his weight.",
+        "Sam received news from the doctor that their weight poses a serious health risk.",
+        "Sam expressed having a hard time dealing with the news about their weight.",
+        "Sam is interested in starting to lift weights to address their health concerns.",
+        "Sam expressed appreciation towards Evan's support and encouragement.",
+        "Sam mentioned that Evan's words inspired and motivated them.",
+        "Sam thanked Evan for giving them a boost and expressed their commitment to staying motivated.",
+        "Sam expressed that Evan's support means a lot to them.",
+        "Evan started lifting weights one year ago and mentioned seeing gains from his workouts.",
+        "Evan offered advice to Sam on how to start lifting weights and emphasized the importance of good form and technique.",
+        "Evan encouraged Sam to stay consistent with their workout routine and shared excitement to hear about their progress.",
+        "Evan expressed belief in Sam's abilities and encouraged them to stay positive and keep pushing towards their goals.",
+        "Evan provided supportive and motivating words to Sam, urging them to keep believing in themselves.",
+        "Evan emphasized the importance of progress, staying motivated, and taking one step at a time towards reaching goals.",
+        "Evan assured Sam of his support and being there for them."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, hope you're doing okay. I wanted to chat about something that's been bothering me lately... I went for a check-up Monday and my doc said my weight's a serious health risk - if I don't make changes soon, it can get worse. I know I made jokes about it, but it's really hitting me. Been having a hard time.",
+        "dia_id": "D12:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, tough news. Yeah, our health can really put a damper on things. I started lifting weights one year ago and it's been a journey. It was a struggle at first, but I'm seeing some gains. You interested in trying it out?",
+        "dia_id": "D12:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, I'm interested in getting into it. Any advice on how to get started? Thanks!",
+        "dia_id": "D12:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, that's awesome! It's important to start out with good form and technique. Find a trainer who can help you avoid injuries while you build your strength. Start with something small, and as you get stronger, the intensity can increase. Stay consistent with your workout routine and let me know how it goes! Good luck!",
+        "dia_id": "D12:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I'm going to find someone who can help me out. I'll keep you posted!",
+        "dia_id": "D12:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No problem, Sam. Can't wait to hear about your progress. Keep up the hard work!",
+        "dia_id": "D12:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I appreciate your support. It really means a lot to me. I'll definitely keep you posted on my progress.",
+        "dia_id": "D12:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "You're welcome, Sam! It takes time, so be patient with yourself. Your health matters, and I believe in you. Keep going and stay upbeat. You got this!",
+        "dia_id": "D12:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I'll stay positive and keep going. Your support means a lot.",
+        "dia_id": "D12:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, glad I can be here for you! Progress is key, so keep pushing on and stay positive. You got this!",
+        "dia_id": "D12:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan, that's really inspiring. Gonna keep believing in it!",
+        "dia_id": "D12:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Go get 'em! Believe in your abilities and you'll reach your goals. Stay motivated!",
+        "dia_id": "D12:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks Evan! Your words gave me a boost. I'm staying motivated and believing in myself.",
+        "dia_id": "D12:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Awesome! Keep staying motivated and believing in yourself. You've got this!",
+        "dia_id": "D12:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Your support means a lot to me.",
+        "dia_id": "D12:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No prob, Sam! I'm here for you. Just keep taking one step at a time, and you'll get there eventually!",
+        "dia_id": "D12:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sure, Evan. I'll take it slow. See ya!",
+        "dia_id": "D12:17"
+      }
+    ]
+  },
+  {
+    "summary": "Evan and Sam had a conversation at 4:07 pm on 14 October, 2023. Sam confessed to Evan about buying unhealthy snacks and feeling guilty about it, while Evan shared about finishing a painting of a sunset. Sam mentioned dealing with work stress and looking for ways to stay motivated. Evan suggested trying kayaking as a way to de-stress, which Sam found appealing. Sam planned to go kayaking on the lake with a friend, and Evan offered to plan a kayaking trip together in the future. Sam decided to kayak at Lake Tahoe, and Evan encouraged him, mentioning the great views there.",
+    "metadata": {
+      "topic": "Session 13",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Sam has a slip-up in his health regimen and buys candy and soda at the store to deal with work stress.",
+        "Sam travels through Lake Tahoe with a friend and decides to try out kayaking after recommendation from Evan.",
+        "Evan paints as a way to relax, and recently finished a painting of a sunset.",
+        "Evan suggested kayaking to Sam as a way to de-stress and enjoy the outdoors.",
+        "Evan offered to hook Sam up with a good spot for kayaking.",
+        "Sam bought some unhealthy snacks and feels guilty about it.",
+        "Sam is dealing with work stress and trying to stay motivated.",
+        "Sam is considering trying kayaking as a new outdoor activity.",
+        "Sam is planning to go kayaking with a friend on the lake.",
+        "Sam and a friend are traveling to Lake Tahoe for kayaking."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, how's it going? Been a while since we talked. Hope all is good.",
+        "dia_id": "D13:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! It's been a rough week - I gave in and bought some unhealthy snacks. I feel kinda guilty. How's it going for you? That painting is awesome! Did you paint it?",
+        "dia_id": "D13:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, sorry to hear about the rough week. Don't worry about the snacks. I'm doing okay, just finished this painting of a sunset. It really helps me relax. So, how's everything going with you? Anything new and exciting?",
+        "dia_id": "D13:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Yeah, I just couldn't resist them. Gotta do better. As for me, just dealing with work stress and trying to stay motivated.",
+        "dia_id": "D13:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, work stress can really get to you. Have you tried anything new to de-stress? Maybe picking up a hobby or something could help.",
+        "dia_id": "D13:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thinking about trying something different outdoors. Any suggestions?",
+        "dia_id": "D13:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sounds good! Have you ever tried kayaking? It's a fun and active way to paddle on a river or lake. What are your thoughts on that?",
+        "dia_id": "D13:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Kayaking sounds awesome! Haven't tried it yet, but it looks like a fun way to get in some exercise and enjoy nature. I'm definitely considering giving it a try. Thanks!",
+        "dia_id": "D13:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, Sam! It's a fun way to get in some exercise and enjoy nature. Let me know when you're ready to give it a try and I can hook you up with a good spot.",
+        "dia_id": "D13:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the idea, my mate and I are just around the corner from kayaking on the lake, we're going to try that now!",
+        "dia_id": "D13:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Of course, let me know if you like it, we can plan a kayaking trip together, I'll pick a cool spot!",
+        "dia_id": "D13:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yep, Evan! Can't wait. Thanks for the help!",
+        "dia_id": "D13:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Ready for an adventure? Where will you go?",
+        "dia_id": "D13:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "We're traveling through Lake Tahoe! I heard it's great for kayaking.",
+        "dia_id": "D13:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, it's an awesome pick! You'll love it there - clear water and gorgeous views. Have a blast and take lots of pics!",
+        "dia_id": "D13:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! I'm looking forward to it!",
+        "dia_id": "D13:16"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan caught up at 1:50 pm on 17 October, 2023. Sam shared about a recent health scare with gastritis, prompting him to focus on health. Evan mentioned his fitness routine helping his well-being and assisting lost tourists often. Evan advised Sam on setting goals and finding enjoyable exercises to stay motivated. They planned a hike together to enjoy nature and bond. Sam appreciated Evan's support and looked forward to the hike. They agreed to stay in touch and support each other, ending the conversation with plans for the upcoming hike.",
+    "metadata": {
+      "topic": "Session 14",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan has another opportunity to help a lost tourist.",
+        "Sam goes to the ER due to stomachache and receives a diagnosis of gastritis stemming from his unhealthy lifestyle.",
+        "Sam had a health scare last weekend and ended up in the ER with gastritis.",
+        "Sam realized the importance of prioritizing health by adopting a more nutritious diet and getting regular exercise after the health scare.",
+        "Sam has been stressed with phone issues on top of the health scare.",
+        "Sam is interested in starting fitness to improve overall well-being.",
+        "Sam is planning a hike with Evan and is excited about it as a fun challenge.",
+        "Sam values the support and appreciated Evan's presence in their friendship.",
+        "Evan has been focusing on fitness and found it beneficial for his overall well-being.",
+        "Evan had another encounter with a lost tourist recently, suggesting a recurring theme of helping tourists in his life.",
+        "Evan suggested setting fitness goals and finding an enjoyable exercise to stay motivated to Sam.",
+        "Evan is planning a hike with Sam and sees it as an opportunity to bond with nature and push themselves.",
+        "Evan values being a supportive friend to Sam and is always there for him."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! I've been missing our chats. I had quite the health scare last weekend - ended up in the ER with a severe stomachache. Turns out, it was gastritis, which was pretty alarming. It was a wake-up call for me to start prioritizing my health, like adopting a more nutritious diet and getting regular exercise. On top of that, my phone's been giving me a hard time, adding to the stress.",
+        "dia_id": "D14:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, sorry to hear about that. Gastritis can be tough. Taking care of ourselves is important. BTW, I've been focusing on fitness and it's been really beneficial for my overall well-being. Funny thing, I had another encounter with a lost tourist recently. Seems like helping tourists is becoming a recurring theme in my life!",
+        "dia_id": "D14:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Glad you've found that it's been good for you! I totally need to get into it too. Just getting started is hard - any tips for staying motivated? Also, you mentioned another lost tourist? Seems like you're becoming the go-to guy for tourists in need!",
+        "dia_id": "D14:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yup, Sam! Set some goals, like a certain distance to run or number of push-ups to do. It'll give you something to strive for and stay motivated. Also, try to find an exercise that you enjoy and maybe even get a buddy for extra fun and accountability. Sound good?",
+        "dia_id": "D14:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, that sounds like a good idea. Having goals and someone to exercise with might help. I'll give it a try!",
+        "dia_id": "D14:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Awesome, Sam! Getting started will get easier with time. And don't forget it's about feeling good and reaching goals, too. Let's plan a hike soon!",
+        "dia_id": "D14:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds awesome, Evan! Can't wait to go on a hike with you. It's going to be a fun challenge and a great opportunity to appreciate the beauty of nature.",
+        "dia_id": "D14:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Definitely, Sam! Hiking is an awesome way to bond with nature and push ourselves. It's gonna be a cool memory for us both. It's great to see progress, was just at the gym yesterday. Gaining strength!",
+        "dia_id": "D14:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Super excited to get fit with ya. Let's hit the trails soon!",
+        "dia_id": "D14:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! That's so nice of you. We'll definitely have a great time on our hike!",
+        "dia_id": "D14:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Totally! I'm so pumped for this hike. Connecting with nature is exactly what I need. Thanks so much for the support and always being there. Means a lot.",
+        "dia_id": "D14:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sure thing! Our hike is going to be awesome, I can tell. I'm always here to support you.",
+        "dia_id": "D14:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I appreciate your support.",
+        "dia_id": "D14:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No problem, Sam. Whenever you need support, I'm here for you. Stay safe!",
+        "dia_id": "D14:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, I'll get in touch if I need anything. Stay safe. Bye!",
+        "dia_id": "D14:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Later! Stay safe and don't hesitate to holler if you need anything. Can't wait to hit the trail.",
+        "dia_id": "D14:16"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan discussed their health routines and the importance of having a supportive but non-stressful environment. Evan shared his experience of gradually improving his well-being by letting go of unrealistic expectations. Sam expressed gratitude for Evan's support and decided to focus on small victories and take it one day at a time. Evan encouraged Sam to celebrate every little achievement and assured continued support. Sam appreciated the support and they both agreed to keep moving forward together.",
+    "metadata": {
+      "topic": "Session 15",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan wakes up early to go for a brisk walk.",
+        "Sam's family encourages him to stick to his new healthier habits but Sam feels a bit pressured.",
+        "Sam is trying to keep up with a new health routine, pushed by family and feeling pressured.",
+        "Sam gets impatient with self when wanting fast results but understands the importance of being patient.",
+        "Sam appreciates Evan's support and acknowledges the importance of taking it slow.",
+        "Sam seeks to feel a sense of freedom and is inspired by Evan's transformation.",
+        "Sam is grateful for Evan's support and values it greatly.",
+        "Evan just got back from a morning walk which helps him start the day actively.",
+        "Evan believes progress takes time and advises Sam to take things one step at a time.",
+        "Evan went through a phase two years ago where he changed his diet and started walking regularly.",
+        "Evan focused more on well-being rather than fixating on quick results, which led to a positive transformation.",
+        "Evan emphasizes celebrating small victories and supporting Sam in moving forward.",
+        "Evan mentions that letting go of unrealistic expectations was liberating both physically and mentally."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Morning, Evan. I've been trying to keep up with my new health routine, but it's tough. My family's really pushing for it, and I feel so pressured.",
+        "dia_id": "D15:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I hear you, Sam. It's important to have people who encourage you, but not stress you out. By the way, I just got back from my morning walk. It really helps to start the day actively.",
+        "dia_id": "D15:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, it's easier when you have a great support system. Thanks for being there for me.",
+        "dia_id": "D15:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No worries, Sam. I'll be there for you. Take it slow and treat yourself.",
+        "dia_id": "D15:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for the reminder to take it easy. I sometimes get impatient with myself when I want results fast, but I gotta be patient.",
+        "dia_id": "D15:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yep, progress takes time. So just take it one step at a time.",
+        "dia_id": "D15:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yes, you're right, Evan. Taking it slow is better than doing too much. I appreciate your support.",
+        "dia_id": "D15:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I get it, Sam. I went through a similar phase a twoyears ago. Changed my diet, started walking regularly, things like that.",
+        "dia_id": "D15:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan, you look great! How did you manage the change?",
+        "dia_id": "D15:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I started focusing more on my well-being rather than fixating on quick results. Letting go of that pressure made a huge difference.",
+        "dia_id": "D15:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's impressive, Evan. It's inspiring to see how you transformed by changing your mindset.",
+        "dia_id": "D15:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. Letting go of unrealistic expectations was liberating, both physically and mentally.",
+        "dia_id": "D15:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "You're really doing great, Evan! I want to feel that same sense of freedom.",
+        "dia_id": "D15:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. Just take it one day at a time. Celebrate small victories.",
+        "dia_id": "D15:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Focusing on small wins sounds like a plan. I'll take it one day at a time.",
+        "dia_id": "D15:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Exactly! Congrats on every little victory. Keep it up, I'm here for you.",
+        "dia_id": "D15:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Your support means everything. Here's to moving forward!",
+        "dia_id": "D15:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Anytime, Sam! Let's keep pushing ahead. I'm here to help you. Take care!",
+        "dia_id": "D15:18"
+      }
+    ]
+  },
+  {
+    "summary": "Sam informed Evan at 9:13 pm on 9 November, 2023, that he had become a Weight Watchers coach, and Evan congratulated him on the achievement. They discussed Sam's journey towards better health and his plans to motivate and help others. Evan shared that he had recently lost his job, and Sam offered support and encouragement. They also discussed enjoying a sunset together at Evan's favorite spot by the beach, planning to visit it soon to de-stress.",
+    "metadata": {
+      "topic": "Session 16",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Sam loses his job due to downsizing of his company and is on the hunt for a new job.",
+        "Sam receives a vintage 1968 Kustom K200-A guitar as a gift from a friend.",
+        "Sam is chosen to be a coach in his Weight Watchers group.",
+        "Sam is now a Weight Watchers coach in their group, feeling proud and accomplished.",
+        "Sam sees becoming a Weight Watchers coach as a great step in their quest for better health.",
+        "Sam appreciates Evan's support and finds his kind words meaningful.",
+        "Sam is determined to continue making a positive impact through coaching and staying committed to better health.",
+        "Sam offered support to Evan when he mentioned personal challenges and job loss, showing willingness to chat and help.",
+        "Sam finds sunsets stunning and soothing, and expressed interest in visiting Evan's favorite spot to watch sunsets.",
+        "Evan gifted a 1968 Kustom K-200A vintage guitar from a close friend.",
+        "Evan lost his job due to company downsizing and is currently on the hunt for a new job, staying hopeful and keeping spirits up.",
+        "Evan appreciates Sam's support during his job loss and personal challenges.",
+        "Evan finds peace and relaxation by watching sunsets at a peaceful spot close to his home.",
+        "Evan plans to visit his favorite spot by the beach with Sam to de-stress and explore together.",
+        "Evan is excited about planning a visit to the spot with Sam next month."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Hope you're doing good. Got some good news to share - I'm a Weight Watchers coach in my group now! It's a pretty big accomplishment for me, feel really proud.",
+        "dia_id": "D16:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Congrats Sam! That's awesome! I'm super proud of you. Becoming a Weight Watchers coach is a big deal. Keep going!",
+        "dia_id": "D16:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Appreciate your support. It's been a journey, and being chosen as a coach is a great step in my quest for better health.",
+        "dia_id": "D16:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Wow, Sam! You've come such a long way. It's exciting to see what comes next for you in your quest for better health.",
+        "dia_id": "D16:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! It feels great to see progress. Being a coach will hopefully keep me motivated and help others stay committed too. It's a big challenge, but I'm ready for it!",
+        "dia_id": "D16:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's awesome, Sam! Helping others stay committed and motivated is so rewarding. You really inspire us. Keep up the great work!",
+        "dia_id": "D16:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Your kind words mean a lot. It's been a difficult road, but I'm determined to continue making a positive impact.",
+        "dia_id": "D16:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sorry about missing any events, I've had some personal challenges since we last spoke. Still here for you though - do you need any support or want to share anything? Btw look what i got!",
+        "dia_id": "D16:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey, it looks so vintage and cool! What model is it? How've you been doing lately? I'm here if you wanna chat.",
+        "dia_id": "D16:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's a 1968 Kustom K-200A vintage guitar and I got it as a gift from a close friend. It's been a tough time for me since we last caught up; I lost my job last month, which has been pretty rough. But I really appreciate your support through all this.",
+        "dia_id": "D16:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sorry to hear about your job, Evan. What happened?",
+        "dia_id": "D16:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's been a bit of a rough patch lately. The company downsized, and I was part of that. I'm currently on the hunt for a new job, which hasn't been easy, but I'm keeping my spirits up and staying hopeful.",
+        "dia_id": "D16:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sorry about your job, Evan. It's tough when it comes out of nowhere, but I'm proud of how you're handling it. Let me know if you need someone to talk to or if I can do anything to help. You'll get through this.",
+        "dia_id": "D16:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. Your support means a lot. It's been quite a ride, but I really appreciate having someone like you to talk to. I'll definitely reach out if I need anything.",
+        "dia_id": "D16:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "For sure, Evan! I'm here for ya. Life can be tough sometimes, but we got this. Stay positive and it'll all work out. Just know that I'm here if you need someone to talk to.",
+        "dia_id": "D16:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. Your kind words and support mean a lot. It's great to have you here. I'm gonna stay positive and keep going. Cheers!",
+        "dia_id": "D16:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that sunset is stunning! It's so soothing just to see it. Is that a special spot you go to watch sunsets?",
+        "dia_id": "D16:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, it's this peaceful place close to my home. I often go there to relax and unwind.",
+        "dia_id": "D16:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That sounds wonderful, Evan! I'd love to check it out with you sometime.",
+        "dia_id": "D16:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Oh, I wish I could bring you along. That picture was actually taken last Friday at my favorite spot by the beach. Watching the waves and the sunset colors really helps me find peace, especially during tough times. It's a beautiful reminder of nature's resilience. We should definitely plan to go together someday.",
+        "dia_id": "D16:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "No worries, Evan. And yes, we should make a plan to go. That photo is just mesmerizing!",
+        "dia_id": "D16:21"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I'm glad you like it! It's a really calming place. Let's make a point to visit it together soon.",
+        "dia_id": "D16:22"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Absolutely, Evan! A trip there sounds like the perfect way to de-stress.",
+        "dia_id": "D16:23"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Awesome, let's do it! Let's plan it for next month, I'm already excited about exploring it together!",
+        "dia_id": "D16:24"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan spoke at 7:30 pm on 21 November 2023. Evan mentioned a recent health scare that turned out to be a misunderstanding and stressed the importance of health. Sam shared struggles with discomfort and dietary changes. They discussed the value of small steps and appreciation in life. Evan highlighted the importance of supportive friends during tough times. They talked about fitness goals, shared about a peaceful island where Evan grew up, and ended the conversation by offering support to each other.",
+    "metadata": {
+      "topic": "Session 17",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan receives a false health scare during a health check-up at the hospital.",
+        "Sam purchases a DVD box set of his goto feel-good flick, The Godfather to help take his mind off his health issues.",
+        "Sam has been dealing with discomfort that has been limiting their movement and has been trying to make changes in their diet.",
+        "Sam finds movies to be a 'feel good' escape.",
+        "Sam acknowledges the importance of appreciating something each day to enjoy life more.",
+        "Sam finds life easier with supportive people around.",
+        "Sam struggles to reach their fitness goals but accepts it as part of life.",
+        "Evan had a health scare recently, which turned out to be a misunderstanding, leading them to realize the importance of monitoring their health.",
+        "Evan values enjoying the moment and appreciating the little things in life.",
+        "Evan stays in shape by going to the gym and taking their car out for a spin.",
+        "Evan grew up on a little island that serves as their happy place, shaping them and holding a special place in their heart.",
+        "Evan finds their childhood island home to be soul-calming, serene, heavenly, and like a little slice of paradise."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Ev! Long time no chat. How's it going? Hope all is well.",
+        "dia_id": "D17:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, good to hear from you! Life's been a wild ride lately. Last week, I had a health scare and had to go to the hospital. They found something suspicious during a check-up, which freaked me out. Thankfully, it was all a misunderstanding, but it made me realize how important it is to keep an eye on my health. How've you been?",
+        "dia_id": "D17:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Woah, Evan, that must've been scary! Phew, it was just a misunderstanding. A health scare can really make you re-evaluate what's important. As for me, I've been dealing with some discomfort and it's been limiting my movement. I've been trying to make changes diet-wise, but it can be hard.",
+        "dia_id": "D17:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That sucks, Sam. It's tough when our health holds us back. I believe in you – just taking small steps can help. Have you tried any new hobbies recently to take your mind off it?",
+        "dia_id": "D17:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I haven't tried much new lately, but I did get this yesterday. It's been my go-to 'feel good' flick. So, you said you had a health scare - how're you now?",
+        "dia_id": "D17:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That movie sounds interesting! I'm doing well now. Doctors said everything is fine, but it taught me the value of life. Just trying to enjoy the moment.",
+        "dia_id": "D17:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's awesome, Evan! Let's make it a habit to appreciate something each day. It really helps us enjoy life more. What do you think?",
+        "dia_id": "D17:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sounds good, Sam! Let's take the time to appreciate the little things in life.",
+        "dia_id": "D17:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks for always being there, Evan. It means a lot.",
+        "dia_id": "D17:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sure, Sam. I'm here for you. We gotta stick together, especially now.",
+        "dia_id": "D17:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, Evan. Life can be tough sometimes, but having supportive people like you makes it way easier.",
+        "dia_id": "D17:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, Sam. Tough times are way easier with friends we can rely on. We've got each other!",
+        "dia_id": "D17:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Looks like you're having a blast! I was wondering, what do you do to stay fit and healthy?",
+        "dia_id": "D17:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That was wild! I stay in shape by hitting the gym and taking my car out for a spin. Gotta keep it up! How are you doing on your fitness goals, Sam?",
+        "dia_id": "D17:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Fitness goals have been hard to reach, but hey, that's life!",
+        "dia_id": "D17:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah Sam, it's true. Progress takes time, so keep pushing.",
+        "dia_id": "D17:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Where is that? It looks gorgeous!",
+        "dia_id": "D17:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "This little island is where I grew up and it's my happy place.",
+        "dia_id": "D17:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that spot looks gorgeous. Growing up there must have been so peaceful and stunning.",
+        "dia_id": "D17:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, it was. That place shaped me and will always hold a special place in my heart.",
+        "dia_id": "D17:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, it can be soul-calming.",
+        "dia_id": "D17:21"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, it really is. So serene and calming.",
+        "dia_id": "D17:22"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "It's heavenly!",
+        "dia_id": "D17:23"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, it's like a little slice of paradise. I always feel so peaceful and serene when I'm there.",
+        "dia_id": "D17:24"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, it really seems like a peaceful retreat. Thanks for showing me!",
+        "dia_id": "D17:25"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "No prob, always good to chat about those tranquil times. Take it easy!",
+        "dia_id": "D17:26"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Take care, buddy. Hang in there!",
+        "dia_id": "D17:27"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam. If you need to talk, I'm here for you too.",
+        "dia_id": "D17:28"
+      }
+    ]
+  },
+  {
+    "summary": "Evan, at 8:16 pm on 5 December 2023, told Sam about his new Prius breaking down, causing stress as it's vital for his active lifestyle. Sam empathized, mentioning the hassle of relying on a new car. They discussed setbacks and opportunities, with Sam sharing insights from a Weight Watchers meeting. Evan considered trying yoga for stress relief based on Sam's recommendation. Sam encouraged him, offering support for new endeavors. They acknowledged the importance of having support during new experiences. The conversation ended with Evan thanking Sam and promising to update him on his yoga journey.",
+    "metadata": {
+      "topic": "Session 18",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan's new Prius car breaks down.",
+        "Sam attends a Weight Watchers meeting, shares his smoothie bowls and learns tips from others.",
+        "Evan recently bought a new Prius for his active lifestyle and road trips, but it broke down soon after purchase.",
+        "Evan sees setbacks as a chance to explore new ways of staying active and traveling.",
+        "Evan is considering trying yoga for stress relief and flexibility.",
+        "Evan appreciates Sam's support and finds it invaluable.",
+        "Evan believes it makes a big difference to have support when trying new things.",
+        "Sam attended a Weight Watchers meeting and learned some great tips.",
+        "Sam suggests yoga to Evan, mentioning its benefits for flexibility and stress relief.",
+        "Sam offers Evan support and assistance with yoga tips if needed.",
+        "Sam believes that having support when trying new things is important."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, good to hear from you. I've hit a bit of a snag - my new Prius, the one I just bought, broke down. It's a bit of a stressor since I rely on it for my active lifestyle and road trips. It's frustrating when new things go awry so soon.",
+        "dia_id": "D18:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, that's rough. Dealing with a new car breaking down is such a hassle, especially when it's your main mode of transport.",
+        "dia_id": "D18:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "You're telling me. I was really counting on this new Prius to be reliable. It's always a challenge when you have to deal with unexpected issues like this. But, I guess it's just one of those things - even new cars can have problems.",
+        "dia_id": "D18:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "It's tough when your plans get derailed by something like this. But hey, sometimes these setbacks lead to new opportunities.",
+        "dia_id": "D18:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "True, I'm trying to see it as a chance to explore other ways of staying active and traveling. Maybe it's an opportunity to try something different.",
+        "dia_id": "D18:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Exactly, it's all about finding the silver lining. Speaking of new things, I attended a Weight Watchers meeting yesterday. Learned some great tips.",
+        "dia_id": "D18:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That smoothie bowl looks fantastic! How was the meeting? Yeah, I've been thinking about trying yoga, something gentle yet effective for stress relief and flexibility. What's your take on it, Sam?",
+        "dia_id": "D18:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "The meeting was really insightful, and that smoothie bowl was a hit! Yoga's a great choice, it's done wonders for my flexibility and stress levels. You should definitely try it.",
+        "dia_id": "D18:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I think I will. Thanks for the suggestion, Sam.",
+        "dia_id": "D18:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Anytime, Evan. If you need any yoga tips or anything else, just let me know.",
+        "dia_id": "D18:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Your support's been invaluable. Thanks again, Sam!",
+        "dia_id": "D18:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "No worries, Evan. We all need a bit of help when trying new things. It's great to have support.",
+        "dia_id": "D18:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Absolutely. It makes a big difference knowing you're not alone in these situations.",
+        "dia_id": "D18:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Definitely. Take care, and let me know how the yoga goes. Bye!",
+        "dia_id": "D18:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Will do. Thanks for everything, Sam. Talk soon. Bye!",
+        "dia_id": "D18:15"
+      }
+    ]
+  },
+  {
+    "summary": "Summary:\nOn 9 December 2023 at 1:45 pm, Evan excitedly shared with Sam that his partner is pregnant, expressing both excitement and nervousness about becoming a parent again. Evan reminisced about the joys of parenthood and family memories. He showed Sam a collage of their top family memories, explaining the significance of a sign that symbolizes their family motto. Sam admired Evan's strong family bond and offered support for their upcoming family reunion. Evan expressed gratitude for Sam's support, looking forward to creating more beautiful memories with his expanding family. The conversation ended with warm goodbyes and promises to stay in touch.",
+    "metadata": {
+      "topic": "Session 19",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan's Canadian partner gets pregnant.",
+        "Evan plans to hold a big family reunion in summer 2024.",
+        "Evan's partner is pregnant, and they are excited about having a child.",
+        "Evan is excited and a bit nervous about becoming a parent again.",
+        "Evan values family greatly and considers them as their rock.",
+        "Evan is planning a big family reunion next summer to create more memories with family.",
+        "Sam congratulates Evan on the news of their partner being pregnant.",
+        "Sam appreciates and recognizes Evan's value for family and memories.",
+        "Sam offers support and assistance to Evan for organizing the family reunion."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, hope you're doing good. Wanted to share some amazing news - my partner is pregnant! We're so excited! It's been a while since we had a kiddo around.",
+        "dia_id": "D19:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Congrats, Ev! That's great news! Parenthood is so amazing. How are you feeling about it?",
+        "dia_id": "D19:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "So excited and a bit nervous! It's been a while since I had a toddler around but I'm really looking forward to it. Parenthood is so rewarding. I still remember when my first child was born, the joy was amazing. Looking forward to witness the miracle of life and build more memories with my family!",
+        "dia_id": "D19:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, you're gonna be an amazing parent! Treasure those memories, they're truly special.",
+        "dia_id": "D19:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks Sam! Absolutely. Talking of memories, I want to show you this. It's a collage of some of our top family memories. Each photo has an amazing moment - birthdays, holidays, vacations - so good to look back and recall all the great times we had.",
+        "dia_id": "D19:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's so lovely, Evan. Your family looks so happy. What's the story behind that sign in the center?",
+        "dia_id": "D19:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Oh, that one? It's from our trip to Banff. We have this sign in the frame that says 'Bring it on Home' - it's our family's motto, always reminding us of the importance of togetherness, no matter where we are.",
+        "dia_id": "D19:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's really touching, Evan. It's important to have something that keeps the family bond strong.",
+        "dia_id": "D19:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Absolutely, Sam. My family means the world to me. They're my rock. I'm looking forward to expanding our family and creating even more beautiful memories.",
+        "dia_id": "D19:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's wonderful to hear, Evan! It's clear how much you value your family. Are you thinking of any specific plans or events to add to that collage?",
+        "dia_id": "D19:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! Yeah, we're planning a big family reunion next summer. It's going to be a blast and a perfect opportunity to add to our collage.",
+        "dia_id": "D19:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds fantastic! If you need any tips on organizing such a big event, just let me know. I'm always here to support and celebrate your family's milestones.",
+        "dia_id": "D19:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! Your support means a lot. I'll keep you updated. Take care, bye!",
+        "dia_id": "D19:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Take care, Evan! Can't wait to hear about it. Bye!",
+        "dia_id": "D19:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Bye Sam. I'll definitely keep you updated. Thanks for the kind words and support. Take care!",
+        "dia_id": "D19:15"
+      }
+    ]
+  },
+  {
+    "summary": "Evan and Sam caught up at 6:48 pm on 17th December 2023. Evan shared that his son had a recent bike accident but is doing better now. They discussed coping mechanisms, with Sam mentioning a love for hiking. Evan encouraged Sam to believe in himself, try new things, and not let his weight define him. Evan showcased a contemporary figurative painting he recently completed, with a friend helping to get it published in an exhibition.",
+    "metadata": {
+      "topic": "Session 20",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan's son falls off a bike and has to rely on crutches for a while.",
+        "Evan finishes work on a portrait of a woman and his close friend helps him get it published at a exhibition.",
+        "Sam begins to think the idea of changing his diet and lifestyle is too hard, and feels like he lacks the motivation to deal with his weight.",
+        "Sam's struggle with his weights affects his confidence.",
+        "Evan's son had an accident where he fell off his bike last Tuesday but is doing better now.",
+        "Evan is supportive and encouraging towards Sam, giving advice to believe in himself and take things one day at a time.",
+        "Evan is a painter who finished a contemporary figurative painting emphasizing emotion and introspection.",
+        "Evan had a painting published in an exhibition with the help of a close friend.",
+        "Sam used to love hiking but hasn't had the chance to do it recently.",
+        "Sam is struggling with weight and confidence issues, feeling like they lack motivation.",
+        "Sam acknowledges that trying new things can be difficult."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, what's up? Long time no see, huh? Lots has happened.",
+        "dia_id": "D20:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Long time no see. I'm doing okay, been through a few bumps. How about you?",
+        "dia_id": "D20:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's not easy for us right now, my son had an accident last Tuesday, he fell off his bike and it was rough. But he's doing better now. How are you dealing with all this?",
+        "dia_id": "D20:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Darn, sorry to hear that. Hope he's feeling better. Same here, it's been tough lately. After we talked, I started thinking about ways to cope with it, but it's been challenging.",
+        "dia_id": "D20:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Life can be hard sometimes. Do you have any hobbies or activities that make you happy?",
+        "dia_id": "D20:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I used to love hiking, but it's been a while since I had the chance to do it.",
+        "dia_id": "D20:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I remember you mentioning that! Hiking is indeed a great way to center oneself and be one with nature. We should definitely plan a hike soon!",
+        "dia_id": "D20:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, I'm struggling with my weight and it's affecting my confidence. I feel like I can't overcome all the challenges with my weight, I keep lacking motivation.",
+        "dia_id": "D20:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, I understand it can be challenging. But remember, it's important to believe in yourself and take it one day at a time, Sam. Your worth is not defined by your weight.",
+        "dia_id": "D20:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Cheers, Evan. Appreciate the help. It's tough breaking out of my comfort zone.",
+        "dia_id": "D20:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Stepping out of your comfort zone can be intimidating, but it's totally worth it. Just challenge yourself to try something new, even if it's just a little thing. You got this!",
+        "dia_id": "D20:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. I'll take your advice. Trying new things can be difficult.",
+        "dia_id": "D20:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, trying something new and succeeding gives a great feeling of accomplishment. Give it a go, even if it's just a little thing. You'll be amazed!",
+        "dia_id": "D20:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "She looks so confident! What kind of painting is that in the background?",
+        "dia_id": "D20:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "\nThis is a contemporary figurative painting that I've finished few days ago, emphasizing the emotional state through expressive brushwork and vibrant color choices. It captures a moment of introspection, where the subject is deeply immersed in thought. Very proud of it!",
+        "dia_id": "D20:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's amazing work, who's the girl standing next to painting?",
+        "dia_id": "D20:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's a close friend of mine who helped me get this painting published in the exhibition!",
+        "dia_id": "D20:17"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan met at 4:25 pm on December 26, 2023. Evan shared that he recently got married to a woman from Canada whom he loved at first sight. He believes in love at first sight, describing it as a magical moment. They discussed the power of love and how it can bring happiness. Evan shared his passion for art and how it helps him express and handle emotions. They exchanged thoughts on art and creativity. Evan offered to help Sam start painting. They also talked about Evan frequently losing his keys and Sam suggested putting a GPS sensor on them.",
+    "metadata": {
+      "topic": "Session 21",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan and his pregnant Canadian partner get married.",
+        "Sam loses his keys.",
+        "Sam starts to enjoy running in the mornings to clear his head and improve his health.",
+        "Sam enjoys running in the mornings as a way to clear their head.",
+        "Sam appreciates art and finds it fascinating how it can express emotions.",
+        "Sam occasionally sketches but hasn't created anything remarkable yet.",
+        "Sam visited an exhibit recently and was inspired by a painting.",
+        "Evan recently got married to a woman from Canada.",
+        "Evan believes in love at first sight and felt a spark when he met his partner.",
+        "Evan created a painting that reflects a sense of joy and freedom.",
+        "Evan has a tendency to lose his keys frequently, turning it into a weekly ritual."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! Long time no see, how's it going?",
+        "dia_id": "D21:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! Long time no see! Been up and down lately, got married last week - how about you?",
+        "dia_id": "D21:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Congratulations, Evan! Is that the woman from Canada?",
+        "dia_id": "D21:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yes, that's her, I don't know why we didn't get married before, because I was in love with her at first sight!",
+        "dia_id": "D21:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan! Love at first sight? That sounds like something straight out of a fairy tale. What are your thoughts on it? Do you believe in love at first sight?",
+        "dia_id": "D21:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I totally believe in it. It was like time stopped and I felt like a spark lit inside me - it was so right.",
+        "dia_id": "D21:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's awesome, Evan! Finding that kind of connection must feel really liberating. Love can be so powerful, huh?",
+        "dia_id": "D21:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, Sam, love is truly amazing. It brings so much happiness and fulfillment, like a beautiful sunset that lights up our lives and brings peace. Incredible!",
+        "dia_id": "D21:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wish I could feel the same about love, but I've started to enjoy running in the mornings, and it's been a great way to clear my head. What can you do, right?",
+        "dia_id": "D21:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, I get it. Life's all about finding what works for you. Like your morning runs, they're a step towards something good, right? Keep trying new things, Sam, and you might find your own version of love in the most unexpected places. Embrace the journey — it’s full of surprises!",
+        "dia_id": "D21:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Such a minimalistic and stunning piece of work, I wonder what inspired the artist to create it.",
+        "dia_id": "D21:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "The painting is mine, I made it when I was a mix of emotions - sad, mad, and hopeful. Art is amazing how it can portray feelings without words.",
+        "dia_id": "D21:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan! Art is really amazing at expressing emotions - it's truly fascinating.",
+        "dia_id": "D21:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "It's amazing how art can express emotions so well. It really helps me recognize and handle my own feelings. This painting is giving me a massive rush of joy!",
+        "dia_id": "D21:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's stunning! What emotions did you create this painting with?",
+        "dia_id": "D21:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I painted this with a sense of joy and freedom. The spontaneous strokes and bold colors reflect a playful and liberated mood, embracing the creative process without restraint.",
+        "dia_id": "D21:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan, this is amazing! You've got serious talent and creativity. Making this must have been so satisfying! Here's a painting that inspired me when I went to an exhibit few days ago.",
+        "dia_id": "D21:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "\nThanks, Sam! I appreciate the compliment. This painting has such an inspiring vibe; you really have a knack for understanding art! How about you? How long have you been painting?",
+        "dia_id": "D21:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "\nI do sketch occasionally, but I haven't created anything remarkable yet. I have a feeling I'll have something to show off before long! Seeing your passion for it is inspiring.",
+        "dia_id": "D21:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! Glad I could motivate you. If you ever want to give it a go, I'm happy to help get you started. Speaking of which, you know what? I lost my keys again, it's become a weekly ritual for me!",
+        "dia_id": "D21:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Ooh, Evan, I'd put a GPS sensor on your keys!",
+        "dia_id": "D21:21"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Great idea, I think I'll do that as soon as I find it!",
+        "dia_id": "D21:22"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan talked at 11:00 am on 31 December 2023. Sam shared about a recent hiking trip, while Evan mentioned a mountain drive that ended in a minor accident. Despite the mishap, Evan was excited about sharing news of his marriage with work friends. The conversation shifted to the healing power of nature and healthy snacks. Evan recommended energy balls to Sam, who was keen on trying new healthy snacks. Sam also mentioned ongoing self-checkout issues at the store, prompting Evan to joke about needing Sam around to attract the problem.",
+    "metadata": {
+      "topic": "Session 22",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan takes a long drive to the mountains with his newly-wedded and pregnant wife in his Prius.",
+        "Evan gets in a minor accident when driving his Prius with his wife.",
+        "Evan spends time with his friends from work and tells them about his recent marriage.",
+        "Sam takes his friends on a hiking trip after a long time, proudly showing off his new healthier lifestyle.",
+        "Sam recently took friends on an epic hiking trip.",
+        "Sam expresses concern for Evan's well-being after hearing about a minor accident.",
+        "Sam appreciates nature for bringing peace and helping find clarity.",
+        "Sam is open to trying new healthy snacks and recipes to stay healthy.",
+        "Sam had issues with the self-checkout at the store and finds it to be a regular annoyance.",
+        "Sam humorously mentions attracting issues with self-checkout and offers to be called if someone wants to experience the situation.",
+        "Evan recently went for a long drive to the mountains with friends in a Prius.",
+        "Evan mentions getting married to his work friends after a minor accident.",
+        "Evan finds peace and clarity in nature and views it as a great healer.",
+        "Evan enjoys sharing and trying new healthy snacks and recipes.",
+        "Evan recommends a recipe for energy balls as a healthier snack idea."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan! I’m really getting into this healthier lifestyle—just took my friends on an epic hiking trip last Friday!",
+        "dia_id": "D22:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam! That’s fantastic—nothing like a good hike to feel alive. We took the Prius for a long drive to the mountains last weekend. It was perfect until we got into a little scrape on the way back.",
+        "dia_id": "D22:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Oh no, were you guys okay after the accident?",
+        "dia_id": "D22:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, we were fine, thanks. Just a minor accident, but it put a bit of a damper on telling my work friends about getting married. They’ve been a great support, though.",
+        "dia_id": "D22:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I bet they were thrilled to hear about your marriage, despite the mishap!",
+        "dia_id": "D22:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Absolutely, it's been a whirlwind of emotions. Good thing the accident was minor. Just a reminder to take it easy on the road, I guess.",
+        "dia_id": "D22:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "True, it’s important to stay safe. Glad you can still enjoy the peaceful moments after something like that.",
+        "dia_id": "D22:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Definitely, nature brings peace and clarity - it's a great experience.",
+        "dia_id": "D22:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Nature can make everything else seem small and help us find peace inside. It reminds us of the bigger picture, you know?",
+        "dia_id": "D22:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "For sure, and nature has been a great healer. Speaking of which, I’ve got to share some of these new healthy snacks I’ve been trying.",
+        "dia_id": "D22:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "They look healthy and delicious! Perfect for after a hike or, I guess, post-accident recovery, huh?",
+        "dia_id": "D22:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Exactly! They’re packed with nutrients and really easy to make. You also need to try these cookies, they are awesome! I’ll send you the recipes.",
+        "dia_id": "D22:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, I’d appreciate that. It’s good to find new ways to stay healthy. Do you have any healthier snack ideas?",
+        "dia_id": "D22:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, I've been trying to eat healthier too. Check out this cool recipe I discovered for these energy balls.",
+        "dia_id": "D22:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Do you like them? I know they can be an acquired taste.",
+        "dia_id": "D22:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I enjoy the taste of these. They're energizing and a healthy way to satisfy your sweet tooth.",
+        "dia_id": "D22:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Awesome! Always on the lookout for healthy snacks, thanks for the tip!",
+        "dia_id": "D22:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Glad to help - hope you enjoy it!",
+        "dia_id": "D22:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! I'll give these a try. They look yum. Your help means a lot to me. Btw you know what? I went to the store again and, unsurprisingly, had issues with the self-checkout. It's becoming a regular annoyance.",
+        "dia_id": "D22:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "That's very strange, I've never had a problem with it once!",
+        "dia_id": "D22:20"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Apparently I attract that to me, if you ever want to be in that situation, call me at the store with you!",
+        "dia_id": "D22:21"
+      }
+    ]
+  },
+  {
+    "summary": "At 1:32 pm on 6 January 2024, Evan excitedly informed Sam about sharing news of his marriage with their extended family, receiving overwhelming love and support. Sam congratulated Evan and praised the happiness evident in the picture. The conversation shifted to the importance of family support and the joy it brings. Both agreed on the significance of family in their lives, expressing gratitude for the love and happiness they provide. They also discussed dinner plans, with Evan mentioning a new diet while Sam shared a picture of dessert from a family wedding. Evan mentioned an upcoming trip to Canada for his honeymoon, intending to ski and savor local cuisine, with Sam wishing him a memorable experience. They ended the conversation looking forward to sharing details about the trip and catching up soon.",
+    "metadata": {
+      "topic": "Session 23",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan starts a diet and limits himself to only two ginger snaps a day.",
+        "Evan and his partner announce their marriage to his extended family.",
+        "Evan has a family reunion where they eat some homemade lasagna.",
+        "Evan plans for a honeymoon to Canada with his wife in February 2024. They plan on exploring the snowy landscapes, local cuisine and skiing.",
+        "Sam has a meal of homemade lasgna.",
+        "Evan recently got married and informed their extended family about it, receiving overwhelming love and support.",
+        "Evan feels lucky to have found a partner who understands them well.",
+        "Evan values and appreciates the support and happiness their family brings regarding their marriage.",
+        "Evan mentions going on a honeymoon trip to Canada to create awesome memories and explore snowy landscapes.",
+        "Evan expresses excitement about skiing, trying local cuisine, and enjoying the beautiful views during the honeymoon trip.",
+        "Sam congratulated Evan on their marriage and appreciated the happiness and love shared in the pictures.",
+        "Sam values family support and acknowledges it as a source of happiness and joy.",
+        "Sam expresses gratitude for the support and love received from their family.",
+        "Sam mentions that their family has been a rock through everything and emphasizes how important they are.",
+        "Sam mentions enjoying homemade lasagna for dinner and admires Evan's discipline of limiting themselves to two ginger snaps a day.",
+        "Sam talks about the special dessert from a cousin's wedding, expressing fondness for special occasions.",
+        "Sam encourages Evan to try poutine in Canada and looks forward to hearing about the experience."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, guess what? My partner and I told our extended fam about our marriage yesterday – it was so special! We've been totally overwhelmed by all their love and support.",
+        "dia_id": "D23:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Congrats on the news, Evan! You two look so happy in the pic. These moments make life so wonderful; super stoked for you!",
+        "dia_id": "D23:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! It was an awesome moment, and I feel really lucky to have found someone who gets me. Plus, our families are really happy for us - that's the best part!",
+        "dia_id": "D23:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, Evan. It's awesome that you've found someone who gets you! Having your family's support must feel great.",
+        "dia_id": "D23:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Definitely, family support is so important. Knowing they're happy about our marriage is awesome and so comforting.",
+        "dia_id": "D23:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, it's awesome to have that support. It definitely brings more happiness and joy.",
+        "dia_id": "D23:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah Sam, that means a lot to me. Our bond just keeps getting stronger and it brings such a good feeling to our lives. Family really is everything.",
+        "dia_id": "D23:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Agree, Evan! Family is everything - they bring so much love and happiness. They're always there for us no matter what. I'm grateful for their support and love.",
+        "dia_id": "D23:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "For sure, Sam. That's what makes family so special. They bring so much love and happiness. It's great having their support and knowing they're always there for us. I feel really fortunate to have their never-ending love and support.",
+        "dia_id": "D23:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, definitely, Evan. We both have amazing families that are always there for us. Always a blessing.",
+        "dia_id": "D23:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, Sam. Our families give us so much joy, support, and love. They're a real blessing! I don't know what I'd do without them.",
+        "dia_id": "D23:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey, Evan. My family has been my rock through everything. Don't know what I'd do without them.",
+        "dia_id": "D23:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, they are our rock. We're blessed to have them.",
+        "dia_id": "D23:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, you guys are awesome! What's cooking tonight?",
+        "dia_id": "D23:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! We're having a family get-together tonight and enjoying some homemade lasagna. Super excited! By the way, I've started a new diet—limiting myself to just two ginger snaps a day. What's on your menu tonight?\t",
+        "dia_id": "D23:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That's a great discipline, Evan! We're keeping it light tonight, just some homemade lasagna. Can't compete with your ginger snap limit though!",
+        "dia_id": "D23:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Oh this must be very hearty and delicious, well I'll have to stick to the diet plan, even with the family gathering!",
+        "dia_id": "D23:17"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, the lasagna was pretty awesome, but check out what I had for dessert, I'm sure you're drooling!",
+        "dia_id": "D23:18"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Looks yummy! Did you make that?",
+        "dia_id": "D23:19"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "No, I didn't make it. This is actually a pic from my cousin's wedding. It's super special.",
+        "dia_id": "D23:20"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Wow Sam! Weddings are indeed special. This looks great, yum!",
+        "dia_id": "D23:21"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Ooh, nice cake! Reminds me of special occasions. Do you have any upcoming plans?",
+        "dia_id": "D23:22"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks Sam! We're off to Canada next month for our honeymoon. So excited to create some awesome memories. Looking forward to exploring the beautiful snowy landscapes there.",
+        "dia_id": "D23:23"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that looks great! What are your plans for the trip?",
+        "dia_id": "D23:24"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "We're planning to ski, try the local cuisine, and enjoy the beautiful views. We're really excited!",
+        "dia_id": "D23:25"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Sounds amazing, Ev! Skiing, trying local dishes, and enjoying the breathtaking views - the perfect honeymoon. Have an incredible time creating unforgettable memories!",
+        "dia_id": "D23:26"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, Sam! Gonna try some poutine while we're there - can't wait!",
+        "dia_id": "D23:27"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Never tried it? Can't say I blame you, it's kind of a Canadian thing. Let me know how you like it!",
+        "dia_id": "D23:28"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sure thing, Sam! Let's see if it lives up to the hype. I'll let you know what happens!",
+        "dia_id": "D23:29"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, Evan! Let me know all about it. Don't forget the details!",
+        "dia_id": "D23:30"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Cool, Sam. I'll keep you posted. Talk soon!",
+        "dia_id": "D23:31"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Awesome, Evan! Catch you soon. Have a great trip!",
+        "dia_id": "D23:32"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Thanks, Sam! Catch you later. Have a great one!",
+        "dia_id": "D23:33"
+      }
+    ]
+  },
+  {
+    "summary": "Evan and Sam discuss a funny incident where Evan had an embarrassing moment with some roses after a night out. Evan apologized and the situation was handled well. They talk about learning from mistakes and staying healthy. Sam plans to see a doctor for diet and exercise advice. Evan suggests low-impact exercises like swimming, yoga, and walking. Sam also mentions watching The Godfather for motivation. Evan recommends beach walks as another fun low-impact exercise. They end on a positive note, planning to make positive changes and enjoy outdoor activities.",
+    "metadata": {
+      "topic": "Session 24",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan and his partner try snowshoeing.",
+        "Evan goes out partying with his friends and gets too drunk, resulting in him urinating on someone's roses.",
+        "Sam watches The Godfather to get motivation to keep up with his healthy eating routine.",
+        "Sam reevaluates his diet and plans to stick to his new healthier habits.",
+        "Sam has a recurring dream about soaring over skyscrapers.",
+        "Evan had a bit too much to drink and had an embarrassing incident involving someone's roses.",
+        "Evan had a pee accident near some roses and felt embarrassed about it.",
+        "Evan and his partner tried snowshoeing as part of a new adventure and found it surprisingly fun.",
+        "Evan suggested swimming, yoga, and walking as good low-impact exercises.",
+        "Evan mentioned that beach sunsets are one of his favorite low-impact exercises.",
+        "Sam made a meal plan and workout schedule to stay healthy and motivated.",
+        "Sam planned to make an appointment with the doctor to get advice on a balanced diet plan and low-impact exercises.",
+        "Sam was motivated to keep up with a fitness routine after watching The Godfather.",
+        "Sam expressed hope for positive changes with a healthier diet and yoga.",
+        "Sam mentioned having a recurring dream where he's flying over skyscrapers."
+      ]
+    },
+    "history": [
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, hope you're doing good. Something funny happened last night.",
+        "dia_id": "D24:1"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, what's up? What happened? Let me know.",
+        "dia_id": "D24:2"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yesterday I went out with my friends and had a bit too much to drink. I ended up doing something I regret and it involved someone's roses.",
+        "dia_id": "D24:3"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "What's up with that incident? All good now?",
+        "dia_id": "D24:4"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Oof, Sam, so embarrassing! I had a pee accident near some roses - can you believe it? I'm so sorry about that.",
+        "dia_id": "D24:5"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Uh oh, Evan! That's awkward. Did anyone get mad at you? Are you okay?",
+        "dia_id": "D24:6"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I was so embarrassed when I saw what happened the next morning, so I apologized and luckily they were understanding. Yeah, I was out of control--guess I gotta be more careful next time.",
+        "dia_id": "D24:7"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "They were understanding? Phew! We all mess up sometimes, we're human after all.",
+        "dia_id": "D24:8"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yeah, they were understanding, which was great. But it's a good reminder to be more careful. We all make mistakes, but it's important to learn from them. Speaking of, my partner and I tried snowshoeing this weekend. It was part of a new adventure for us and surprisingly fun.",
+        "dia_id": "D24:9"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, Evan, you're right. Mistakes happen, but it's good to learn from them. Snowshoeing sounds like a great way to stay active during the winter. I've been thinking and I made a meal plan and workout schedule. I'm getting motivated by something I saw, so starting today I'm gonna do my best to stay on track.",
+        "dia_id": "D24:10"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Good work, Sam! You've got a plan and you're dedicated to staying healthy - have you asked your doctor for advice? They could probably give you even more diet and exercise tips.",
+        "dia_id": "D24:11"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan! Haven't seen a doctor in a while, but it's probably a good idea to get some advice. I'm going to make an appointment soon.",
+        "dia_id": "D24:12"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "What advice are you planning to get from the doctor?",
+        "dia_id": "D24:13"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "I'm gonna ask the doc about a balanced diet plan and getting advice on low-impact exercises, given my current situation.",
+        "dia_id": "D24:14"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Sounds good, Sam. That's definitely a step in the right direction. Remember to focus on a balanced diet and low-impact exercises. Let me know how it goes.",
+        "dia_id": "D24:15"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That looks great! Where did you get the idea for this salad? Also, do you have any suggestions for low-impact exercises?",
+        "dia_id": "D24:16"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I got it from a nearby restaurant. As for low-impact exercises, swimming, yoga, and walking are good options.",
+        "dia_id": "D24:17"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "The salad idea from a restaurant is a smart move, Evan! And thanks for the exercise tips. Also I watched The Godfather last night, and it motivated me to keep up with my routine. \"I'm gonna make him an offer he can't refuse\" - now that's motivation!",
+        "dia_id": "D24:18"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Yoga's definitely a great start, Sam. It's helped me with stress and staying flexible, which is perfect alongside the diet. And yes, The Godfather is a legendary thing to watch, can be re-watched many times!",
+        "dia_id": "D24:19"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Between a healthier diet and yoga, I’m hoping for some positive changes.",
+        "dia_id": "D24:20"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": " By the way there are plenty of other low-impact exercises that can be fun. Going on beach sunsets is one of my favorites - good for exercise and totally calming.",
+        "dia_id": "D24:21"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That looks zen. Gonna go for some beach walks - thanks for the tip, Evan! I want to brag, I had that recurring dream again where I'm flying over skyscrapers!",
+        "dia_id": "D24:22"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I think a little more and you'll learn how to control those dreams, once you get the hang of it let me know haha! Enjoy the fresh air and the views. Have fun!",
+        "dia_id": "D24:23"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks Evan! Gonna make the most of it. You too, have a good one!",
+        "dia_id": "D24:24"
+      }
+    ]
+  },
+  {
+    "summary": "Sam and Evan caught up at 9:37 pm on 11 January, 2024. Sam shared about his health issues and feeling weighed down, while Evan apologized to his partner for a drunken incident involving rose bushes. Sam enjoys relaxing car rides in the countryside, which Evan thinks is a great way to unwind. They both agree on the calming effect of nature and sharing photos that brighten their days. Evan emphasizes the importance of appreciating small joys during tough times and offers support to Sam. They end the conversation with well wishes and a reminder to take care of themselves.",
+    "metadata": {
+      "topic": "Session 25",
+      "entities": [
+        "Evan",
+        "Sam"
+      ],
+      "attributes": [
+        "Evan tells his newly-wed partner about his drunken night out and apologizes for urinating on the rose bushes.",
+        "Sam is dealing with health issues that have been rough on him.",
+        "Sam enjoys going on car rides to chill and enjoy the view.",
+        "Sam finds being in nature relaxing and enjoys getting fresh air away from the city.",
+        "Sam is planning to spend more time in nature to rejuvenate.",
+        "Sam appreciates and finds joy in small moments outdoors.",
+        "Evan had to apologize to his partner for a drunken night which was embarrassing.",
+        "Evan enjoys kayaking on the water and finds it peaceful.",
+        "Evan believes nature has a way of calming and reviving the soul.",
+        "Evan believes small moments outdoors can make a big impact when dealing with tough times.",
+        "Evan emphasizes finding joy in the little things and appreciating small joys, especially during tough times."
+      ]
+    },
+    "history": [
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, been a few days since we last chatted. Hope you're doing OK. A lot's happened since then. Got issues with my health, it's been rough. Feels like this weight's keeping me from fully living. Trying to stay positive, not easy.",
+        "dia_id": "D25:1"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Hey Sam, sorry to hear about your health. It's tough when it gets in the way of life. You're being positive, but remember to take care of yourself too. By the way, I had to apologize to my partner for that drunken night, it was pretty embarrassing.",
+        "dia_id": "D25:2"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, that does sound like a tough situation. I'm doing my best with my health. How did your partner take the news about the rose bushes?",
+        "dia_id": "D25:3"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Well, she wasn't thrilled, but understood it was an accident. I promised to be more careful in the future. Changing the subject, have you found any low-impact exercises that you enjoy?",
+        "dia_id": "D25:4"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Hey Evan, haven't found any exercises I like. But lately, I've been on a few car rides. Helps me chill and enjoy the view. Check out this cool pic I snapped last week in the country.",
+        "dia_id": "D25:5"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Nice pic! Does being out in the countryside help you relax and get some fresh air away from the city?",
+        "dia_id": "D25:6"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Yeah, being in nature really helps me relax and get some fresh air away from the city.",
+        "dia_id": "D25:7"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Glad to hear it! Nature really has a way of calming and reviving the soul. Last summer, I took this pic on a camping trip - it was such an amazing sunset. Moments like these remind us of the beauty of life, even during tough times.",
+        "dia_id": "D25:8"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that pic is amazing! It must have been a great experience being out on the lake.",
+        "dia_id": "D25:9"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "I had a great time kayaking and watching the sunset last summer - it was truly unforgettable. Being out on the water is so peaceful.",
+        "dia_id": "D25:10"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Wow, that sounds amazing. Being in nature is so calming, right?",
+        "dia_id": "D25:11"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Nature can be super calming. It's like pushing a reset button for your mind and body.",
+        "dia_id": "D25:12"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Definitely, I couldn't agree more. There's something about being outdoors that rejuvenates you. I'm planning to spend more time in nature myself!",
+        "dia_id": "D25:13"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Got it. When health stuff cramps your style, it sucks. But small moments outdoors can make a big impact. This photo reminds me of last spring when I was feeling a bit down, but the vibrant colors brought a smile to my face, even if just for a moment. Remember to find joy in the little things.",
+        "dia_id": "D25:14"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "That pic is gorgeous! It really brightens my day. Sometimes, it's the little things that matter, right?",
+        "dia_id": "D25:15"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Absolutely, Sam. It's often those little moments that make the biggest difference. Keep finding those bright spots.",
+        "dia_id": "D25:16"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Thanks, Evan. It's good to be reminded to appreciate the small things. They do add up.",
+        "dia_id": "D25:17"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "Anytime, Sam. It's all about those small joys, especially when times are tough. You've got this!",
+        "dia_id": "D25:18"
+      },
+      {
+        "role": "assistant",
+        "speaker": "Sam",
+        "content": "Really appreciate it, Evan. Your words help a lot. Take care!",
+        "dia_id": "D25:19"
+      },
+      {
+        "role": "user",
+        "speaker": "Evan",
+        "content": "You too, Sam. And remember, I'm always here if you need to chat. Look after yourself!",
+        "dia_id": "D25:20"
+      }
+    ]
+  }
+]

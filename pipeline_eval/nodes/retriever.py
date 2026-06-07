@@ -17,20 +17,31 @@ def safe_merge(current_state: ConversationState, retrieved_memos: List[Dict[str,
     
     # Gap-fill entities
     memo_meta = memo.get("metadata", {})
-    memo_entities = memo_meta.get("entities", {})
-    if isinstance(memo_entities, dict):
+    memo_entities = memo_meta.get("entities", [])
+    
+    if isinstance(memo_entities, list):
+        for ent in memo_entities:
+            if ent not in current_state.entities:
+                current_state.entities.append(ent)
+                print(f"[Retriever Node] Gap-fill entity: '{ent}' (from Memo).")
+    elif isinstance(memo_entities, dict):
         for key, value in memo_entities.items():
             if key not in current_state.entities:
-                current_state.entities[key] = value
-                print(f"[Retriever Node] Gap-fill entities: '{key}' = '{value}' (from Memo).")
+                current_state.entities.append(key)
+                print(f"[Retriever Node] Gap-fill entity dict-key: '{key}' (from Memo).")
     
     # Gap-fill attributes
-    memo_attributes = memo_meta.get("attributes", {})
-    if isinstance(memo_attributes, dict):
+    memo_attributes = memo_meta.get("attributes", [])
+    if isinstance(memo_attributes, list):
+        for attr in memo_attributes:
+            if attr not in current_state.attributes:
+                current_state.attributes.append(attr)
+                print(f"[Retriever Node] Gap-fill attribute: '{attr}' (from Memo).")
+    elif isinstance(memo_attributes, dict):
         for key, value in memo_attributes.items():
             if key not in current_state.attributes:
-                current_state.attributes[key] = value
-                print(f"[Retriever Node] Gap-fill attributes: '{key}' = '{value}' (from Memo).")
+                current_state.attributes.append(key)
+                print(f"[Retriever Node] Gap-fill attribute dict-key: '{key}' (from Memo).")
 
     # Clear unresolved references if entities are now resolved
     if current_state.entities:

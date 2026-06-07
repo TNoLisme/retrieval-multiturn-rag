@@ -1,0 +1,2575 @@
+{
+  "summary": {
+    "conversation_index": 1,
+    "sample_id": "conv-30",
+    "total_qa": 105,
+    "bm25_hit_rate_at1": 0.7079,
+    "bm25_hit_rate_at3": 0.8349,
+    "bm25_hit_rate_at5": 0.9071,
+    "llm_judge_accuracy": 0.7714,
+    "llm_judge_passes": 81
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 2,
+      "original_question": "When Jon has lost his job as a banker?",
+      "ambiguous_query": "When he has lost his job as a banker?",
+      "q_final": "When Jon has lost his job as a banker?",
+      "evidence": [
+        "D1:2"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        6,
+        14,
+        5,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 1,
+      "category": 2,
+      "original_question": "When Gina has lost her job at Door Dash?",
+      "ambiguous_query": "When she has lost her job at Door Dash?",
+      "q_final": "When did Gina lose her job at Door Dash?",
+      "evidence": [
+        "D1:3"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        6,
+        17,
+        9,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 4,
+      "original_question": "How do Jon and Gina both like to destress?",
+      "ambiguous_query": "How do he and she both like to destress?",
+      "q_final": "How do Jon and Gina both like to destress?",
+      "evidence": [
+        "D1:7",
+        "D1:6"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        2,
+        11,
+        6,
+        8,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "What do Jon and Gina both have in common?",
+      "ambiguous_query": "What do he and she both have in common?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D1:2",
+        "D1:3",
+        "D1:4",
+        "D2:1"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        15,
+        2,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 4,
+      "category": 4,
+      "original_question": "Why did Jon decide to start his dance studio?",
+      "ambiguous_query": "Why did he decide to start his dance studio?",
+      "q_final": "Why did Jon decide to start his dance studio?",
+      "evidence": [
+        "D1:2",
+        "D1:4"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        18,
+        11,
+        2,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 5,
+      "category": 1,
+      "original_question": "What Jon thinks the ideal dance studio should look like?",
+      "ambiguous_query": "What he thinks the ideal dance studio should look like?",
+      "q_final": "What does Jon think the ideal dance studio should look like?",
+      "evidence": [
+        "D1:20",
+        "D2:4",
+        "D2:8"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        18,
+        9,
+        11
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 6,
+      "category": 2,
+      "original_question": "When is Jon's group performing at a festival?",
+      "ambiguous_query": "When is his group performing at a festival?",
+      "q_final": "When is Jon's group performing at a festival?",
+      "evidence": [
+        "D1:24"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        19,
+        5,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 7,
+      "category": 2,
+      "original_question": "When did Gina launch an ad campaign for her store?",
+      "ambiguous_query": "When did she launch an ad campaign for her store?",
+      "q_final": "When did Gina launch an ad campaign for her store?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        8,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 2,
+      "original_question": "When was Jon in Paris?",
+      "ambiguous_query": "When was he in Paris?",
+      "q_final": "When was Jon in Paris?",
+      "evidence": [
+        "D2:4"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        3,
+        4,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 1,
+      "original_question": "Which city have both Jean and John visited?",
+      "ambiguous_query": "Which city have both Jean and John visited?",
+      "q_final": "Which city have both Jean and John visited?",
+      "evidence": [
+        "D2:5",
+        "D15:1"
+      ],
+      "gold_sections": [
+        2,
+        15
+      ],
+      "retrieved_sections": [
+        2,
+        10,
+        15,
+        18,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When did Gina team up with a local artist for some cool designs?",
+      "ambiguous_query": "When did she team up with a local artist for some cool designs?",
+      "q_final": "When did Gina team up with a local artist for some cool designs?",
+      "evidence": [
+        "D5:5"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        11,
+        8,
+        1,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 2,
+      "original_question": "When did Gina get her tattoo?",
+      "ambiguous_query": "When did she get her tattoo?",
+      "q_final": "When did Gina get her tattoo?",
+      "evidence": [
+        "D5:15"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        17,
+        11,
+        16,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 12,
+      "category": 2,
+      "original_question": "When did Jon start to go to the gym?",
+      "ambiguous_query": "When did he start to go to the gym?",
+      "q_final": "When did Jon start to go to the gym?",
+      "evidence": [
+        "D6:1"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        17,
+        1,
+        10,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 2,
+      "original_question": "When did Gina open her online clothing store?",
+      "ambiguous_query": "When did she open her online clothing store?",
+      "q_final": "When did Gina open her online clothing store?",
+      "evidence": [
+        "D6:6"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        15,
+        14,
+        3,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 2,
+      "original_question": "When did Jon start expanding his studio's social media presence?",
+      "ambiguous_query": "When did he start expanding his studio's social media presence?",
+      "q_final": "When did Jon start expanding his studio's social media presence?",
+      "evidence": [
+        "D8:13"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        14,
+        1,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 2,
+      "original_question": "When did Jon host a dance competition?",
+      "ambiguous_query": "When did he host a dance competition?",
+      "q_final": "When did Jon host a dance competition?",
+      "evidence": [
+        "D8:13"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        1,
+        4,
+        9,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "When did Jon go to a fair to get more exposure for his dance studio?",
+      "ambiguous_query": "When did he go to a fair to get more exposure for his dance studio?",
+      "q_final": "When did Jon go to a fair to get more exposure for his dance studio?",
+      "evidence": [
+        "D10:1"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        18,
+        11,
+        1,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 1,
+      "original_question": "Why did Gina decide to start her own clothing store?",
+      "ambiguous_query": "Why did she decide to start her own clothing store?",
+      "q_final": "Why did Gina decide to start her own clothing store?",
+      "evidence": [
+        "D6:8",
+        "D1:3"
+      ],
+      "gold_sections": [
+        1,
+        6
+      ],
+      "retrieved_sections": [
+        2,
+        14,
+        10,
+        6,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "Do Jon and Gina start businesses out of what they love?",
+      "ambiguous_query": "Do he and she start businesses out of what they love?",
+      "q_final": "Do Jon and Gina start businesses out of what they love?",
+      "evidence": [
+        "D1:4",
+        "D6:8"
+      ],
+      "gold_sections": [
+        1,
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        10,
+        1,
+        17,
+        14
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 19,
+      "category": 2,
+      "original_question": "When did Gina interview for a design internship?",
+      "ambiguous_query": "When did she interview for a design internship?",
+      "q_final": "When did Gina interview for a design internship?",
+      "evidence": [
+        "D11:14"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        12,
+        3,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 20,
+      "category": 2,
+      "original_question": "When did Gina get accepted for the design internship?",
+      "ambiguous_query": "When did she get accepted for the design internship?",
+      "q_final": "When did Gina get accepted for the design internship?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        11,
+        5,
+        3,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 2,
+      "original_question": "When did Jon start reading \"The Lean Startup\"?",
+      "ambiguous_query": "When did he start reading \"The Lean Startup\"?",
+      "q_final": "When did Gina start reading \"The Lean Startup\"?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        6,
+        17,
+        1,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 22,
+      "category": 2,
+      "original_question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+      "ambiguous_query": "When did she develop a video presentation to teach how to style her fashion pieces? ",
+      "q_final": "When did Gina develop a video presentation to teach how to style her fashion pieces?",
+      "evidence": [
+        "D13:4"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        16,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 1,
+      "original_question": "How did Gina promote her clothes store?",
+      "ambiguous_query": "How did she promote her clothes store?",
+      "q_final": "How did Gina promote her clothes store?",
+      "evidence": [
+        "D5:5",
+        "D16:3",
+        "D8:4",
+        "D13:4"
+      ],
+      "gold_sections": [
+        5,
+        8,
+        13,
+        16
+      ],
+      "retrieved_sections": [
+        2,
+        14,
+        18,
+        13,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "Which events has Jon participated in to promote his business venture?",
+      "ambiguous_query": "Which events has he participated in to promote his business venture?",
+      "q_final": "Which events has Jon participated in to promote his business venture?",
+      "evidence": [
+        "D10:1",
+        "D16:6",
+        "D8:4"
+      ],
+      "gold_sections": [
+        8,
+        10,
+        16
+      ],
+      "retrieved_sections": [
+        14,
+        16,
+        1,
+        6,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 1,
+      "original_question": "What does Jon's dance studio offer?",
+      "ambiguous_query": "What does his dance studio offer?",
+      "q_final": "What does Jon's dance studio offer?",
+      "evidence": [
+        "D13:7",
+        "D8:13"
+      ],
+      "gold_sections": [
+        8,
+        13
+      ],
+      "retrieved_sections": [
+        18,
+        8,
+        13,
+        11,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 2,
+      "original_question": "When did Jon receive mentorship to promote his venture?",
+      "ambiguous_query": "When did he receive mentorship to promote his venture?",
+      "q_final": "When did Jon receive mentorship to promote his venture?",
+      "evidence": [
+        "D14:1"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        2,
+        13,
+        18,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 27,
+      "category": 1,
+      "original_question": "Did Jon and Gina both participate in dance competitions?",
+      "ambiguous_query": "Did he and she both participate in dance competitions?",
+      "q_final": "Did Jon and Gina both participate in dance competitions?",
+      "evidence": [
+        "D1:14",
+        "D14:14",
+        "D1:16",
+        "D1:17",
+        "D9:10"
+      ],
+      "gold_sections": [
+        1,
+        9,
+        14
+      ],
+      "retrieved_sections": [
+        1,
+        4,
+        8,
+        9,
+        11
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 28,
+      "category": 2,
+      "original_question": "When was Jon in Rome?",
+      "ambiguous_query": "When was he in Rome?",
+      "q_final": "When was Jon in Rome?",
+      "evidence": [
+        "D15:1"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        10,
+        18,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 1,
+      "original_question": "Which cities has Jon visited?",
+      "ambiguous_query": "Which cities has he visited?",
+      "q_final": "Which cities has Jon visited?",
+      "evidence": [
+        "D2:4",
+        "D15:1"
+      ],
+      "gold_sections": [
+        2,
+        15
+      ],
+      "retrieved_sections": [
+        2,
+        10,
+        15,
+        18,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 2,
+      "original_question": "When Jon is planning to open his dance studio?",
+      "ambiguous_query": "When he is planning to open his dance studio?",
+      "q_final": "When does Jon plan to open his dance studio?",
+      "evidence": [
+        "D15:5"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        19,
+        9,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 1,
+      "original_question": "How long did it take for Jon to open his studio?",
+      "ambiguous_query": "How long did it take for him to open his studio?",
+      "q_final": "How long did Jon take to open his dance studio?",
+      "evidence": [
+        "D1:2",
+        "D15:13"
+      ],
+      "gold_sections": [
+        1,
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        9,
+        19,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 32,
+      "category": 2,
+      "original_question": "When did Gina design a limited collection of hoodies?",
+      "ambiguous_query": "When did she design a limited collection of hoodies?",
+      "q_final": "When did Gina design a limited collection of hoodies?",
+      "evidence": [
+        "D16:3"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        3,
+        5,
+        11,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 2,
+      "original_question": "When did Jon visit networking events for his store?",
+      "ambiguous_query": "When did he visit networking events for his store?",
+      "q_final": "When did Jon visit networking events for his store?",
+      "evidence": [
+        "D16:6"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        2,
+        10,
+        18,
+        16,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 34,
+      "category": 2,
+      "original_question": "When did Gina start being recognized by fashion editors?",
+      "ambiguous_query": "When did she start being recognized by fashion editors?",
+      "q_final": "When did Gina start being recognized by fashion editors?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        6,
+        12,
+        8,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 35,
+      "category": 2,
+      "original_question": "When did Jon start learning marketing and analytics tools?",
+      "ambiguous_query": "When did he start learning marketing and analytics tools?",
+      "q_final": "When did Jon start learning marketing and analytics tools?",
+      "evidence": [
+        "D17:4"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        14,
+        13,
+        18,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 2,
+      "original_question": "When did Jon and Gina decide to collaborate to create dance content?",
+      "ambiguous_query": "When did he and she decide to collaborate to create dance content?",
+      "q_final": "When did Gina and Jon decide to collaborate to create dance content?",
+      "evidence": [
+        "D18:18"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        11,
+        2,
+        17,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 37,
+      "category": 2,
+      "original_question": "When did Gina mention Shia Labeouf?",
+      "ambiguous_query": "When did she mention Shia Labeouf?",
+      "q_final": "Who mentioned Shia Labeouf?",
+      "evidence": [
+        "D19:4"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        14,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 38,
+      "category": 2,
+      "original_question": "When did Gina go to a dance class with a group of friends?",
+      "ambiguous_query": "When did she go to a dance class with a group of friends?",
+      "q_final": "When did Gina go to a dance class with a group of friends?",
+      "evidence": [
+        "D19:6"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        9,
+        1,
+        15,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 39,
+      "category": 4,
+      "original_question": "What is Gina's favorite style of dance?",
+      "ambiguous_query": "What is her favorite style of dance?",
+      "q_final": "What is Gina's favorite style of dance?",
+      "evidence": [
+        "D1:9"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        13,
+        3,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 40,
+      "category": 4,
+      "original_question": "What is Jon's favorite style of dance?",
+      "ambiguous_query": "What is his favorite style of dance?",
+      "q_final": "What is Jon's favorite style of dance?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        13,
+        3,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 41,
+      "category": 4,
+      "original_question": "What was Gina's favorite dancing memory?",
+      "ambiguous_query": "What was her favorite dancing memory?",
+      "q_final": "What was Gina's favorite dancing memory?",
+      "evidence": [
+        "D1:17"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        5,
+        13,
+        3,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 42,
+      "category": 4,
+      "original_question": "What kind of dance piece did Gina's team perform to win first place?",
+      "ambiguous_query": "What kind of dance piece did her team perform to win first place?",
+      "q_final": "What kind of dance piece did Gina's team perform to win first place?",
+      "evidence": [
+        "D1:19"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        8,
+        5,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 4,
+      "original_question": "What do the dancers in the photo represent?",
+      "ambiguous_query": "What do the dancers in the photo represent?",
+      "q_final": "What do the dancers in the photo represent?",
+      "evidence": [
+        "D1:25"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        13,
+        5,
+        17,
+        19,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 44,
+      "category": 4,
+      "original_question": "What does Gina say about the dancers in the photo?",
+      "ambiguous_query": "What does she say about the dancers in the photo?",
+      "q_final": "What does Gina say about the dancers in the photo?",
+      "evidence": [
+        "D1:26"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        13,
+        5,
+        17,
+        19,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 45,
+      "category": 4,
+      "original_question": "What is Jon's attitude towards being part of the dance festival?",
+      "ambiguous_query": "What is his attitude towards being part of the dance festival?",
+      "q_final": "What is Jon's attitude towards being part of the dance festival?",
+      "evidence": [
+        "D1:28"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        12,
+        17,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 46,
+      "category": 4,
+      "original_question": "What kind of flooring is Jon looking for in his dance studio?",
+      "ambiguous_query": "What kind of flooring is he looking for in his dance studio?",
+      "q_final": "What kind of flooring is Jon looking for in his dance studio?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        18,
+        9,
+        8,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 47,
+      "category": 4,
+      "original_question": "What did Gina find for her clothing store on 1 February, 2023?",
+      "ambiguous_query": "What did she find for her clothing store on 1 February, 2023?",
+      "q_final": "What did Gina find for her clothing store on 1 February, 2023?",
+      "evidence": [
+        "D3:2"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        6,
+        3,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 48,
+      "category": 4,
+      "original_question": "What did Gina design for her store?",
+      "ambiguous_query": "What did she design for her store?",
+      "q_final": "What did Gina design for her store?",
+      "evidence": [
+        "D3:4"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        11,
+        16,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 49,
+      "category": 4,
+      "original_question": "What did Gina want her customers to feel in her store?",
+      "ambiguous_query": "What did she want her customers to feel in her store?",
+      "q_final": "What did Gina want her customers to feel in her store?",
+      "evidence": [
+        "D3:6",
+        "D3:8"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        14,
+        18,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 50,
+      "category": 4,
+      "original_question": "What did Jon say about Gina's progress with her store?",
+      "ambiguous_query": "What did he say about her progress with her store?",
+      "q_final": "What did Gina say about her store's progress?",
+      "evidence": [
+        "D3:3"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        4,
+        13,
+        8,
+        16,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 51,
+      "category": 4,
+      "original_question": "What made Gina choose the furniture and decor for her store?",
+      "ambiguous_query": "What made she choose the furniture and decor for her store?",
+      "q_final": "What made Gina choose the furniture and decor for her store?",
+      "evidence": [
+        "D3:6"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        5,
+        2,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 52,
+      "category": 4,
+      "original_question": "What did Jon say about creating a special experience for customers?",
+      "ambiguous_query": "What did he say about creating a special experience for customers?",
+      "q_final": "What did Gina say about creating a special experience for customers?",
+      "evidence": [
+        "D3:9"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        18,
+        4,
+        9,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 53,
+      "category": 4,
+      "original_question": "What did Gina say about creating an experience for her customers?",
+      "ambiguous_query": "What did she say about creating an experience for her customers?",
+      "q_final": "What did Gina say about creating an experience for her customers?",
+      "evidence": [
+        "D3:8"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        18,
+        4,
+        14,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 54,
+      "category": 4,
+      "original_question": "How is Gina's store doing?",
+      "ambiguous_query": "How is her store doing?",
+      "q_final": "How is Gina's store doing?",
+      "evidence": [
+        "D4:2"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        8,
+        3,
+        5,
+        2,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 55,
+      "category": 4,
+      "original_question": "What does Gina's tattoo symbolize?",
+      "ambiguous_query": "What does her tattoo symbolize?",
+      "q_final": "What does Gina's tattoo symbolize?",
+      "evidence": [
+        "D5:15"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 56,
+      "category": 4,
+      "original_question": "What did Jon and Gina compare their entrepreneurial journeys to?",
+      "ambiguous_query": "What did he and she compare their entrepreneurial journeys to?",
+      "q_final": "What did Jon and Gina compare their entrepreneurial journeys to?",
+      "evidence": [
+        "D6:15",
+        "D6:16"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        14,
+        1,
+        4,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 57,
+      "category": 4,
+      "original_question": "What advice does Gina give to Jon about running a successful business?",
+      "ambiguous_query": "What advice does she give to him about running a successful business?",
+      "q_final": "What advice does Gina give him about running a successful business?",
+      "evidence": [
+        "D7:5"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        18,
+        6,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 58,
+      "category": 4,
+      "original_question": "Why did Jon shut down his bank account?",
+      "ambiguous_query": "Why did he shut down his bank account?",
+      "q_final": "Why did Jon shut down his bank account?",
+      "evidence": [
+        "D8:1"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 59,
+      "category": 4,
+      "original_question": "Why did Gina combine her clothing business with dance?",
+      "ambiguous_query": "Why did she combine her clothing business with dance?",
+      "q_final": "Why did Gina combine her clothing business with dance?",
+      "evidence": [
+        "D8:8"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        2,
+        1,
+        18,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 4,
+      "original_question": "What does Jon's dance make him?",
+      "ambiguous_query": "What does his dance make him?",
+      "q_final": "What does Jon's dance make him?",
+      "evidence": [
+        "D9:5"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        1,
+        9,
+        11,
+        18,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 61,
+      "category": 4,
+      "original_question": "What did Gina receive from a dance contest?",
+      "ambiguous_query": "What did she receive from a dance contest?",
+      "q_final": "What did Gina receive from a dance contest?",
+      "evidence": [
+        "D9:10"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        1,
+        11,
+        18,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 4,
+      "original_question": "How does Gina stay confident in her business?",
+      "ambiguous_query": "How does she stay confident in her business?",
+      "q_final": "How does Gina stay confident in her business?",
+      "evidence": [
+        "D10:8"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        6,
+        14,
+        4,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 4,
+      "original_question": "What kind of professional experience did Gina get accepted for on May 23, 2023?",
+      "ambiguous_query": "What kind of professional experience did she get accepted for on May 23, 2023?",
+      "q_final": "What kind of professional experience did Gina get accepted for on May 23, 2023?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        8,
+        3,
+        18,
+        12,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 64,
+      "category": 4,
+      "original_question": "Where is Gina's fashion internship?",
+      "ambiguous_query": "Where is her fashion internship?",
+      "q_final": "Where is Gina's fashion internship?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        11,
+        8,
+        5,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 65,
+      "category": 4,
+      "original_question": "What book is Jon currently reading?",
+      "ambiguous_query": "What book is he currently reading?",
+      "q_final": "What book is Jon currently reading?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 4,
+      "original_question": "What is Jon offering to the dancers at his dance studio?",
+      "ambiguous_query": "What is he offering to the dancers at his dance studio?",
+      "q_final": "What does Jon offer to dancers at his dance studio?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        5,
+        13,
+        8,
+        19,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 67,
+      "category": 4,
+      "original_question": "How does Jon use the clipboard with a notepad attached to it?",
+      "ambiguous_query": "How does he use the clipboard with a notepad attached to it?",
+      "q_final": "How does Jon use the clipboard with a notepad attached to it?",
+      "evidence": [
+        "D13:11"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        17,
+        14,
+        13,
+        2,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 4,
+      "original_question": "What does Jon tell Gina he won't do?",
+      "ambiguous_query": "What does he tell her he won't do?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D14:17"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        15,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 69,
+      "category": 4,
+      "original_question": "What did Jon take a trip to Rome for?",
+      "ambiguous_query": "What did he take a trip to Rome for?",
+      "q_final": "What did [Jon] take a trip to Rome for?",
+      "evidence": [
+        "D15:1"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        10,
+        18,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 70,
+      "category": 4,
+      "original_question": "What is Jon working on opening?",
+      "ambiguous_query": "What is he working on opening?",
+      "q_final": "What is Jon working on opening?",
+      "evidence": [
+        "D15:3"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        19,
+        6,
+        14,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "How does Gina describe the studio that Jon has opened?",
+      "ambiguous_query": "How does she describe the studio that he has opened?",
+      "q_final": "How does Gina describe the studio that Jon has opened?",
+      "evidence": [
+        "D15:6"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        19,
+        9,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "How does Jon feel about the opening night of his dance studio?",
+      "ambiguous_query": "How does he feel about the opening night of his dance studio?",
+      "q_final": "How does Jon feel about the opening night of his dance studio?",
+      "evidence": [
+        "D15:7"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        19,
+        9,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "How does Gina describe the feeling that dance brings?",
+      "ambiguous_query": "How does she describe the feeling that dance brings?",
+      "q_final": "How does Gina describe the feeling that dance brings?",
+      "evidence": [
+        "D15:8"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        9,
+        4,
+        11,
+        1,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "What does Jon plan to do at the grand opening of his dance studio?",
+      "ambiguous_query": "What does he plan to do at the grand opening of his dance studio?",
+      "q_final": "What does Gina plan to do at the grand opening of Jon's dance studio?",
+      "evidence": [
+        "D15:9"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        19,
+        9,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What does Gina say to Jon about the grand opening?",
+      "ambiguous_query": "What does she say to him about the grand opening?",
+      "q_final": "What does Gina say about the grand opening?",
+      "evidence": [
+        "D15:12"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        6,
+        19,
+        17,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "What is the general sentiment about the upcoming grand opening?",
+      "ambiguous_query": "What is the general sentiment about the upcoming grand opening?",
+      "q_final": "What is the general sentiment about the upcoming grand opening for Jon's dance studio?",
+      "evidence": [
+        "D15:18",
+        "D15:19"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        19,
+        9,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What did Gina make a limited edition line of?",
+      "ambiguous_query": "What did she make a limited edition line of?",
+      "q_final": "What did Gina make a limited edition line of?",
+      "evidence": [
+        "D16:3"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "According to Gina, what makes Jon a perfect mentor and guide?",
+      "ambiguous_query": "According to her, what makes he a perfect mentor and guide?",
+      "q_final": "According to Gina, what makes her a perfect mentor and guide?",
+      "evidence": [
+        "D17:7"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        13,
+        4,
+        14,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 79,
+      "category": 5,
+      "original_question": "What temporary job did Jon take to cover expenses?",
+      "ambiguous_query": "What temporary job did he take to cover expenses?",
+      "q_final": "What temporary job did Jon take to cover expenses?",
+      "evidence": [
+        "D18:2"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        1,
+        6,
+        9,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "What plans does Jon have after receiving advice at the networking event?",
+      "ambiguous_query": "What plans does he have after receiving advice at the networking event?",
+      "q_final": "What plans does Gina have after receiving advice at the networking event?",
+      "evidence": [
+        "D18:10"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        16,
+        8,
+        14,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "What offer does Gina make to Jon regarding social media?",
+      "ambiguous_query": "What offer does she make to him regarding social media?",
+      "q_final": "What offer does Gina make regarding social media?",
+      "evidence": [
+        "D18:13"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        8,
+        14,
+        13,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 82,
+      "category": 5,
+      "original_question": "What is Jon's favorite style of painting?",
+      "ambiguous_query": "What is his favorite style of painting?",
+      "q_final": "What is Jon's favorite style of painting?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        13,
+        3,
+        16,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 5,
+      "original_question": "What was Jon's favorite dancing memory?",
+      "ambiguous_query": "What was his favorite dancing memory?",
+      "q_final": "What was Jon's favorite dancing memory?",
+      "evidence": [
+        "D1:17"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        5,
+        13,
+        3,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 5,
+      "original_question": "What kind of dance piece did Jon's team perform to win first place?",
+      "ambiguous_query": "What kind of dance piece did his team perform to win first place?",
+      "q_final": "What kind of dance piece did Gina's team perform to win first place?",
+      "evidence": [
+        "D1:19"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        14,
+        8,
+        5,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 85,
+      "category": 5,
+      "original_question": "What is Gina's attitude towards participating in the dance festival?",
+      "ambiguous_query": "What is her attitude towards participating in the dance festival?",
+      "q_final": "What is Gina's attitude towards participating in the dance festival?",
+      "evidence": [
+        "D1:28"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        12,
+        9,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 86,
+      "category": 5,
+      "original_question": "What kind of flooring is Gina looking for in her dance studio?",
+      "ambiguous_query": "What kind of flooring is she looking for in her dance studio?",
+      "q_final": "What kind of flooring is Jon looking for in his dance studio?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        18,
+        9,
+        8,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 87,
+      "category": 5,
+      "original_question": "What did Jon find for his clothing store on 1 February, 2023?",
+      "ambiguous_query": "What did he find for his clothing store on 1 February, 2023?",
+      "q_final": "What did Gina find for her clothing store on 1 February, 2023?",
+      "evidence": [
+        "D3:2"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        6,
+        3,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 88,
+      "category": 5,
+      "original_question": "What did Jon design for his store?",
+      "ambiguous_query": "What did he design for his store?",
+      "q_final": "What did Gina design for her store?",
+      "evidence": [
+        "D3:4"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        11,
+        16,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 89,
+      "category": 5,
+      "original_question": "What did Jon want his customers to feel in her store?",
+      "ambiguous_query": "What did he want his customers to feel in her store?",
+      "q_final": "What did Jon want his customers to feel in his store?",
+      "evidence": [
+        "D3:6",
+        "D3:8"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        14,
+        18,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 90,
+      "category": 5,
+      "original_question": "What made Jon choose the furniture and decor for his store?",
+      "ambiguous_query": "What made he choose the furniture and decor for his store?",
+      "q_final": "What made Gina choose the furniture and decor for her store?",
+      "evidence": [
+        "D3:6"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        5,
+        2,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 91,
+      "category": 5,
+      "original_question": "How is Jon's store doing?",
+      "ambiguous_query": "How is his store doing?",
+      "q_final": "How is Gina's store doing?",
+      "evidence": [
+        "D4:2"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        8,
+        3,
+        5,
+        2,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 92,
+      "category": 5,
+      "original_question": "What does Jon's tattoo symbolize?",
+      "ambiguous_query": "What does his tattoo symbolize?",
+      "q_final": "What does Gina's tattoo symbolize?",
+      "evidence": [
+        "D5:15"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 93,
+      "category": 5,
+      "original_question": "Why did Gina shut down her bank account?",
+      "ambiguous_query": "Why did she shut down her bank account?",
+      "q_final": "Why did Jon shut down his bank account?",
+      "evidence": [
+        "D8:1"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        18,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 94,
+      "category": 5,
+      "original_question": "Why did Jon combine his clothing business with dance?",
+      "ambiguous_query": "Why did he combine his clothing business with dance?",
+      "q_final": "Why did Jon combine his clothing business with dance?",
+      "evidence": [
+        "D8:8"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        2,
+        1,
+        18,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 95,
+      "category": 5,
+      "original_question": "What did Gina receive from a dance contest?",
+      "ambiguous_query": "What did she receive from a dance contest?",
+      "q_final": "What did Gina receive from a dance contest?",
+      "evidence": [
+        "D9:10"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        1,
+        11,
+        18,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 5,
+      "original_question": "What kind of professional experience did Jon get accepted for on May 23, 2023?",
+      "ambiguous_query": "What kind of professional experience did he get accepted for on May 23, 2023?",
+      "q_final": "What kind of professional experience did Gina get accepted for on May 23, 2023?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        8,
+        3,
+        18,
+        12,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 97,
+      "category": 5,
+      "original_question": "Where is Gina's HR internship?",
+      "ambiguous_query": "Where is her HR internship?",
+      "q_final": "Where is Gina's HR internship?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        11,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 5,
+      "original_question": "Where is Jon's fashion internship?",
+      "ambiguous_query": "Where is his fashion internship?",
+      "q_final": "Where is Gina's fashion internship?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        11,
+        8,
+        5,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 99,
+      "category": 5,
+      "original_question": "What book is Gina currently reading?",
+      "ambiguous_query": "What book is she currently reading?",
+      "q_final": "What book is Gina currently reading?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 5,
+      "original_question": "How does Gina use the clipboard with a notepad attached to it?",
+      "ambiguous_query": "How does she use the clipboard with a notepad attached to it?",
+      "q_final": "How does Gina use the clipboard with a notepad attached to it?",
+      "evidence": [
+        "D13:11"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        17,
+        14,
+        13,
+        2,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 5,
+      "original_question": "What did Jon take a trip to Barcelona for?",
+      "ambiguous_query": "What did he take a trip to Barcelona for?",
+      "q_final": "What did Jon take a trip to Barcelona for?",
+      "evidence": [
+        "D15:1"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        10,
+        1,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 102,
+      "category": 5,
+      "original_question": "What did Jon make a limited edition line of?",
+      "ambiguous_query": "What did he make a limited edition line of?",
+      "q_final": "What did Gina make a limited edition line of?",
+      "evidence": [
+        "D16:3"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 103,
+      "category": 5,
+      "original_question": "What temporary job did Gina take to cover expenses?",
+      "ambiguous_query": "What temporary job did she take to cover expenses?",
+      "q_final": "What temporary job did Jon take to cover expenses?",
+      "evidence": [
+        "D18:2"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        1,
+        6,
+        9,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 104,
+      "category": 5,
+      "original_question": "What plans does Gina have after receiving advice at the networking event?",
+      "ambiguous_query": "What plans does she have after receiving advice at the networking event?",
+      "q_final": "What plans does Gina have after receiving advice at the networking event?",
+      "evidence": [
+        "D18:10"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        16,
+        8,
+        14,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    }
+  ]
+}

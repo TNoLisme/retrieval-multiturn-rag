@@ -17,17 +17,23 @@ def vector_db_search(state: ConversationState, session_id: str, query: str = "")
     """
     Search old memos in the RAM database.
     """
-    if state.entities:
-        query_term = " ".join(state.entities.values())
-    elif state.attributes:
-        query_term = " ".join(state.attributes.values())
-    elif query:
-        query_term = query
+    # Combine lists into strings
+    ent_str = " ".join(state.entities) if state.entities else ""
+    attr_str = " ".join(state.attributes) if state.attributes else ""
+    
+    # Merge all available keywords
+    parts = []
+    if ent_str: parts.append(ent_str)
+    if attr_str: parts.append(attr_str)
+    if query: parts.append(query)
+    
+    if parts:
+        query_term = " ".join(parts)
     else:
         query_term = "conversation"
         
     print(f"[3. Retrieval & Fusion (Retrieve Memo)] Querying Memo DB for keywords: '{query_term}'...")
-    return search_memo_db(query_term, session_id)
+    return search_memo_db(query_term, session_id, top_k=5)
 
 def run_pipeline(user_query: str, session_id: str) -> str:
     """
@@ -82,7 +88,7 @@ def run_pipeline(user_query: str, session_id: str) -> str:
 
     # 5. Generation Layer (Controlled Rewrite)
     print("[4. Generation Layer (Controlled Rewrite)] Generating standalone query...")
-    q_final = controlled_rewrite(user_query, new_state, memos, retrieved_empty)
+    q_final = controlled_rewrite(user_query, new_state, memos, retrieved_empty, active_chat=active_chat)
     print(f"[4. Generation Layer (Controlled Rewrite)] Rewritten: '{user_query}' ➔ '{q_final}'")
     
     # 6. Save state and history for next turn

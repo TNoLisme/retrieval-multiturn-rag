@@ -94,9 +94,8 @@ def state_tracker_node(query: str, old_state: ConversationState) -> TrackerOutpu
         state_data = data.get("state", {})
         state = ConversationState(
             intent=state_data.get("intent", "inquiry"),
-            entities=state_data.get("entities", {}),
-            attributes=state_data.get("attributes", {}),
-            constraints=state_data.get("constraints", []),
+            entities=state_data.get("entities", []),
+            attributes=state_data.get("attributes", []),
             unresolved_references=state_data.get("unresolved_references", [])
         )
         output = _sanitize_output(query, state, bool(data.get("need_retrieval", False)))
