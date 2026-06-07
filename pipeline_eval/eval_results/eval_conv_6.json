@@ -1,0 +1,4660 @@
+{
+  "summary": {
+    "conversation_index": 6,
+    "sample_id": "conv-47",
+    "total_qa": 190,
+    "bm25_hit_rate_at1": 0.7614,
+    "bm25_hit_rate_at3": 0.9072,
+    "bm25_hit_rate_at5": 0.9528,
+    "llm_judge_accuracy": 0.5526,
+    "llm_judge_passes": 105
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 3,
+      "original_question": "What are John's suspected health problems?",
+      "ambiguous_query": "What are his suspected health problems?",
+      "q_final": "What are John's suspected health problems?",
+      "evidence": [
+        "D1:27"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        17,
+        7,
+        8,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 1,
+      "category": 2,
+      "original_question": "Which recreational activity was James pursuing on March 16, 2022?",
+      "ambiguous_query": "Which recreational activity was he pursuing on March 16, 2022?",
+      "q_final": "Which recreational activity was James pursuing on March 16, 2022?",
+      "evidence": [
+        "D1:26"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        3,
+        6,
+        14,
+        1,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 1,
+      "original_question": "Which places or events have John and James planned to meet at?",
+      "ambiguous_query": "Which places or events have he and James planned to meet at?",
+      "q_final": "Which places or events have James and John planned to meet at?",
+      "evidence": [
+        "D1:36",
+        "D21:15",
+        "D23:5",
+        "D23:6"
+      ],
+      "gold_sections": [
+        1,
+        21,
+        23
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        10,
+        6,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "Do both James and John have pets?",
+      "ambiguous_query": "Do both James and him have pets?",
+      "q_final": "Do James and John have pets?",
+      "evidence": [
+        "D1:12",
+        "D2:18"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        9,
+        2,
+        1,
+        17,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 4,
+      "category": 2,
+      "original_question": "When did John resume playing drums in his adulthood?",
+      "ambiguous_query": "When did he resume playing drums in his adulthood?",
+      "q_final": "When did James resume playing drums in his adulthood?",
+      "evidence": [
+        "D3:5"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        24,
+        8,
+        17,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 5,
+      "category": 1,
+      "original_question": "What are John and James' favorite games?",
+      "ambiguous_query": "What are he and James' favorite games?",
+      "q_final": "What are James and his favorite games?",
+      "evidence": [
+        "D3:11",
+        "D4:16"
+      ],
+      "gold_sections": [
+        3,
+        4
+      ],
+      "retrieved_sections": [
+        1,
+        4,
+        20,
+        3,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 6,
+      "category": 3,
+      "original_question": "Does James live in Connecticut?",
+      "ambiguous_query": "Does he live in Connecticut?",
+      "q_final": "Does he live in Connecticut?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        15,
+        21,
+        10,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 7,
+      "category": 3,
+      "original_question": "In which state is the shelter from which James adopted the puppy?",
+      "ambiguous_query": "In which state is the shelter from which him adopted the puppy?",
+      "q_final": "In which state is the shelter from which James adopted his puppy?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        18,
+        10,
+        21,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 1,
+      "original_question": "How many pets does James have?",
+      "ambiguous_query": "How many pets does he have?",
+      "q_final": "How many pets does James have?",
+      "evidence": [
+        "D1:12",
+        "D1:14",
+        "D5:1"
+      ],
+      "gold_sections": [
+        1,
+        5
+      ],
+      "retrieved_sections": [
+        9,
+        2,
+        1,
+        17,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 1,
+      "original_question": "What are the names of James's dogs?",
+      "ambiguous_query": "What are the names of his dogs?",
+      "q_final": "What are the names of his dogs?",
+      "evidence": [
+        "D1:14",
+        "D5:1"
+      ],
+      "gold_sections": [
+        1,
+        5
+      ],
+      "retrieved_sections": [
+        31,
+        19,
+        14,
+        5,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When did James adopt Ned?",
+      "ambiguous_query": "When did he adopt Ned?",
+      "q_final": "When did James adopt Ned?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        21,
+        15,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 2,
+      "original_question": "How was John feeling on April 10, 2022?",
+      "ambiguous_query": "How was he feeling on April 10, 2022?",
+      "q_final": "How was James feeling on April 10, 2022?",
+      "evidence": [
+        "D6:7"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        12,
+        14,
+        16,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 12,
+      "category": 3,
+      "original_question": "Did James have a girlfriend during April 2022?",
+      "ambiguous_query": "Did he have a girlfriend during April 2022?",
+      "q_final": "Did James have a girlfriend during April 2022?",
+      "evidence": [
+        "D6:6"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        23,
+        6,
+        14,
+        13,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 2,
+      "original_question": "When did James visit Italy?",
+      "ambiguous_query": "When did he visit Italy?",
+      "q_final": "When did James visit Italy?",
+      "evidence": [
+        "D6:12"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        31,
+        16,
+        17,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 2,
+      "original_question": "When did James buy himself a new adventure book?",
+      "ambiguous_query": "When did he buy himself a new adventure book?",
+      "q_final": "When did John buy himself a new adventure book?",
+      "evidence": [
+        "D8:11"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        14,
+        2,
+        25,
+        8,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 15,
+      "category": 2,
+      "original_question": "When did James start playing Civilization VI?",
+      "ambiguous_query": "When did he start playing Civilization VI?",
+      "q_final": "When did James start playing Civilization VI?",
+      "evidence": [
+        "D8:29"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        24,
+        3,
+        17,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 3,
+      "original_question": "What is the game with different colored cards that was John talking about with James?",
+      "ambiguous_query": "What is the game with different colored cards that was he talking about with James?",
+      "q_final": "What game with different colored cards was he talking about with James?",
+      "evidence": [
+        "D8:34"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        25,
+        27,
+        28,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 3,
+      "original_question": "What is the board game where you have to find the imposter that John mentions to James?",
+      "ambiguous_query": "What is the board game where you have to find the imposter that he mentions to James?",
+      "q_final": "What board game involves finding the imposter that James mentions?",
+      "evidence": [
+        "D8:36"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        31,
+        5,
+        25,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "Which books has John recommended to James?",
+      "ambiguous_query": "Which books has he recommended to James?",
+      "q_final": "Which books has James recommended to James?",
+      "evidence": [
+        "D8:14",
+        "D14:10"
+      ],
+      "gold_sections": [
+        8,
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        8,
+        25,
+        24,
+        26
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 19,
+      "category": 3,
+      "original_question": "Was James feeling lonely before meeting Samantha?",
+      "ambiguous_query": "Was he feeling lonely before meeting Samantha?",
+      "q_final": "Was John feeling lonely before meeting Samantha?",
+      "evidence": [
+        "D9:16"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        29,
+        6,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 20,
+      "category": 1,
+      "original_question": "How many charity tournaments has John organized till date?",
+      "ambiguous_query": "How many charity tournaments has he organized till date?",
+      "q_final": "How many charity tournaments has John organized till date?",
+      "evidence": [
+        "D10:2",
+        "D29:1"
+      ],
+      "gold_sections": [
+        10,
+        29
+      ],
+      "retrieved_sections": [
+        10,
+        29,
+        18,
+        4,
+        12
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 2,
+      "original_question": "When did John first organize a charity tournament with his friends?",
+      "ambiguous_query": "When did he first organize a charity tournament with his friends?",
+      "q_final": "When did James first organize a charity tournament with his friends?",
+      "evidence": [
+        "D10:2"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        4,
+        27,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 22,
+      "category": 1,
+      "original_question": "Who or which organizations have been the beneficiaries of John's charity tournaments?",
+      "ambiguous_query": "Who or which organizations have been the beneficiaries of his charity tournaments?",
+      "q_final": "Who or which organizations have been the beneficiaries of his charity tournaments?",
+      "evidence": [
+        "D10:10",
+        "D10:12",
+        "D29:1"
+      ],
+      "gold_sections": [
+        10,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        4,
+        15,
+        12
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 2,
+      "original_question": "When will John start his new job?",
+      "ambiguous_query": "When will he start his new job?",
+      "q_final": "When will he start his new job?",
+      "evidence": [
+        "D13:5"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        18,
+        23,
+        24,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "What kind of games has James tried to develop?",
+      "ambiguous_query": "What kind of games has him tried to develop?",
+      "q_final": "What kind of games has James tried to develop?",
+      "evidence": [
+        "D13:7",
+        "D1:4",
+        "D27:2"
+      ],
+      "gold_sections": [
+        1,
+        13,
+        27
+      ],
+      "retrieved_sections": [
+        20,
+        3,
+        28,
+        26,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 3,
+      "original_question": "Are John and James fans of the same football team?",
+      "ambiguous_query": "Are he and James fans of the same football team?",
+      "q_final": "Are James and John fans of the same football team?",
+      "evidence": [
+        "D13:12",
+        "D13:15"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        4,
+        7,
+        17,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 1,
+      "original_question": "Which countries has James visited?",
+      "ambiguous_query": "Which countries has he visited?",
+      "q_final": "Which countries has John visited?",
+      "evidence": [
+        "D6:12",
+        "D6:14",
+        "D16:9",
+        "D17:22"
+      ],
+      "gold_sections": [
+        6,
+        16,
+        17
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        31,
+        17,
+        23
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 27,
+      "category": 1,
+      "original_question": "What kind of classes has James joined?",
+      "ambiguous_query": "What kind of classes has him joined?",
+      "q_final": "What kind of classes has he joined?",
+      "evidence": [
+        "D13:6",
+        "D23:13"
+      ],
+      "gold_sections": [
+        13,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        20,
+        1,
+        2,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 28,
+      "category": 2,
+      "original_question": "When did James volunteer at an organization?",
+      "ambiguous_query": "When did he volunteer at an organization?",
+      "q_final": "When did John volunteer at an organization?",
+      "evidence": [
+        "D15:9"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        26,
+        10,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 29,
+      "category": 2,
+      "original_question": "When did James depart for his trip to Canada?",
+      "ambiguous_query": "When did he depart for his trip to Canada?",
+      "q_final": "When did James depart for his trip to Canada?",
+      "evidence": [
+        "D16:9"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        17,
+        16,
+        31,
+        30,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 3,
+      "original_question": "Which country did James book tickets for in July 2022?",
+      "ambiguous_query": "Which country did he book tickets for in July 2022?",
+      "q_final": "Which country did he book tickets for in July 2022?",
+      "evidence": [
+        "D16:9",
+        "D16:11"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        14,
+        25,
+        8,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "How many days did James plan to spend on his trip in Canada?",
+      "ambiguous_query": "How many days did he plan to spend on his trip in Canada?",
+      "q_final": "How many days did James plan to spend on his trip in Canada?",
+      "evidence": [
+        "D16:9",
+        "D16:13"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        17,
+        16,
+        31,
+        30,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 2,
+      "original_question": "Where was James at on July 12, 2022?",
+      "ambiguous_query": "Where was he at on July 12, 2022?",
+      "q_final": "Where was James at on July 12, 2022?",
+      "evidence": [
+        "D16:9"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        3,
+        13,
+        5,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 3,
+      "original_question": "Did John and James study together?",
+      "ambiguous_query": "Did he and James study together?",
+      "q_final": "Did James and she study together?",
+      "evidence": [
+        "D17:13"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        30,
+        15,
+        1,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 34,
+      "category": 1,
+      "original_question": "Which countries did James visit in July 2022?",
+      "ambiguous_query": "Which countries did he visit in July 2022?",
+      "q_final": "Which countries did John visit in July 2022?",
+      "evidence": [
+        "D16:9",
+        "D17:22"
+      ],
+      "gold_sections": [
+        16,
+        17
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        31,
+        13,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 35,
+      "category": 3,
+      "original_question": "What additional country did James visit during his trip to Canada?",
+      "ambiguous_query": "What additional country did he visit during his trip to Canada?",
+      "q_final": "What additional country did James visit during his trip to Canada?",
+      "evidence": [
+        "D17:22"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        16,
+        6,
+        31,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 3,
+      "original_question": "Who is Jill?",
+      "ambiguous_query": "Who is Jill?",
+      "q_final": "Who is Jill?",
+      "evidence": [
+        "D17:24"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 37,
+      "category": 2,
+      "original_question": "When did John spend time with his sister and dogs?",
+      "ambiguous_query": "When did he spend time with his sister and dogs?",
+      "q_final": "When did Melanie spend time with her sister and dogs?",
+      "evidence": [
+        "D17:28"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        30,
+        31,
+        7,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 38,
+      "category": 1,
+      "original_question": "What happened to John's job situation in 2022?",
+      "ambiguous_query": "What happened to his job situation in 2022?",
+      "q_final": "What happened to James's job situation in 2022?",
+      "evidence": [
+        "D4:36",
+        "D18:1",
+        "D18:7"
+      ],
+      "gold_sections": [
+        4,
+        18
+      ],
+      "retrieved_sections": [
+        13,
+        18,
+        25,
+        6,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 39,
+      "category": 2,
+      "original_question": "When did John start his job in IT?",
+      "ambiguous_query": "When did he start his job in IT?",
+      "q_final": "When did James start his job in IT?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        13,
+        18,
+        24,
+        14,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 40,
+      "category": 1,
+      "original_question": "What kind of tricks do James's pets know?",
+      "ambiguous_query": "What kind of tricks do his pets know?",
+      "q_final": "What kind of tricks do James's pets know?",
+      "evidence": [
+        "D2:17",
+        "D14:17",
+        "D14:23",
+        "D17:16"
+      ],
+      "gold_sections": [
+        2,
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        2,
+        9,
+        17,
+        1,
+        26
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 41,
+      "category": 2,
+      "original_question": "When did James meet Samantha?",
+      "ambiguous_query": "When did he meet Samantha?",
+      "q_final": "When did he meet Samantha?",
+      "evidence": [
+        "D19:12"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        29,
+        21,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 42,
+      "category": 2,
+      "original_question": "When did James take his 3 dogs to the beach?",
+      "ambiguous_query": "When did he take his 3 dogs to the beach?",
+      "q_final": "When did James take his 3 dogs to the beach?",
+      "evidence": [
+        "D19:12"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        6,
+        1,
+        31,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 2,
+      "original_question": "When did John plan his next meeting with his siblings?",
+      "ambiguous_query": "When did he plan his next meeting with his siblings?",
+      "q_final": "When did he plan his next meeting with his siblings?",
+      "evidence": [
+        "D20:17"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        21,
+        20,
+        6,
+        22,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 44,
+      "category": 3,
+      "original_question": "Why didn't John want to go to Starbucks?",
+      "ambiguous_query": "Why didn't he want to go to Starbucks?",
+      "q_final": "Why didn't he want to go to Starbucks?",
+      "evidence": [
+        "D21:12",
+        "D21:14"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        18,
+        1,
+        15,
+        31
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 45,
+      "category": 1,
+      "original_question": "What kind of beer does McGee's bar serve?",
+      "ambiguous_query": "What kind of beer does McGee's bar serve?",
+      "q_final": "What kind of beer does McGee's bar serve?",
+      "evidence": [
+        "D21:15",
+        "D21:17",
+        "D23:3"
+      ],
+      "gold_sections": [
+        21,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        21,
+        29,
+        16,
+        24
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 46,
+      "category": 2,
+      "original_question": "When did John and James meet at McGee's bar?",
+      "ambiguous_query": "When did he and James meet at McGee's bar?",
+      "q_final": "When did James and he meet at McGee's bar?",
+      "evidence": [
+        "D21:18"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        29,
+        21,
+        23,
+        6,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 2,
+      "original_question": "When did James ask Samantha to be his girlfriend?",
+      "ambiguous_query": "When did he ask Samantha to be his girlfriend?",
+      "q_final": "When did she ask Samantha to be his girlfriend?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        6,
+        29,
+        19,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 48,
+      "category": 2,
+      "original_question": "When did James, Samantha and John go to the baseball game together?",
+      "ambiguous_query": "When did James, Samantha and him go to the baseball game together?",
+      "q_final": "When did James and Samantha go to the baseball game together?",
+      "evidence": [
+        "D23:5",
+        "D23:6"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        1,
+        19,
+        20,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 49,
+      "category": 1,
+      "original_question": "What gaming equipments did John buy or refurbish?",
+      "ambiguous_query": "What gaming equipments did he buy or refurbish?",
+      "q_final": "What gaming equipment did James buy or refurbish?",
+      "evidence": [
+        "D23:8",
+        "D23:10",
+        "D20:9"
+      ],
+      "gold_sections": [
+        20,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        20,
+        10,
+        4,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 50,
+      "category": 2,
+      "original_question": "When did James start taking cooking classes?",
+      "ambiguous_query": "When did he start taking cooking classes?",
+      "q_final": "When did James start taking cooking classes?",
+      "evidence": [
+        "D23:13"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        13,
+        8,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 51,
+      "category": 1,
+      "original_question": "Which new games did John start play during the course of the conversation with James?",
+      "ambiguous_query": "Which new games did he start play during the course of the conversation with James?",
+      "q_final": "Which new games did James start playing during the course of the conversation with John?",
+      "evidence": [
+        "D5:4",
+        "D19:7",
+        "D30:14",
+        "D24:1",
+        "D24:3",
+        "D8:20"
+      ],
+      "gold_sections": [
+        5,
+        8,
+        19,
+        24,
+        30
+      ],
+      "retrieved_sections": [
+        28,
+        24,
+        26,
+        29,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.2,
+      "recall_at5": 0.2,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 52,
+      "category": 2,
+      "original_question": "When did John start working on his 2D Adventure mobile game?",
+      "ambiguous_query": "When did he start working on his 2D Adventure mobile game?",
+      "q_final": "When did James start working on his 2D Adventure mobile game?",
+      "evidence": [
+        "D25:9"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        21,
+        8,
+        1,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 53,
+      "category": 2,
+      "original_question": "How long did it take for James to complete his Witcher-inspired game?",
+      "ambiguous_query": "How long did it take for him to complete his Witcher-inspired game?",
+      "q_final": "How long did it take for James to complete his Witcher-inspired game?",
+      "evidence": [
+        "D6:1",
+        "D27:2"
+      ],
+      "gold_sections": [
+        6,
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        6,
+        9,
+        25,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 54,
+      "category": 1,
+      "original_question": "What kind of programming-related events has John hosted?",
+      "ambiguous_query": "What kind of programming-related events has he hosted?",
+      "q_final": "What kind of programming-related events has John hosted?",
+      "evidence": [
+        "D27:1",
+        "D28:6"
+      ],
+      "gold_sections": [
+        27,
+        28
+      ],
+      "retrieved_sections": [
+        20,
+        27,
+        28,
+        1,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "When did John and his programming friends host an online programming competition?",
+      "ambiguous_query": "When did he and his programming friends host an online programming competition?",
+      "q_final": "When did James and his programming friends host an online programming competition?",
+      "evidence": [
+        "D27:1"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        20,
+        28,
+        8,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 56,
+      "category": 1,
+      "original_question": "Which of James's family members have visited him in the last year?",
+      "ambiguous_query": "Which of his family members have visited him in the last year?",
+      "q_final": "Which of her family members have visited her in the last year?",
+      "evidence": [
+        "D17:28",
+        "D28:19"
+      ],
+      "gold_sections": [
+        17,
+        28
+      ],
+      "retrieved_sections": [
+        20,
+        31,
+        6,
+        17,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 57,
+      "category": 2,
+      "original_question": "When did James' mother and her friend visit him?",
+      "ambiguous_query": "When did he' mother and her friend visit him?",
+      "q_final": "When did Melanie's mother and her friend visit her?",
+      "evidence": [
+        "D28:19"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        31,
+        28,
+        6,
+        17,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 58,
+      "category": 2,
+      "original_question": "When did James try Cyberpunk 2077 game?",
+      "ambiguous_query": "When did he try Cyberpunk 2077 game?",
+      "q_final": "When did James try Cyberpunk 2073 game?",
+      "evidence": [
+        "D28:27"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        8,
+        1,
+        19,
+        31
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 59,
+      "category": 2,
+      "original_question": "When did John and his gaming friends organize the charity tournament?",
+      "ambiguous_query": "When did he and his gaming friends organize the charity tournament?",
+      "q_final": "When did James and his gaming friends organize the charity tournament?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        4,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 60,
+      "category": 1,
+      "original_question": "What games has John played with his friends at charity tournaments?",
+      "ambiguous_query": "What games has he played with his friends at charity tournaments?",
+      "q_final": "What games has James played with his friends at charity tournaments?",
+      "evidence": [
+        "D10:4",
+        "D29:1",
+        "D29:3"
+      ],
+      "gold_sections": [
+        10,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        4,
+        8,
+        3
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 61,
+      "category": 2,
+      "original_question": "What was James' big moment with Samantha in October 2023?",
+      "ambiguous_query": "What was he' big moment with Samantha in October 2023?",
+      "q_final": "What was Samantha's big moment with James in October 2023?",
+      "evidence": [
+        "D29:8",
+        "D29:10"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        25,
+        23,
+        19,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 62,
+      "category": 2,
+      "original_question": "How long did James and Samantha date for before deciding to move in together?",
+      "ambiguous_query": "How long did he and Samantha date for before deciding to move in together?",
+      "q_final": "How long did James and Samantha date for before deciding to move in together?",
+      "evidence": [
+        "D19:14",
+        "D29:8",
+        "D29:10"
+      ],
+      "gold_sections": [
+        19,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        19,
+        4,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 2,
+      "original_question": "When did James, his family and his dogs start on a road trip together?",
+      "ambiguous_query": "When did he, his family and his dogs start on a road trip together?",
+      "q_final": "When did John and his family and dogs start on a road trip together?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        31,
+        30,
+        17,
+        20,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 64,
+      "category": 2,
+      "original_question": "How long did John practice chess for before winning the chess tournament?",
+      "ambiguous_query": "How long did he practice chess for before winning the chess tournament?",
+      "q_final": "How long did James practice chess for before winning the chess tournament?",
+      "evidence": [
+        "D17:1",
+        "D30:2",
+        "D30:4"
+      ],
+      "gold_sections": [
+        17,
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        16,
+        17,
+        4,
+        29
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 65,
+      "category": 2,
+      "original_question": "When did James and his family visit Mark and Josh?",
+      "ambiguous_query": "When did he and his family visit Mark and Josh?",
+      "q_final": "When did Mark and Josh visit?",
+      "evidence": [
+        "D31:1"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        6,
+        16,
+        17,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 66,
+      "category": 2,
+      "original_question": "When did John work with a game developer on a project?",
+      "ambiguous_query": "When did he work with a game developer on a project?",
+      "q_final": "When did James work with a game developer on a project?",
+      "evidence": [
+        "D31:2"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        1,
+        6,
+        21,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 67,
+      "category": 4,
+      "original_question": "What programming languages has James worked with?",
+      "ambiguous_query": "What programming languages has he worked with?",
+      "q_final": "What programming languages has James worked with?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        6,
+        8,
+        28,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 4,
+      "original_question": "What type of mobile application does James plan to build with John?",
+      "ambiguous_query": "What type of mobile application does James plan to build with him?",
+      "q_final": "What type of mobile application does James plan to build with him?",
+      "evidence": [
+        "D1:14"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        25,
+        16,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 4,
+      "original_question": "How does James plan to make his dog-sitting app unique?",
+      "ambiguous_query": "How does he plan to make his dog-sitting app unique?",
+      "q_final": "How does he plan to make his dog-sitting app unique?",
+      "evidence": [
+        "D1:16"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        21,
+        31,
+        6,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 70,
+      "category": 4,
+      "original_question": "What has John mostly found with the metal detector so far?",
+      "ambiguous_query": "What has he mostly found with the metal detector so far?",
+      "q_final": "What has John mostly found with the metal detector so far?",
+      "evidence": [
+        "D2:12"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        6,
+        25,
+        28,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "What did James offer to do for John regarding pets?",
+      "ambiguous_query": "What did James offer to do for him regarding pets?",
+      "q_final": "What did James offer to do for you regarding pets?",
+      "evidence": [
+        "D2:19"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        17,
+        18,
+        9,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "What instrument is John learning to play as of 27 March, 2022?",
+      "ambiguous_query": "What instrument is he learning to play as of 27 March, 2022?",
+      "q_final": "What instrument is James learning to play as of 27 March, 2022?",
+      "evidence": [
+        "D3:2",
+        "D3:3"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        28,
+        22,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "How long has John been playing the drums as of 27 March, 2022?",
+      "ambiguous_query": "How long has he been playing the drums as of 27 March, 2022?",
+      "q_final": "How long has Melanie been playing drums as of 27 March, 2022?",
+      "evidence": [
+        "D3:5"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        24,
+        28,
+        4,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "What game did John play in an intense tournament at the gaming convention in March 2022?",
+      "ambiguous_query": "What game did he play in an intense tournament at the gaming convention in March 2022?",
+      "q_final": "What game did James play in an intense tournament at the gaming convention in March 2022?",
+      "evidence": [
+        "D3:11"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        4,
+        8,
+        28,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What game was James playing in the online gaming tournament in April 2022?",
+      "ambiguous_query": "What game was he playing in the online gaming tournament in April 2022?",
+      "q_final": "What game was he playing in the online gaming tournament in April 2022?",
+      "evidence": [
+        "D4:16"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        8,
+        5,
+        20,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "How does James communicate with his gaming team?",
+      "ambiguous_query": "How does he communicate with his gaming team?",
+      "q_final": "How does he communicate with his gaming team?",
+      "evidence": [
+        "D4:14"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        28,
+        25,
+        17,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What advice did James receive from the famous players he met at the tournament?",
+      "ambiguous_query": "What advice did he receive from the famous players he met at the tournament?",
+      "q_final": "What advice did John receive from the famous players he met at the tournament?",
+      "evidence": [
+        "D4:12"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        30,
+        18,
+        7,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "What did James adopt in April 2022?",
+      "ambiguous_query": "What did he adopt in April 2022?",
+      "q_final": "What did James adopt in April 2022?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        6,
+        4,
+        7,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 79,
+      "category": 4,
+      "original_question": "What is the name of the pup that was adopted by James?",
+      "ambiguous_query": "What is the name of the pup that was adopted by him?",
+      "q_final": "What is the name of the pup that was adopted by him?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        21,
+        31,
+        8,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "Why did James embody the appearance of the game character from the woman he saw during a walk?",
+      "ambiguous_query": "Why did he embody the appearance of the game character from the woman he saw during a walk?",
+      "q_final": "Why did James embody the appearance of the game character from the woman he saw during a walk?",
+      "evidence": [
+        "D6:6"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        28,
+        1,
+        19,
+        31
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "What inspired James to create the game character in the virtual world?",
+      "ambiguous_query": "What inspired he to create the game character in the virtual world?",
+      "q_final": "What inspired you to create the game character in the virtual world?",
+      "evidence": [
+        "D6:6"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        27,
+        22,
+        14,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "Which country did James visit in 2021?",
+      "ambiguous_query": "Which country did he visit in 2021?",
+      "q_final": "Which country did John visit in 2021?",
+      "evidence": [
+        "D6:12"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        31,
+        17,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What impresses John about Japan?",
+      "ambiguous_query": "What impresses he about Japan?",
+      "q_final": "What impresses Japan about Japan?",
+      "evidence": [
+        "D6:15"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "What kind of assignment was giving John a hard time at work?",
+      "ambiguous_query": "What kind of assignment was giving he a hard time at work?",
+      "q_final": "What kind of assignment was giving John a hard time at work?",
+      "evidence": [
+        "D7:13"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        20,
+        25,
+        12,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What breed is Daisy, one of James' dogs?",
+      "ambiguous_query": "What breed is Daisy, one of him' dogs?",
+      "q_final": "What breed is Daisy, one of her dogs?",
+      "evidence": [
+        "D9:12"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        31,
+        1,
+        8,
+        9,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "What type of pizza is James' favorite?",
+      "ambiguous_query": "What type of pizza is him' favorite?",
+      "q_final": "What type of pizza is he favorite?",
+      "evidence": [
+        "D9:18"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        1,
+        14,
+        3,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "What type of pizza is John's favorite?",
+      "ambiguous_query": "What type of pizza is his favorite?",
+      "q_final": "What type of pizza is Samantha's favorite?",
+      "evidence": [
+        "D9:19"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        29,
+        23,
+        19,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "What did John organize with his friends on May 8, 2022?",
+      "ambiguous_query": "What did he organize with his friends on May 8, 2022?",
+      "q_final": "What did he organize with his friends on May 8, 2022?",
+      "evidence": [
+        "D10:4"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        9,
+        31,
+        8,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What did John and his friends do with the remaining money after helping the dog shelter?",
+      "ambiguous_query": "What did he and his friends do with the remaining money after helping the dog shelter?",
+      "q_final": "What did James and his friends do with the remaining money after helping the dog shelter?",
+      "evidence": [
+        "D10:12"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        31,
+        17,
+        6,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "What was the main goal of the money raised from the charity tournament organized by John and his friends in May 2022?",
+      "ambiguous_query": "What was the main goal of the money raised from the charity tournament organized by him and his friends in May 2022?",
+      "q_final": "What was the main goal of the money raised from the charity tournament organized by him and his friends in May 2022?",
+      "evidence": [
+        "D10:10"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        29,
+        12,
+        9,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "What did the system John created help the charitable foundation with?",
+      "ambiguous_query": "What did the system he created help the charitable foundation with?",
+      "q_final": "What did the system he created help the charitable foundation with?",
+      "evidence": [
+        "D11:5"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        22,
+        21,
+        30,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "What did John create for the charitable foundation that helped generate reports for analysis?",
+      "ambiguous_query": "What did he create for the charitable foundation that helped generate reports for analysis?",
+      "q_final": "What did James create for the charitable foundation that helped generate reports for analysis?",
+      "evidence": [
+        "D11:3"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        25,
+        30,
+        22,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "What did John receive for achieving second place in the tournament?",
+      "ambiguous_query": "What did he receive for achieving second place in the tournament?",
+      "q_final": "What did James receive for achieving second place in the tournament?",
+      "evidence": [
+        "D12:5",
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        4,
+        29,
+        10,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "What project is James working on in his game design course?",
+      "ambiguous_query": "What project is he working on in his game design course?",
+      "q_final": "What project is James working on in his game design course?",
+      "evidence": [
+        "D13:8"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        6,
+        21,
+        1,
+        13,
+        31
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "Who does James support in football matches?",
+      "ambiguous_query": "Who does he support in football matches?",
+      "q_final": "Who does he support in football matches?",
+      "evidence": [
+        "D13:12"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        22,
+        27,
+        15,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "Which football club does John support?",
+      "ambiguous_query": "Which football club does he support?",
+      "q_final": "Which football club does John support?",
+      "evidence": [
+        "D13:15"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        17,
+        22,
+        27,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "What disagreement do James and John have about their football teams?",
+      "ambiguous_query": "What disagreement do James and him have about their football teams?",
+      "q_final": "What disagreement does James have with him about their football teams?",
+      "evidence": [
+        "D13:15"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        4,
+        7,
+        17,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "What is Max good at doing according to James?",
+      "ambiguous_query": "What is Max good at doing according to him?",
+      "q_final": "What is Max good at doing according to him?",
+      "evidence": [
+        "D14:23"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        29,
+        10,
+        11,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What is the main focus of the organization that James volunteered with?",
+      "ambiguous_query": "What is the main focus of the organization that he volunteered with?",
+      "q_final": "What is the main focus of the organization that James volunteered with?",
+      "evidence": [
+        "D15:11"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        26,
+        1,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "Will there be an interview required to volunteer with the organization James volunteered for?",
+      "ambiguous_query": "Will there be an interview required to volunteer with the organization him volunteered for?",
+      "q_final": "Will there be an interview required to volunteer with the organization he volunteered for?",
+      "evidence": [
+        "D15:15"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        25,
+        26,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "How did John relax in his free time on 9 July, 2022?",
+      "ambiguous_query": "How did he relax in his free time on 9 July, 2022?",
+      "q_final": "How did James relax in his free time on 9 July, 2022?",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        7,
+        5,
+        19,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "What did James enjoy doing on cold winter days?",
+      "ambiguous_query": "What did he enjoy doing on cold winter days?",
+      "q_final": "What did James enjoy doing on cold winter days?",
+      "evidence": [
+        "D16:9"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        8,
+        1,
+        14,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What new hobby did James become interested in on 9 July, 2022?",
+      "ambiguous_query": "What new hobby did he become interested in on 9 July, 2022?",
+      "q_final": "What new hobby did James become interested in on 9 July, 2022?",
+      "evidence": [
+        "D16:5"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        2,
+        16,
+        5,
+        6,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "Where did James plan to visit after Toronto?",
+      "ambiguous_query": "Where did he plan to visit after Toronto?",
+      "q_final": "Where did he plan to visit after Toronto?",
+      "evidence": [
+        "D16:11"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        23,
+        6,
+        31
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "When did James plan to return from his trip to Toronto and Vancouver?",
+      "ambiguous_query": "When did he plan to return from his trip to Toronto and Vancouver?",
+      "q_final": "When did he plan to return from his trip to Toronto and Vancouver?",
+      "evidence": [
+        "D16:13"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        31,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "What online game did John start playing recently for improving strategy?",
+      "ambiguous_query": "What online game did he start playing recently for improving strategy?",
+      "q_final": "What online game did James start playing recently for improving strategy?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        20,
+        19,
+        8,
+        17,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What made John leave his IT job?",
+      "ambiguous_query": "What made he leave his IT job?",
+      "q_final": "What made James leave his IT job?",
+      "evidence": [
+        "D18:3"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        13,
+        18,
+        10,
+        12,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "Which game tournaments does John plan to organize besides CS:GO?",
+      "ambiguous_query": "Which game tournaments does he plan to organize besides CS:GO?",
+      "q_final": "Which game tournaments does John plan to organize besides CS:GO?",
+      "evidence": [
+        "D18:9"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        3,
+        10,
+        4,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What happened to James's puppy during the recent visit to the clinic?",
+      "ambiguous_query": "What happened to his puppy during the recent visit to the clinic?",
+      "q_final": "What happened to his puppy during the recent visit to the clinic?",
+      "evidence": [
+        "D18:16"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        23,
+        6,
+        31,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What game genre did John start exploring instead of shooters?",
+      "ambiguous_query": "What game genre did he start exploring instead of shooters?",
+      "q_final": "What game genre did James start exploring instead of shooters?",
+      "evidence": [
+        "D19:3"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        24,
+        8,
+        3,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "Which RPG game is John playing and enjoying on 10 August, 2022?",
+      "ambiguous_query": "Which RPG game is he playing and enjoying on 10 August, 2022?",
+      "q_final": "Which RPG game is he playing and enjoying on 10 August, 2022?",
+      "evidence": [
+        "D19:7"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        8,
+        5,
+        28,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What aspect of \"The Witcher 3\" does John find immersive?",
+      "ambiguous_query": "What aspect of \"The Witcher 3\" does he find immersive?",
+      "q_final": "What aspect of \"The Witcher 3\" does James find immersive?",
+      "evidence": [
+        "D19:7"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        27,
+        1,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "Whose phone number did James receive during the beach outing?",
+      "ambiguous_query": "Whose phone number did he receive during the beach outing?",
+      "q_final": "Whose phone number did James receive during the beach outing?",
+      "evidence": [
+        "D19:14"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        14,
+        8,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "What is James planning to do after receiving Samantha's phone number?",
+      "ambiguous_query": "What is he planning to do after receiving Samantha's phone number?",
+      "q_final": "What is she planning to do after receiving Samantha's phone number?",
+      "evidence": [
+        "D19:14"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        29,
+        4,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "What is John organizing with his siblings?",
+      "ambiguous_query": "What is he organizing with his siblings?",
+      "q_final": "What is he organizing with his siblings?",
+      "evidence": [
+        "D20:17"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        21,
+        10,
+        22,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "What type of beer does John not like?",
+      "ambiguous_query": "What type of beer does him not like?",
+      "q_final": "What type of beer does James not like?",
+      "evidence": [
+        "D21:16"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        9,
+        23,
+        8,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What were some difficulties James faced during the development of his game?",
+      "ambiguous_query": "What were some difficulties he faced during the development of his game?",
+      "q_final": "What difficulties did John face during the development of his game?",
+      "evidence": [
+        "D22:7"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        25,
+        27,
+        9,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What has John been teaching his siblings?",
+      "ambiguous_query": "What has he been teaching his siblings?",
+      "q_final": "What has John been teaching his siblings?",
+      "evidence": [
+        "D22:10"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        21,
+        20,
+        17,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "What kind of programs are John's siblings making?",
+      "ambiguous_query": "What kind of programs are his siblings making?",
+      "q_final": "What kind of programs are Melanie and Jake making?",
+      "evidence": [
+        "D22:12"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        11,
+        7,
+        1,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "Which company's headphones did John choose for gaming?",
+      "ambiguous_query": "Which company's headphones did he choose for gaming?",
+      "q_final": "Which company's headphones did James choose for gaming?",
+      "evidence": [
+        "D23:10"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        4,
+        20,
+        3,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "What did James and Samantha discover they both enjoy at McGee's bar?",
+      "ambiguous_query": "What did he and Samantha discover they both enjoy at McGee's bar?",
+      "q_final": "What did James and Samantha discover they both enjoy at McGee's bar?",
+      "evidence": [
+        "D23:3"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        29,
+        7,
+        14,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "How much does James pay per cooking class?",
+      "ambiguous_query": "How much does he pay per cooking class?",
+      "q_final": "How much does he pay per cooking class?",
+      "evidence": [
+        "D23:15"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        31,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "What did James learn to make in the cooking class besides omelette and meringue?",
+      "ambiguous_query": "What did he learn to make in the cooking class besides omelette and meringue?",
+      "q_final": "What did John learn to make in the cooking class besides omelette and meringue?",
+      "evidence": [
+        "D23:15"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        28,
+        12,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "Why did James sign up for a cooking class?",
+      "ambiguous_query": "Why did he sign up for a cooking class?",
+      "q_final": "Why did John sign up for a cooking class?",
+      "evidence": [
+        "D23:13"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        1,
+        8,
+        10,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "What did James prepare for the first time in the cooking class?",
+      "ambiguous_query": "What did he prepare for the first time in the cooking class?",
+      "q_final": "What did James prepare for the first time in the cooking class?",
+      "evidence": [
+        "D23:13"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        12,
+        17,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "What is the name of the board game John tried in September 2022?",
+      "ambiguous_query": "What is the name of the board game he tried in September 2022?",
+      "q_final": "What board game did he try in September 2022?",
+      "evidence": [
+        "D24:3"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        8,
+        25,
+        28,
+        1,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "Where does James get his ideas from?",
+      "ambiguous_query": "Where does he get his ideas from?",
+      "q_final": "Where does he get his ideas from?",
+      "evidence": [
+        "D24:4"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        17,
+        28,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "What kind of dream did James have recently?",
+      "ambiguous_query": "What kind of dream did him have recently?",
+      "q_final": "What kind of dream did James have recently?",
+      "evidence": [
+        "D24:8"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        13,
+        24,
+        2,
+        16,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "What kind of music does John like?",
+      "ambiguous_query": "What kind of music does him like?",
+      "q_final": "What kind of music does John like?",
+      "evidence": [
+        "D24:13"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        8,
+        2,
+        3,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "What instrument did James used to play when he was younger?",
+      "ambiguous_query": "What instrument did he used to play when he was younger?",
+      "q_final": "What instrument did James use to play when he was younger?",
+      "evidence": [
+        "D24:14"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        3,
+        26,
+        29,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 131,
+      "category": 4,
+      "original_question": "What did John use to play when he was younger to let off steam?",
+      "ambiguous_query": "What did he use to play when he was younger to let off steam?",
+      "q_final": "What did John use to play when he was younger to let off steam?",
+      "evidence": [
+        "D24:15"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        26,
+        29,
+        20,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 132,
+      "category": 4,
+      "original_question": "What career milestone did John achieve recently in September 2022?",
+      "ambiguous_query": "What career milestone did he achieve recently in September 2022?",
+      "q_final": "What career milestone did James achieve recently in September 2022?",
+      "evidence": [
+        "D25:7"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        15,
+        18,
+        11,
+        25,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 133,
+      "category": 4,
+      "original_question": "What type of game is John's upcoming mobile game?",
+      "ambiguous_query": "What type of game is his upcoming mobile game?",
+      "q_final": "What type of game is James's upcoming mobile game?",
+      "evidence": [
+        "D25:9"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        31,
+        27,
+        8,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 134,
+      "category": 4,
+      "original_question": "What does John do to stay informed and constantly learn about game design?",
+      "ambiguous_query": "What does he do to stay informed and constantly learn about game design?",
+      "q_final": "What does he do to stay informed and constantly learn about game design?",
+      "evidence": [
+        "D25:13"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        22,
+        21,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 135,
+      "category": 4,
+      "original_question": "What kind of gig was John offered at the game dev non-profit organization?",
+      "ambiguous_query": "What kind of gig was him offered at the game dev non-profit organization?",
+      "q_final": "What kind of gig was Melanie offered at the game dev non-profit organization?",
+      "evidence": [
+        "D26:3"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        11,
+        25,
+        22,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 136,
+      "category": 4,
+      "original_question": "What does John feel about starting the journey as a programming mentor for game developers?",
+      "ambiguous_query": "What does he feel about starting the journey as a programming mentor for game developers?",
+      "q_final": "What does **he** feel about starting the journey as a programming mentor for game developers?",
+      "evidence": [
+        "D26:5"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        25,
+        28,
+        1,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 137,
+      "category": 4,
+      "original_question": "What kind of games is James excited to play with his new video card?",
+      "ambiguous_query": "What kind of games is him excited to play with his new video card?",
+      "q_final": "What kind of games is James excited to play with his new video card?",
+      "evidence": [
+        "D26:10"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        3,
+        4,
+        8,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 138,
+      "category": 4,
+      "original_question": "What inspired James to create his game?",
+      "ambiguous_query": "What inspired he to create his game?",
+      "q_final": "What inspired him to create his game?",
+      "evidence": [
+        "D27:6"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        22,
+        25,
+        1,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 139,
+      "category": 4,
+      "original_question": "What sparked James' passion for gaming when he was a kid?",
+      "ambiguous_query": "What sparked he' passion for gaming when he was a kid?",
+      "q_final": "What sparked his passion for gaming when he was a kid?",
+      "evidence": [
+        "D28:25"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        3,
+        11,
+        1,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 140,
+      "category": 4,
+      "original_question": "What did James lose progress on due to a power outage?",
+      "ambiguous_query": "What did he lose progress on due to a power outage?",
+      "q_final": "What did John lose progress on due to a power outage?",
+      "evidence": [
+        "D28:3"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        7,
+        8,
+        3,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 141,
+      "category": 4,
+      "original_question": "What games were played at the gaming tournament organized by John on 31 October, 2022?",
+      "ambiguous_query": "What games were played at the gaming tournament organized by him on 31 October, 2022?",
+      "q_final": "What games were played at the gaming tournament organized by him on 31 October, 2022?",
+      "evidence": [
+        "D29:1",
+        "D29:3"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        28,
+        4,
+        24,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 142,
+      "category": 4,
+      "original_question": "What was the purpose of the gaming tournament organized by John on 31 October, 2022?",
+      "ambiguous_query": "What was the purpose of the gaming tournament organized by him on 31 October, 2022?",
+      "q_final": "What was the purpose of the gaming tournament organized by John on 31 October, 2022?",
+      "evidence": [
+        "D29:1",
+        "D29:3"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        28,
+        4,
+        10,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 143,
+      "category": 4,
+      "original_question": "What decision did James and Samantha make on 31 October, 2022?",
+      "ambiguous_query": "What decision did he and Samantha make on 31 October, 2022?",
+      "q_final": "What decision did James and Samantha make on 31 October, 2022?",
+      "evidence": [
+        "D29:8",
+        "D29:10"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        19,
+        18,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 144,
+      "category": 4,
+      "original_question": "Where did James and Samantha decide to live together on 31 October, 2022?",
+      "ambiguous_query": "Where did he and Samantha decide to live together on 31 October, 2022?",
+      "q_final": "Where did James and Samantha decide to live together on 31 October, 2022?",
+      "evidence": [
+        "D29:10"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        15,
+        20,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 145,
+      "category": 4,
+      "original_question": "Why did James and Samantha choose an apartment near McGee's bar?",
+      "ambiguous_query": "Why did he and Samantha choose an apartment near McGee's bar?",
+      "q_final": "Why did Samantha and McGee choose an apartment near McGee's bar?",
+      "evidence": [
+        "D29:12"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        19,
+        21,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 146,
+      "category": 4,
+      "original_question": "What game is John hooked on playing on 5 November, 2022?",
+      "ambiguous_query": "What game is he hooked on playing on 5 November, 2022?",
+      "q_final": "What game is James hooked on playing on 5 November, 2022?",
+      "evidence": [
+        "D30:14"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        8,
+        28,
+        19,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 147,
+      "category": 4,
+      "original_question": "What did John suggest James practice before playing FIFA 23 together?",
+      "ambiguous_query": "What did he suggest James practice before playing FIFA 23 together?",
+      "q_final": "What did he suggest James practice before playing FIFA 23 together?",
+      "evidence": [
+        "D30:18"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        17,
+        29,
+        1,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 148,
+      "category": 4,
+      "original_question": "What project did John work on with a game developer by 7 November, 2022?",
+      "ambiguous_query": "What project did he work on with a game developer by 7 November, 2022?",
+      "q_final": "What project did James work on with a game developer by 7 November, 2022?",
+      "evidence": [
+        "D31:4"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        9,
+        21,
+        8,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 149,
+      "category": 4,
+      "original_question": "What is the name of John's cousin's dog?",
+      "ambiguous_query": "What is the name of his cousin's dog?",
+      "q_final": "What is the name of my cousin's dog?",
+      "evidence": [
+        "D31:22"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        14,
+        8,
+        19,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 150,
+      "category": 5,
+      "original_question": "What did John adopt in April 2022?",
+      "ambiguous_query": "What did he adopt in April 2022?",
+      "q_final": "What did James adopt in April 2022?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        6,
+        4,
+        7,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 151,
+      "category": 5,
+      "original_question": "What is the name of the kitten that was adopted by James?",
+      "ambiguous_query": "What is the name of the kitten that was adopted by him?",
+      "q_final": "What is the name of the kitten that was adopted by him?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        21,
+        5,
+        8,
+        31,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 152,
+      "category": 5,
+      "original_question": "What inspired John to create the game character in the virtual world?",
+      "ambiguous_query": "What inspired he to create the game character in the virtual world?",
+      "q_final": "What inspired him to create the game character in the virtual world?",
+      "evidence": [
+        "D6:6"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        27,
+        22,
+        14,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 153,
+      "category": 5,
+      "original_question": "Which country did John visit in 2021?",
+      "ambiguous_query": "Which country did he visit in 2021?",
+      "q_final": "Which country did John visit in 2021?",
+      "evidence": [
+        "D6:12"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        31,
+        17,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 154,
+      "category": 5,
+      "original_question": "What kind of assignment was giving James a hard time at work?",
+      "ambiguous_query": "What kind of assignment was giving he a hard time at work?",
+      "q_final": "What kind of assignment was giving John a hard time at work?",
+      "evidence": [
+        "D7:13"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        20,
+        25,
+        12,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 5,
+      "original_question": "What did James and his friends do with the remaining money after helping the dog shelter?",
+      "ambiguous_query": "What did he and his friends do with the remaining money after helping the dog shelter?",
+      "q_final": "What did James and his friends do with the remaining money after helping the dog shelter?",
+      "evidence": [
+        "D10:12"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        31,
+        17,
+        6,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 156,
+      "category": 5,
+      "original_question": "What was the main goal of the money raised from the political campaign organized by John and his friends in May 2022?",
+      "ambiguous_query": "What was the main goal of the money raised from the political campaign organized by him and his friends in May 2022?",
+      "q_final": "What was the main goal of the money raised from the political campaign organized by James and his friends in May 2022?",
+      "evidence": [
+        "D10:10"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        29,
+        9,
+        28,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 157,
+      "category": 5,
+      "original_question": "What did the system John created help the illegal organization with?",
+      "ambiguous_query": "What did the system he created help the illegal organization with?",
+      "q_final": "What did the system he created help the illegal organization with?",
+      "evidence": [
+        "D11:5"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        15,
+        22,
+        21,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 158,
+      "category": 5,
+      "original_question": "What did James create for the charitable foundation that helped generate reports for analysis?",
+      "ambiguous_query": "What did he create for the charitable foundation that helped generate reports for analysis?",
+      "q_final": "What did James create for the charitable foundation that helped generate reports for analysis?",
+      "evidence": [
+        "D11:3"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        25,
+        30,
+        22,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 159,
+      "category": 5,
+      "original_question": "Who does James support in cricket matches?",
+      "ambiguous_query": "Who does he support in cricket matches?",
+      "q_final": "Who does he support in cricket matches?",
+      "evidence": [
+        "D13:12"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        13,
+        15,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 160,
+      "category": 5,
+      "original_question": "What is Max good at doing according to John?",
+      "ambiguous_query": "What is Max good at doing according to him?",
+      "q_final": "What is Max good at doing according to him?",
+      "evidence": [
+        "D14:23"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        29,
+        10,
+        11,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 161,
+      "category": 5,
+      "original_question": "Will there be a background check required to volunteer with the organization James volunteered for?",
+      "ambiguous_query": "Will there be a background check required to volunteer with the organization him volunteered for?",
+      "q_final": "Will there be a background check required for James to volunteer with the organization he volunteered for?",
+      "evidence": [
+        "D15:15"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        2,
+        26,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 162,
+      "category": 5,
+      "original_question": "How did James relax in his free time on 9 July, 2022?",
+      "ambiguous_query": "How did he relax in his free time on 9 July, 2022?",
+      "q_final": "How did James relax in his free time on 9 July, 2022?",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        7,
+        5,
+        19,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 163,
+      "category": 5,
+      "original_question": "What new hobby did John become interested in on 9 July, 2022?",
+      "ambiguous_query": "What new hobby did he become interested in on 9 July, 2022?",
+      "q_final": "What new hobby did James become interested in on 9 July, 2022?",
+      "evidence": [
+        "D16:5"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        2,
+        16,
+        5,
+        6,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 164,
+      "category": 5,
+      "original_question": "When did John plan to return from his trip to Toronto and Vancouver?",
+      "ambiguous_query": "When did he plan to return from his trip to Toronto and Vancouver?",
+      "q_final": "When did he plan to return from his trip to Toronto and Vancouver?",
+      "evidence": [
+        "D16:13"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        31,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 165,
+      "category": 5,
+      "original_question": "What made James leave his IT job?",
+      "ambiguous_query": "What made he leave his IT job?",
+      "q_final": "What made James leave his IT job?",
+      "evidence": [
+        "D18:3"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        13,
+        18,
+        10,
+        12,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 166,
+      "category": 5,
+      "original_question": "Which game tournaments does James plan to organize besides CS:GO?",
+      "ambiguous_query": "Which game tournaments does he plan to organize besides CS:GO?",
+      "q_final": "Which game tournaments does John plan to organize besides CS:GO?",
+      "evidence": [
+        "D18:9"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        3,
+        10,
+        4,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 167,
+      "category": 5,
+      "original_question": "What happened to James's kitten during the recent visit to the clinic?",
+      "ambiguous_query": "What happened to his kitten during the recent visit to the clinic?",
+      "q_final": "What happened to her kitten during the recent visit to the clinic?",
+      "evidence": [
+        "D18:16"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        23,
+        6,
+        31,
+        16,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 168,
+      "category": 5,
+      "original_question": "What aspect of \"The Witcher 3\" does John find boring?",
+      "ambiguous_query": "What aspect of \"The Witcher 3\" does he find boring?",
+      "q_final": "What aspect of \"The Witcher 3\" does John find boring?",
+      "evidence": [
+        "D19:7"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        27,
+        2,
+        19,
+        6,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 169,
+      "category": 5,
+      "original_question": "What is John planning to do after receiving Samantha's phone number?",
+      "ambiguous_query": "What is he planning to do after receiving Samantha's phone number?",
+      "q_final": "What is he planning to do after receiving Samantha's phone number?",
+      "evidence": [
+        "D19:14"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        29,
+        4,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 170,
+      "category": 5,
+      "original_question": "What has James been teaching his siblings?",
+      "ambiguous_query": "What has he been teaching his siblings?",
+      "q_final": "What has John been teaching his siblings?",
+      "evidence": [
+        "D22:10"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        21,
+        20,
+        17,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 171,
+      "category": 5,
+      "original_question": "How much does James pay per dance class?",
+      "ambiguous_query": "How much does he pay per dance class?",
+      "q_final": "How much does he pay per dance class?",
+      "evidence": [
+        "D23:15"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        31,
+        17,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 172,
+      "category": 5,
+      "original_question": "What did James learn to make in the chemistry class besides omelette and meringue?",
+      "ambiguous_query": "What did he learn to make in the chemistry class besides omelette and meringue?",
+      "q_final": "What did James learn to make in the chemistry class besides omelette and meringue?",
+      "evidence": [
+        "D23:15"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        28,
+        12,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 173,
+      "category": 5,
+      "original_question": "Why did James sign up for a ballet class?",
+      "ambiguous_query": "Why did he sign up for a ballet class?",
+      "q_final": "Why did James sign up for a ballet class?",
+      "evidence": [
+        "D23:13"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        1,
+        8,
+        17,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 174,
+      "category": 5,
+      "original_question": "What did John prepare for the first time in the cooking class?",
+      "ambiguous_query": "What did he prepare for the first time in the cooking class?",
+      "q_final": "What did James prepare for the first time in the cooking class?",
+      "evidence": [
+        "D23:13"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        12,
+        17,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 175,
+      "category": 5,
+      "original_question": "What is the name of the board game James tried in September 2022?",
+      "ambiguous_query": "What is the name of the board game he tried in September 2022?",
+      "q_final": "What board game did he try in September 2022?",
+      "evidence": [
+        "D24:3"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        8,
+        25,
+        28,
+        1,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 176,
+      "category": 5,
+      "original_question": "Where does John get his ideas from?",
+      "ambiguous_query": "Where does he get his ideas from?",
+      "q_final": "Where does he get his ideas from?",
+      "evidence": [
+        "D24:4"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        17,
+        28,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 177,
+      "category": 5,
+      "original_question": "What did James use to play when he was younger to let off steam?",
+      "ambiguous_query": "What did he use to play when he was younger to let off steam?",
+      "q_final": "What did John use to play when he was younger to let off steam?",
+      "evidence": [
+        "D24:15"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        26,
+        29,
+        20,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 178,
+      "category": 5,
+      "original_question": "What does James do to stay informed and constantly learn about game design?",
+      "ambiguous_query": "What does he do to stay informed and constantly learn about game design?",
+      "q_final": "What does he do to stay informed and constantly learn about game design?",
+      "evidence": [
+        "D25:13"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        22,
+        21,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 179,
+      "category": 5,
+      "original_question": "What kind of gig was James offered at the game dev non-profit organization?",
+      "ambiguous_query": "What kind of gig was him offered at the game dev non-profit organization?",
+      "q_final": "What kind of gig was Melanie offered at the game dev non-profit organization?",
+      "evidence": [
+        "D26:3"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        11,
+        25,
+        22,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 180,
+      "category": 5,
+      "original_question": "What does James feel about starting the journey as a programming mentor for game developers?",
+      "ambiguous_query": "What does he feel about starting the journey as a programming mentor for game developers?",
+      "q_final": "What does **he** feel about starting the journey as a programming mentor for game developers?",
+      "evidence": [
+        "D26:5"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        25,
+        28,
+        1,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 181,
+      "category": 5,
+      "original_question": "What inspired James to create his painting?",
+      "ambiguous_query": "What inspired he to create his painting?",
+      "q_final": "What inspired John to create his painting?",
+      "evidence": [
+        "D27:6"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        6,
+        11,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 182,
+      "category": 5,
+      "original_question": "What games were played at the gaming tournament organized by James on 31 October, 2022?",
+      "ambiguous_query": "What games were played at the gaming tournament organized by him on 31 October, 2022?",
+      "q_final": "What games were played at the gaming tournament organized by him on 31 October, 2022?",
+      "evidence": [
+        "D29:1",
+        "D29:3"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        28,
+        4,
+        24,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 183,
+      "category": 5,
+      "original_question": "What was the purpose of the gaming tournament organized by James on 31 October, 2022?",
+      "ambiguous_query": "What was the purpose of the gaming tournament organized by him on 31 October, 2022?",
+      "q_final": "What was the purpose of the gaming tournament organized by John on 31 October, 2022?",
+      "evidence": [
+        "D29:1",
+        "D29:3"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        28,
+        4,
+        10,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 184,
+      "category": 5,
+      "original_question": "What decision did John and Samantha make on 31 October, 2022?",
+      "ambiguous_query": "What decision did he and Samantha make on 31 October, 2022?",
+      "q_final": "What decision did James and Samantha make on 31 October, 2022?",
+      "evidence": [
+        "D29:8",
+        "D29:10"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        19,
+        18,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 185,
+      "category": 5,
+      "original_question": "Where did John and Samantha decide to live together on 31 October, 2022?",
+      "ambiguous_query": "Where did he and Samantha decide to live together on 31 October, 2022?",
+      "q_final": "Where did James and Samantha decide to live together on 31 October, 2022?",
+      "evidence": [
+        "D29:10"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        15,
+        20,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 186,
+      "category": 5,
+      "original_question": "Why did John and Samantha choose an apartment near McGee's bar?",
+      "ambiguous_query": "Why did he and Samantha choose an apartment near McGee's bar?",
+      "q_final": "Why did Samantha and McGee choose an apartment near McGee's bar?",
+      "evidence": [
+        "D29:12"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        23,
+        19,
+        21,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 187,
+      "category": 5,
+      "original_question": "What game is James hooked on playing on 5 November, 2022?",
+      "ambiguous_query": "What game is he hooked on playing on 5 November, 2022?",
+      "q_final": "What game is James hooked on playing on 5 November, 2022?",
+      "evidence": [
+        "D30:14"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        8,
+        28,
+        19,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 188,
+      "category": 5,
+      "original_question": "What project did James work on with a game developer by 7 November, 2022?",
+      "ambiguous_query": "What project did he work on with a game developer by 7 November, 2022?",
+      "q_final": "What project did James work on with a game developer by 7 November, 2022?",
+      "evidence": [
+        "D31:4"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        9,
+        21,
+        8,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 189,
+      "category": 5,
+      "original_question": "What is the name of James's cousin's dog?",
+      "ambiguous_query": "What is the name of his cousin's dog?",
+      "q_final": "What is the name of my cousin's dog?",
+      "evidence": [
+        "D31:22"
+      ],
+      "gold_sections": [
+        31
+      ],
+      "retrieved_sections": [
+        31,
+        14,
+        8,
+        19,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    }
+  ]
+}

@@ -1,0 +1,5906 @@
+{
+  "summary": {
+    "conversation_index": 7,
+    "sample_id": "conv-48",
+    "total_qa": 239,
+    "bm25_hit_rate_at1": 0.6282,
+    "bm25_hit_rate_at3": 0.8284,
+    "bm25_hit_rate_at5": 0.8946,
+    "llm_judge_accuracy": 0.5063,
+    "llm_judge_passes": 121
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 2,
+      "original_question": "What kind of project was Jolene working on in the beginning of January 2023?",
+      "ambiguous_query": "What kind of project was her working on in the beginning of January 2023?",
+      "q_final": "What kind of project was Melanie working on in the beginning of January 2023?",
+      "evidence": [
+        "D1:2"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        13,
+        22,
+        3,
+        17,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 1,
+      "category": 1,
+      "original_question": "Which of Deborah`s family and friends have passed away?",
+      "ambiguous_query": "Which of her`s family and friends have passed away?",
+      "q_final": "Which of her family and friends have passed away?",
+      "evidence": [
+        "D1:5",
+        "D2:1",
+        "D6:4"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        6
+      ],
+      "retrieved_sections": [
+        2,
+        6,
+        1,
+        24,
+        22
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 2,
+      "original_question": "When did Deborah`s mother pass away?",
+      "ambiguous_query": "When did she`s mother pass away?",
+      "q_final": "When did she pass away?",
+      "evidence": [
+        "D1:5"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        6,
+        22,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 3,
+      "category": 2,
+      "original_question": "When did Jolene`s mother pass away?",
+      "ambiguous_query": "When did she`s mother pass away?",
+      "q_final": "When did Deborah's mother pass away?",
+      "evidence": [
+        "D1:6"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        2,
+        22,
+        6,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 4,
+      "category": 2,
+      "original_question": "When did Jolene's mom gift her a pendant?",
+      "ambiguous_query": "When did her mom gift her a pendant?",
+      "q_final": "When did her mom gift her a pendant?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        19,
+        29,
+        1,
+        12,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 5,
+      "category": 3,
+      "original_question": "In what country did Jolene's mother buy her the pendant?",
+      "ambiguous_query": "In what country did her mother buy her the pendant?",
+      "q_final": "In what country did Melanie buy the pendant for her?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        19,
+        4,
+        14,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 6,
+      "category": 1,
+      "original_question": "What symbolic gifts do Deborah and Jolene have from their mothers?",
+      "ambiguous_query": "What symbolic gifts do Deborah and her have from their mothers?",
+      "q_final": "What symbolic gifts do Melanie and her have from their mothers?",
+      "evidence": [
+        "D1:8",
+        "D1:9"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        2,
+        28,
+        19,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 7,
+      "category": 2,
+      "original_question": "Which country were Jolene and her mother visiting in 2010?",
+      "ambiguous_query": "Which country were she and her mother visiting in 2010?",
+      "q_final": "Which country were Melanie and her mother visiting in 2010?",
+      "evidence": [
+        "D1:8"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        23,
+        2,
+        20,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 8,
+      "category": 1,
+      "original_question": "What helped Deborah find peace when grieving deaths of her loved ones?",
+      "ambiguous_query": "What helped she find peace when grieving deaths of her loved ones?",
+      "q_final": "What helped Deborah find peace when grieving deaths of her loved ones?",
+      "evidence": [
+        "D1:15",
+        "D2:3",
+        "D6:4",
+        "D15:29"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        6,
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        28,
+        7,
+        20,
+        1
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.25,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 2,
+      "original_question": "When did Deborah's father pass away?",
+      "ambiguous_query": "When did her father pass away?",
+      "q_final": "When did her father pass away?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        6,
+        22,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When was Deborah's parents' wedding?",
+      "ambiguous_query": "When was her parents' wedding?",
+      "q_final": "When was her parents' wedding?",
+      "evidence": [
+        "D2:3"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        24,
+        7,
+        22,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 3,
+      "original_question": "Is Deborah married?",
+      "ambiguous_query": "Is she married?",
+      "q_final": "Is Deborah married?",
+      "evidence": [
+        "D2:5",
+        "D19:11",
+        "D23:4",
+        "D28:11"
+      ],
+      "gold_sections": [
+        2,
+        19,
+        23,
+        28
+      ],
+      "retrieved_sections": [
+        7,
+        28,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.25,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 12,
+      "category": 2,
+      "original_question": "When did Deborah receive an appreciation letter from her community?",
+      "ambiguous_query": "When did she receive an appreciation letter from her community?",
+      "q_final": "When did Melanie receive an appreciation letter from her community?",
+      "evidence": [
+        "D2:7"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        4,
+        16,
+        22,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 13,
+      "category": 1,
+      "original_question": "What places give Deborah peace?",
+      "ambiguous_query": "What places give her peace?",
+      "q_final": "What places give [REPLACER] peace?",
+      "evidence": [
+        "D2:13",
+        "D4:34",
+        "D6:10",
+        "D19:17"
+      ],
+      "gold_sections": [
+        2,
+        4,
+        6,
+        19
+      ],
+      "retrieved_sections": [
+        18,
+        2,
+        6,
+        19,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.75,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 14,
+      "category": 1,
+      "original_question": "What were Deborah's mother's hobbies?",
+      "ambiguous_query": "What were her mother's hobbies?",
+      "q_final": "What were her mother's hobbies?",
+      "evidence": [
+        "D2:17",
+        "D2:19",
+        "D12:3",
+        "D29:7"
+      ],
+      "gold_sections": [
+        2,
+        12,
+        29
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        19,
+        28,
+        22
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 4,
+      "original_question": "What pets does Jolene have?",
+      "ambiguous_query": "What pets does she have?",
+      "q_final": "What pets does she have?",
+      "evidence": [
+        "D2:20",
+        "D2:22",
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        14,
+        15,
+        28,
+        2,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 4,
+      "original_question": "What are the names of Jolene's snakes?",
+      "ambiguous_query": "What are the names of her snakes?",
+      "q_final": "What are the names of her snakes?",
+      "evidence": [
+        "D2:20",
+        "D2:22"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        22,
+        2,
+        12,
+        15,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 2,
+      "original_question": "When did Jolene buy her pet Seraphim?",
+      "ambiguous_query": "When did she buy her pet Seraphim?",
+      "q_final": "When did she buy her pet Seraphim?",
+      "evidence": [
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        14,
+        2,
+        28,
+        8,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 3,
+      "original_question": "In what country did Jolene buy snake Seraphim?",
+      "ambiguous_query": "In what country did she buy snake Seraphim?",
+      "q_final": "In what country did Melanie buy snake Seraphim?",
+      "evidence": [
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        14,
+        2,
+        28,
+        8,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 19,
+      "category": 1,
+      "original_question": "How many times has Jolene been to France?",
+      "ambiguous_query": "How many times has she been to France?",
+      "q_final": "How many times has Melanie been to France?",
+      "evidence": [
+        "D2:24",
+        "D1:8"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        1,
+        4,
+        2,
+        16,
+        28
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 20,
+      "category": 1,
+      "original_question": "Which games have Jolene and her partner played together?",
+      "ambiguous_query": "Which games have she and her partner played together?",
+      "q_final": "Which games have Melanie and her partner played together?",
+      "evidence": [
+        "D2:26",
+        "D2:30",
+        "D20:1",
+        "D15:10",
+        "D19:10"
+      ],
+      "gold_sections": [
+        2,
+        15,
+        19,
+        20
+      ],
+      "retrieved_sections": [
+        19,
+        12,
+        7,
+        15,
+        2
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.25,
+      "recall_at5": 0.75,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 21,
+      "category": 2,
+      "original_question": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
+      "ambiguous_query": "When do she and her partner plan to complete the game \"Walking Dead\"?",
+      "q_final": "When do Jolene and her partner plan to complete the game \"Walking Dead\"?",
+      "evidence": [
+        "D2:30"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        19,
+        22,
+        20,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 22,
+      "category": 2,
+      "original_question": "When did Deborah meet Anna?",
+      "ambiguous_query": "When did she meet Anna?",
+      "q_final": "When did Anna and Deb start their running group?",
+      "evidence": [
+        "D3:4"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        15,
+        18,
+        4,
+        9,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 23,
+      "category": 3,
+      "original_question": "Why did Jolene sometimes put off doing yoga?",
+      "ambiguous_query": "Why did she sometimes put off doing yoga?",
+      "q_final": "Why did Deborah sometimes put off doing yoga?",
+      "evidence": [
+        "D3:11",
+        "D2:30"
+      ],
+      "gold_sections": [
+        2,
+        3
+      ],
+      "retrieved_sections": [
+        7,
+        28,
+        19,
+        22,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "What new yoga poses did Deborah try?",
+      "ambiguous_query": "What new yoga poses did she try?",
+      "q_final": "What new yoga poses did Deborah try?",
+      "evidence": [
+        "D4:14",
+        "D14:3",
+        "D14:15"
+      ],
+      "gold_sections": [
+        4,
+        14
+      ],
+      "retrieved_sections": [
+        16,
+        22,
+        13,
+        3,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 4,
+      "original_question": "What are Jolene's favorite books?",
+      "ambiguous_query": "What are her favorite books?",
+      "q_final": "What are her favorite books?",
+      "evidence": [
+        "D4:21",
+        "D4:23"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        29,
+        2,
+        19,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 2,
+      "original_question": "Which book did Jolene read in January 2023?",
+      "ambiguous_query": "Which book did she read in January 2023?",
+      "q_final": "Which book did Deborah read in January 2023?",
+      "evidence": [
+        "D4:23"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        29,
+        2,
+        1,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 27,
+      "category": 2,
+      "original_question": "When was Jolene in Bogota?",
+      "ambiguous_query": "When was she in Bogota?",
+      "q_final": "When was Bogota associated with her?",
+      "evidence": [
+        "D4:33"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 28,
+      "category": 3,
+      "original_question": "In what country was Jolene during summer 2022?",
+      "ambiguous_query": "In what country was she during summer 2022?",
+      "q_final": "In what country was Jolene during summer 2022?",
+      "evidence": [
+        "D4:33"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        13,
+        23,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 2,
+      "original_question": "When did Jolene have a mini-retreat to reflect on her career?",
+      "ambiguous_query": "When did she have a mini-retreat to reflect on her career?",
+      "q_final": "When did Jolene have a mini-retreat to reflect on her career?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        4,
+        27,
+        21,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 2,
+      "original_question": "When did Jolene have a dinner and drinks with her friends?",
+      "ambiguous_query": "When did she have a dinner and drinks with her friends?",
+      "q_final": "When did Deborah have a dinner and drinks with her friends?",
+      "evidence": [
+        "D6:1"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        28,
+        4,
+        9,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "When was the last photo of Deborah and Karlie taken?",
+      "ambiguous_query": "When was the last photo of her and Karlie taken?",
+      "q_final": "When was the last photo of Deborah and Karlie taken?",
+      "evidence": [
+        "D6:8"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        1,
+        23,
+        7,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 2,
+      "original_question": "When was Deborah in Bali?",
+      "ambiguous_query": "When was she in Bali?",
+      "q_final": "When was Deborah in Bali?",
+      "evidence": [
+        "D6:10"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 4,
+      "original_question": "How long have Jolene and her partner been together?",
+      "ambiguous_query": "How long have she and her partner been together?",
+      "q_final": "How long have Deborah and her partner been together?",
+      "evidence": [
+        "D7:7"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        12,
+        19,
+        7,
+        15,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 34,
+      "category": 2,
+      "original_question": "Which year did Jolene and her partner start dating?",
+      "ambiguous_query": "Which year did she and her partner start dating?",
+      "q_final": "Which year did you and your partner start dating?",
+      "evidence": [
+        "D7:7"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        16,
+        13,
+        20,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 35,
+      "category": 2,
+      "original_question": "When did Deborah go for her first morning jog in a nearby park?",
+      "ambiguous_query": "When did she go for her first morning jog in a nearby park?",
+      "q_final": "When did she go for her first morning jog in a nearby park?",
+      "evidence": [
+        "D7:18"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        3,
+        4,
+        15,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 3,
+      "original_question": "How old is Jolene?",
+      "ambiguous_query": "How old is she?",
+      "q_final": "How old is she?",
+      "evidence": [
+        "D8:2",
+        "D13:5",
+        "D21:6",
+        "D21:8",
+        "D22:6",
+        "D22:14",
+        "D24:2",
+        "D24:14",
+        "D25:5",
+        "D26:6"
+      ],
+      "gold_sections": [
+        8,
+        13,
+        21,
+        22,
+        24,
+        25,
+        26
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        28,
+        29
+      ],
+      "recall_at1": 0.14285714285714285,
+      "recall_at3": 0.14285714285714285,
+      "recall_at5": 0.14285714285714285,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 37,
+      "category": 2,
+      "original_question": "When did Jolene take Seraphim to the park?",
+      "ambiguous_query": "When did she take Seraphim to the park?",
+      "q_final": "When did Melanie take Seraphim to the park?",
+      "evidence": [
+        "D8:8"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        14,
+        2,
+        28,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 38,
+      "category": 2,
+      "original_question": "When did Deborah start the yoga class in the neighborhood?",
+      "ambiguous_query": "When did she start the yoga class in the neighborhood?",
+      "q_final": "When did she start the yoga class in the neighborhood?",
+      "evidence": [
+        "D9:5"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        7,
+        9,
+        24,
+        11,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 39,
+      "category": 1,
+      "original_question": "What time management techniques do Deborah and Jolene use?",
+      "ambiguous_query": "What time management techniques do Deborah and her use?",
+      "q_final": "What time management techniques do Melanie and her use?",
+      "evidence": [
+        "D10:4",
+        "D10:5",
+        "D10:6",
+        "D10:13",
+        "D18:3"
+      ],
+      "gold_sections": [
+        10,
+        18
+      ],
+      "retrieved_sections": [
+        8,
+        9,
+        10,
+        19,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 40,
+      "category": 3,
+      "original_question": "Does Deborah live close to the beach or the mountains?",
+      "ambiguous_query": "Does she live close to the beach or the mountains?",
+      "q_final": "Does [REPLACER] live close to the beach or the mountains?",
+      "evidence": [
+        "D10:17"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        29,
+        25,
+        28,
+        4,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 41,
+      "category": 1,
+      "original_question": "What ways do Deborah and Jolene use to enhance their yoga practice?",
+      "ambiguous_query": "What ways do Deborah and her use to enhance their yoga practice?",
+      "q_final": "What ways do Melanie and her use to enhance their yoga practice?",
+      "evidence": [
+        "D11:4",
+        "D11:7",
+        "D28:16",
+        "D28:18"
+      ],
+      "gold_sections": [
+        11,
+        28
+      ],
+      "retrieved_sections": [
+        11,
+        22,
+        15,
+        19,
+        20
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 42,
+      "category": 4,
+      "original_question": "What music pieces does Deborah listen to during her yoga practice?",
+      "ambiguous_query": "What music pieces does she listen to during her yoga practice?",
+      "q_final": "What music pieces does Deborah listen to during her yoga practice?",
+      "evidence": [
+        "D11:8",
+        "D11:10"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        19,
+        22,
+        30,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 2,
+      "original_question": "When did Deborah go for a bicycle ride with Anna?",
+      "ambiguous_query": "When did she go for a bicycle ride with Anna?",
+      "q_final": "When did Melanie go for a bicycle ride with Anna?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        4,
+        3,
+        15,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 44,
+      "category": 2,
+      "original_question": "When did Deborah go to an art show with Anna?",
+      "ambiguous_query": "When did she go to an art show with Anna?",
+      "q_final": "When did Anna go to an art show?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        4,
+        3,
+        15,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 45,
+      "category": 2,
+      "original_question": "When did Jolene finish her robotics project?",
+      "ambiguous_query": "When did she finish her robotics project?",
+      "q_final": "When did Deborah finish her robotics project?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        3,
+        12,
+        1,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 46,
+      "category": 2,
+      "original_question": "How long did Jolene work on the robotics project given to her by her Professor?",
+      "ambiguous_query": "How long did she work on the robotics project given to her by her Professor?",
+      "q_final": "How long did Melanie work on the robotics project given to her by her Professor?",
+      "evidence": [
+        "D3:1",
+        "D12:10",
+        "D13:1"
+      ],
+      "gold_sections": [
+        3,
+        12,
+        13
+      ],
+      "retrieved_sections": [
+        3,
+        13,
+        12,
+        11,
+        22
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 2,
+      "original_question": "When did Jolene do yoga at Talkeetna?",
+      "ambiguous_query": "When did she do yoga at Talkeetna?",
+      "q_final": "When did Melanie do yoga at Talkeetna?",
+      "evidence": [
+        "D13:15"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        7,
+        19,
+        22,
+        11,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 48,
+      "category": 3,
+      "original_question": "Which US state did Jolene visit during her internship?",
+      "ambiguous_query": "Which US state did she visit during her internship?",
+      "q_final": "Which US state did Anna visit during her internship?",
+      "evidence": [
+        "D13:15"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        13,
+        23,
+        19,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 49,
+      "category": 4,
+      "original_question": "How long has Jolene been doing yoga and meditation?",
+      "ambiguous_query": "How long has she been doing yoga and meditation?",
+      "q_final": "How long has Deborah been doing yoga and meditation?",
+      "evidence": [
+        "D13:17"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        7,
+        11,
+        19,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 50,
+      "category": 2,
+      "original_question": "Which year did Jolene start practicing yoga?",
+      "ambiguous_query": "Which year did she start practicing yoga?",
+      "q_final": "Which year did Luna and Max start practicing yoga?",
+      "evidence": [
+        "D13:17"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        22,
+        7,
+        13,
+        16,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 51,
+      "category": 2,
+      "original_question": "When did Jolene buy a new aquarium for Seraphim?",
+      "ambiguous_query": "When did she buy a new aquarium for Seraphim?",
+      "q_final": "When did Melanie buy a new aquarium for Seraphim?",
+      "evidence": [
+        "D14:4"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        8,
+        28,
+        2,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 52,
+      "category": 2,
+      "original_question": "When did Jolene lose a lot of progress in her work?",
+      "ambiguous_query": "When did she lose a lot of progress in her work?",
+      "q_final": "When did Jolene lose a lot of progress in her work?",
+      "evidence": [
+        "D16:2"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        4,
+        12,
+        17,
+        11,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 53,
+      "category": 2,
+      "original_question": "When did Jolene adopt her snake Susie?",
+      "ambiguous_query": "When did she adopt her snake Susie?",
+      "q_final": "When did Susie adopt her snake?",
+      "evidence": [
+        "D16:6",
+        "D28:26"
+      ],
+      "gold_sections": [
+        16,
+        28
+      ],
+      "retrieved_sections": [
+        16,
+        28,
+        8,
+        14,
+        15
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 54,
+      "category": 2,
+      "original_question": "Which pet did Jolene adopt first - Susie or Seraphim?",
+      "ambiguous_query": "Which pet did she adopt first - Susie or Seraphim?",
+      "q_final": "Which pet did she adopt first - Susie or Seraphim?",
+      "evidence": [
+        "D2:24",
+        "D2:28",
+        "D16:6"
+      ],
+      "gold_sections": [
+        2,
+        16
+      ],
+      "retrieved_sections": [
+        28,
+        2,
+        14,
+        8,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
+      "ambiguous_query": "Which pet did she adopt more recently - Susie or Seraphim?",
+      "q_final": "Which pet did Jolene adopt more recently - Susie or Seraphim?",
+      "evidence": [
+        "D2:24",
+        "D2:28",
+        "D16:6"
+      ],
+      "gold_sections": [
+        2,
+        16
+      ],
+      "retrieved_sections": [
+        28,
+        2,
+        14,
+        8,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 56,
+      "category": 2,
+      "original_question": "When did Deborah lead a meditation session during the sunset?",
+      "ambiguous_query": "When did she lead a meditation session during the sunset?",
+      "q_final": "When did Melanie lead a meditation session during the sunset?",
+      "evidence": [
+        "D18:8"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        27,
+        17,
+        25,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 57,
+      "category": 2,
+      "original_question": "When did Jolene gift her partner a new console?",
+      "ambiguous_query": "When did she gift her partner a new console?",
+      "q_final": "When did she gift her partner a new console?",
+      "evidence": [
+        "D19:2"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        20,
+        11,
+        3,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 58,
+      "category": 4,
+      "original_question": "What games does Jolene recommend for Deborah?",
+      "ambiguous_query": "What games does she recommend for Deborah?",
+      "q_final": "What games does Melanie recommend for Deborah?",
+      "evidence": [
+        "D19:8",
+        "D19:10"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        24,
+        2,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 59,
+      "category": 4,
+      "original_question": "What do Deborah and her husband do together?",
+      "ambiguous_query": "What do she and her husband do together?",
+      "q_final": "What do Deborah and her husband do together?",
+      "evidence": [
+        "D19:13",
+        "D19:15"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        29,
+        3,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 2,
+      "original_question": "When did Deborah go to a yoga retreat near her mom's place?",
+      "ambiguous_query": "When did she go to a yoga retreat near her mom's place?",
+      "q_final": "When did Jolene go to a yoga retreat near her mom's place?",
+      "evidence": [
+        "D21:1"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        30,
+        19,
+        20,
+        22,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 61,
+      "category": 4,
+      "original_question": "What projects is Jolene planning for next year?",
+      "ambiguous_query": "What projects is she planning for next year?",
+      "q_final": "What projects is she planning for next year?",
+      "evidence": [
+        "D22:10",
+        "D22:12"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        16,
+        13,
+        3,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 4,
+      "original_question": "Where did Deborah get her cats?",
+      "ambiguous_query": "Where did she get her cats?",
+      "q_final": "Where did she get her cats?",
+      "evidence": [
+        "D22:23",
+        "D22:25"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        15,
+        27,
+        8,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 4,
+      "original_question": "How old are Deborah's cats?",
+      "ambiguous_query": "How old are her cats?",
+      "q_final": "How old are her cats?",
+      "evidence": [
+        "D22:27",
+        "D22:29"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        28,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 64,
+      "category": 4,
+      "original_question": "Does Deborah like cats?",
+      "ambiguous_query": "Does she like cats?",
+      "q_final": "Does Jolene like cats?",
+      "evidence": [
+        "D22:27",
+        "D15:25"
+      ],
+      "gold_sections": [
+        15,
+        22
+      ],
+      "retrieved_sections": [
+        15,
+        22,
+        8,
+        11,
+        28
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 65,
+      "category": 2,
+      "original_question": "Which country was Jolene located in during the last week of August 2023?",
+      "ambiguous_query": "Which country was she located in during the last week of August 2023?",
+      "q_final": "Which country was Deborah located in during the last week of August 2023?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        1,
+        6,
+        4,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 66,
+      "category": 2,
+      "original_question": "When did Jolene and her partner return home from Rio de Janeiro?",
+      "ambiguous_query": "When did she and her partner return home from Rio de Janeiro?",
+      "q_final": "When did Melanie and her partner return home from Rio de Janeiro?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        30,
+        24,
+        2,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 67,
+      "category": 4,
+      "original_question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "ambiguous_query": "What was she doing with her partner in Rio de Janeiro?",
+      "q_final": "What was Melanie doing with her partner in Rio de Janeiro?",
+      "evidence": [
+        "D23:15",
+        "D23:1",
+        "D23:3",
+        "D23:17"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        24,
+        30,
+        26,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 68,
+      "category": 2,
+      "original_question": "When did Deborah visit Brazil?",
+      "ambiguous_query": "When did she visit Brazil?",
+      "q_final": "When did Deborah visit Brazil?",
+      "evidence": [
+        "D23:18"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        15,
+        28,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 4,
+      "original_question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "ambiguous_query": "Have Deborah and her been to Rio de Janeiro?",
+      "q_final": "Have [Entities] and her been to Rio de Janeiro?",
+      "evidence": [
+        "D23:1",
+        "D23:3",
+        "D23:18"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        24,
+        26,
+        30,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 70,
+      "category": 3,
+      "original_question": "Is the friend who wrote Deborah the motivational quote no longer alive?",
+      "ambiguous_query": "Is the friend who wrote her the motivational quote no longer alive?",
+      "q_final": "Is the friend who wrote her the motivational quote no longer alive?",
+      "evidence": [
+        "D23:22"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        18,
+        28,
+        6,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 71,
+      "category": 2,
+      "original_question": "When did Deborah go to a community meetup?",
+      "ambiguous_query": "When did she go to a community meetup?",
+      "q_final": "When did Deborah go to a community meetup?",
+      "evidence": [
+        "D24:1"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        4,
+        16,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "When did Jolene's parents give her first console?",
+      "ambiguous_query": "When did her parents give her first console?",
+      "q_final": "When did her parents give her first console?",
+      "evidence": [
+        "D24:6"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        7,
+        3,
+        2,
+        8,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 73,
+      "category": 1,
+      "original_question": "Did Jolene teach herself how to play the console?",
+      "ambiguous_query": "Did she teach herself how to play the console?",
+      "q_final": "Did [REPLACER] teach herself how to play the console?",
+      "evidence": [
+        "D2:28",
+        "D24:8"
+      ],
+      "gold_sections": [
+        2,
+        24
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        7,
+        20,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "ambiguous_query": "What do Deborah and her plan to try when they meet in a new cafe?",
+      "q_final": "What do Deborah and Susie plan to try when they meet in a new cafe?",
+      "evidence": [
+        "D26:10",
+        "D26:12"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        16,
+        29,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 75,
+      "category": 3,
+      "original_question": "What card game is Deborah talking about?",
+      "ambiguous_query": "What card game is she talking about?",
+      "q_final": "What card game do you and your partner love playing together?",
+      "evidence": [
+        "D27:12"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        15,
+        27,
+        19,
+        2,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 76,
+      "category": 2,
+      "original_question": "When did Jolene and her partner try scuba diving lessons?",
+      "ambiguous_query": "When did she and her partner try scuba diving lessons?",
+      "q_final": "When did Jolene and her partner try scuba diving lessons?",
+      "evidence": [
+        "D29:4"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        13,
+        16,
+        20,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 1,
+      "original_question": "Where did Jolene and her partner find a cool diving spot?",
+      "ambiguous_query": "Where did she and her partner find a cool diving spot?",
+      "q_final": "Where did she and her partner find a cool diving spot?",
+      "evidence": [
+        "D27:1",
+        "D29:4"
+      ],
+      "gold_sections": [
+        27,
+        29
+      ],
+      "retrieved_sections": [
+        4,
+        29,
+        19,
+        15,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 78,
+      "category": 2,
+      "original_question": "Where did Jolene and her partner spend most of September 2023?",
+      "ambiguous_query": "Where did she and her partner spend most of September 2023?",
+      "q_final": "Where did Deborah and her partner spend most of September 2023?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        19,
+        14,
+        26,
+        30,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 79,
+      "category": 1,
+      "original_question": "Has Deborah tried surfing?",
+      "ambiguous_query": "Has she tried surfing?",
+      "q_final": "Has she tried surfing?",
+      "evidence": [
+        "D28:11",
+        "D29:25"
+      ],
+      "gold_sections": [
+        28,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        28,
+        14,
+        18
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 1,
+      "original_question": "Has Jolene tried surfing?",
+      "ambiguous_query": "Has she tried surfing?",
+      "q_final": "Has she tried surfing?",
+      "evidence": [
+        "D10:20",
+        "D29:26",
+        "D29:30"
+      ],
+      "gold_sections": [
+        10,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        10,
+        28,
+        14,
+        18
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 2,
+      "original_question": "When did the Deboran and Jolene agree to go surfing?",
+      "ambiguous_query": "When did the Deboran and her agree to go surfing?",
+      "q_final": "When did Deborah and her agree to go surfing?",
+      "evidence": [
+        "D29:34"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        10,
+        29,
+        28,
+        27,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 82,
+      "category": 1,
+      "original_question": "Which locations does Deborah practice her yoga at?",
+      "ambiguous_query": "Which locations does she practice her yoga at?",
+      "q_final": "Which locations does Deborah practice her yoga at?",
+      "evidence": [
+        "D2:11",
+        "D2:13",
+        "D3:6",
+        "D4:12",
+        "D6:10"
+      ],
+      "gold_sections": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "retrieved_sections": [
+        11,
+        22,
+        20,
+        7,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 1,
+      "original_question": "What kind of professional activities does Jolene participate in to gain more experience in her field?",
+      "ambiguous_query": "What kind of professional activities does she participate in to gain more experience in her field?",
+      "q_final": "What kind of professional activities does Jolene participate in to gain more experience in her field?",
+      "evidence": [
+        "D21:6",
+        "D13:5"
+      ],
+      "gold_sections": [
+        13,
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        13,
+        19,
+        25,
+        28
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 1,
+      "original_question": "What kind of engineering projects has Jolene worked on?",
+      "ambiguous_query": "What kind of engineering projects has she worked on?",
+      "q_final": "What kind of engineering projects has Jolene worked on?",
+      "evidence": [
+        "D1:2",
+        "D3:1",
+        "D4:5",
+        "D17:10",
+        "D17:12"
+      ],
+      "gold_sections": [
+        1,
+        3,
+        4,
+        17
+      ],
+      "retrieved_sections": [
+        13,
+        22,
+        3,
+        5,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.25,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 1,
+      "original_question": "Which community activities have Deborah and Anna participated in?",
+      "ambiguous_query": "Which community activities have she and Anna participated in?",
+      "q_final": "Which community activities have Anna and she participated in?",
+      "evidence": [
+        "D4:12",
+        "D4:16",
+        "D15:1"
+      ],
+      "gold_sections": [
+        4,
+        15
+      ],
+      "retrieved_sections": [
+        4,
+        3,
+        19,
+        29,
+        15
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 86,
+      "category": 1,
+      "original_question": "What gifts has Deborah received?",
+      "ambiguous_query": "What gifts has she received?",
+      "q_final": "What gifts has Deborah received?",
+      "evidence": [
+        "D2:7",
+        "D2:9",
+        "D4:26",
+        "D23:20",
+        "D23:22"
+      ],
+      "gold_sections": [
+        2,
+        4,
+        23
+      ],
+      "retrieved_sections": [
+        3,
+        19,
+        21,
+        2,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 87,
+      "category": 1,
+      "original_question": "Which countries has Deborah traveled to?",
+      "ambiguous_query": "Which countries has she traveled to?",
+      "q_final": "Which countries has Deborah traveled to?",
+      "evidence": [
+        "D6:10",
+        "D23:18"
+      ],
+      "gold_sections": [
+        6,
+        23
+      ],
+      "retrieved_sections": [
+        6,
+        27,
+        2,
+        22,
+        23
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 88,
+      "category": 1,
+      "original_question": "What activities does Deborah pursue besides practicing and teaching yoga?",
+      "ambiguous_query": "What activities does she pursue besides practicing and teaching yoga?",
+      "q_final": "What activities does Deborah pursue besides practicing and teaching yoga?",
+      "evidence": [
+        "D12:1",
+        "D15:1",
+        "D15:11",
+        "D28:11",
+        "D29:1"
+      ],
+      "gold_sections": [
+        12,
+        15,
+        28,
+        29
+      ],
+      "retrieved_sections": [
+        19,
+        7,
+        22,
+        15,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What are the names of Jolene's snakes?",
+      "ambiguous_query": "What are the names of her snakes?",
+      "q_final": "What are the names of her snakes?",
+      "evidence": [
+        "D2:20",
+        "D2:22"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        22,
+        2,
+        12,
+        15,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "What are Jolene's favorite books?",
+      "ambiguous_query": "What are her favorite books?",
+      "q_final": "What are her favorite books?",
+      "evidence": [
+        "D4:21",
+        "D4:23"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        29,
+        2,
+        19,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "What music pieces does Deborah listen to during her yoga practice?",
+      "ambiguous_query": "What music pieces does she listen to during her yoga practice?",
+      "q_final": "What music pieces does Deborah listen to during her yoga practice?",
+      "evidence": [
+        "D11:8",
+        "D11:10"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        19,
+        22,
+        30,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "What games does Jolene recommend for Deborah?",
+      "ambiguous_query": "What games does she recommend for Deborah?",
+      "q_final": "What games does Melanie recommend for Deborah?",
+      "evidence": [
+        "D19:8",
+        "D19:10"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        24,
+        2,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "What projects is Jolene planning for next year?",
+      "ambiguous_query": "What projects is she planning for next year?",
+      "q_final": "What projects is she planning for next year?",
+      "evidence": [
+        "D22:10",
+        "D22:12"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        16,
+        13,
+        3,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "Where did Deborah get her cats?",
+      "ambiguous_query": "Where did she get her cats?",
+      "q_final": "Where did she get her cats?",
+      "evidence": [
+        "D22:23",
+        "D22:25"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        15,
+        27,
+        8,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "How old are Deborah's cats?",
+      "ambiguous_query": "How old are her cats?",
+      "q_final": "How old are her cats?",
+      "evidence": [
+        "D22:27",
+        "D22:29"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        28,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "What was Jolene doing with her partner in Rio de Janeiro?",
+      "ambiguous_query": "What was she doing with her partner in Rio de Janeiro?",
+      "q_final": "What was Melanie doing with her partner in Rio de Janeiro?",
+      "evidence": [
+        "D23:15",
+        "D23:1",
+        "D23:3",
+        "D23:17"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        24,
+        30,
+        26,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "Have Deborah and Jolene been to Rio de Janeiro?",
+      "ambiguous_query": "Have Deborah and her been to Rio de Janeiro?",
+      "q_final": "Have Deborah and her husband been to Rio de Janeiro?",
+      "evidence": [
+        "D23:1",
+        "D23:3",
+        "D23:18"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        24,
+        26,
+        2,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "When did Jolene's parents give her first console?",
+      "ambiguous_query": "When did her parents give her first console?",
+      "q_final": "When did her parents give her first console?",
+      "evidence": [
+        "D24:6"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        7,
+        3,
+        2,
+        8,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What do Deborah and Jolene plan to try when they meet in a new cafe?",
+      "ambiguous_query": "What do Deborah and her plan to try when they meet in a new cafe?",
+      "q_final": "What do Deborah and Susie plan to try when they meet in a new cafe?",
+      "evidence": [
+        "D26:10",
+        "D26:12"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        16,
+        29,
+        5,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "What project did Jolene finish last week before 23 January, 2023?",
+      "ambiguous_query": "What project did she finish last week before 23 January, 2023?",
+      "q_final": "What project did Melanie finish last week before 23 January, 2023?",
+      "evidence": [
+        "D1:2"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        13,
+        16,
+        22,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "When did Jolene buy her pet snake?",
+      "ambiguous_query": "When did she buy her pet snake?",
+      "q_final": "When did Jolene buy her pet snake?",
+      "evidence": [
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        14,
+        15,
+        28,
+        2,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "What project was Jolene working on as of 1 February, 2023?",
+      "ambiguous_query": "What project was she working on as of 1 February, 2023?",
+      "q_final": "What project was Jolene working on as of 1 February, 2023?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        13,
+        22,
+        17,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "Where did Deborah meet her new neighbor Anna?",
+      "ambiguous_query": "Where did she meet her new neighbor Anna?",
+      "q_final": "Where did she meet her new neighbor Anna?",
+      "evidence": [
+        "D3:6"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        4,
+        19,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "What activity did Jolene and her partner plan to do together instead of resuming yoga?",
+      "ambiguous_query": "What activity did she and her partner plan to do together instead of resuming yoga?",
+      "q_final": "What activity did Deborah and her partner plan to do together instead of resuming yoga?",
+      "evidence": [
+        "D3:11"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        19,
+        26,
+        7,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "What milestone did Jolene achieve recently on 4 February, 2023?",
+      "ambiguous_query": "What milestone did she achieve recently on 4 February, 2023?",
+      "q_final": "What milestone did Jolene achieve recently on 4 February, 2023?",
+      "evidence": [
+        "D4:3"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        7,
+        13,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "What is Jolene's favorite book which she mentioned on 4 February, 2023?",
+      "ambiguous_query": "What is her favorite book which she mentioned on 4 February, 2023?",
+      "q_final": "What is Deborah's favorite book which she mentioned on 4 February, 2023?",
+      "evidence": [
+        "D4:21"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        19,
+        29,
+        7,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What does Deborah bring with her whenever she comes to reflect on her mom?",
+      "ambiguous_query": "What does she bring with her whenever she comes to reflect on her mom?",
+      "q_final": "What does Deborah bring with her whenever she comes to reflect on her mom?",
+      "evidence": [
+        "D4:36"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        28,
+        29,
+        4,
+        22,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "What new outlook did Jolene gain after her mini retreat on 9 February, 2023?",
+      "ambiguous_query": "What new outlook did she gain after her mini retreat on 9 February, 2023?",
+      "q_final": "What new outlook did Deborah gain after her mini retreat on 9 February, 2023?",
+      "evidence": [
+        "D5:3"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        14,
+        5,
+        21,
+        25,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What cool stuff did Jolene accomplish at the retreat on 9 February, 2023?",
+      "ambiguous_query": "What cool stuff did she accomplish at the retreat on 9 February, 2023?",
+      "q_final": "What cool stuff did Deborah accomplish at the retreat on 9 February, 2023?",
+      "evidence": [
+        "D5:5"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        14,
+        21,
+        4,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What idea did Jolene have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
+      "ambiguous_query": "What idea did she have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
+      "q_final": "What idea did Jolene have to help underprivileged kids learn about STEM subjects on 9 February, 2023?",
+      "evidence": [
+        "D5:7"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        7,
+        16,
+        25,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "How does Jolene plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "ambiguous_query": "How does she plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "q_final": "How does Melanie plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "evidence": [
+        "D5:9"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        4,
+        7,
+        22,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What gave Deborah peace in the garden she visited?",
+      "ambiguous_query": "What gave she peace in the garden she visited?",
+      "q_final": "What gave Jolene peace in the garden she visited?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        14,
+        6,
+        2,
+        29,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "Why did Deborah spend time in the garden?",
+      "ambiguous_query": "Why did she spend time in the garden?",
+      "q_final": "Why did Melanie spend time in the garden?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        8,
+        19,
+        29,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "How did Jolene and her partner initially meet?",
+      "ambiguous_query": "How did she and her partner initially meet?",
+      "q_final": "How did Deborah and her partner initially meet?",
+      "evidence": [
+        "D7:9"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        3,
+        7,
+        26,
+        19,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "What activity does Deborah incorporate into her daily routine after going for a morning jog in the park?",
+      "ambiguous_query": "What activity does she incorporate into her daily routine after going for a morning jog in the park?",
+      "q_final": "What activity does Deborah incorporate into her daily routine after going for a morning jog in the park?",
+      "evidence": [
+        "D7:18"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        19,
+        22,
+        3,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "According to Jolene, what does exercise help her to feel?",
+      "ambiguous_query": "According to her, what does exercise help her to feel?",
+      "q_final": "According to [Her], what does exercise help her to feel?",
+      "evidence": [
+        "D7:20"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        8,
+        9,
+        20,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What did Deb share a photo of, which brought a smile to Jolene's face?",
+      "ambiguous_query": "What did Deb share a photo of, which brought a smile to her face?",
+      "q_final": "What did Deb share a photo of, which brought a smile to her face?",
+      "evidence": [
+        "D8:22"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        15,
+        6,
+        23,
+        28,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What is one of Jolene's favorite dishes?",
+      "ambiguous_query": "What is one of her favorite dishes?",
+      "q_final": "What is one of her favorite dishes?",
+      "evidence": [
+        "D8:2"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        19,
+        23,
+        29,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "What picture did Jolene share related to feeling overwhelmed?",
+      "ambiguous_query": "What picture did she share related to feeling overwhelmed?",
+      "q_final": "What picture did Deborah share related to feeling overwhelmed?",
+      "evidence": [
+        "D8:16"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        7,
+        8,
+        9,
+        10,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "What did Jolene and Deb discuss as a helpful strategy for studying and time management?",
+      "ambiguous_query": "What did she and Deb discuss as a helpful strategy for studying and time management?",
+      "q_final": "What did Deborah and Jolene discuss as a helpful strategy for studying and time management?",
+      "evidence": [
+        "D8:19"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        19,
+        18,
+        9,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "What did Jolene ask Deb to help with on 13 March, 2023?",
+      "ambiguous_query": "What did she ask Deb to help with on 13 March, 2023?",
+      "q_final": "What did she ask Deb to help with on 13 March, 2023?",
+      "evidence": [
+        "D9:14"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        16,
+        8,
+        7,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "What method does Deb suggest Jolene to try for organizing tasks based on importance and urgency?",
+      "ambiguous_query": "What method does Deb suggest she to try for organizing tasks based on importance and urgency?",
+      "q_final": "What method does Deborah suggest she can use for organizing tasks based on importance and urgency?",
+      "evidence": [
+        "D10:13"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        19,
+        18,
+        8,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "What did Jolene and Anna discuss while watching the sunset by the sea?",
+      "ambiguous_query": "What did she and Anna discuss while watching the sunset by the sea?",
+      "q_final": "What did Melanie and Anna discuss while watching the sunset by the sea?",
+      "evidence": [
+        "D10:17"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        19,
+        4,
+        3,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "How does Jolene plan to pursue her dream of learning to surf?",
+      "ambiguous_query": "How does she plan to pursue her dream of learning to surf?",
+      "q_final": "How does she plan to pursue her dream of learning to surf?",
+      "evidence": [
+        "D10:20"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        13,
+        29,
+        26,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "What did Deborah buy to enhance her yoga practice besides the props?",
+      "ambiguous_query": "What did she buy to enhance her yoga practice besides the props?",
+      "q_final": "What did Jolene buy to enhance her yoga practice besides the props?",
+      "evidence": [
+        "D11:4"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        22,
+        19,
+        20,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "What type of music does Deborah find helpful during her yoga practice?",
+      "ambiguous_query": "What type of music does her find helpful during her yoga practice?",
+      "q_final": "What type of music does Jolene find helpful during her yoga practice?",
+      "evidence": [
+        "D11:8"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        19,
+        30,
+        22,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "Who are the musicians mentioned by Jolene that she enjoys listening to during her yoga practice?",
+      "ambiguous_query": "Who are the musicians mentioned by her that she enjoys listening to during her yoga practice?",
+      "q_final": "Who are the musicians mentioned by her that she enjoys listening to during her yoga practice?",
+      "evidence": [
+        "D11:9"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        19,
+        11,
+        3,
+        7,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "What album does Deborah recommend for meditation and deep relaxation?",
+      "ambiguous_query": "What album does she recommend for meditation and deep relaxation?",
+      "q_final": "What album does Melanie recommend for meditation and deep relaxation?",
+      "evidence": [
+        "D11:10"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        13,
+        28,
+        7,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "Which show did Deborah go to with a friend on 9 April, 2023?",
+      "ambiguous_query": "Which show did her go to with a friend on 9 April, 2023?",
+      "q_final": "Which show did Deborah go to with a friend on 9 April, 2023?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        28,
+        4,
+        14,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "What does Deborah find comforting about going to art shows?",
+      "ambiguous_query": "What does she find comforting about going to art shows?",
+      "q_final": "What does Deborah find comforting about going to art shows?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        16,
+        15,
+        28,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 131,
+      "category": 4,
+      "original_question": "How does Jolene describe the time spent with her snakes and partner?",
+      "ambiguous_query": "How does she describe the time spent with her snakes and partner?",
+      "q_final": "How does Deborah describe the time spent with her partner and snakes?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        2,
+        12,
+        19,
+        7,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 132,
+      "category": 4,
+      "original_question": "What does Jolene enjoy doing with her partner after a long day?",
+      "ambiguous_query": "What does she enjoy doing with her partner after a long day?",
+      "q_final": "What does Jolene enjoy doing with her partner after a long day?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        19,
+        3,
+        22,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 133,
+      "category": 4,
+      "original_question": "What is Jolene currently doing in June 2023?",
+      "ambiguous_query": "What is she currently doing in June 2023?",
+      "q_final": "What is she currently doing in June 2023?",
+      "evidence": [
+        "D13:5"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        14,
+        13,
+        1,
+        3,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 134,
+      "category": 4,
+      "original_question": "For how long has Jolene had Seraphim as a pet?",
+      "ambiguous_query": "For how long has she had Seraphim as a pet?",
+      "q_final": "For how long has Jolene had Seraphim as a pet?",
+      "evidence": [
+        "D14:6"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        2,
+        8,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 135,
+      "category": 4,
+      "original_question": "How does Jolene feel when spending time with Seraphim?",
+      "ambiguous_query": "How does she feel when spending time with Seraphim?",
+      "q_final": "How does Deborah feel when spending time with Seraphim?",
+      "evidence": [
+        "D14:6"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        8,
+        14,
+        2,
+        28,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 136,
+      "category": 4,
+      "original_question": "Which new yoga pose did Deborah share a photo of?",
+      "ambiguous_query": "Which new yoga pose did she share a photo of?",
+      "q_final": "Which new yoga pose did Deborah share a photo of?",
+      "evidence": [
+        "D14:15"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        23,
+        7,
+        28,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 137,
+      "category": 4,
+      "original_question": "What group activity did Deborah start with Anna?",
+      "ambiguous_query": "What group activity did she start with Anna?",
+      "q_final": "What group activity did Deborah start with Anna?",
+      "evidence": [
+        "D15:1"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        3,
+        19,
+        4,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 138,
+      "category": 4,
+      "original_question": "What made being part of the running group easy for Deborah to stay motivated?",
+      "ambiguous_query": "What made being part of the running group easy for her to stay motivated?",
+      "q_final": "What made being part of the running group easy for Deborah to stay motivated?",
+      "evidence": [
+        "D15:3"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        18,
+        25,
+        4,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 139,
+      "category": 4,
+      "original_question": "Why did Jolene decide to get a snake as a pet?",
+      "ambiguous_query": "Why did she decide to get a snake as a pet?",
+      "q_final": "Why did Jolene decide to get a snake as a pet?",
+      "evidence": [
+        "D15:18"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        8,
+        14,
+        28,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 140,
+      "category": 4,
+      "original_question": "What is the favorite game Jolene plays with her partner?",
+      "ambiguous_query": "What is the favorite game she plays with her partner?",
+      "q_final": "What is the favorite game she plays with her partner?",
+      "evidence": [
+        "D15:10"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        19,
+        2,
+        15,
+        24,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 141,
+      "category": 4,
+      "original_question": "What activity does Deborah do with her cats?",
+      "ambiguous_query": "What activity does she do with her cats?",
+      "q_final": "What activity does Deborah do with her cats?",
+      "evidence": [
+        "D15:27"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        22,
+        26,
+        3,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 142,
+      "category": 4,
+      "original_question": "How does Jolene describe the feeling of finding her snake snuggled under the bed after it got out?",
+      "ambiguous_query": "How does she describe the feeling of finding her snake snuggled under the bed after it got out?",
+      "q_final": "How does Deborah describe the feeling of finding her snake snuggled under the bed after it got out?",
+      "evidence": [
+        "D15:20"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        8,
+        14,
+        10,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 143,
+      "category": 4,
+      "original_question": "Why does Deborah take her cats out for a run in the park every day?",
+      "ambiguous_query": "Why does she take her cats out for a run in the park every day?",
+      "q_final": "Why does Melanie take her cats out for a run in the park every day?",
+      "evidence": [
+        "D15:27"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        4,
+        14,
+        22,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 144,
+      "category": 4,
+      "original_question": "How did Jolene come to have her pet, Susie?",
+      "ambiguous_query": "How did she come to have her pet, Susie?",
+      "q_final": "How did Susie come to be hers?",
+      "evidence": [
+        "D16:6"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        28,
+        4,
+        3,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 145,
+      "category": 4,
+      "original_question": "What activities have been helping Jolene stay distracted during tough times?",
+      "ambiguous_query": "What activities have been helping she stay distracted during tough times?",
+      "q_final": "What activities have been helping Jolene stay distracted during tough times?",
+      "evidence": [
+        "D16:4"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        12,
+        15,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 146,
+      "category": 4,
+      "original_question": "What kind of yoga routine does Deborah recommend to Jolene?",
+      "ambiguous_query": "What kind of yoga routine does Deborah recommend to her?",
+      "q_final": "What kind of yoga routine does Deborah recommend?",
+      "evidence": [
+        "D16:15"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        19,
+        11,
+        13,
+        7,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 147,
+      "category": 4,
+      "original_question": "What did Jolene design inspired by their love for space and engines?",
+      "ambiguous_query": "What did she design inspired by their love for space and engines?",
+      "q_final": "What did Luna design inspired by their love for space and engines?",
+      "evidence": [
+        "D17:6"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        22,
+        13,
+        11,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 148,
+      "category": 4,
+      "original_question": "What journal has Jolene been using to help track tasks and stay organized?",
+      "ambiguous_query": "What journal has she been using to help track tasks and stay organized?",
+      "q_final": "What journal has Melanie been using to help track tasks and stay organized?",
+      "evidence": [
+        "D18:3"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        8,
+        15,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 149,
+      "category": 4,
+      "original_question": "What game did Jolene recommend for being calming and cute?",
+      "ambiguous_query": "What game did she recommend for being calming and cute?",
+      "q_final": "What game did Deborah recommend for being calming and cute?",
+      "evidence": [
+        "D19:8"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        20,
+        11,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 150,
+      "category": 4,
+      "original_question": "What game did Jolene suggest as an awesome open-world game for the Nintendo Switch?",
+      "ambiguous_query": "What game did she suggest as an awesome open-world game for the Nintendo Switch?",
+      "q_final": "What game did she suggest as an awesome open-world game for the Nintendo Switch?",
+      "evidence": [
+        "D19:8"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        29,
+        24,
+        15,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 151,
+      "category": 4,
+      "original_question": "What did Deborah and her husband use to play to bond and make memories?",
+      "ambiguous_query": "What did she and her husband use to play to bond and make memories?",
+      "q_final": "What did she and her husband use to play to bond and make memories?",
+      "evidence": [
+        "D19:11"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        28,
+        4,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 152,
+      "category": 4,
+      "original_question": "What is special about the bench at the park near Deborah's house?",
+      "ambiguous_query": "What is special about the bench at the park near her house?",
+      "q_final": "What is special about the bench at the park near her house?",
+      "evidence": [
+        "D19:18"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        29,
+        23,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 153,
+      "category": 4,
+      "original_question": "What did Deborah and her mom chat about at their special bench in the park?",
+      "ambiguous_query": "What did she and her mom chat about at their special bench in the park?",
+      "q_final": "What did Deborah and her mom chat about at their special bench in the park?",
+      "evidence": [
+        "D19:19"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        29,
+        28,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 154,
+      "category": 4,
+      "original_question": "What feeling does Deborah get when she thinks about the time spent with her mom at their special spot?",
+      "ambiguous_query": "What feeling does she get when she thinks about the time spent with her mom at their special spot?",
+      "q_final": "What feeling does Melanie get when she thinks about the time spent with her mom at their special spot?",
+      "evidence": [
+        "D19:21"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        29,
+        10,
+        4,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 4,
+      "original_question": "What habits does Jolene practice to feel balanced?",
+      "ambiguous_query": "What habits does she practice to feel balanced?",
+      "q_final": "What habits does Deborah practice to feel balanced?",
+      "evidence": [
+        "D20:12"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        11,
+        7,
+        26,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 156,
+      "category": 4,
+      "original_question": "Which yoga pose is Jolene a fan of for rest and calmness?",
+      "ambiguous_query": "Which yoga pose is she a fan of for rest and calmness?",
+      "q_final": "Which yoga pose is Deborah a fan of for rest and calmness?",
+      "evidence": [
+        "D20:19"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        22,
+        11,
+        28,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 157,
+      "category": 4,
+      "original_question": "How long has Jolene been doing yoga?",
+      "ambiguous_query": "How long has she been doing yoga?",
+      "q_final": "How long has Deborah been doing yoga?",
+      "evidence": [
+        "D20:21"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        19,
+        20,
+        11,
+        13,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 158,
+      "category": 4,
+      "original_question": "What did Jolene participate in recently that provided her with a rewarding experience?",
+      "ambiguous_query": "What did she participate in recently that provided her with a rewarding experience?",
+      "q_final": "What recent activity provided a rewarding experience for her?",
+      "evidence": [
+        "D21:6"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        25,
+        21,
+        19,
+        28,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 159,
+      "category": 4,
+      "original_question": "How did Jolene feel after receiving positive feedback at the virtual conference?",
+      "ambiguous_query": "How did she feel after receiving positive feedback at the virtual conference?",
+      "q_final": "How did Deborah feel after receiving positive feedback at the virtual conference?",
+      "evidence": [
+        "D21:8"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        3,
+        4,
+        2,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 160,
+      "category": 4,
+      "original_question": "What kind of event did Jolene present at recently?",
+      "ambiguous_query": "What kind of event did her present at recently?",
+      "q_final": "What kind of event did Jolene present at recently?",
+      "evidence": [
+        "D21:6"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        24,
+        21,
+        19,
+        15,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 161,
+      "category": 4,
+      "original_question": "What did Jolene's mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "ambiguous_query": "What did her mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "q_final": "What did her mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "evidence": [
+        "D22:6"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        4,
+        11,
+        13,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 162,
+      "category": 4,
+      "original_question": "What type of projects is Jolene interested in getting involved in the future?",
+      "ambiguous_query": "What type of projects is her interested in getting involved in the future?",
+      "q_final": "What type of projects is Jolene interested in getting involved in the future?",
+      "evidence": [
+        "D22:8"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        3,
+        13,
+        14,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 163,
+      "category": 4,
+      "original_question": "How did Deborah get Luna, one of her cats?",
+      "ambiguous_query": "How did she get Luna, one of her cats?",
+      "q_final": "How did she get Luna, one of her cats?",
+      "evidence": [
+        "D22:25"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        15,
+        8,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 164,
+      "category": 4,
+      "original_question": "How old is Max?",
+      "ambiguous_query": "How old is Max?",
+      "q_final": "How old is Max?",
+      "evidence": [
+        "D22:27"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        28,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 165,
+      "category": 4,
+      "original_question": "What type of classes did Jolene and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "ambiguous_query": "What type of classes did her and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "q_final": "What type of classes did Deborah and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        7,
+        19,
+        22,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 166,
+      "category": 4,
+      "original_question": "What type of place does Jolene visit to meditate?",
+      "ambiguous_query": "What type of place does her visit to meditate?",
+      "q_final": "What type of place does Luna visit to meditate?",
+      "evidence": [
+        "D23:9"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        20,
+        1,
+        6,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 167,
+      "category": 4,
+      "original_question": "What was the new plant Jolene got used as a reminder for on 30 August, 2023?",
+      "ambiguous_query": "What was the new plant she got used as a reminder for on 30 August, 2023?",
+      "q_final": "What was the new plant she got used as a reminder for on 30 August, 2023?",
+      "evidence": [
+        "D23:29"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        29,
+        18,
+        4,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 168,
+      "category": 4,
+      "original_question": "Why did Jolene get the new plant on 30 August, 2023?",
+      "ambiguous_query": "Why did she get the new plant on 30 August, 2023?",
+      "q_final": "Why did Jolene get the new plant on 30 August, 2023?",
+      "evidence": [
+        "D23:29"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        16,
+        22,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 169,
+      "category": 4,
+      "original_question": "What has Jolene been focusing on lately besides studying?",
+      "ambiguous_query": "What has she been focusing on lately besides studying?",
+      "q_final": "What has Jolene been focusing on lately besides studying?",
+      "evidence": [
+        "D24:2"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        19,
+        24,
+        21,
+        15,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 170,
+      "category": 4,
+      "original_question": "How did Deborah's mom support her yoga practice when she first started?",
+      "ambiguous_query": "How did her mom support her yoga practice when she first started?",
+      "q_final": "How did Anna support Jolene's yoga practice when she first started?",
+      "evidence": [
+        "D24:5"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        7,
+        24,
+        15,
+        9,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 171,
+      "category": 4,
+      "original_question": "What was the video game console that Jolene's parents got her at age 10?",
+      "ambiguous_query": "What was the video game console that her parents got her at age 10?",
+      "q_final": "What video game console did her parents get her at age 10?",
+      "evidence": [
+        "D24:6"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        2,
+        24,
+        19,
+        7,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 172,
+      "category": 4,
+      "original_question": "What was one of Jolene's favorite games to play with her mom on the nintendo wii game system?",
+      "ambiguous_query": "What was one of her favorite games to play with her mom on the nintendo wii game system?",
+      "q_final": "What was one of her favorite games to play with her mom on the Nintendo Wii game system?",
+      "evidence": [
+        "D24:10"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        19,
+        15,
+        2,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 173,
+      "category": 4,
+      "original_question": "What course did Jolene sign up for on 6 September 2023?",
+      "ambiguous_query": "What course did she sign up for on 6 September 2023?",
+      "q_final": "What course did Melanie sign up for on 6 September 2023?",
+      "evidence": [
+        "D25:1"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        14,
+        30,
+        13,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 174,
+      "category": 4,
+      "original_question": "Why did Jolene have to reschedule their meeting with Deborah on September 8, 2023?",
+      "ambiguous_query": "Why did she have to reschedule their meeting with Deborah on September 8, 2023?",
+      "q_final": "Why did Deborah have to reschedule their meeting with Jolene on September 8, 2023?",
+      "evidence": [
+        "D26:15"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        25,
+        3,
+        7,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 175,
+      "category": 4,
+      "original_question": "Where did Jolene and her partner travel for a few weeks in September 2023?",
+      "ambiguous_query": "Where did she and her partner travel for a few weeks in September 2023?",
+      "q_final": "Where did Deborah and her partner travel for a few weeks in September 2023?",
+      "evidence": [
+        "D27:1"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        1,
+        24,
+        30,
+        26,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 176,
+      "category": 4,
+      "original_question": "What was the main focus of the session that stood out to Jolene during the retreat?",
+      "ambiguous_query": "What was the main focus of the session that stood out to her during the retreat?",
+      "q_final": "What was the main focus of the retreat that stood out to Deborah?",
+      "evidence": [
+        "D27:5"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        14,
+        5,
+        17,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 177,
+      "category": 4,
+      "original_question": "How did Jolene feel about her progress in practicing mindfulness and gratitude?",
+      "ambiguous_query": "How did she feel about her progress in practicing mindfulness and gratitude?",
+      "q_final": "How did Deborah feel about her progress in practicing mindfulness and gratitude?",
+      "evidence": [
+        "D27:9"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        15,
+        13,
+        17,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 178,
+      "category": 4,
+      "original_question": "What positive change did Jolene experience during the retreat?",
+      "ambiguous_query": "What positive change did she experience during the retreat?",
+      "q_final": "What positive change did Jolene experience during the retreat?",
+      "evidence": [
+        "D27:1"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        21,
+        27,
+        30,
+        5,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 179,
+      "category": 4,
+      "original_question": "What did Jolene recently play that she described to Deb?",
+      "ambiguous_query": "What did she recently play that she described to Deb?",
+      "q_final": "What did Jolene recently play that she described to Deb?",
+      "evidence": [
+        "D27:12"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        24,
+        10,
+        18,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 180,
+      "category": 4,
+      "original_question": "What did Deborah do with their mom's old friends?",
+      "ambiguous_query": "What did she do with their mom's old friends?",
+      "q_final": "What did Anna do with their mom's old friends?",
+      "evidence": [
+        "D28:7"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        4,
+        29,
+        12,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 181,
+      "category": 4,
+      "original_question": "Where did Deborah get married?",
+      "ambiguous_query": "Where did she get married?",
+      "q_final": "Where did she get married?",
+      "evidence": [
+        "D28:11"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        15,
+        7,
+        22,
+        28,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 182,
+      "category": 4,
+      "original_question": "What does yoga on the beach provide for Deborah?",
+      "ambiguous_query": "What does yoga on the beach provide for her?",
+      "q_final": "What does yoga on top of Mount Talkeetna provide for her?",
+      "evidence": [
+        "D28:15"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        13,
+        7,
+        26,
+        22,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 183,
+      "category": 4,
+      "original_question": "How does Jolene describe their home room?",
+      "ambiguous_query": "How does she describe their home room?",
+      "q_final": "How does Deborah describe their home room?",
+      "evidence": [
+        "D28:22"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        1,
+        28,
+        2,
+        18,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 184,
+      "category": 4,
+      "original_question": "What new activity did Deborah and her neighbor organize for the community on 16 September, 2023?",
+      "ambiguous_query": "What new activity did she and her neighbor organize for the community on 16 September, 2023?",
+      "q_final": "What new activity did Deborah and her neighbor Anna organize for the community on 16 September, 2023?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        3,
+        25,
+        4,
+        19,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 185,
+      "category": 4,
+      "original_question": "What was Deborah's mom passionate about?",
+      "ambiguous_query": "What was her mom passionate about?",
+      "q_final": "What was Deborah's mom passionate about?",
+      "evidence": [
+        "D29:7"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        12,
+        28,
+        2,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 186,
+      "category": 4,
+      "original_question": "What food did Deborah's mom make for her on birthdays?",
+      "ambiguous_query": "What food did her mom make for her on birthdays?",
+      "q_final": "What food did Melanie's mom make for her on birthdays?",
+      "evidence": [
+        "D29:9"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        19,
+        12,
+        28,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 187,
+      "category": 4,
+      "original_question": "What kind of cookies did Jolene used to bake with someone close to her?",
+      "ambiguous_query": "What kind of cookies did her used to bake with someone close to her?",
+      "q_final": "What kind of cookies did she used to bake with someone close to her?",
+      "evidence": [
+        "D29:12"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        2,
+        4,
+        12,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 188,
+      "category": 4,
+      "original_question": "What outdoor activity did Jolene suggest doing together with Deborah?",
+      "ambiguous_query": "What outdoor activity did she suggest doing together with Deborah?",
+      "q_final": "What outdoor activity did Jolene suggest doing together with Deborah?",
+      "evidence": [
+        "D29:27"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        19,
+        15,
+        3,
+        26,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 189,
+      "category": 4,
+      "original_question": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
+      "ambiguous_query": "What activity did she enjoy at the music festival with their pals on September 20, 2023?",
+      "q_final": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        25,
+        19,
+        3,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 190,
+      "category": 4,
+      "original_question": "What did Deborah find freeing at the music festival?",
+      "ambiguous_query": "What did she find freeing at the music festival?",
+      "q_final": "What did Deborah find freeing at the music festival?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        11,
+        29,
+        19,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 191,
+      "category": 5,
+      "original_question": "What are the names of Deborah's snakes?",
+      "ambiguous_query": "What are the names of her snakes?",
+      "q_final": "What are the names of her snakes?",
+      "evidence": [
+        "D2:20",
+        "D2:22"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        22,
+        2,
+        12,
+        15,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 192,
+      "category": 5,
+      "original_question": "What are Deborah's favorite books?",
+      "ambiguous_query": "What are her favorite books?",
+      "q_final": "What are her favorite books?",
+      "evidence": [
+        "D4:21",
+        "D4:23"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        29,
+        2,
+        19,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 193,
+      "category": 5,
+      "original_question": "Where did Deborah get her dogs?",
+      "ambiguous_query": "Where did she get her dogs?",
+      "q_final": "Where did she get her dog?",
+      "evidence": [
+        "D22:23",
+        "D22:25"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        15,
+        22,
+        8,
+        9,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 194,
+      "category": 5,
+      "original_question": "How old are Jolene's cats?",
+      "ambiguous_query": "How old are her cats?",
+      "q_final": "How old are her cats?",
+      "evidence": [
+        "D22:27",
+        "D22:29"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        28,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 195,
+      "category": 5,
+      "original_question": "When did Deborah's parents give her first console?",
+      "ambiguous_query": "When did her parents give her first console?",
+      "q_final": "When did her parents give her first console?",
+      "evidence": [
+        "D24:6"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        7,
+        3,
+        2,
+        8,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 196,
+      "category": 5,
+      "original_question": "When did Jolene release her pet snake?",
+      "ambiguous_query": "When did she release her pet snake?",
+      "q_final": "When did Jolene release her pet snake?",
+      "evidence": [
+        "D2:24"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        15,
+        14,
+        28,
+        2,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 197,
+      "category": 5,
+      "original_question": "Where did Jolene meet her new friend Anna?",
+      "ambiguous_query": "Where did she meet her new friend Anna?",
+      "q_final": "Where did she meet her new friend Anna?",
+      "evidence": [
+        "D3:6"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        28,
+        4,
+        8,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 198,
+      "category": 5,
+      "original_question": "What is Deborah's favorite book which she mentioned on 4 February, 2023?",
+      "ambiguous_query": "What is her favorite book which she mentioned on 4 February, 2023?",
+      "q_final": "What is Deborah's favorite book which she mentioned on 4 February, 2023?",
+      "evidence": [
+        "D4:21"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        19,
+        29,
+        7,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 199,
+      "category": 5,
+      "original_question": "What cool stuff did Deborah accomplish at the retreat on 9 February, 2023?",
+      "ambiguous_query": "What cool stuff did she accomplish at the retreat on 9 February, 2023?",
+      "q_final": "What cool stuff did Deborah accomplish at the retreat on 9 February, 2023?",
+      "evidence": [
+        "D5:5"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        14,
+        21,
+        4,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 200,
+      "category": 5,
+      "original_question": "How does Deborah plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "ambiguous_query": "How does she plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "q_final": "How does Melanie plan to involve local engineers in her idea of teaching STEM to underprivileged kids?",
+      "evidence": [
+        "D5:9"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        4,
+        7,
+        22,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 201,
+      "category": 5,
+      "original_question": "What gave Deborah anxiety in the garden she visited?",
+      "ambiguous_query": "What gave she anxiety in the garden she visited?",
+      "q_final": "What gave Jolene anxiety in the garden she visited?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        23,
+        29,
+        1,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 202,
+      "category": 5,
+      "original_question": "Why did Jolene spend time in the garden?",
+      "ambiguous_query": "Why did she spend time in the garden?",
+      "q_final": "Why did Melanie spend time in the garden?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        8,
+        19,
+        29,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 203,
+      "category": 5,
+      "original_question": "How did Jolene and her rival initially meet?",
+      "ambiguous_query": "How did she and her rival initially meet?",
+      "q_final": "How did Deborah and her rival initially meet?",
+      "evidence": [
+        "D7:9"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        3,
+        26,
+        1,
+        7,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 204,
+      "category": 5,
+      "original_question": "What activity does Jolene incorporate into her daily routine after going for a morning jog in the park?",
+      "ambiguous_query": "What activity does she incorporate into her daily routine after going for a morning jog in the park?",
+      "q_final": "What activity does she incorporate into her daily routine after going for a morning jog in the park?",
+      "evidence": [
+        "D7:18"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        19,
+        22,
+        3,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 205,
+      "category": 5,
+      "original_question": "What method does Jolene suggest Deborah to try for organizing tasks based on importance and urgency?",
+      "ambiguous_query": "What method does she suggest Deborah to try for organizing tasks based on importance and urgency?",
+      "q_final": "What method does Deborah suggest for organizing tasks based on importance and urgency?",
+      "evidence": [
+        "D10:13"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        19,
+        18,
+        8,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 206,
+      "category": 5,
+      "original_question": "How does Jolene plan to pursue her dream of climbing mountains?",
+      "ambiguous_query": "How does she plan to pursue her dream of climbing mountains?",
+      "q_final": "How does she plan to pursue her dream of climbing mountains?",
+      "evidence": [
+        "D10:20"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        13,
+        26,
+        22,
+        5,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 207,
+      "category": 5,
+      "original_question": "Who are the authors mentioned by Jolene that she enjoys reading during her yoga practice?",
+      "ambiguous_query": "Who are the authors mentioned by her that she enjoys reading during her yoga practice?",
+      "q_final": "Who are the authors mentioned by her that she enjoys reading during her yoga practice?",
+      "evidence": [
+        "D11:9"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        19,
+        3,
+        11,
+        20,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 208,
+      "category": 5,
+      "original_question": "Which show did Jolene go to with a friend on 9 April, 2023?",
+      "ambiguous_query": "Which show did her go to with a friend on 9 April, 2023?",
+      "q_final": "Which show did Melanie go to with a friend on 9 April, 2023?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        28,
+        4,
+        14,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 209,
+      "category": 5,
+      "original_question": "What does Deborah find comforting about going to horror movie screenings?",
+      "ambiguous_query": "What does she find comforting about going to horror movie screenings?",
+      "q_final": "What does Deborah find comforting about going to horror movie screenings?",
+      "evidence": [
+        "D12:3"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        15,
+        16,
+        28,
+        12,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 210,
+      "category": 5,
+      "original_question": "How does Deborah describe the time spent with her snakes and partner?",
+      "ambiguous_query": "How does she describe the time spent with her snakes and partner?",
+      "q_final": "How does Deborah describe the time spent with her partner and snakes?",
+      "evidence": [
+        "D12:6"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        2,
+        12,
+        19,
+        7,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 211,
+      "category": 5,
+      "original_question": "For how long has Jolene had Lucifer as a pet?",
+      "ambiguous_query": "For how long has she had Lucifer as a pet?",
+      "q_final": "For how long has Lucifer been a pet?",
+      "evidence": [
+        "D14:6"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        15,
+        2,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 212,
+      "category": 5,
+      "original_question": "How does Deborah feel when spending time with Seraphim?",
+      "ambiguous_query": "How does she feel when spending time with Seraphim?",
+      "q_final": "How does Deborah feel when spending time with Seraphim?",
+      "evidence": [
+        "D14:6"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        8,
+        14,
+        2,
+        28,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 213,
+      "category": 5,
+      "original_question": "What made being part of the running group easy for Jolene to stay motivated?",
+      "ambiguous_query": "What made being part of the running group easy for her to stay motivated?",
+      "q_final": "What made being part of the running group easy for Deborah to stay motivated?",
+      "evidence": [
+        "D15:3"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        18,
+        25,
+        4,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 214,
+      "category": 5,
+      "original_question": "Why did Jolene decide to get a tarantula as a pet?",
+      "ambiguous_query": "Why did she decide to get a tarantula as a pet?",
+      "q_final": "Why did Deborah decide to get a tarantula as a pet?",
+      "evidence": [
+        "D15:18"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        16,
+        14,
+        28,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 215,
+      "category": 5,
+      "original_question": "How did Deborah come to have her pet, Susie?",
+      "ambiguous_query": "How did she come to have her pet, Susie?",
+      "q_final": "How did Susie come to be hers?",
+      "evidence": [
+        "D16:6"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        28,
+        4,
+        3,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 216,
+      "category": 5,
+      "original_question": "What did Deborah design inspired by their love for space and engines?",
+      "ambiguous_query": "What did she design inspired by their love for space and engines?",
+      "q_final": "What did Melanie design inspired by their love for space and engines?",
+      "evidence": [
+        "D17:6"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        13,
+        22,
+        11,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 217,
+      "category": 5,
+      "original_question": "What journal has Deborah been using to help track tasks and stay organized?",
+      "ambiguous_query": "What journal has she been using to help track tasks and stay organized?",
+      "q_final": "What journal has Melanie been using to help track tasks and stay organized?",
+      "evidence": [
+        "D18:3"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        8,
+        15,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 218,
+      "category": 5,
+      "original_question": "What game did Jolene recommend to Deborah for being thrilling and intense?",
+      "ambiguous_query": "What game did she recommend to Deborah for being thrilling and intense?",
+      "q_final": "What game did Deborah recommend for being thrilling and intense?",
+      "evidence": [
+        "D19:8"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        27,
+        2,
+        13,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 219,
+      "category": 5,
+      "original_question": "What game did Deborah suggest as an awesome open-world game for the Nintendo Switch?",
+      "ambiguous_query": "What game did she suggest as an awesome open-world game for the Nintendo Switch?",
+      "q_final": "What game did she suggest as an awesome open-world game for the Nintendo Switch?",
+      "evidence": [
+        "D19:8"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        29,
+        24,
+        15,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 220,
+      "category": 5,
+      "original_question": "What is special about the bench at the park near Jolene's house?",
+      "ambiguous_query": "What is special about the bench at the park near her house?",
+      "q_final": "What is special about the bench at the park near her house?",
+      "evidence": [
+        "D19:18"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        29,
+        23,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 221,
+      "category": 5,
+      "original_question": "What did Jolene and her mom chat about at their special bench in the park?",
+      "ambiguous_query": "What did she and her mom chat about at their special bench in the park?",
+      "q_final": "What did Deborah and her mom chat about at their special bench in the park?",
+      "evidence": [
+        "D19:19"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        29,
+        28,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 222,
+      "category": 5,
+      "original_question": "How did Deborah feel after receiving positive feedback at the virtual conference?",
+      "ambiguous_query": "How did she feel after receiving positive feedback at the virtual conference?",
+      "q_final": "How did Deborah feel after receiving positive feedback at the virtual conference?",
+      "evidence": [
+        "D21:8"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        3,
+        4,
+        2,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 223,
+      "category": 5,
+      "original_question": "What kind of event did Deborah present at recently?",
+      "ambiguous_query": "What kind of event did her present at recently?",
+      "q_final": "What kind of event did Jolene present at recently?",
+      "evidence": [
+        "D21:6"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        24,
+        21,
+        19,
+        15,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 224,
+      "category": 5,
+      "original_question": "What did Deborah's mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "ambiguous_query": "What did her mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "q_final": "What did her mom stress the value of, which she wants to keep in mind for her engineering projects?",
+      "evidence": [
+        "D22:6"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        4,
+        11,
+        13,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 225,
+      "category": 5,
+      "original_question": "What type of projects is Deborah interested in getting involved in the future?",
+      "ambiguous_query": "What type of projects is her interested in getting involved in the future?",
+      "q_final": "What type of projects is Jolene interested in getting involved in the future?",
+      "evidence": [
+        "D22:8"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        3,
+        13,
+        14,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 226,
+      "category": 5,
+      "original_question": "How did Jolene get Luna, one of her cats?",
+      "ambiguous_query": "How did she get Luna, one of her cats?",
+      "q_final": "How did she get Luna, one of her cats?",
+      "evidence": [
+        "D22:25"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        15,
+        8,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 227,
+      "category": 5,
+      "original_question": "What type of classes did Deborah and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "ambiguous_query": "What type of classes did her and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "q_final": "What type of classes did Deborah and her partner check out during their trip to Rio de Janeiro on 30 August, 2023?",
+      "evidence": [
+        "D23:1"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        7,
+        19,
+        22,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 228,
+      "category": 5,
+      "original_question": "Why did Deborah get the new plant on 30 August, 2023?",
+      "ambiguous_query": "Why did she get the new plant on 30 August, 2023?",
+      "q_final": "Why did Jolene get the new plant on 30 August, 2023?",
+      "evidence": [
+        "D23:29"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        16,
+        22,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 229,
+      "category": 5,
+      "original_question": "How did Jolene's mom support her yoga practice when she first started?",
+      "ambiguous_query": "How did her mom support her yoga practice when she first started?",
+      "q_final": "How did Anna support Jolene's yoga practice when she first started?",
+      "evidence": [
+        "D24:5"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        7,
+        24,
+        15,
+        9,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 230,
+      "category": 5,
+      "original_question": "What was the video game console that Deborah's parents got her at age 10?",
+      "ambiguous_query": "What was the video game console that her parents got her at age 10?",
+      "q_final": "What video game console did her parents get her at age 10?",
+      "evidence": [
+        "D24:6"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        2,
+        24,
+        19,
+        7,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 231,
+      "category": 5,
+      "original_question": "What was one of Deborah's favorite games to play with her mom on the PlayStation game system?",
+      "ambiguous_query": "What was one of her favorite games to play with her mom on the PlayStation game system?",
+      "q_final": "What was one of her favorite games to play with her mom on the PlayStation game system?",
+      "evidence": [
+        "D24:10"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        19,
+        15,
+        2,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 232,
+      "category": 5,
+      "original_question": "Where did Deborah and her partner travel for a few weeks in September 2023?",
+      "ambiguous_query": "Where did she and her partner travel for a few weeks in September 2023?",
+      "q_final": "Where did Deborah and her partner travel for a few weeks in September 2023?",
+      "evidence": [
+        "D27:1"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        1,
+        24,
+        30,
+        26,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 233,
+      "category": 5,
+      "original_question": "What did Jolene do with their mom's old friends?",
+      "ambiguous_query": "What did she do with their mom's old friends?",
+      "q_final": "What did Anna do with their mom's old friends?",
+      "evidence": [
+        "D28:7"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        4,
+        29,
+        12,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 234,
+      "category": 5,
+      "original_question": "Where did Jolene get married?",
+      "ambiguous_query": "Where did she get married?",
+      "q_final": "Where did she get married?",
+      "evidence": [
+        "D28:11"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        15,
+        7,
+        22,
+        28,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 235,
+      "category": 5,
+      "original_question": "What new activity did Jolene and her neighbor organize for the community on 16 September, 2023?",
+      "ambiguous_query": "What new activity did she and her neighbor organize for the community on 16 September, 2023?",
+      "q_final": "What new activity did Deborah and her neighbor Anna organize for the community on 16 September, 2023?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        3,
+        25,
+        4,
+        19,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 236,
+      "category": 5,
+      "original_question": "What food did Jolene's mom make for her on holidays?",
+      "ambiguous_query": "What food did her mom make for her on holidays?",
+      "q_final": "What food did Melanie make for her on holidays?",
+      "evidence": [
+        "D29:9"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        8,
+        19,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 237,
+      "category": 5,
+      "original_question": "What kind of cookies did Deborah used to bake with someone close to her?",
+      "ambiguous_query": "What kind of cookies did her used to bake with someone close to her?",
+      "q_final": "What kind of cookies did she used to bake with someone close to her?",
+      "evidence": [
+        "D29:12"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        2,
+        4,
+        12,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 238,
+      "category": 5,
+      "original_question": "What activity did Jolene enjoy at the music festival with their pals on September 20, 2023?",
+      "ambiguous_query": "What activity did she enjoy at the music festival with their pals on September 20, 2023?",
+      "q_final": "What activity did Deborah enjoy at the music festival with their pals on September 20, 2023?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        25,
+        19,
+        3,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    }
+  ]
+}

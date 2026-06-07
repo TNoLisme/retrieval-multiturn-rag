@@ -1,0 +1,4243 @@
+{
+  "summary": {
+    "conversation_index": 4,
+    "sample_id": "conv-43",
+    "total_qa": 169,
+    "bm25_hit_rate_at1": 0.7126,
+    "bm25_hit_rate_at3": 0.8624,
+    "bm25_hit_rate_at5": 0.8894,
+    "llm_judge_accuracy": 0.7278,
+    "llm_judge_passes": 123
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 1,
+      "original_question": "what are John's goals with regards to his basketball career?",
+      "ambiguous_query": "what are his goals with regards to his basketball career?",
+      "q_final": "his goals with regards to his basketball career?",
+      "evidence": [
+        "D1:9",
+        "D6:15",
+        "D11:17"
+      ],
+      "gold_sections": [
+        1,
+        6,
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        23,
+        6,
+        28,
+        24
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 1,
+      "category": 1,
+      "original_question": "What are John's goals for his career that are not related to his basketball skills?",
+      "ambiguous_query": "What are his goals for his career that are not related to his basketball skills?",
+      "q_final": "What are John's career goals that are not related to his basketball skills?",
+      "evidence": [
+        "D6:15",
+        "D11:17"
+      ],
+      "gold_sections": [
+        6,
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        23,
+        6,
+        28,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 1,
+      "original_question": "What items does John collect?",
+      "ambiguous_query": "What items does he collect?",
+      "q_final": "What items does Tim collect?",
+      "evidence": [
+        "D1:15",
+        "D12:18",
+        "D27:20"
+      ],
+      "gold_sections": [
+        1,
+        12,
+        27
+      ],
+      "retrieved_sections": [
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 3,
+      "category": 3,
+      "original_question": "Would Tim enjoy reading books by C. S. Lewis or John Greene?",
+      "ambiguous_query": "Would he enjoy reading books by C. S. Lewis or John Greene?",
+      "q_final": "Would C. S. Lewis or John Greene enjoy reading books by C. S. Lewis?",
+      "evidence": [
+        "D1:14",
+        "D1:16",
+        "D1:18"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        27,
+        5,
+        22,
+        15,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 4,
+      "category": 1,
+      "original_question": "What books has Tim read?",
+      "ambiguous_query": "What books has he read?",
+      "q_final": "What books has John read?",
+      "evidence": [
+        "D1:14",
+        "D2:7",
+        "D6:8",
+        "D11:26",
+        "D20:21",
+        "D26:36",
+        "D22:13"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        6,
+        11,
+        20,
+        22,
+        26
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        4,
+        5,
+        19
+      ],
+      "recall_at1": 0.14285714285714285,
+      "recall_at3": 0.14285714285714285,
+      "recall_at5": 0.14285714285714285,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 5,
+      "category": 3,
+      "original_question": "Based on Tim's collections, what is a shop that he would enjoy visiting in New York city?",
+      "ambiguous_query": "Based on his collections, what is a shop that he would enjoy visiting in New York city?",
+      "q_final": "What shop would John enjoy visiting in New York City based on his collections?",
+      "evidence": [
+        "D2:9"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        9,
+        10,
+        27,
+        11,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 6,
+      "category": 2,
+      "original_question": "In which month's game did John achieve a career-high score in points?",
+      "ambiguous_query": "In which month's game did he achieve a career-high score in points?",
+      "q_final": "In which month did John achieve a career-high score in points?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        23,
+        11,
+        6,
+        3,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 7,
+      "category": 1,
+      "original_question": "Which geographical locations has Tim been to?",
+      "ambiguous_query": "Which geographical locations has he been to?",
+      "q_final": "Which geographical locations has John been to?",
+      "evidence": [
+        "D1:18",
+        "D3:2",
+        "D14:16"
+      ],
+      "gold_sections": [
+        1,
+        3,
+        14
+      ],
+      "retrieved_sections": [
+        25,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 8,
+      "category": 3,
+      "original_question": "Which outdoor gear company likely signed up John for an endorsement deal?",
+      "ambiguous_query": "Which outdoor gear company likely signed up he for an endorsement deal?",
+      "q_final": "Which outdoor gear company likely signed him up for an endorsement deal?",
+      "evidence": [
+        "D3:15",
+        "D25:2"
+      ],
+      "gold_sections": [
+        3,
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        29,
+        3,
+        11,
+        21
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 1,
+      "original_question": "Which endorsement deals has John been offered?",
+      "ambiguous_query": "Which endorsement deals has he been offered?",
+      "q_final": "Which endorsement deals has John been offered?",
+      "evidence": [
+        "D3:13",
+        "D3:15",
+        "D25:2",
+        "D29:4"
+      ],
+      "gold_sections": [
+        3,
+        25,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        25,
+        21,
+        3,
+        9
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When was John in Seattle for a game?",
+      "ambiguous_query": "When was he in Seattle for a game?",
+      "q_final": "When was John in Seattle for a game?",
+      "evidence": [
+        "D3:19",
+        "D5:2"
+      ],
+      "gold_sections": [
+        3,
+        5
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        6,
+        28,
+        16
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 1,
+      "original_question": "What sports does John like besides basketball?",
+      "ambiguous_query": "What sports does he like besides basketball?",
+      "q_final": "What sports does Tim like besides basketball?",
+      "evidence": [
+        "D1:7",
+        "D2:14",
+        "D3:1",
+        "D3:25"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        3
+      ],
+      "retrieved_sections": [
+        16,
+        2,
+        23,
+        26,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 12,
+      "category": 2,
+      "original_question": "What year did John start surfing?",
+      "ambiguous_query": "What year did he start surfing?",
+      "q_final": "What year did John start surfing?",
+      "evidence": [
+        "D3:27"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        21,
+        26,
+        8,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 1,
+      "original_question": "What does Tim do to escape reality?",
+      "ambiguous_query": "What does he do to escape reality?",
+      "q_final": "What does Tim do to escape reality?",
+      "evidence": [
+        "D2:11",
+        "D3:30"
+      ],
+      "gold_sections": [
+        2,
+        3
+      ],
+      "retrieved_sections": [
+        17,
+        12,
+        2,
+        20,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 1,
+      "original_question": "What kind of writing does Tim do?",
+      "ambiguous_query": "What kind of writing does him do?",
+      "q_final": "What kind of writing does Tim do?",
+      "evidence": [
+        "D2:1",
+        "D4:3",
+        "D4:5",
+        "D15:3"
+      ],
+      "gold_sections": [
+        2,
+        4,
+        15
+      ],
+      "retrieved_sections": [
+        4,
+        15,
+        6,
+        19,
+        16
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 3,
+      "original_question": "Who is Anthony?",
+      "ambiguous_query": "Who is Anthony?",
+      "q_final": "Who is Anthony?",
+      "evidence": [
+        "D4:8"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
+      "ambiguous_query": "After how many weeks did he reconnect with the fellow Harry Potter fan from California?",
+      "q_final": "After how many weeks did Tim reconnect with the fellow Harry Potter fan from California?",
+      "evidence": [
+        "D3:2",
+        "D5:1"
+      ],
+      "gold_sections": [
+        3,
+        5
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        1,
+        26,
+        13
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 1,
+      "original_question": "How many games has John mentioned winning?",
+      "ambiguous_query": "How many games has he mentioned winning?",
+      "q_final": "How many games has John mentioned winning?",
+      "evidence": [
+        "D3:3",
+        "D5:2",
+        "D22:4",
+        "D23:7",
+        "D24:2"
+      ],
+      "gold_sections": [
+        3,
+        5,
+        22,
+        23,
+        24
+      ],
+      "retrieved_sections": [
+        13,
+        24,
+        16,
+        6,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.2,
+      "recall_at5": 0.4,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "What authors has Tim read books from?",
+      "ambiguous_query": "What authors has he read books from?",
+      "q_final": "What authors has John read books from?",
+      "evidence": [
+        "D1:14",
+        "D2:7",
+        "D4:7",
+        "D5:15",
+        "D:11:26",
+        "D20:21",
+        "D26:36"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        4,
+        5,
+        20,
+        26
+      ],
+      "retrieved_sections": [
+        5,
+        22,
+        15,
+        7,
+        27
+      ],
+      "recall_at1": 0.16666666666666666,
+      "recall_at3": 0.16666666666666666,
+      "recall_at5": 0.16666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 19,
+      "category": 3,
+      "original_question": "What is a prominent charity organization that John might want to work with and why?",
+      "ambiguous_query": "What is a prominent charity organization that he might want to work with and why?",
+      "q_final": "What is a prominent charity organization that John might want to work with and why?",
+      "evidence": [
+        "D3:13",
+        "D3:15",
+        "D6:15"
+      ],
+      "gold_sections": [
+        3,
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        11,
+        26,
+        4,
+        21
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 20,
+      "category": 2,
+      "original_question": "Which city was John in before traveling to Chicago?",
+      "ambiguous_query": "Which city was he in before traveling to Chicago?",
+      "q_final": "Which city was John in before traveling to Chicago?",
+      "evidence": [
+        "D3:19",
+        "D5:2",
+        "D6:1",
+        "D6:3"
+      ],
+      "gold_sections": [
+        3,
+        5,
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        9,
+        29,
+        11,
+        27
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 1,
+      "original_question": "Which US cities does John mention visiting to Tim?",
+      "ambiguous_query": "Which US cities does he mention visiting to Tim?",
+      "q_final": "Which US cities does John mention visiting to Tim?",
+      "evidence": [
+        "D3:19",
+        "D6:3",
+        "D9:6"
+      ],
+      "gold_sections": [
+        3,
+        6,
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        29,
+        3,
+        26,
+        20
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 22,
+      "category": 2,
+      "original_question": "When did John meet with his teammates after returning from Chicago?",
+      "ambiguous_query": "When did he meet with his teammates after returning from Chicago?",
+      "q_final": "When did John meet with his teammates after returning from Chicago?",
+      "evidence": [
+        "D7:1"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        21,
+        6,
+        3,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 2,
+      "original_question": "When is Tim attending a book conference?",
+      "ambiguous_query": "When is he attending a book conference?",
+      "q_final": "When is Tim attending a book conference?",
+      "evidence": [
+        "D7:6"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        13,
+        11,
+        22,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 24,
+      "category": 2,
+      "original_question": "Where was John between August 11 and August 15 2023?",
+      "ambiguous_query": "Where was he between August 11 and August 15 2023?",
+      "q_final": "Where was John between August 11 and August 15 2023?",
+      "evidence": [
+        "D6:1",
+        "D6:3",
+        "D7:1"
+      ],
+      "gold_sections": [
+        6,
+        7
+      ],
+      "retrieved_sections": [
+        3,
+        22,
+        11,
+        15,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 1,
+      "original_question": "What similar sports collectible do Tim and John own?",
+      "ambiguous_query": "What similar sports collectible do Tim and him own?",
+      "q_final": "What similar sports collectible do Tim and John own?",
+      "evidence": [
+        "D7:7",
+        "D7:9",
+        "D16:7",
+        "D16:9"
+      ],
+      "gold_sections": [
+        7,
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        12,
+        21,
+        14,
+        19
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 1,
+      "original_question": "Which TV series does Tim mention watching?",
+      "ambiguous_query": "Which TV series does he mention watching?",
+      "q_final": "Which TV series does Tim mention watching?",
+      "evidence": [
+        "D17:1",
+        "D17:11",
+        "D26:36"
+      ],
+      "gold_sections": [
+        17,
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        22,
+        8,
+        17,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 27,
+      "category": 3,
+      "original_question": "Which popular time management technique does Tim use to prepare for exams?",
+      "ambiguous_query": "Which popular time management technique does he use to prepare for exams?",
+      "q_final": "Which popular time management technique does Tim use to prepare for exams?",
+      "evidence": [
+        "D18:3",
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        9,
+        20,
+        29,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 28,
+      "category": 3,
+      "original_question": "Which popular music composer's tunes does Tim enjoy playing on the piano?",
+      "ambiguous_query": "Which popular music composer's tunes does he enjoy playing on the piano?",
+      "q_final": "Which popular music composer's tunes does Tim enjoy playing on the piano?",
+      "evidence": [
+        "D8:14",
+        "D8:16"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        21,
+        20,
+        28,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 1,
+      "original_question": "What schools did John play basketball in and how many years was he with his team during high school?",
+      "ambiguous_query": "What schools did he play basketball in and how many years was he with his team during high school?",
+      "q_final": "What schools did John play basketball in and how many years was he with his team during high school?",
+      "evidence": [
+        "D6:13",
+        "D9:4"
+      ],
+      "gold_sections": [
+        6,
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        6,
+        22,
+        21,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 1,
+      "original_question": "Which cities has John been to?",
+      "ambiguous_query": "Which cities has he been to?",
+      "q_final": "Which cities has John been to?",
+      "evidence": [
+        "D3:19",
+        "D6:3",
+        "D9:6",
+        "D27:36"
+      ],
+      "gold_sections": [
+        3,
+        6,
+        9,
+        27
+      ],
+      "retrieved_sections": [
+        9,
+        11,
+        3,
+        29,
+        10
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "What month did Tim plan on going to Universal Studios?",
+      "ambiguous_query": "What month did he plan on going to Universal Studios?",
+      "q_final": "What month did Tim plan on visiting Universal Studios?",
+      "evidence": [
+        "D10:9"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        9,
+        29,
+        27,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 3,
+      "original_question": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+      "ambiguous_query": "Which US states might he be in during September 2023 based on his plans of visiting Universal Studios?",
+      "q_final": "Which US states might Tim be in during September 2023 based on his plans of visiting Universal Studios?",
+      "evidence": [
+        "D10:9"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        9,
+        7,
+        29,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 2,
+      "original_question": "When does John plan on traveling with his team on a team trip?",
+      "ambiguous_query": "When does he plan on traveling with his team on a team trip?",
+      "q_final": "When does John plan on traveling with his team on a team trip?",
+      "evidence": [
+        "D11:7"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        1,
+        11,
+        7,
+        22,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 34,
+      "category": 3,
+      "original_question": "What could John do after his basketball career?",
+      "ambiguous_query": "What could he do after his basketball career?",
+      "q_final": "What could [ENTITY_NAME] do after his basketball career?",
+      "evidence": [
+        "D11:19",
+        "D26:1",
+        "D27:26"
+      ],
+      "gold_sections": [
+        11,
+        26,
+        27
+      ],
+      "retrieved_sections": [
+        11,
+        23,
+        6,
+        28,
+        22
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 35,
+      "category": 1,
+      "original_question": "What outdoor activities does John enjoy?",
+      "ambiguous_query": "What outdoor activities does he enjoy?",
+      "q_final": "What outdoor activities does John enjoy?",
+      "evidence": [
+        "D3:27",
+        "D12:6"
+      ],
+      "gold_sections": [
+        3,
+        12
+      ],
+      "retrieved_sections": [
+        25,
+        15,
+        12,
+        20,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 1,
+      "original_question": "Who is Tim and John's favorite basketball player?",
+      "ambiguous_query": "Who is Tim and his favorite basketball player?",
+      "q_final": "Who is Tim and his favorite basketball player?",
+      "evidence": [
+        "D12:20",
+        "D12:22",
+        "D16:9"
+      ],
+      "gold_sections": [
+        12,
+        16
+      ],
+      "retrieved_sections": [
+        12,
+        16,
+        14,
+        21,
+        19
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 37,
+      "category": 2,
+      "original_question": "Which week did Tim visit the UK for the Harry Potter Conference?",
+      "ambiguous_query": "Which week did he visit the UK for the Harry Potter Conference?",
+      "q_final": "Which week did Tim visit the UK for the Harry Potter Conference?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        3,
+        18,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 38,
+      "category": 1,
+      "original_question": "which country has Tim visited most frequently in his travels?",
+      "ambiguous_query": "which country has he visited most frequently in his travels?",
+      "q_final": "Which country has Tim visited most frequently in his travels?",
+      "evidence": [
+        "D1:18",
+        "D13:1",
+        "D18:1"
+      ],
+      "gold_sections": [
+        1,
+        13,
+        18
+      ],
+      "retrieved_sections": [
+        29,
+        21,
+        18,
+        27,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 39,
+      "category": 2,
+      "original_question": "What year did Tim go to the Smoky Mountains?",
+      "ambiguous_query": "What year did he go to the Smoky Mountains?",
+      "q_final": "What year did John go to the Smoky Mountains?",
+      "evidence": [
+        "D14:16"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        20,
+        21,
+        9,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 40,
+      "category": 2,
+      "original_question": "Has Tim been to North Carolina and/or Tennesee states in the US?",
+      "ambiguous_query": "Has he been to North Carolina and/or Tennesee states in the US?",
+      "q_final": "Has Tim been to North Carolina and/or Tennessee states in the US?",
+      "evidence": [
+        "D14:16"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        24,
+        20,
+        8,
+        17,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 41,
+      "category": 1,
+      "original_question": "What kind of fiction stories does Tim write?",
+      "ambiguous_query": "What kind of fiction stories does he write?",
+      "q_final": "What kind of fiction stories does Tim write?",
+      "evidence": [
+        "D15:3",
+        "D16:1"
+      ],
+      "gold_sections": [
+        15,
+        16
+      ],
+      "retrieved_sections": [
+        15,
+        4,
+        6,
+        19,
+        27
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 42,
+      "category": 1,
+      "original_question": "What has John cooked?",
+      "ambiguous_query": "What has he cooked?",
+      "q_final": "What has Tim cooked?",
+      "evidence": [
+        "D10:4",
+        "D15:30",
+        "D15:31",
+        "D15:32"
+      ],
+      "gold_sections": [
+        10,
+        15
+      ],
+      "retrieved_sections": [
+        10,
+        15,
+        27,
+        1,
+        2
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 43,
+      "category": 1,
+      "original_question": "What does John like about Lebron James?",
+      "ambiguous_query": "What does he like about Lebron James?",
+      "q_final": "What does Tim like about Lebron James?",
+      "evidence": [
+        "D12:20",
+        "D16:12"
+      ],
+      "gold_sections": [
+        12,
+        16
+      ],
+      "retrieved_sections": [
+        12,
+        16,
+        8,
+        14,
+        5
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 44,
+      "category": 2,
+      "original_question": "When did John and his wife go on a European vacation?",
+      "ambiguous_query": "When did he and his wife go on a European vacation?",
+      "q_final": "When did John and his wife go on a European vacation?",
+      "evidence": [
+        "D16:14"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        17,
+        12,
+        24,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 45,
+      "category": 2,
+      "original_question": "Which country was Tim visiting in the second week of November?",
+      "ambiguous_query": "Which country was he visiting in the second week of November?",
+      "q_final": "Which country was Tim visiting in the second week of November?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        29,
+        18,
+        21,
+        9,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 46,
+      "category": 2,
+      "original_question": "Where was Tim in the week before 16 November 2023?",
+      "ambiguous_query": "Where was he in the week before 16 November 2023?",
+      "q_final": "Where was John in the week before 16 November 2023?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        3,
+        16,
+        18,
+        9,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 2,
+      "original_question": "When did John get married at a greenhouse?",
+      "ambiguous_query": "When did he get married at a greenhouse?",
+      "q_final": "When did John get married at a greenhouse?",
+      "evidence": [
+        "D12:2"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        8,
+        15,
+        13,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 48,
+      "category": 1,
+      "original_question": "When did John get an ankle injury in 2023?",
+      "ambiguous_query": "When did he get an ankle injury in 2023?",
+      "q_final": "When did John get an ankle injury in 2023?",
+      "evidence": [
+        "D18:2"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        24,
+        18,
+        19,
+        8,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 49,
+      "category": 1,
+      "original_question": "How many times has John injured his ankle?",
+      "ambiguous_query": "How many times has he injured his ankle?",
+      "q_final": "How many times has John injured his ankle?",
+      "evidence": [
+        "D18:2",
+        "D19:6"
+      ],
+      "gold_sections": [
+        18,
+        19
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        19,
+        6,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 50,
+      "category": 1,
+      "original_question": "Which book was John reading during his recovery from an ankle injury?",
+      "ambiguous_query": "Which book was he reading during his recovery from an ankle injury?",
+      "q_final": "Which book was John reading during his recovery from an ankle injury?",
+      "evidence": [
+        "D19:20",
+        "D18:2"
+      ],
+      "gold_sections": [
+        18,
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        24,
+        18,
+        22,
+        27
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 51,
+      "category": 3,
+      "original_question": "What kind of yoga for building core strength might John benefit from?",
+      "ambiguous_query": "What kind of yoga for building core strength might he benefit from?",
+      "q_final": "What kind of yoga for building core strength might John benefit from?",
+      "evidence": [
+        "D20:2"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        8,
+        16,
+        28,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 52,
+      "category": 1,
+      "original_question": "What does John do to supplement his basketball training?",
+      "ambiguous_query": "What does he do to supplement his basketball training?",
+      "q_final": "What does John do to supplement his basketball training?",
+      "evidence": [
+        "D8:5",
+        "D20:2"
+      ],
+      "gold_sections": [
+        8,
+        20
+      ],
+      "retrieved_sections": [
+        8,
+        27,
+        25,
+        11,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 53,
+      "category": 3,
+      "original_question": "What other exercises can help John with his basketball performance?",
+      "ambiguous_query": "What other exercises can help him with his basketball performance?",
+      "q_final": "What other exercises can John help with his basketball performance?",
+      "evidence": [
+        "D8:5",
+        "D20:2"
+      ],
+      "gold_sections": [
+        8,
+        20
+      ],
+      "retrieved_sections": [
+        8,
+        24,
+        19,
+        6,
+        26
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 54,
+      "category": 2,
+      "original_question": "When did John take a trip to the Rocky Mountains?",
+      "ambiguous_query": "When did he take a trip to the Rocky Mountains?",
+      "q_final": "When did John take a trip to the Rocky Mountains?",
+      "evidence": [
+        "D20:40"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        14,
+        10,
+        11,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "When did John start playing professionally?",
+      "ambiguous_query": "When did he start playing professionally?",
+      "q_final": "When did John start playing professionally?",
+      "evidence": [
+        "D1:3",
+        "D21:4"
+      ],
+      "gold_sections": [
+        1,
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        6,
+        8,
+        27,
+        26
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 56,
+      "category": 2,
+      "original_question": "When did Tim start playing the violin?",
+      "ambiguous_query": "When did he start playing the violin?",
+      "q_final": "When did Tim start playing the violin?",
+      "evidence": [
+        "D21:13"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        6,
+        8,
+        27,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 57,
+      "category": 1,
+      "original_question": "What instruments does Tim play?",
+      "ambiguous_query": "What instruments does he play?",
+      "q_final": "What instruments does John play?",
+      "evidence": [
+        "D8:12",
+        "D21:11"
+      ],
+      "gold_sections": [
+        8,
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        8,
+        1,
+        2,
+        23
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 58,
+      "category": 2,
+      "original_question": "When did John attend the Harry Potter trivia?",
+      "ambiguous_query": "When did he attend the Harry Potter trivia?",
+      "q_final": "When did Tim attend the Harry Potter trivia?",
+      "evidence": [
+        "D4:8",
+        "D22:2"
+      ],
+      "gold_sections": [
+        4,
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        4,
+        13,
+        1,
+        2
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 59,
+      "category": 1,
+      "original_question": "Which career-high performances did John achieve in 2023?",
+      "ambiguous_query": "Which career-high performances did he achieve in 2023?",
+      "q_final": "Which career-high performances did John achieve in 2023?",
+      "evidence": [
+        "D3:1",
+        "D23:2"
+      ],
+      "gold_sections": [
+        3,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        11,
+        6,
+        25,
+        9
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 2,
+      "original_question": "When did John achieve a career-high assist performance?",
+      "ambiguous_query": "When did he achieve a career-high assist performance?",
+      "q_final": "When did John achieve a career-high assist performance?",
+      "evidence": [
+        "D23:2"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        11,
+        6,
+        8,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 61,
+      "category": 1,
+      "original_question": "What books has John read?",
+      "ambiguous_query": "What books has he read?",
+      "q_final": "What books has John read?",
+      "evidence": [
+        "D4:10",
+        "D11:26",
+        "D17:9",
+        "D19:16",
+        "D19:20",
+        "D22:12"
+      ],
+      "gold_sections": [
+        4,
+        11,
+        17,
+        19,
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        27,
+        4,
+        5,
+        19
+      ],
+      "recall_at1": 0.2,
+      "recall_at3": 0.4,
+      "recall_at5": 0.6,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 1,
+      "original_question": "What does John do to share his knowledge?",
+      "ambiguous_query": "What does he do to share his knowledge?",
+      "q_final": "What does John do to share his knowledge?",
+      "evidence": [
+        "D14:3",
+        "D26:1"
+      ],
+      "gold_sections": [
+        14,
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        27,
+        7,
+        6,
+        10
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 2,
+      "original_question": "When did John organize a basketball camp for kids?",
+      "ambiguous_query": "When did he organize a basketball camp for kids?",
+      "q_final": "When did John organize a basketball camp for kids?",
+      "evidence": [
+        "D26:23"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        20,
+        6,
+        11,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 64,
+      "category": 2,
+      "original_question": "Which month was John in Italy?",
+      "ambiguous_query": "Which month was he in Italy?",
+      "q_final": "Which month was John in Italy?",
+      "evidence": [
+        "D27:2"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        21,
+        7,
+        3,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 65,
+      "category": 1,
+      "original_question": "What fantasy movies does Tim like?",
+      "ambiguous_query": "What fantasy movies does he like?",
+      "q_final": "What fantasy movies does Tim like?",
+      "evidence": [
+        "D8:16",
+        "D8:18",
+        "D26:28",
+        "D26:32",
+        "D27:21"
+      ],
+      "gold_sections": [
+        8,
+        26,
+        27
+      ],
+      "retrieved_sections": [
+        20,
+        26,
+        27,
+        12,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 3,
+      "original_question": "What is a Star Wars book that Tim might enjoy?",
+      "ambiguous_query": "What is a Star Wars book that he might enjoy?",
+      "q_final": "What Star Wars book might John enjoy?",
+      "evidence": [
+        "D27:19",
+        "D27:21"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        19,
+        5,
+        20,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 67,
+      "category": 3,
+      "original_question": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+      "ambiguous_query": "What would be a good hobby related to his travel dreams for him to pick up?",
+      "q_final": "What would be a good hobby related to his travel dreams for Tim to pick up?",
+      "evidence": [
+        "D4:1",
+        "D6:6",
+        "D15:3",
+        "D27:37"
+      ],
+      "gold_sections": [
+        4,
+        6,
+        15,
+        27
+      ],
+      "retrieved_sections": [
+        29,
+        26,
+        1,
+        11,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 2,
+      "original_question": "What day did Tim get into his study abroad program?",
+      "ambiguous_query": "What day did he get into his study abroad program?",
+      "q_final": "What day did Tim get into his study abroad program?",
+      "evidence": [
+        "D28:1"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        22,
+        21,
+        8,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 2,
+      "original_question": "When will Tim leave for Ireland?",
+      "ambiguous_query": "When will he leave for Ireland?",
+      "q_final": "When will Tim leave for Ireland?",
+      "evidence": [
+        "D28:1"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        11,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 70,
+      "category": 3,
+      "original_question": "Which Star Wars-related locations would Tim enjoy during his visit to Ireland?",
+      "ambiguous_query": "Which Star Wars-related locations would he enjoy during his visit to Ireland?",
+      "q_final": "Which Star Wars-related locations would John enjoy during his visit to Ireland?",
+      "evidence": [
+        "D1:18",
+        "D27:21",
+        "D28:1"
+      ],
+      "gold_sections": [
+        1,
+        27,
+        28
+      ],
+      "retrieved_sections": [
+        27,
+        2,
+        28,
+        1,
+        25
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "Which team did John sign with on 21 May, 2023?",
+      "ambiguous_query": "Which team did he sign with on 21 May, 2023?",
+      "q_final": "Which team did John sign with on 21 May, 2023?",
+      "evidence": [
+        "D1:5"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        7,
+        22,
+        25,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "What is John's position on the team he signed with?",
+      "ambiguous_query": "What is his position on the team he signed with?",
+      "q_final": "What is John's position on the Minnesota Wolves?",
+      "evidence": [
+        "D1:7"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        12,
+        22,
+        25,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "What challenge did John encounter during pre-season training?",
+      "ambiguous_query": "What challenge did he encounter during pre-season training?",
+      "q_final": "What challenge did John encounter during pre-season training?",
+      "evidence": [
+        "D1:11"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        19,
+        8,
+        25,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "What aspects of the Harry Potter universe will be discussed in John's fan project collaborations?",
+      "ambiguous_query": "What aspects of the Harry Potter universe will be discussed in his fan project collaborations?",
+      "q_final": "What aspects of the Harry Potter universe will Tim discuss in his fan project collaborations?",
+      "evidence": [
+        "D1:16"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        5,
+        26,
+        3,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What forum did Tim join recently?",
+      "ambiguous_query": "What forum did he join recently?",
+      "q_final": "What forum did Tim join recently?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        21,
+        4,
+        12,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "What kind of picture did Tim share as part of their Harry Potter book collection?",
+      "ambiguous_query": "What kind of picture did him share as part of their Harry Potter book collection?",
+      "q_final": "What kind of picture did John share as part of his Harry Potter book collection?",
+      "evidence": [
+        "D2:9"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        27,
+        19,
+        22,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What was the highest number of points John scored in a game recently?",
+      "ambiguous_query": "What was the highest number of points him scored in a game recently?",
+      "q_final": "What was the highest number of points John scored in a game recently?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        6,
+        21,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "What did John celebrate at a restaurant with teammates?",
+      "ambiguous_query": "What did he celebrate at a restaurant with teammates?",
+      "q_final": "What did John celebrate at a restaurant with his teammates?",
+      "evidence": [
+        "D3:5"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        11,
+        24,
+        7,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 79,
+      "category": 4,
+      "original_question": "What kind of deals did John sign with Nike and Gatorade?",
+      "ambiguous_query": "What kind of deals did him sign with Nike and Gatorade?",
+      "q_final": "What kind of deals did John sign with Nike and Gatorade?",
+      "evidence": [
+        "D3:13"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        25,
+        29,
+        7,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "Which city is John excited to have a game at?",
+      "ambiguous_query": "Which city is he excited to have a game at?",
+      "q_final": "Which city is John excited to have a game at?",
+      "evidence": [
+        "D3:19"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        9,
+        3,
+        6,
+        28,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "How long has John been surfing?",
+      "ambiguous_query": "How long has he been surfing?",
+      "q_final": "How long has John been surfing?",
+      "evidence": [
+        "D3:27"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        15,
+        21,
+        14,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "How does John feel while surfing?",
+      "ambiguous_query": "How does he feel while surfing?",
+      "q_final": "How does John feel while surfing?",
+      "evidence": [
+        "D3:29"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        13,
+        29,
+        11,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What kind of articles has Tim been writing about for the online magazine?",
+      "ambiguous_query": "What kind of articles has him been writing about for the online magazine?",
+      "q_final": "What kind of articles has Tim been writing for the online magazine?",
+      "evidence": [
+        "D4:5"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        15,
+        13,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "Which two fantasy novels does Tim particularly enjoy writing about?",
+      "ambiguous_query": "Which two fantasy novels does he particularly enjoy writing about?",
+      "q_final": "Which two fantasy novels does Tim particularly enjoy writing about?",
+      "evidence": [
+        "D4:7"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        15,
+        4,
+        26,
+        12,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What did Anthony and John end up playing during the charity event?",
+      "ambiguous_query": "What did Anthony and him end up playing during the charity event?",
+      "q_final": "What did Tim and Anthony end up playing during the charity event?",
+      "evidence": [
+        "D4:8"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        22,
+        6,
+        28,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "What did John share with the person he skyped about?",
+      "ambiguous_query": "What did he share with the person he skyped about?",
+      "q_final": "What did Tim share with the person he skyped about?",
+      "evidence": [
+        "D5:1"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        7,
+        14,
+        27,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "How did John describe the team bond?",
+      "ambiguous_query": "How did he describe the team bond?",
+      "q_final": "How did John describe the team bond?",
+      "evidence": [
+        "D5:6"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        25,
+        1,
+        22,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "How did John get introduced to basketball?",
+      "ambiguous_query": "How did he get introduced to basketball?",
+      "q_final": "How did John get introduced to basketball?",
+      "evidence": [
+        "D6:13"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        19,
+        8,
+        6,
+        7,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What is John's number one goal in his basketball career?",
+      "ambiguous_query": "What is his number one goal in his basketball career?",
+      "q_final": "What is John's number one goal in his basketball career?",
+      "evidence": [
+        "D6:15"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        11,
+        23,
+        6,
+        28,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "What organization is John teaming up with for his charity work?",
+      "ambiguous_query": "What organization is he teaming up with for his charity work?",
+      "q_final": "What organization is John teaming up with for his charity work?",
+      "evidence": [
+        "D6:17"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        1,
+        13,
+        25,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "When did John meet back up with his teammates after his trip in August 2023?",
+      "ambiguous_query": "When did he meet back up with his teammates after his trip in August 2023?",
+      "q_final": "When did John meet back up with his teammates after his trip in August 2023?",
+      "evidence": [
+        "D7:1"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        3,
+        7,
+        11,
+        21,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "What did John's teammates give him when they met on Aug 15th?",
+      "ambiguous_query": "What did his teammates give him when they met on Aug 15th?",
+      "q_final": "What did John's teammates give him when they met on August 15th?",
+      "evidence": [
+        "D7:7"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        3,
+        11,
+        5,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "Why did John's teammates sign the basketball they gave him?",
+      "ambiguous_query": "Why did his teammates sign the basketball they gave him?",
+      "q_final": "Why did John's teammates sign the basketball they gave him?",
+      "evidence": [
+        "D7:9"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        11,
+        3,
+        16,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "What is the main intention behind Tim wanting to attend the book conference?",
+      "ambiguous_query": "What is the main intention behind he wanting to attend the book conference?",
+      "q_final": "What is Tim's main intention behind attending the book conference?",
+      "evidence": [
+        "D7:6"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        13,
+        26,
+        6,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "What new activity has Tim started learning in August 2023?",
+      "ambiguous_query": "What new activity has he started learning in August 2023?",
+      "q_final": "What new activity has Tim started learning in August 2023?",
+      "evidence": [
+        "D8:12"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        3,
+        21,
+        26,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "Which movie's theme is Tim's favorite to play on the piano?",
+      "ambiguous_query": "Which movie's theme is his favorite to play on the piano?",
+      "q_final": "Which movie's theme is Tim's favorite to play on the piano?",
+      "evidence": [
+        "D8:14",
+        "D8:16"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        21,
+        26,
+        27,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
+      "ambiguous_query": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to him?",
+      "q_final": "What special memory does \"Harry Potter and the Philosopher's Stone\" bring to Tim?",
+      "evidence": [
+        "D8:16"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        12,
+        22,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "Which movie does Tim mention they enjoy watching during Thanksgiving?",
+      "ambiguous_query": "Which movie does he mention they enjoy watching during Thanksgiving?",
+      "q_final": "Which movie does Tim mention they enjoy watching during Thanksgiving?",
+      "evidence": [
+        "D8:24"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        26,
+        12,
+        9,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What tradition does Tim mention they love during Thanksgiving?",
+      "ambiguous_query": "What tradition does he mention they love during Thanksgiving?",
+      "q_final": "What tradition does Tim mention they love during Thanksgiving?",
+      "evidence": [
+        "D8:22"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        9,
+        13,
+        27,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "How long did John and his high school basketball teammates play together?",
+      "ambiguous_query": "How long did he and his high school basketball teammates play together?",
+      "q_final": "How long did John and his high school basketball teammates play together?",
+      "evidence": [
+        "D9:4"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        21,
+        6,
+        11,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "How was John's experience in New York City?",
+      "ambiguous_query": "How was his experience in New York City?",
+      "q_final": "How was John's experience in New York City?",
+      "evidence": [
+        "D9:8"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        10,
+        11,
+        6,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "What did John say about NYC, enticing Tim to visit?",
+      "ambiguous_query": "What did he say about NYC, enticing Tim to visit?",
+      "q_final": "What did John say about NYC, enticing Tim to visit?",
+      "evidence": [
+        "D9:10"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        10,
+        25,
+        13,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What kind of soup did John make recently?",
+      "ambiguous_query": "What kind of soup did him make recently?",
+      "q_final": "What kind of soup did John make recently?",
+      "evidence": [
+        "D10:4",
+        "D10:8"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        6,
+        9,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "What spice did John add to the soup for flavor?",
+      "ambiguous_query": "What spice did he add to the soup for flavor?",
+      "q_final": "What spice did John add to the soup for flavor?",
+      "evidence": [
+        "D10:8"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        15,
+        29,
+        28,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "What is Tim excited to see at Universal Studios?",
+      "ambiguous_query": "What is he excited to see at Universal Studios?",
+      "q_final": "What is Tim excited to see at Universal Studios?",
+      "evidence": [
+        "D10:11"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        26,
+        8,
+        9,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "Where are John and his teammates planning to explore on a team trip?",
+      "ambiguous_query": "Where are he and his teammates planning to explore on a team trip?",
+      "q_final": "Where are Tim and his teammates planning to explore on a team trip?",
+      "evidence": [
+        "D11:7"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        7,
+        1,
+        22,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What city did Tim suggest to John for the team trip next month?",
+      "ambiguous_query": "What city did Tim suggest to him for the team trip next month?",
+      "q_final": "What city did Tim suggest for the team trip next month?",
+      "evidence": [
+        "D11:10"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        7,
+        1,
+        3,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "What does John want to do after his basketball career?",
+      "ambiguous_query": "What does he want to do after his basketball career?",
+      "q_final": "What does John want to do after his basketball career?",
+      "evidence": [
+        "D11:19"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        23,
+        6,
+        28,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What advice did Tim give John about picking endorsements?",
+      "ambiguous_query": "What advice did Tim give him about picking endorsements?",
+      "q_final": "What advice did [ENTITY_NAME] give him about picking endorsements? [ENTITY_NAME] being Tim.",
+      "evidence": [
+        "D11:22"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        2,
+        7,
+        3,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What book recommendation did Tim give to John for the trip?",
+      "ambiguous_query": "What book recommendation did Tim give to him for the trip?",
+      "q_final": "What book recommendation did Tim give to John for the trip?",
+      "evidence": [
+        "D11:24"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        27,
+        22,
+        7,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
+      "ambiguous_query": "What type of venue did him and his girlfriend choose for their wedding ceremony?",
+      "q_final": "What type of venue did John and his girlfriend choose for their wedding ceremony?",
+      "evidence": [
+        "D12:4"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        2,
+        1,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What was the setting for John and his wife's first dance?",
+      "ambiguous_query": "What was the setting for him and his wife's first dance?",
+      "q_final": "What was the setting for Tim and his wife's first dance?",
+      "evidence": [
+        "D12:10"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        17,
+        22,
+        16,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "Which basketball team does Tim support?",
+      "ambiguous_query": "Which basketball team does he support?",
+      "q_final": "Which basketball team does John support?",
+      "evidence": [
+        "D12:21"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        7,
+        1,
+        22,
+        12,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "What passion does Tim mention connects him with people from all over the world?",
+      "ambiguous_query": "What passion does he mention connects him with people from all over the world?",
+      "q_final": "What passion does John mention connects him with people from all over the world?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        6,
+        3,
+        27,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "How does John describe the game season for his team?",
+      "ambiguous_query": "How does he describe the game season for his team?",
+      "q_final": "How does Tim describe his team's game season?",
+      "evidence": [
+        "D13:4"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        14,
+        22,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "How does John say his team handles tough opponents?",
+      "ambiguous_query": "How does he say his team handles tough opponents?",
+      "q_final": "How does Tim say his team handles tough opponents?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        22,
+        1,
+        25,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What motivates John's team to get better, according to John?",
+      "ambiguous_query": "What motivates his team to get better, according to him?",
+      "q_final": "What motivates John's team to get better, according to him?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        21,
+        19,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What did John's team win at the end of the season?",
+      "ambiguous_query": "What did his team win at the end of the season?",
+      "q_final": "What did Tim's team win at the end of the season?",
+      "evidence": [
+        "D13:8"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        1,
+        22,
+        14,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "Where did Tim capture the photography of the sunset over the mountain range?",
+      "ambiguous_query": "Where did he capture the photography of the sunset over the mountain range?",
+      "q_final": "Where did John capture the photography of the sunset over the mountain range?",
+      "evidence": [
+        "D14:16"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        20,
+        5,
+        11,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "How does John feel about being seen as a mentor by some of the younger players?",
+      "ambiguous_query": "How does he feel about being seen as a mentor by some of the younger players?",
+      "q_final": "How does John feel about being seen as a mentor by some of the younger players?",
+      "evidence": [
+        "D14:11"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        16,
+        12,
+        25,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "What does John find rewarding about mentoring the younger players?",
+      "ambiguous_query": "What does he find rewarding about mentoring the younger players?",
+      "q_final": "What does John find rewarding about mentoring the younger players?",
+      "evidence": [
+        "D14:7"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        12,
+        16,
+        21,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "What has John been able to help the younger players achieve?",
+      "ambiguous_query": "What has he been able to help the younger players achieve?",
+      "q_final": "What has John been able to help the younger players achieve?",
+      "evidence": [
+        "D14:5"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        12,
+        16,
+        21,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "What genre is the novel that Tim is writing?",
+      "ambiguous_query": "What genre is the novel that he is writing?",
+      "q_final": "What genre is Tim's novel?",
+      "evidence": [
+        "D15:3"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        26,
+        15,
+        4,
+        20,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "Who is one of Tim's sources of inspiration for writing?",
+      "ambiguous_query": "Who is one of his sources of inspiration for writing?",
+      "q_final": "Who is one of Tim's sources of inspiration for writing?",
+      "evidence": [
+        "D15:7"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        4,
+        12,
+        19,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "What J.K. Rowling quote does Tim resonate with?",
+      "ambiguous_query": "What J.K. Rowling quote does he resonate with?",
+      "q_final": "What J.K. Rowling quote does Tim resonate with?",
+      "evidence": [
+        "D15:11"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        27,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "What does John write on the whiteboard to help him stay motivated?",
+      "ambiguous_query": "What does he write on the whiteboard to help him stay motivated?",
+      "q_final": "What does John write on the whiteboard to help him stay motivated?",
+      "evidence": [
+        "D15:14"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        13,
+        19,
+        18,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "What hobby is a therapy for John when away from the court?",
+      "ambiguous_query": "What hobby is a therapy for him when away from the court?",
+      "q_final": "What hobby is a therapy for John when away from the court?",
+      "evidence": [
+        "D15:30"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        6,
+        11,
+        19,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "What type of meal does John often cook using a slow cooker?",
+      "ambiguous_query": "What type of meal does him often cook using a slow cooker?",
+      "q_final": "What type of meal does John often cook using a slow cooker?",
+      "evidence": [
+        "D15:32",
+        "D15:33"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        10,
+        19,
+        27,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "How will John share the honey garlic chicken recipe with the other person?",
+      "ambiguous_query": "How will he share the honey garlic chicken recipe with the other person?",
+      "q_final": "How will [ENTITY_NAME] share the honey garlic chicken recipe with the other person?",
+      "evidence": [
+        "D15:34"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        10,
+        7,
+        14,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "What was Tim's huge writing issue last week,as mentioned on November 6, 2023?",
+      "ambiguous_query": "What was his huge writing issue last week,as mentioned on November 6, 2023?",
+      "q_final": "What was Tim's huge writing issue last week, as mentioned on November 6, 2023?",
+      "evidence": [
+        "D16:1"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        3,
+        6,
+        19,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 131,
+      "category": 4,
+      "original_question": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+      "ambiguous_query": "What does he have that serves as a reminder of hard work and is his prized possession?",
+      "q_final": "What does Tim have that serves as a reminder of hard work and is his prized possession?",
+      "evidence": [
+        "D16:7"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        7,
+        29,
+        2,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 132,
+      "category": 4,
+      "original_question": "Why do Tim and John find LeBron inspiring?",
+      "ambiguous_query": "Why do Tim and him find LeBron inspiring?",
+      "q_final": "Why do Tim and John find LeBron inspiring?",
+      "evidence": [
+        "D16:9",
+        "D16:10"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        12,
+        27,
+        16,
+        14,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 133,
+      "category": 4,
+      "original_question": "How did John describe the views during their road trip out on the European coastline?",
+      "ambiguous_query": "How did he describe the views during their road trip out on the European coastline?",
+      "q_final": "How did John describe the views during their road trip out on the European coastline?",
+      "evidence": [
+        "D17:3"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        15,
+        16,
+        28,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 134,
+      "category": 4,
+      "original_question": "What is one of Tim's favorite fantasy TV shows, as mentioned on November 11, 2023?",
+      "ambiguous_query": "What is one of his favorite fantasy TV shows, as mentioned on November 11, 2023?",
+      "q_final": "What is one of John's favorite fantasy TV shows, as mentioned on November 11, 2023?",
+      "evidence": [
+        "D17:10"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        27,
+        26,
+        5,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 135,
+      "category": 4,
+      "original_question": "How does Tim stay motivated during difficult study sessions?",
+      "ambiguous_query": "How does he stay motivated during difficult study sessions?",
+      "q_final": "How does John stay motivated during difficult study sessions?",
+      "evidence": [
+        "D18:6"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        13,
+        19,
+        15,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 136,
+      "category": 4,
+      "original_question": "What did Tim say about his injury on 16 November, 2023?",
+      "ambiguous_query": "What did he say about his injury on 16 November, 2023?",
+      "q_final": "What did John say about his injury on 16 November, 2023?",
+      "evidence": [
+        "D18:10"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        16,
+        25,
+        19,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 137,
+      "category": 4,
+      "original_question": "What was the setback Tim faced in his writing project on 21 November, 2023?",
+      "ambiguous_query": "What was the setback he faced in his writing project on 21 November, 2023?",
+      "q_final": "What setback did Tim face in his writing project on 21 November, 2023?",
+      "evidence": [
+        "D19:3"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        21,
+        1,
+        15,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 138,
+      "category": 4,
+      "original_question": "How did John overcome his ankle injury from last season?",
+      "ambiguous_query": "How did he overcome his ankle injury from last season?",
+      "q_final": "How did John overcome his ankle injury from last season?",
+      "evidence": [
+        "D19:6"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        18,
+        24,
+        1,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 139,
+      "category": 4,
+      "original_question": "What motivated Tim to keep pushing himself to get better in writing and reading?",
+      "ambiguous_query": "What motivated him to keep pushing himself to get better in writing and reading?",
+      "q_final": "What motivated Tim to keep pushing himself to get better in writing and reading?",
+      "evidence": [
+        "D19:9"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        16,
+        13,
+        15,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 140,
+      "category": 4,
+      "original_question": "How did John overcome a mistake he made during a big game in basketball?",
+      "ambiguous_query": "How did he overcome a mistake he made during a big game in basketball?",
+      "q_final": "How did Tim overcome a mistake he made during a big game in basketball?",
+      "evidence": [
+        "D19:10"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        23,
+        8,
+        16,
+        3,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 141,
+      "category": 4,
+      "original_question": "What book did John recently finish rereading that left him feeling inspired and hopeful about following dreams?",
+      "ambiguous_query": "What book did he recently finish rereading that left him feeling inspired and hopeful about following dreams?",
+      "q_final": "What book did John recently finish rereading that left him feeling inspired and hopeful about following dreams?",
+      "evidence": [
+        "D19:20"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        4,
+        22,
+        23,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 142,
+      "category": 4,
+      "original_question": "How did \"The Alchemist\" impact John's perspective on following dreams?",
+      "ambiguous_query": "How did \"The Alchemist\" impact his perspective on following dreams?",
+      "q_final": "How did John's perspective on following dreams change after reading \"The Alchemist\"?",
+      "evidence": [
+        "D19:20"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        23,
+        11,
+        4,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 143,
+      "category": 4,
+      "original_question": "What is John trying out to improve his strength and flexibility after recovery from ankle injury?",
+      "ambiguous_query": "What is he trying out to improve his strength and flexibility after recovery from ankle injury?",
+      "q_final": "What does John try out to improve his strength and flexibility after recovering from his ankle injury?",
+      "evidence": [
+        "D20:2"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        18,
+        24,
+        8,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 144,
+      "category": 4,
+      "original_question": "How long does John usually hold the yoga pose he shared with Tim?",
+      "ambiguous_query": "How long does he usually hold the yoga pose he shared with Tim?",
+      "q_final": "How long does John usually hold the yoga pose he shared with Tim?",
+      "evidence": [
+        "D20:10"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        15,
+        6,
+        8,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 145,
+      "category": 4,
+      "original_question": "Where was the forest picture shared by John on December 1,2023 taken?",
+      "ambiguous_query": "Where was the forest picture shared by him on December 1,2023 taken?",
+      "q_final": "Where was the forest picture shared by John on December 1,2023 taken?",
+      "evidence": [
+        "D20:28"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        25,
+        9,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 146,
+      "category": 4,
+      "original_question": "What did Tim recently start learning in addition to being part of a travel club and working on studies?",
+      "ambiguous_query": "What did he recently start learning in addition to being part of a travel club and working on studies?",
+      "q_final": "What did Tim recently start learning in addition to being part of a travel club and working on studies?",
+      "evidence": [
+        "D21:9"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        27,
+        6,
+        18,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 147,
+      "category": 4,
+      "original_question": "What instrument is Tim learning to play in December 2023?",
+      "ambiguous_query": "What instrument is he learning to play in December 2023?",
+      "q_final": "What instrument is Tim learning to play in December 2023?",
+      "evidence": [
+        "D21:11"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        8,
+        27,
+        12,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 148,
+      "category": 4,
+      "original_question": "How long has Tim been playing the piano for, as of December 2023?",
+      "ambiguous_query": "How long has he been playing the piano for, as of December 2023?",
+      "q_final": "[STANDALON QUERY]: How long has Tim been playing the piano for, as of December 2023?",
+      "evidence": [
+        "D21:13"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        8,
+        9,
+        3,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 149,
+      "category": 4,
+      "original_question": "What book did Tim just finish reading on 8th December, 2023?",
+      "ambiguous_query": "What book did he just finish reading on 8th December, 2023?",
+      "q_final": "What book did Tim just finish reading on 8th December, 2023?",
+      "evidence": [
+        "D22:13"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        17,
+        19,
+        27,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 150,
+      "category": 4,
+      "original_question": "Which book did Tim recommend to John as a good story on 8th December, 2023?",
+      "ambiguous_query": "Which book did Tim recommend to him as a good story on 8th December, 2023?",
+      "q_final": "Which book did John recommend to Tim as a good story on 8th December, 2023?",
+      "evidence": [
+        "D22:13"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        14,
+        6,
+        11,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 151,
+      "category": 4,
+      "original_question": "What is the topic of discussion between John and Tim on 11 December, 2023?",
+      "ambiguous_query": "What is the topic of discussion between him and Tim on 11 December, 2023?",
+      "q_final": "What was the topic of discussion between Tim and John on 11 December, 2023?",
+      "evidence": [
+        "D23:1",
+        "D23:2",
+        "D23:3"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        11,
+        2,
+        23,
+        3,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 152,
+      "category": 4,
+      "original_question": "What kind of game did John have a career-high in assists in?",
+      "ambiguous_query": "What kind of game did him have a career-high in assists in?",
+      "q_final": "What kind of game did John have a career-high in assists in?",
+      "evidence": [
+        "D23:3"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        11,
+        6,
+        28,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 153,
+      "category": 4,
+      "original_question": "What was John's way of dealing with doubts and stress when he was younger?",
+      "ambiguous_query": "What was his way of dealing with doubts and stress when he was younger?",
+      "q_final": "What was John's way of dealing with doubts and stress when he was younger?",
+      "evidence": [
+        "D23:9"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        29,
+        14,
+        3,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 154,
+      "category": 4,
+      "original_question": "How did John feel about the atmosphere during the big game against the rival team?",
+      "ambiguous_query": "How did he feel about the atmosphere during the big game against the rival team?",
+      "q_final": "How did Tim feel about the atmosphere during the big game against the rival team?",
+      "evidence": [
+        "D23:5"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        22,
+        5,
+        23,
+        1,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 4,
+      "original_question": "How did John feel after being able to jog without pain?",
+      "ambiguous_query": "How did he feel after being able to jog without pain?",
+      "q_final": "How did John feel after being able to jog without pain?",
+      "evidence": [
+        "D24:16"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        19,
+        13,
+        29,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 156,
+      "category": 4,
+      "original_question": "What kind of deal did John get in December?",
+      "ambiguous_query": "What kind of deal did him get in December?",
+      "q_final": "What kind of deal did Tim get in December?",
+      "evidence": [
+        "D25:2"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        29,
+        3,
+        4,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 157,
+      "category": 4,
+      "original_question": "Where was the photoshoot done for John's gear deal?",
+      "ambiguous_query": "Where was the photoshoot done for his gear deal?",
+      "q_final": "Where was the photoshoot done for Tim's gear deal?",
+      "evidence": [
+        "D25:4"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        29,
+        21,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 158,
+      "category": 4,
+      "original_question": "In which area has John's team seen the most growth during training?",
+      "ambiguous_query": "In which area has his team seen the most growth during training?",
+      "q_final": "In which area has John's team seen the most growth during training?",
+      "evidence": [
+        "D25:14"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        1,
+        22,
+        14,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 159,
+      "category": 4,
+      "original_question": "What type of seminars is John conducting?",
+      "ambiguous_query": "What type of seminars is him conducting?",
+      "q_final": "What type of seminars is John conducting?",
+      "evidence": [
+        "D26:1"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 160,
+      "category": 4,
+      "original_question": "What activity did Tim do after reading the stories about the Himalayan trek?",
+      "ambiguous_query": "What activity did he do after reading the stories about the Himalayan trek?",
+      "q_final": "What activity did John do after reading the stories about the Himalayan trek?",
+      "evidence": [
+        "D26:12"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        22,
+        6,
+        15,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 161,
+      "category": 4,
+      "original_question": "What is one cause that John supports with his influence and resources?",
+      "ambiguous_query": "What is one cause that he supports with his influence and resources?",
+      "q_final": "What cause does John support with his influence and resources?",
+      "evidence": [
+        "D26:21"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        15,
+        2,
+        27,
+        13
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 162,
+      "category": 4,
+      "original_question": "What new fantasy TV series is Tim excited about?",
+      "ambiguous_query": "What new fantasy TV series is he excited about?",
+      "q_final": "What new fantasy TV series is Tim excited about?",
+      "evidence": [
+        "D26:36"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        17,
+        1,
+        9,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 163,
+      "category": 4,
+      "original_question": "Which language is Tim learning?",
+      "ambiguous_query": "Which language is he learning?",
+      "q_final": "Which language is Tim learning?",
+      "evidence": [
+        "D27:5"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        21,
+        8,
+        20,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 164,
+      "category": 4,
+      "original_question": "What language does Tim know besides German?",
+      "ambiguous_query": "What language does he know besides German?",
+      "q_final": "What language does John know besides German?",
+      "evidence": [
+        "D27:6"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        5,
+        28,
+        9,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 165,
+      "category": 4,
+      "original_question": "What book did Tim get in Italy that inspired him to cook?",
+      "ambiguous_query": "What book did he get in Italy that inspired him to cook?",
+      "q_final": "What book did John get in Italy that inspired him to cook?",
+      "evidence": [
+        "D27:4"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        15,
+        4,
+        22,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 166,
+      "category": 4,
+      "original_question": "What is John's favorite book series?",
+      "ambiguous_query": "What is his favorite book series?",
+      "q_final": "What is Tim's favorite book series?",
+      "evidence": [
+        "D27:19"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        26,
+        27,
+        20,
+        4,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 167,
+      "category": 4,
+      "original_question": "According to John, who is his favorite character from Lord of the Rings?",
+      "ambiguous_query": "According to him, who is his favorite character from Lord of the Rings?",
+      "q_final": "According to John, who is his favorite character from Lord of the Rings?",
+      "evidence": [
+        "D27:24"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        26,
+        12,
+        4,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 168,
+      "category": 4,
+      "original_question": "Why does John like Aragorn from Lord of the Rings?",
+      "ambiguous_query": "Why does he like Aragorn from Lord of the Rings?",
+      "q_final": "Why does John like Aragorn from Lord of the Rings?",
+      "evidence": [
+        "D27:30"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        26,
+        5,
+        20,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    }
+  ]
+}

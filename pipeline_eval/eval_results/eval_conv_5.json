@@ -1,0 +1,3959 @@
+{
+  "summary": {
+    "conversation_index": 5,
+    "sample_id": "conv-44",
+    "total_qa": 158,
+    "bm25_hit_rate_at1": 0.5557,
+    "bm25_hit_rate_at3": 0.7419,
+    "bm25_hit_rate_at5": 0.8198,
+    "llm_judge_accuracy": 0.6519,
+    "llm_judge_passes": 103
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 2,
+      "original_question": "Which year did Audrey adopt the first three of her dogs?",
+      "ambiguous_query": "Which year did she adopt the first three of her dogs?",
+      "q_final": "Which year did Melanie adopt the first three of her dogs?",
+      "evidence": [
+        "D1:7"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        5,
+        24,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 1,
+      "category": 2,
+      "original_question": "When did Andrew start his new job as a financial analyst?",
+      "ambiguous_query": "When did he start his new job as a financial analyst?",
+      "q_final": "When did he start his new job as a financial analyst?",
+      "evidence": [
+        "D1:2"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        28,
+        10,
+        4,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 2,
+      "category": 1,
+      "original_question": "What kind of indoor activities has Andrew pursued with his girlfriend?",
+      "ambiguous_query": "What kind of indoor activities has he pursued with his girlfriend?",
+      "q_final": "What kind of indoor activities has Melanie pursued with her girlfriend?",
+      "evidence": [
+        "D13:1",
+        "D23:1",
+        "D25:1",
+        "D19:15"
+      ],
+      "gold_sections": [
+        13,
+        19,
+        23,
+        25
+      ],
+      "retrieved_sections": [
+        27,
+        8,
+        14,
+        18,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "What kind of places have Andrew and his girlfriend checked out around the city?",
+      "ambiguous_query": "What kind of places have him and his girlfriend checked out around the city?",
+      "q_final": "What kind of places have Andrew and his girlfriend checked out around the city?",
+      "evidence": [
+        "D3:1",
+        "D3:11",
+        "D4:2",
+        "D6:1",
+        "D13:1",
+        "D23:3",
+        "D25:1",
+        "D27:1"
+      ],
+      "gold_sections": [
+        3,
+        4,
+        6,
+        13,
+        23,
+        25,
+        27
+      ],
+      "retrieved_sections": [
+        3,
+        7,
+        23,
+        20,
+        27
+      ],
+      "recall_at1": 0.14285714285714285,
+      "recall_at3": 0.2857142857142857,
+      "recall_at5": 0.42857142857142855,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 4,
+      "category": 2,
+      "original_question": "When did Audrey make muffins for herself?",
+      "ambiguous_query": "When did she make muffins for herself?",
+      "q_final": "Your question is unclear because it refers to 'she' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D3:18"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        22,
+        20,
+        3,
+        21,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 5,
+      "category": 2,
+      "original_question": "When did Audrey see a hummingbird?",
+      "ambiguous_query": "When did she see a hummingbird?",
+      "q_final": "When did Audrey see a hummingbird?",
+      "evidence": [
+        "D4:1"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        11,
+        4,
+        1,
+        18,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 6,
+      "category": 2,
+      "original_question": "When did Audrey adopt Pixie?",
+      "ambiguous_query": "When did she adopt Pixie?",
+      "q_final": "When did Pixie get adopted?",
+      "evidence": [
+        "D2:1"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        5,
+        24,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 7,
+      "category": 2,
+      "original_question": "How many years passed between Audrey adopting Pixie and her other three dogs?",
+      "ambiguous_query": "How many years passed between her adopting Pixie and her other three dogs?",
+      "q_final": "How many years passed between Pixie's adoption and the adoption of her other three dogs?",
+      "evidence": [
+        "D2:1",
+        "D1:7"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        26,
+        28,
+        23,
+        15
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 2,
+      "original_question": "Did Andrew have a pet dog during March 2023?",
+      "ambiguous_query": "Did he have a pet dog during March 2023?",
+      "q_final": "Did he have a pet dog during March 2023?",
+      "evidence": [
+        "D2:8"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        28,
+        6,
+        5,
+        4,
+        15
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 1,
+      "original_question": "What kind of classes or groups has Audrey joined to take better care of her dogs?",
+      "ambiguous_query": "What kind of classes or groups has she joined to take better care of her dogs?",
+      "q_final": "What kind of classes or groups has Audrey joined to take better care of her dogs?",
+      "evidence": [
+        "D6:2",
+        "D10:1",
+        "D14:2",
+        "D16:6",
+        "D27:2"
+      ],
+      "gold_sections": [
+        6,
+        10,
+        14,
+        16,
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        8,
+        17,
+        19,
+        26
+      ],
+      "recall_at1": 0.2,
+      "recall_at3": 0.2,
+      "recall_at5": 0.2,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When did Audrey's positive reinforcement training course for dogs take place?",
+      "ambiguous_query": "When did her positive reinforcement training course for dogs take place?",
+      "q_final": "When did Audrey's positive reinforcement training course for dogs take place?",
+      "evidence": [
+        "D6:2"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        10,
+        16,
+        8,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 2,
+      "original_question": "When did Andrew go rock climbing?",
+      "ambiguous_query": "When did he go rock climbing?",
+      "q_final": "When did Andrew go rock climbing?",
+      "evidence": [
+        "D8:1"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        17,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 12,
+      "category": 1,
+      "original_question": "What outdoor activities has Andrew done other than hiking in nature?",
+      "ambiguous_query": "What outdoor activities has he done other than hiking in nature?",
+      "q_final": "What outdoor activities has Andrew done other than hiking in nature?",
+      "evidence": [
+        "D8:1",
+        "D17:1",
+        "D14:1"
+      ],
+      "gold_sections": [
+        8,
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        9,
+        8,
+        14,
+        12,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 2,
+      "original_question": "When did Audrey move to a new place?",
+      "ambiguous_query": "When did she move to a new place?",
+      "q_final": "When did Audrey move to a new place?",
+      "evidence": [
+        "D9:1"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        18,
+        4,
+        9,
+        7,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 14,
+      "category": 1,
+      "original_question": "What is something that Andrew really misses while working in the city?",
+      "ambiguous_query": "What is something that he really misses while working in the city?",
+      "q_final": "What does he really miss while working in the city?",
+      "evidence": [
+        "D3:7",
+        "D9:20"
+      ],
+      "gold_sections": [
+        3,
+        9
+      ],
+      "retrieved_sections": [
+        3,
+        12,
+        21,
+        18,
+        10
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 1,
+      "original_question": "What is a shared frustration regarding dog ownership for Audrey and Andrew?",
+      "ambiguous_query": "What is a shared frustration regarding dog ownership for Audrey and him?",
+      "q_final": "What is a shared frustration regarding dog ownership for Audrey and Andrew?",
+      "evidence": [
+        "D7:8",
+        "D10:5"
+      ],
+      "gold_sections": [
+        7,
+        10
+      ],
+      "retrieved_sections": [
+        2,
+        11,
+        28,
+        26,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "When is Andrew going to go hiking with Audrey?",
+      "ambiguous_query": "When is he going to go hiking with Audrey?",
+      "q_final": "When is he going to go hiking with Audrey?",
+      "evidence": [
+        "D11:7"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        26,
+        4,
+        11,
+        14,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 17,
+      "category": 1,
+      "original_question": "How many times did Audrey and Andew plan to hike together?",
+      "ambiguous_query": "How many times did she and Andew plan to hike together?",
+      "q_final": "How many times did Audrey and Andrew plan to hike together?",
+      "evidence": [
+        "D11:7",
+        "D24:13",
+        "D26:20"
+      ],
+      "gold_sections": [
+        11,
+        24,
+        26
+      ],
+      "retrieved_sections": [
+        14,
+        11,
+        20,
+        24,
+        12
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "Where did Audrey get Pixie from?",
+      "ambiguous_query": "Where did she get Pixie from?",
+      "q_final": "Where did she get Pixie from?",
+      "evidence": [
+        "D11:4",
+        "D2:1"
+      ],
+      "gold_sections": [
+        2,
+        11
+      ],
+      "retrieved_sections": [
+        2,
+        15,
+        3,
+        26,
+        28
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 19,
+      "category": 3,
+      "original_question": "What is an indoor activity that Andrew would enjoy doing while make his dog happy?",
+      "ambiguous_query": "What is an indoor activity that he would enjoy doing while make his dog happy?",
+      "q_final": "What indoor activity would you enjoy doing while making your dog happy?",
+      "evidence": [
+        "D10:12",
+        "D12:1"
+      ],
+      "gold_sections": [
+        10,
+        12
+      ],
+      "retrieved_sections": [
+        8,
+        23,
+        27,
+        11,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 20,
+      "category": 3,
+      "original_question": "Which meat does Audrey prefer eating more than others?",
+      "ambiguous_query": "Which meat does she prefer eating more than others?",
+      "q_final": "Which meat does Audrey prefer eating more than others?",
+      "evidence": [
+        "D10:13",
+        "D10:23"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        4,
+        3,
+        23,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 21,
+      "category": 1,
+      "original_question": "What are the classes that Audrey took for her dogs to?",
+      "ambiguous_query": "What are the classes that she took for her dogs to?",
+      "q_final": "What classes did Audrey take for her dogs to?",
+      "evidence": [
+        "D6:4",
+        "D10:1",
+        "D14:2"
+      ],
+      "gold_sections": [
+        6,
+        10,
+        14
+      ],
+      "retrieved_sections": [
+        6,
+        14,
+        2,
+        8,
+        11
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 22,
+      "category": 2,
+      "original_question": "Where did Andrew go during the first weekend of August 2023?",
+      "ambiguous_query": "Where did he go during the first weekend of August 2023?",
+      "q_final": "Where did Andrew go during the first weekend of August 2023?",
+      "evidence": [
+        "D14:1"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        16,
+        27,
+        17,
+        4,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 1,
+      "original_question": "What are some problems that Andrew faces before he adopted Toby?",
+      "ambiguous_query": "What are some problems that he faces before he adopted Toby?",
+      "q_final": "What are some problems that Audrey faces before she adopted Toby?",
+      "evidence": [
+        "D2:12",
+        "D5:3",
+        "D5:5",
+        "D5:7"
+      ],
+      "gold_sections": [
+        2,
+        5
+      ],
+      "retrieved_sections": [
+        28,
+        12,
+        24,
+        2,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "Did Audrey and Andrew grow up with a pet dog?",
+      "ambiguous_query": "Did Audrey and him grow up with a pet dog?",
+      "q_final": "Did Audrey and him grow up with a pet dog?",
+      "evidence": [
+        "D2:16",
+        "D13:10"
+      ],
+      "gold_sections": [
+        2,
+        13
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        6,
+        5,
+        26
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 25,
+      "category": 2,
+      "original_question": "When did Andrew and his girlfriend go fishing?",
+      "ambiguous_query": "When did he and his girlfriend go fishing?",
+      "q_final": "When did Andrew and his girlfriend go fishing?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        6,
+        11,
+        14,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 1,
+      "original_question": "What is the biggest stressor in Andrew's life besides not being able to hike frequently?",
+      "ambiguous_query": "What is the biggest stressor in his life besides not being able to hike frequently?",
+      "q_final": "What is the biggest stressor in Andrew's life besides not being able to hike frequently?",
+      "evidence": [
+        "D12:3",
+        "D16:1",
+        "D18:1",
+        "D10:16"
+      ],
+      "gold_sections": [
+        10,
+        12,
+        16,
+        18
+      ],
+      "retrieved_sections": [
+        22,
+        11,
+        8,
+        18,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.25,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 27,
+      "category": 1,
+      "original_question": "How does Andrew feel about his current work?",
+      "ambiguous_query": "How does he feel about his current work?",
+      "q_final": "How does Audrey feel about her current work?",
+      "evidence": [
+        "D12:3",
+        "D16:1",
+        "D18:1",
+        "D10:16"
+      ],
+      "gold_sections": [
+        10,
+        12,
+        16,
+        18
+      ],
+      "retrieved_sections": [
+        12,
+        18,
+        4,
+        10,
+        3
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.5,
+      "recall_at5": 0.75,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 28,
+      "category": 1,
+      "original_question": "What is something that Audrey often dresses up her dogs with?",
+      "ambiguous_query": "What is something that she often dresses up her dogs with?",
+      "q_final": "What does Audrey often dress her dogs with?",
+      "evidence": [
+        "D4:23",
+        "D4:25",
+        "D19:6"
+      ],
+      "gold_sections": [
+        4,
+        19
+      ],
+      "retrieved_sections": [
+        27,
+        1,
+        2,
+        11,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 1,
+      "original_question": "What are the names of Audrey's dogs?",
+      "ambiguous_query": "What are the names of her dogs?",
+      "q_final": "What are the names of her dogs?",
+      "evidence": [
+        "D1:7",
+        "D2:1",
+        "D19:12"
+      ],
+      "gold_sections": [
+        1,
+        2,
+        19
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        1,
+        15,
+        24
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 2,
+      "original_question": "When is Andrew planning to go to the beach with his girlfriend?",
+      "ambiguous_query": "When is he planning to go to the beach with his girlfriend?",
+      "q_final": "When is he planning to go to the beach with his girlfriend?",
+      "evidence": [
+        "D20:1"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        11,
+        21,
+        10,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 1,
+      "original_question": "What has Andrew done with his dogs?",
+      "ambiguous_query": "What has he done with his dogs?",
+      "q_final": "Your question is unclear because it refers to 'his' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D14:27",
+        "D24:8"
+      ],
+      "gold_sections": [
+        14,
+        24
+      ],
+      "retrieved_sections": [
+        22,
+        20,
+        3,
+        21,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 32,
+      "category": 1,
+      "original_question": "What kind of tattoo does Audrey have on her arm?",
+      "ambiguous_query": "What kind of tattoo does her have on her arm?",
+      "q_final": "What kind of tattoo does Audrey have on her arm?",
+      "evidence": [
+        "D3:26",
+        "D15:1",
+        "D23:20"
+      ],
+      "gold_sections": [
+        3,
+        15,
+        23
+      ],
+      "retrieved_sections": [
+        3,
+        15,
+        23,
+        25,
+        22
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 3,
+      "original_question": "What can Andrew potentially do to improve his stress and accomodate his living situation with his dogs?",
+      "ambiguous_query": "What can he potentially do to improve his stress and accomodate his living situation with his dogs?",
+      "q_final": "What can Andrew potentially do to improve his stress and accommodate his living situation with his dogs?",
+      "evidence": [
+        "D12:3",
+        "D18:1",
+        "D21:5"
+      ],
+      "gold_sections": [
+        12,
+        18,
+        21
+      ],
+      "retrieved_sections": [
+        18,
+        12,
+        10,
+        21,
+        27
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 34,
+      "category": 2,
+      "original_question": "How many months passed between Andrew adopting Toby and Buddy?",
+      "ambiguous_query": "How many months passed between him adopting Toby and Buddy?",
+      "q_final": "How many months passed between Toby's adoption and Buddy's adoption?",
+      "evidence": [
+        "D12:1",
+        "D24:2"
+      ],
+      "gold_sections": [
+        12,
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        14,
+        20,
+        28,
+        27
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 35,
+      "category": 1,
+      "original_question": "What are the names of Andrew's dogs?",
+      "ambiguous_query": "What are the names of his dogs?",
+      "q_final": "What are the names of his dogs?",
+      "evidence": [
+        "D12:1",
+        "D24:6",
+        "D28:8"
+      ],
+      "gold_sections": [
+        12,
+        24,
+        28
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        1,
+        15,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 1,
+      "original_question": "What are some foods that Audrey likes eating?",
+      "ambiguous_query": "What are some foods that she likes eating?",
+      "q_final": "What are some foods that Andrew likes eating?",
+      "evidence": [
+        "D3:18",
+        "D10:13",
+        "D10:23",
+        "D25:6"
+      ],
+      "gold_sections": [
+        3,
+        10,
+        25
+      ],
+      "retrieved_sections": [
+        10,
+        3,
+        1,
+        2,
+        4
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 37,
+      "category": 2,
+      "original_question": "When did Audrey get into an accident in the park?",
+      "ambiguous_query": "When did she get into an accident in the park?",
+      "q_final": "When did Audrey get into an accident in the park?",
+      "evidence": [
+        "D25:2"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        27,
+        25,
+        28,
+        19,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 38,
+      "category": 2,
+      "original_question": "When did Andrew and his girlfriend go on a wine tasting trip?",
+      "ambiguous_query": "When did he and his girlfriend go on a wine tasting trip?",
+      "q_final": "When did Andrew and his girlfriend go on a wine tasting trip?",
+      "evidence": [
+        "D25:1"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        20,
+        17,
+        14,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 39,
+      "category": 1,
+      "original_question": "What did Audrey get wtih having so many dogs?",
+      "ambiguous_query": "What did she get wtih having so many dogs?",
+      "q_final": "What did Audrey get with having so many dogs?",
+      "evidence": [
+        "D2:15",
+        "D23:18"
+      ],
+      "gold_sections": [
+        2,
+        23
+      ],
+      "retrieved_sections": [
+        2,
+        11,
+        28,
+        23,
+        27
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 40,
+      "category": 1,
+      "original_question": "What is a good place for dogs to run around freely and meet new friends?",
+      "ambiguous_query": "What is a good place for dogs to run around freely and meet new friends?",
+      "q_final": "What is a good place for [Audrey]'s dogs to run around freely and meet new friends?",
+      "evidence": [
+        "D4:25",
+        "D14:2",
+        "D23:10"
+      ],
+      "gold_sections": [
+        4,
+        14,
+        23
+      ],
+      "retrieved_sections": [
+        26,
+        11,
+        5,
+        23,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 41,
+      "category": 1,
+      "original_question": "What are the breeds of Audrey's dogs?",
+      "ambiguous_query": "What are the breeds of her dogs?",
+      "q_final": "What are the breeds of Precious?",
+      "evidence": [
+        "D19:12",
+        "D26:13"
+      ],
+      "gold_sections": [
+        19,
+        26
+      ],
+      "retrieved_sections": [
+        19,
+        1,
+        15,
+        26,
+        2
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 42,
+      "category": 1,
+      "original_question": "What technique is Audrey using to discipline her dogs?",
+      "ambiguous_query": "What technique is she using to discipline her dogs?",
+      "q_final": "What technique is Audrey using to discipline her dogs?",
+      "evidence": [
+        "D6:4",
+        "D26:5"
+      ],
+      "gold_sections": [
+        6,
+        26
+      ],
+      "retrieved_sections": [
+        2,
+        26,
+        28,
+        4,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 43,
+      "category": 3,
+      "original_question": "Which US state do Audrey and Andrew potentially live in?",
+      "ambiguous_query": "Which US state do Audrey and him potentially live in?",
+      "q_final": "Which US state do Melanie and him potentially live in?",
+      "evidence": [
+        "D11:9"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        2,
+        13,
+        8,
+        18,
+        20
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 44,
+      "category": 3,
+      "original_question": "Which national park could Audrey and Andrew be referring to in their conversations?",
+      "ambiguous_query": "Which national park could Audrey and him be referring to in their conversations?",
+      "q_final": "Which national park could Melanie and him be referring to in their conversations?",
+      "evidence": [
+        "D5:8",
+        "D11:9"
+      ],
+      "gold_sections": [
+        5,
+        11
+      ],
+      "retrieved_sections": [
+        7,
+        26,
+        23,
+        4,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 45,
+      "category": 2,
+      "original_question": "How many pets will Andrew have, as of December 2023?",
+      "ambiguous_query": "How many pets will he have, as of December 2023?",
+      "q_final": "How many pets will Melanie have, as of December 2023?",
+      "evidence": [
+        "D12:1",
+        "D24:2",
+        "D28:6"
+      ],
+      "gold_sections": [
+        12,
+        24,
+        28
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        15,
+        7,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 46,
+      "category": 2,
+      "original_question": "How many pets did Andrew have, as of September 2023?",
+      "ambiguous_query": "How many pets did he have, as of September 2023?",
+      "q_final": "How many pets did Melanie have, as of September 2023?",
+      "evidence": [
+        "D12:1",
+        "D24:2"
+      ],
+      "gold_sections": [
+        12,
+        24
+      ],
+      "retrieved_sections": [
+        18,
+        6,
+        13,
+        15,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 2,
+      "original_question": "How many months passed between Andrew adopting Buddy and Scout",
+      "ambiguous_query": "How many months passed between him adopting Buddy and Scout",
+      "q_final": "How many months passed between Buddy's adoption and Scout's adoption?",
+      "evidence": [
+        "D24:2",
+        "D28:6"
+      ],
+      "gold_sections": [
+        24,
+        28
+      ],
+      "retrieved_sections": [
+        24,
+        28,
+        11,
+        20,
+        14
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 48,
+      "category": 1,
+      "original_question": "What does Andrew view his pets as?",
+      "ambiguous_query": "What does he view his pets as?",
+      "q_final": "What does Audrey view her pets as?",
+      "evidence": [
+        "D15:14",
+        "D28:18"
+      ],
+      "gold_sections": [
+        15,
+        28
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        15,
+        8,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 49,
+      "category": 1,
+      "original_question": "What does Audrey view her pets as?",
+      "ambiguous_query": "What does she view her pets as?",
+      "q_final": "What does Audrey view her pets as?",
+      "evidence": [
+        "D15:15",
+        "D23:18"
+      ],
+      "gold_sections": [
+        15,
+        23
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        15,
+        8,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 50,
+      "category": 1,
+      "original_question": "What is a skill that Audrey learned to take care of her dogs?",
+      "ambiguous_query": "What is a skill that she learned to take care of her dogs?",
+      "q_final": "What skill did Melanie learn to take care of her dogs?",
+      "evidence": [
+        "D16:2",
+        "D17:4"
+      ],
+      "gold_sections": [
+        16,
+        17
+      ],
+      "retrieved_sections": [
+        27,
+        16,
+        19,
+        28,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 51,
+      "category": 1,
+      "original_question": "What items has Audrey bought or made for her dogs?",
+      "ambiguous_query": "What items has she bought or made for her dogs?",
+      "q_final": "What items has Audrey bought or made for her dogs?",
+      "evidence": [
+        "D1:2",
+        "D9:5",
+        "D18:10",
+        "D24:1"
+      ],
+      "gold_sections": [
+        1,
+        9,
+        18,
+        24
+      ],
+      "retrieved_sections": [
+        5,
+        22,
+        2,
+        11,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 52,
+      "category": 3,
+      "original_question": "What is something that Andrew could do to make birdwatching hobby to fit in his city schedule?",
+      "ambiguous_query": "What is something that he could do to make birdwatching hobby to fit in his city schedule?",
+      "q_final": "What could he do to fit birdwatching into his city schedule?",
+      "evidence": [
+        "D20:5",
+        "D20:21",
+        "D23:1",
+        "D1:14"
+      ],
+      "gold_sections": [
+        1,
+        20,
+        23
+      ],
+      "retrieved_sections": [
+        20,
+        3,
+        12,
+        18,
+        27
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 53,
+      "category": 3,
+      "original_question": "What is a career that Andrew could potentially pursue with his love for animals and nature?",
+      "ambiguous_query": "What is a career that he could potentially pursue with his love for animals and nature?",
+      "q_final": "What career could Andrew potentially pursue with his love for animals and nature?",
+      "evidence": [
+        "D2:18",
+        "D3:1",
+        "D5:7",
+        "D8:27"
+      ],
+      "gold_sections": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "retrieved_sections": [
+        9,
+        14,
+        23,
+        3,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 54,
+      "category": 1,
+      "original_question": "What activity do Audrey's dogs like to do in the dog park?",
+      "ambiguous_query": "What activity do her dogs like to do in the dog park?",
+      "q_final": "What activity do Melanie's dogs like to do in the dog park?",
+      "evidence": [
+        "D4:21",
+        "D10:7",
+        "D13:8",
+        "D23:14",
+        "D27:12"
+      ],
+      "gold_sections": [
+        4,
+        10,
+        13,
+        23,
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        23,
+        28,
+        8,
+        24
+      ],
+      "recall_at1": 0.2,
+      "recall_at3": 0.4,
+      "recall_at5": 0.4,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "When did Andrew make his dogs a fun indoor area?",
+      "ambiguous_query": "When did he make his dogs a fun indoor area?",
+      "q_final": "When did Audrey make a fun indoor area for her dogs?",
+      "evidence": [
+        "D28:12"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        11,
+        2,
+        28,
+        5,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 56,
+      "category": 1,
+      "original_question": "Has Andrew moved into a new apartment for his dogs?",
+      "ambiguous_query": "Has he moved into a new apartment for his dogs?",
+      "q_final": "Has he moved into a new apartment for his dogs?",
+      "evidence": [
+        "D5:5",
+        "D28:12"
+      ],
+      "gold_sections": [
+        5,
+        28
+      ],
+      "retrieved_sections": [
+        2,
+        10,
+        18,
+        9,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 57,
+      "category": 2,
+      "original_question": "When did Andrew adopt Scout?",
+      "ambiguous_query": "When did he adopt Scout?",
+      "q_final": "When did Andrew adopt Scout?",
+      "evidence": [
+        "D28:6"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        2,
+        5,
+        24,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 58,
+      "category": 2,
+      "original_question": "What did Audrey eat for dinner on October 24, 2023?",
+      "ambiguous_query": "What did she eat for dinner on October 24, 2023?",
+      "q_final": "What did Audrey eat for dinner on October 24, 2023?",
+      "evidence": [
+        "D25:14"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        15,
+        24,
+        17,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 59,
+      "category": 2,
+      "original_question": "How long has it been since Andrew adopted his first pet, as of November 2023?",
+      "ambiguous_query": "How long has it been since he adopted his first pet, as of November 2023?",
+      "q_final": "How long has he adopted his first pet, as of November 2023?",
+      "evidence": [
+        "D12:1"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        28,
+        5,
+        24,
+        2,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 1,
+      "original_question": "How many dogs does Andrew have?",
+      "ambiguous_query": "How many dogs does he have?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D12:1",
+        "D24:2",
+        "D28:6"
+      ],
+      "gold_sections": [
+        12,
+        24,
+        28
+      ],
+      "retrieved_sections": [
+        22,
+        20,
+        3,
+        21,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 61,
+      "category": 4,
+      "original_question": "Which specific type of bird mesmerizes Andrew?",
+      "ambiguous_query": "Which specific type of bird mesmerizes him?",
+      "q_final": "Which specific type of bird mesmerizes Andrew?",
+      "evidence": [
+        "D1:16"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        20,
+        7,
+        9,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 4,
+      "original_question": "What did Andrew express missing about exploring nature trails with his family's dog?",
+      "ambiguous_query": "What did he express missing about exploring nature trails with his family's dog?",
+      "q_final": "What did Andrew express missing about exploring nature trails with his family's dog?",
+      "evidence": [
+        "D2:18"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        26,
+        20,
+        10,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 4,
+      "original_question": "What kind of pastries did Andrew and his girlfriend have at the cafe?",
+      "ambiguous_query": "What kind of pastries did him and his girlfriend have at the cafe?",
+      "q_final": "What kind of pastries did Andrew and his girlfriend have at the cafe?",
+      "evidence": [
+        "D3:17"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        23,
+        6,
+        11,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 64,
+      "category": 4,
+      "original_question": "What kind of flowers does Audrey have a tattoo of?",
+      "ambiguous_query": "What kind of flowers does her have a tattoo of?",
+      "q_final": "What kind of flowers does Audrey have a tattoo of?",
+      "evidence": [
+        "D3:26"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        19,
+        3,
+        23,
+        15,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 65,
+      "category": 4,
+      "original_question": "What does Audrey do during dog playdates in the park?",
+      "ambiguous_query": "What does she do during dog playdates in the park?",
+      "q_final": "What does Audrey do during dog playdates in the park?",
+      "evidence": [
+        "D4:21"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        11,
+        27,
+        28,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 4,
+      "original_question": "What type of dog was Andrew looking to adopt based on his living space?",
+      "ambiguous_query": "What type of dog was him looking to adopt based on his living space?",
+      "q_final": "What type of dog was he looking to adopt based on his living space?",
+      "evidence": [
+        "D5:3"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        28,
+        24,
+        2,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 67,
+      "category": 4,
+      "original_question": "Where does Andrew want to live to give their dog a large, open space to run around?",
+      "ambiguous_query": "Where does he want to live to give their dog a large, open space to run around?",
+      "q_final": "Where does he want to live to give their dog a large, open space to run around?",
+      "evidence": [
+        "D5:7"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        11,
+        23,
+        27,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 4,
+      "original_question": "Why did Audrey sign up for a workshop about bonding with pets?",
+      "ambiguous_query": "Why did she sign up for a workshop about bonding with pets?",
+      "q_final": "Why did Audrey sign up for a workshop about bonding with pets?",
+      "evidence": [
+        "D6:2"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        17,
+        14,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 4,
+      "original_question": "How did Audrey hear about the workshop on bonding with pets?",
+      "ambiguous_query": "How did she hear about the workshop on bonding with pets?",
+      "q_final": "How did Audrey hear about the workshop on bonding with pets?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        13,
+        17,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 70,
+      "category": 4,
+      "original_question": "What type of training was the workshop Audrey signed up for in May 2023?",
+      "ambiguous_query": "What type of training was the workshop she signed up for in May 2023?",
+      "q_final": "What type of training was Melanie signed up for in her workshop in May 2023?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        10,
+        19,
+        4,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "How did Audrey describe she dog he met at the pet store?",
+      "ambiguous_query": "How did she describe she dog he met at the pet store?",
+      "q_final": "How did Audrey describe her dog he met at the pet store?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        24,
+        12,
+        2,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "Why did Audrey think positive reinforcement training is important for pets?",
+      "ambiguous_query": "Why did she think positive reinforcement training is important for pets?",
+      "q_final": "Why did Melanie think positive reinforcement training is important for pets?",
+      "evidence": [
+        "D6:12"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        13,
+        10,
+        17,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "What challenge is Andrew facing in their search for a pet?",
+      "ambiguous_query": "What challenge is he facing in their search for a pet?",
+      "q_final": "What challenge is Andrew facing in his search for a pet?",
+      "evidence": [
+        "D7:8"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        5,
+        7,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "How does Andrew feel about their search for a pet-friendly place?",
+      "ambiguous_query": "How does he feel about their search for a pet-friendly place?",
+      "q_final": "How does Andrew feel about their search for a pet-friendly place?",
+      "evidence": [
+        "D7:8"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        7,
+        5,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What outdoor activities does Andrew plan on trying after the rock climbing class?",
+      "ambiguous_query": "What outdoor activities does he plan on trying after the rock climbing class?",
+      "q_final": "What outdoor activities does Andrew plan on trying after the rock climbing class?",
+      "evidence": [
+        "D8:7"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        10,
+        14,
+        16,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "How long does Audrey typically walk her dogs for?",
+      "ambiguous_query": "How long does she typically walk her dogs for?",
+      "q_final": "How long does Audrey typically walk her dogs for?",
+      "evidence": [
+        "D8:14"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        11,
+        8,
+        4,
+        5,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What did Audrey set up in the backyard for their dogs on June 26, 2023?",
+      "ambiguous_query": "What did she set up in the backyard for their dogs on June 26, 2023?",
+      "q_final": "What did Melanie set up in the backyard for their dogs on June 26, 2023?",
+      "evidence": [
+        "D9:5"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        8,
+        7,
+        2,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "What did Audrey and her friends stumble across during a hike a few years back, as mentioned on June 26, 2023?",
+      "ambiguous_query": "What did she and her friends stumble across during a hike a few years back, as mentioned on June 26, 2023?",
+      "q_final": "What did Audrey and her friends stumble across during a hike a few years back, as mentioned on June 26, 2023?",
+      "evidence": [
+        "D9:23"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        11,
+        18,
+        8,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 79,
+      "category": 4,
+      "original_question": "What is Audrey's favorite recipe that she shares with Andrew on 3 July, 2023?",
+      "ambiguous_query": "What is Audrey's favorite recipe that she shares with him on 3 July, 2023?",
+      "q_final": "What is Andrew's favorite recipe that Audrey shares with him on 3 July, 2023?",
+      "evidence": [
+        "D10:13"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        13,
+        15,
+        1,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "What dish is one of Audrey's favorite dishes that includes garlic and is shared with Andrew on 3 July, 2023?",
+      "ambiguous_query": "What dish is one of Audrey's favorite dishes that includes garlic and is shared with him on 3 July, 2023?",
+      "q_final": "What dish is one of Audrey's favorite dishes that includes garlic and is shared with her on 3 July, 2023?",
+      "evidence": [
+        "D10:23"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        13,
+        4,
+        15,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "What did Andrew and his GF do on the Monday before July 24, 2023?",
+      "ambiguous_query": "What did he and his GF do on the Monday before July 24, 2023?",
+      "q_final": "What did Andrew and his GF do on the Monday before July 24, 2023?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        10,
+        11,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "What is the name of Audrey's childhood dog?",
+      "ambiguous_query": "What is the name of her childhood dog?",
+      "q_final": "What is the name of Audrey's childhood dog?",
+      "evidence": [
+        "D13:8"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        28,
+        11,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What special memories does Audrey have with her childhood dog, Max?",
+      "ambiguous_query": "What special memories does she have with her childhood dog, Max?",
+      "q_final": "What special memories does Max have with her childhood dog?",
+      "evidence": [
+        "D13:10"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        26,
+        28,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "What are some of the personalities of Audrey's four fur babies?",
+      "ambiguous_query": "What are some of the personalities of her four fur babies?",
+      "q_final": "What are some of the personalities of her four fur babies?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        15,
+        13,
+        9,
+        26,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What type of classes did Audrey start with her pups recently on 4 August, 2023?",
+      "ambiguous_query": "What type of classes did her start with her pups recently on 4 August, 2023?",
+      "q_final": "What type of classes did Toby's pups start with recently on 4 August, 2023?",
+      "evidence": [
+        "D14:2"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        23,
+        12,
+        17,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "How often does Audrey take her pups to the park for practice?",
+      "ambiguous_query": "How often does she take her pups to the park for practice?",
+      "q_final": "How often does Melanie take her pups to the park for practice?",
+      "evidence": [
+        "D14:4"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        23,
+        27,
+        14,
+        5,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "How long did the trail hike that Audrey went on with her pups take?",
+      "ambiguous_query": "How long did the trail hike that she went on with her pups take?",
+      "q_final": "How long did the trail hike that Melanie went on with her pups take?",
+      "evidence": [
+        "D14:8"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        24,
+        14,
+        11,
+        26,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "What advice did Audrey give to Andrew regarding grooming Toby?",
+      "ambiguous_query": "What advice did Audrey give to him regarding grooming Toby?",
+      "q_final": "What advice did Audrey give to him regarding grooming Toby?",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        28,
+        17,
+        14,
+        16,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What is essential to keep the dogs looking good according to Audrey?",
+      "ambiguous_query": "What is essential to keep the dogs looking good according to her?",
+      "q_final": "What is essential to keep her dogs looking good according to her?",
+      "evidence": [
+        "D17:4"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        28,
+        26,
+        11,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "What did Audrey organize with the neighbors' dogs?",
+      "ambiguous_query": "What did she organize with the neighbors' dogs?",
+      "q_final": "What did Audrey organize with the neighbors' dogs?",
+      "evidence": [
+        "D18:6"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        23,
+        18,
+        2,
+        11,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "What did Audrey do to give her dogs extra comfort as the weather cooled down?",
+      "ambiguous_query": "What did she do to give her dogs extra comfort as the weather cooled down?",
+      "q_final": "What did Audrey do to give her dogs extra comfort as the weather cooled down?",
+      "evidence": [
+        "D18:10"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        2,
+        11,
+        28,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "How does Audrey describe the new beds for her dogs?",
+      "ambiguous_query": "How does she describe the new beds for her dogs?",
+      "q_final": "How does Audrey describe the new beds for her dogs?",
+      "evidence": [
+        "D18:12"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        28,
+        18,
+        2,
+        23,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "How did Audrey calm down her dog after the leash incident?",
+      "ambiguous_query": "How did she calm down her dog after the leash incident?",
+      "q_final": "How did Audrey calm down her dogs after the leash incident?",
+      "evidence": [
+        "D19:4"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        28,
+        11,
+        7,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "How often does Audrey take her dogs for walks?",
+      "ambiguous_query": "How often does she take her dogs for walks?",
+      "q_final": "How often does Audrey take her dogs for walks?",
+      "evidence": [
+        "D19:10"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        11,
+        4,
+        8,
+        5,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "What kind of flowers does Audrey take care of?",
+      "ambiguous_query": "What kind of flowers does her take care of?",
+      "q_final": "What kind of flowers does they take care of?",
+      "evidence": [
+        "D19:20"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        27,
+        17,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "What did Andrew learn from reading books about ecological systems?",
+      "ambiguous_query": "What did he learn from reading books about ecological systems?",
+      "q_final": "What did Andrew learn from reading books about ecological systems?",
+      "evidence": [
+        "D20:25"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        16,
+        6,
+        14,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "What did Andrew suggest as a way to reduce carbon footprint?",
+      "ambiguous_query": "What did he suggest as a way to reduce carbon footprint?",
+      "q_final": "What did Andrew suggest as a way to reduce carbon footprint?",
+      "evidence": [
+        "D20:33"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        3,
+        21,
+        22,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "How does Andrew suggest helping the planet while also training the body?",
+      "ambiguous_query": "How does he suggest helping the planet while also training the body?",
+      "q_final": "How does Andrew suggest helping the planet while also training the body?",
+      "evidence": [
+        "D20:35"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        10,
+        5,
+        21,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "What did Audrey do with her pups over the weekend before 4th October, 2023?",
+      "ambiguous_query": "What did she do with her pups over the weekend before 4th October, 2023?",
+      "q_final": "What did Audrey do with her pups over the weekend before 4th October, 2023?",
+      "evidence": [
+        "D21:2"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        23,
+        16,
+        25,
+        24,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "What was the reason Audrey couldn't walk her dogs for a period of time?",
+      "ambiguous_query": "What was the reason she couldn't walk her dogs for a period of time?",
+      "q_final": "What was the reason Audrey couldn't walk her dogs for a period of time?",
+      "evidence": [
+        "D22:1"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        8,
+        11,
+        4,
+        23,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "What type of jewelry does Audrey make?",
+      "ambiguous_query": "What type of jewelry does her make?",
+      "q_final": "What type of jewelry does Audrey make?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "Why does Audrey make jewelry out of recycled objects?",
+      "ambiguous_query": "Why does she make jewelry out of recycled objects?",
+      "q_final": "Why does Audrey make jewelry out of recycled objects?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        20,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What organization does Audrey donate a portion of his profits to?",
+      "ambiguous_query": "What organization does she donate a portion of his profits to?",
+      "q_final": "What organization does Audrey donate a portion of her profits to?",
+      "evidence": [
+        "D22:7"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "How does Audrey help out the animal shelter?",
+      "ambiguous_query": "How does she help out the animal shelter?",
+      "q_final": "How does Audrey help out the animal shelter?",
+      "evidence": [
+        "D22:9"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        13,
+        22,
+        5,
+        26,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "What type of games do Audrey's dogs like to play at the park?",
+      "ambiguous_query": "What type of games do her dogs like to play at the park?",
+      "q_final": "What type of games do Melanie's dogs like to play at the park?",
+      "evidence": [
+        "D23:14"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        28,
+        27,
+        8,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "What did Audrey make to thank her neighbors?",
+      "ambiguous_query": "What did she make to thank her neighbors?",
+      "q_final": "What did Audrey make to thank her neighbors?",
+      "evidence": [
+        "D23:2"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        27,
+        2,
+        18,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "How do Audrey's dogs react to snow?",
+      "ambiguous_query": "How do her dogs react to snow?",
+      "q_final": "How do her dogs react to snow?",
+      "evidence": [
+        "D23:12"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        11,
+        28,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "How does Audrey describe her dogs' response to snow?",
+      "ambiguous_query": "How does she describe her dogs' response to snow?",
+      "q_final": "How does Audrey describe her dogs' response to snow?",
+      "evidence": [
+        "D23:12"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        11,
+        28,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What kind of experiences are Audrey's dogs the best companions for?",
+      "ambiguous_query": "What kind of experiences are her dogs the best companions for?",
+      "q_final": "What kind of experiences are Audrey's dogs the best companions for?",
+      "evidence": [
+        "D23:24"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        2,
+        26,
+        23,
+        5,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What activity do Andrew and Buddy enjoy doing together?",
+      "ambiguous_query": "What activity do he and Buddy enjoy doing together?",
+      "q_final": "What activity do Andrew and Buddy enjoy doing together?",
+      "evidence": [
+        "D24:8"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        14,
+        20,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "What do Andrew and Buddy like doing on walks?",
+      "ambiguous_query": "What do he and Buddy like doing on walks?",
+      "q_final": "What do Andrew and Buddy like doing on walks?",
+      "evidence": [
+        "D24:10"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        8,
+        11,
+        14,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "What cuisine did Andrew recently try at a new spot in town?",
+      "ambiguous_query": "What cuisine did he recently try at a new spot in town?",
+      "q_final": "What cuisine did Andrew recently try at a new spot in town?",
+      "evidence": [
+        "D25:3"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        10,
+        23,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "Which type of sushi did Audrey suggest trying first to someone new to sushi?",
+      "ambiguous_query": "Which type of sushi did her suggest trying first to someone new to sushi?",
+      "q_final": "Which type of sushi did she suggest trying first to someone new to sushi?",
+      "evidence": [
+        "D25:8"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        10,
+        1,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "What type of date is Andrew going on Sunday?",
+      "ambiguous_query": "What type of date is him going on Sunday?",
+      "q_final": "What type of date is he going on Sunday?",
+      "evidence": [
+        "D26:20"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        8,
+        4,
+        11,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "What did Andrew and Audrey plan to do on the Saturday after October 28, 2023?",
+      "ambiguous_query": "What did he and Audrey plan to do on the Saturday after October 28, 2023?",
+      "q_final": "What did Audrey and Andrew plan to do on the Saturday after October 28, 2023?",
+      "evidence": [
+        "D26:20"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        23,
+        20,
+        12,
+        16,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "What aspect of autumn does Andrew find beautiful?",
+      "ambiguous_query": "What aspect of autumn does him find beautiful?",
+      "q_final": "What aspect of autumn does Andrew find beautiful?",
+      "evidence": [
+        "D26:36"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        7,
+        26,
+        2,
+        18,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What did Audrey do in November 2023 to better take care of her dogs?",
+      "ambiguous_query": "What did she do in November 2023 to better take care of her dogs?",
+      "q_final": "What did Audrey do in November 2023 to better take care of her dogs?",
+      "evidence": [
+        "D27:2"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        19,
+        28,
+        27,
+        18,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "How often does Audrey meet up with other dog owners for tips and playdates?",
+      "ambiguous_query": "How often does she meet up with other dog owners for tips and playdates?",
+      "q_final": "How often does Melanie meet up with other dog owners for tips and playdates?",
+      "evidence": [
+        "D27:4"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        26,
+        4,
+        2,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "What did Audrey share to show ways to keep dogs active in the city?",
+      "ambiguous_query": "What did she share to show ways to keep dogs active in the city?",
+      "q_final": "What did Andrew share to show ways to keep dogs active in the city?",
+      "evidence": [
+        "D27:10"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        3,
+        10,
+        6,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "What type of activities does Audrey suggest for mental stimulation of the dogs?",
+      "ambiguous_query": "What type of activities does her suggest for mental stimulation of the dogs?",
+      "q_final": "What type of activities does Audrey suggest for mental stimulation of her dogs?",
+      "evidence": [
+        "D27:14"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        2,
+        8,
+        5,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "What is Andrew planning to do with Scout, Toby, and Buddy?",
+      "ambiguous_query": "What is he planning to do with Scout, Toby, and Buddy?",
+      "q_final": "What is he planning to do with Scout, Toby, and Buddy?",
+      "evidence": [
+        "D28:10"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        24,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "What did Andrew get for Scout to create a safe and fun space for them?",
+      "ambiguous_query": "What did he get for Scout to create a safe and fun space for them?",
+      "q_final": "What did Andrew get for Scout to create a safe and fun space for them?",
+      "evidence": [
+        "D28:12"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        4,
+        11,
+        2,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 5,
+      "original_question": "Which specific type of bird mesmerizes Audrey?",
+      "ambiguous_query": "Which specific type of bird mesmerizes her?",
+      "q_final": "Which specific type of bird mesmerizes Andrew?",
+      "evidence": [
+        "D1:16"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        20,
+        7,
+        9,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 5,
+      "original_question": "What kind of flowers does Andrew have a tattoo of?",
+      "ambiguous_query": "What kind of flowers does him have a tattoo of?",
+      "q_final": "What kind of flowers does Audrey have a tattoo of?",
+      "evidence": [
+        "D3:26"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        19,
+        3,
+        23,
+        15,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 125,
+      "category": 5,
+      "original_question": "What type of dog was Audrey looking to adopt based on her living space?",
+      "ambiguous_query": "What type of dog was her looking to adopt based on her living space?",
+      "q_final": "What type of dog was she looking to adopt based on her living space?",
+      "evidence": [
+        "D5:3"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        28,
+        24,
+        2,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 126,
+      "category": 5,
+      "original_question": "Why did Audrey sign up for a workshop about car maintenance?",
+      "ambiguous_query": "Why did she sign up for a workshop about car maintenance?",
+      "q_final": "Why did Audrey sign up for a workshop about car maintenance?",
+      "evidence": [
+        "D6:2"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        10,
+        8,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 5,
+      "original_question": "How did Andrew hear about the workshop on bonding with pets?",
+      "ambiguous_query": "How did he hear about the workshop on bonding with pets?",
+      "q_final": "How did Audrey hear about the workshop on bonding with pets?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        16,
+        13,
+        17,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 128,
+      "category": 5,
+      "original_question": "What type of training was the workshop Andrew signed up for in May 2023?",
+      "ambiguous_query": "What type of training was the workshop he signed up for in May 2023?",
+      "q_final": "What type of training was Melanie signed up for in May 2023?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        10,
+        19,
+        4,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 129,
+      "category": 5,
+      "original_question": "How did Andrew describe the dog he met at the pet store?",
+      "ambiguous_query": "How did he describe the dog he met at the pet store?",
+      "q_final": "How did Andrew describe the dog he met at the pet store?",
+      "evidence": [
+        "D6:4"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        24,
+        12,
+        2,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 5,
+      "original_question": "What challenge is Audrey facing in their search for a pet?",
+      "ambiguous_query": "What challenge is she facing in their search for a pet?",
+      "q_final": "What challenge is Andrew facing in their search for a pet-friendly apartment?",
+      "evidence": [
+        "D7:8"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        18,
+        10,
+        5,
+        7,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 131,
+      "category": 5,
+      "original_question": "What indoor activities does Andrew plan on trying after the rock climbing class?",
+      "ambiguous_query": "What indoor activities does he plan on trying after the rock climbing class?",
+      "q_final": "What indoor activities does Andrew plan on trying after the rock climbing class?",
+      "evidence": [
+        "D8:7"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        10,
+        27,
+        16,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 132,
+      "category": 5,
+      "original_question": "What did Andrew set up in the backyard for their dogs on June 26, 2023?",
+      "ambiguous_query": "What did he set up in the backyard for their dogs on June 26, 2023?",
+      "q_final": "What did Andrew set up in the backyard for their dogs on June 26, 2023?",
+      "evidence": [
+        "D9:5"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        8,
+        7,
+        2,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 133,
+      "category": 5,
+      "original_question": "What did Audrey and her GF do on the Monday before July 24, 2023?",
+      "ambiguous_query": "What did she and her GF do on the Monday before July 24, 2023?",
+      "q_final": "What did Audrey and her GF do on the Monday before July 24, 2023?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        10,
+        11,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 134,
+      "category": 5,
+      "original_question": "What is the name of Andrew's childhood dog?",
+      "ambiguous_query": "What is the name of his childhood dog?",
+      "q_final": "What is the name of Andrew's childhood dog?",
+      "evidence": [
+        "D13:8"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        28,
+        11,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 135,
+      "category": 5,
+      "original_question": "What special memories does Andrew have with his childhood dog, Max?",
+      "ambiguous_query": "What special memories does he have with his childhood dog, Max?",
+      "q_final": "What special memories does Melanie have with her childhood dog, Max?",
+      "evidence": [
+        "D13:10"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        2,
+        26,
+        28,
+        23
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 136,
+      "category": 5,
+      "original_question": "What are some of the personalities of Andrew's four fur babies?",
+      "ambiguous_query": "What are some of the personalities of his four fur babies?",
+      "q_final": "What are some of the personalities of my four fur babies?",
+      "evidence": [
+        "D13:6"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        15,
+        13,
+        9,
+        26,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 137,
+      "category": 5,
+      "original_question": "What type of classes did Andrew start with his pups recently on 4 August, 2023?",
+      "ambiguous_query": "What type of classes did him start with his pups recently on 4 August, 2023?",
+      "q_final": "What type of classes did Melanie start with her pups recently on 4 August, 2023?",
+      "evidence": [
+        "D14:2"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        23,
+        14,
+        16,
+        25,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 138,
+      "category": 5,
+      "original_question": "What is essential to keep the dogs looking good according to Andrew?",
+      "ambiguous_query": "What is essential to keep the dogs looking good according to him?",
+      "q_final": "What is essential to keep Pepper and Precious looking good according to Audrey?",
+      "evidence": [
+        "D17:4"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        26,
+        2,
+        28,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 139,
+      "category": 5,
+      "original_question": "What did Audrey organize with the neighbors' cats?",
+      "ambiguous_query": "What did she organize with the neighbors' cats?",
+      "q_final": "What did Audrey organize with the neighbors' cats?",
+      "evidence": [
+        "D18:6"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        23,
+        18,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 140,
+      "category": 5,
+      "original_question": "What did Andrew do to give his dogs extra comfort as the weather cooled down?",
+      "ambiguous_query": "What did he do to give his dogs extra comfort as the weather cooled down?",
+      "q_final": "What did Audrey do to give her dogs extra comfort as the weather cooled down?",
+      "evidence": [
+        "D18:10"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        2,
+        11,
+        28,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 141,
+      "category": 5,
+      "original_question": "How does Andrew describe the new beds for his dogs?",
+      "ambiguous_query": "How does he describe the new beds for his dogs?",
+      "q_final": "How does Andrew describe the new beds for Pixie and the other dogs?",
+      "evidence": [
+        "D18:12"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        28,
+        2,
+        18,
+        23,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 142,
+      "category": 5,
+      "original_question": "How did Andrew calm down his dog after the leash incident?",
+      "ambiguous_query": "How did he calm down his dog after the leash incident?",
+      "q_final": "How did Andrew calm down his dog after the leash incident?",
+      "evidence": [
+        "D19:4"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        28,
+        11,
+        7,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 143,
+      "category": 5,
+      "original_question": "How often does Andrew take his dogs for walks?",
+      "ambiguous_query": "How often does he take his dogs for walks?",
+      "q_final": "How often does Audrey take her dogs for walks?",
+      "evidence": [
+        "D19:10"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        11,
+        4,
+        8,
+        5,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 144,
+      "category": 5,
+      "original_question": "What kind of vegetables does Audrey take care of?",
+      "ambiguous_query": "What kind of vegetables does her take care of?",
+      "q_final": "What kind of vegetables does they take care of?",
+      "evidence": [
+        "D19:20"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        27,
+        17,
+        18,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 145,
+      "category": 5,
+      "original_question": "What did Andrew learn from reading books about economic systems?",
+      "ambiguous_query": "What did he learn from reading books about economic systems?",
+      "q_final": "What did Andrew learn from reading books about economic systems?",
+      "evidence": [
+        "D20:25"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        16,
+        6,
+        14,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 146,
+      "category": 5,
+      "original_question": "What was the reason Andrew couldn't walk his dogs for a period of time?",
+      "ambiguous_query": "What was the reason he couldn't walk his dogs for a period of time?",
+      "q_final": "What was the reason he couldn't walk his dogs for a period of time?",
+      "evidence": [
+        "D22:1"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        8,
+        11,
+        4,
+        23,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 147,
+      "category": 5,
+      "original_question": "What type of jewelry does Andrew make?",
+      "ambiguous_query": "What type of jewelry does him make?",
+      "q_final": "What type of jewelry does Audrey make?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        1,
+        2,
+        3,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 148,
+      "category": 5,
+      "original_question": "Why does Andrew make jewelry out of recycled objects?",
+      "ambiguous_query": "Why does he make jewelry out of recycled objects?",
+      "q_final": "Why does Audrey make jewelry out of recycled objects?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        20,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 149,
+      "category": 5,
+      "original_question": "What type of games do Andrew's dogs like to play at the park?",
+      "ambiguous_query": "What type of games do his dogs like to play at the park?",
+      "q_final": "What type of games do Melanie's dogs like to play at the park?",
+      "evidence": [
+        "D23:14"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        28,
+        27,
+        8,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 150,
+      "category": 5,
+      "original_question": "What did Andrew make to thank his neighbors?",
+      "ambiguous_query": "What did he make to thank his neighbors?",
+      "q_final": "What did Andrew make to thank his neighbors?",
+      "evidence": [
+        "D23:2"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        27,
+        2,
+        18,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 151,
+      "category": 5,
+      "original_question": "How do Andrew's dogs react to snow?",
+      "ambiguous_query": "How do his dogs react to snow?",
+      "q_final": "How do his dogs react to snow?",
+      "evidence": [
+        "D23:12"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        11,
+        28,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 152,
+      "category": 5,
+      "original_question": "How does Andrew describe his dogs' response to snow?",
+      "ambiguous_query": "How does he describe his dogs' response to snow?",
+      "q_final": "How does Andrew describe his dogs' response to snow?",
+      "evidence": [
+        "D23:12"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        11,
+        28,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 153,
+      "category": 5,
+      "original_question": "What kind of experiences are Audrey's cats the best companions for?",
+      "ambiguous_query": "What kind of experiences are her cats the best companions for?",
+      "q_final": "What kind of experiences are her cats the best companions for?",
+      "evidence": [
+        "D23:24"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        26,
+        20,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 154,
+      "category": 5,
+      "original_question": "What activity do Audrey and Buddy enjoy doing together?",
+      "ambiguous_query": "What activity do she and Buddy enjoy doing together?",
+      "q_final": "What activity do Andrew and Buddy enjoy doing together?",
+      "evidence": [
+        "D24:8"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        14,
+        20,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 5,
+      "original_question": "What type of drink did Andrew recently try at a new spot in town?",
+      "ambiguous_query": "What type of drink did him recently try at a new spot in town?",
+      "q_final": "What type of drink did Andrew recently try at a new spot in town?",
+      "evidence": [
+        "D25:3"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        10,
+        23,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 156,
+      "category": 5,
+      "original_question": "Which type of pizza did Audrey suggest trying first to someone new to Italian cuisine?",
+      "ambiguous_query": "Which type of pizza did her suggest trying first to someone new to Italian cuisine?",
+      "q_final": "Which type of pizza did Andrew suggest trying first to someone new to Italian cuisine?",
+      "evidence": [
+        "D25:8"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        10,
+        1,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 157,
+      "category": 5,
+      "original_question": "How often does Andrew meet up with other dog owners for tips and playdates?",
+      "ambiguous_query": "How often does he meet up with other dog owners for tips and playdates?",
+      "q_final": "How often does Melanie meet up with other dog owners for tips and playdates?",
+      "evidence": [
+        "D27:4"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        26,
+        4,
+        2,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    }
+  ]
+}

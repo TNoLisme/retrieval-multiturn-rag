@@ -32,6 +32,18 @@ def calculate_averages(results_dir):
         rate_at3 = first_row.get("Summary_bm25_hit_rate_at3", 0)
         rate_at5 = first_row.get("Summary_bm25_hit_rate_at5", 0)
         
+        # Calculate category accuracies from the raw data
+        cat_accs = {}
+        for cat in range(1, 6):
+            cat_df = df[df['category'] == cat]
+            if len(cat_df) > 0:
+                # Count passes securely
+                passed = cat_df['llm_judge_pass'].astype(bool).sum()
+                total = len(cat_df)
+                cat_accs[f"Cat{cat} Accuracy"] = passed / total
+            else:
+                cat_accs[f"Cat{cat} Accuracy"] = 0.0 # Default if no questions
+        
         summary_list.append({
             "File": os.path.basename(file),
             "Conversation": first_row.get("Summary_conversation_index", "N/A"),
@@ -43,7 +55,12 @@ def calculate_averages(results_dir):
             "Hit Rate@1": rate_at1,
             "Hit Rate@3": rate_at3,
             "Hit Rate@5": rate_at5,
-            "LLM Judge Accuracy": first_row.get("Summary_llm_judge_accuracy", 0)
+            "LLM Judge Accuracy": first_row.get("Summary_llm_judge_accuracy", 0),
+            "Cat1 Accuracy": cat_accs["Cat1 Accuracy"],
+            "Cat2 Accuracy": cat_accs["Cat2 Accuracy"],
+            "Cat3 Accuracy": cat_accs["Cat3 Accuracy"],
+            "Cat4 Accuracy": cat_accs["Cat4 Accuracy"],
+            "Cat5 Accuracy": cat_accs["Cat5 Accuracy"]
         })
 
     if not summary_list:
@@ -65,11 +82,32 @@ def calculate_averages(results_dir):
     global_hr_at5 = global_hits_at5 / global_total_qa if global_total_qa > 0 else 0
     global_llm_judge_accuracy = global_llm_passes / global_total_qa if global_total_qa > 0 else 0
     
+    # Calculate micro averages for categories by scanning all raw files
+    global_cat_passes = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+    global_cat_totals = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+    
+    for file in excel_files:
+        df = pd.read_excel(file, sheet_name='Evaluation Results')
+        for cat in range(1, 6):
+            cat_df = df[df['category'] == cat]
+            global_cat_passes[cat] += cat_df['llm_judge_pass'].astype(bool).sum()
+            global_cat_totals[cat] += len(cat_df)
+            
+    micro_cat_accs = {}
+    for cat in range(1, 6):
+        tot = global_cat_totals[cat]
+        micro_cat_accs[cat] = global_cat_passes[cat] / tot if tot > 0 else 0.0
+    
     # Macro-average (Trung bình của các tỷ lệ)
     macro_hr_at1 = df_summaries["Hit Rate@1"].mean()
     macro_hr_at3 = df_summaries["Hit Rate@3"].mean()
     macro_hr_at5 = df_summaries["Hit Rate@5"].mean()
     macro_llm_judge_accuracy = df_summaries["LLM Judge Accuracy"].mean()
+    macro_cat1_acc = df_summaries["Cat1 Accuracy"].mean()
+    macro_cat2_acc = df_summaries["Cat2 Accuracy"].mean()
+    macro_cat3_acc = df_summaries["Cat3 Accuracy"].mean()
+    macro_cat4_acc = df_summaries["Cat4 Accuracy"].mean()
+    macro_cat5_acc = df_summaries["Cat5 Accuracy"].mean()
 
     # Tạo nội dung báo cáo Markdown
     report_lines = []
@@ -86,13 +124,18 @@ def calculate_averages(results_dir):
     report_lines.append(f"| **BM25 Hit Rate @3** | {macro_hr_at3:.2%} | {global_hr_at3:.2%} |")
     report_lines.append(f"| **BM25 Hit Rate @5** | {macro_hr_at5:.2%} | {global_hr_at5:.2%} |")
     report_lines.append(f"| **LLM Judge Accuracy** | {macro_llm_judge_accuracy:.2%} | {global_llm_judge_accuracy:.2%} |")
+    report_lines.append(f"| **Cat1: Single-hop Accuracy** | {macro_cat1_acc:.2%} | {micro_cat_accs[1]:.2%} |")
+    report_lines.append(f"| **Cat2: Temporal Accuracy** | {macro_cat2_acc:.2%} | {micro_cat_accs[2]:.2%} |")
+    report_lines.append(f"| **Cat3: Multi-hop Accuracy** | {macro_cat3_acc:.2%} | {micro_cat_accs[3]:.2%} |")
+    report_lines.append(f"| **Cat4: Open-domain Accuracy** | {macro_cat4_acc:.2%} | {micro_cat_accs[4]:.2%} |")
+    report_lines.append(f"| **Cat5: Adversarial Accuracy** | {macro_cat5_acc:.2%} | {micro_cat_accs[5]:.2%} |")
     report_lines.append("\n*Ghi chú:*\n")
     report_lines.append("*- **Macro-Average**: Tính tỷ lệ cho từng Conversation, sau đó cộng lại chia đều.*")
     report_lines.append("*- **Micro-Average**: Tính tổng số câu đúng trên tổng số câu hỏi của toàn bộ tập dữ liệu.*")
     
     report_lines.append("\n## 2. Chi tiết từng Sample (Conversation)\n")
-    report_lines.append("| File | Conv Index | Total QA | Hits@1 | Hits@3 | Hits@5 | LLM Passes | Hit Rate@1 | Hit Rate@3 | Hit Rate@5 | LLM Accuracy |")
-    report_lines.append("|---|---|---|---|---|---|---|---|---|---|---|")
+    report_lines.append("| File | Conv Index | Total QA | Hits@1 | Hits@3 | Hits@5 | LLM Passes | Hit Rate@1 | Hit Rate@3 | Hit Rate@5 | LLM Accuracy | Cat1 Acc | Cat2 Acc | Cat3 Acc | Cat4 Acc | Cat5 Acc |")
+    report_lines.append("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     
     for _, row in df_summaries.iterrows():
         report_lines.append(
@@ -100,7 +143,9 @@ def calculate_averages(results_dir):
             f"{row['Hits@1']:.1f} | {row['Hits@3']:.1f} | {row['Hits@5']:.1f} | "
             f"{row['LLM Judge Passes']} | "
             f"{row['Hit Rate@1']:.2%} | {row['Hit Rate@3']:.2%} | {row['Hit Rate@5']:.2%} | "
-            f"{row['LLM Judge Accuracy']:.2%} |"
+            f"{row['LLM Judge Accuracy']:.2%} | "
+            f"{row['Cat1 Accuracy']:.2%} | {row['Cat2 Accuracy']:.2%} | {row['Cat3 Accuracy']:.2%} | "
+            f"{row['Cat4 Accuracy']:.2%} | {row['Cat5 Accuracy']:.2%} |"
         )
 
     report_content = "\n".join(report_lines)
@@ -119,14 +164,24 @@ def calculate_averages(results_dir):
         "Tổng số Samples": len(df_summaries),
         "Tổng số câu QA": global_total_qa,
         "Tổng LLM Passes": global_llm_passes,
+        "Micro-Average BM25 Hit Rate@1": global_hr_at1,
+        "Micro-Average BM25 Hit Rate@3": global_hr_at3,
+        "Micro-Average BM25 Hit Rate@5": global_hr_at5,
+        "Micro-Average LLM Accuracy": global_llm_judge_accuracy,
+        "Micro-Average Cat1 Accuracy": micro_cat_accs[1],
+        "Micro-Average Cat2 Accuracy": micro_cat_accs[2],
+        "Micro-Average Cat3 Accuracy": micro_cat_accs[3],
+        "Micro-Average Cat4 Accuracy": micro_cat_accs[4],
+        "Micro-Average Cat5 Accuracy": micro_cat_accs[5],
         "Macro-Average BM25 Hit Rate@1": macro_hr_at1,
         "Macro-Average BM25 Hit Rate@3": macro_hr_at3,
         "Macro-Average BM25 Hit Rate@5": macro_hr_at5,
         "Macro-Average LLM Accuracy": macro_llm_judge_accuracy,
-        "Micro-Average BM25 Hit Rate@1": global_hr_at1,
-        "Micro-Average BM25 Hit Rate@3": global_hr_at3,
-        "Micro-Average BM25 Hit Rate@5": global_hr_at5,
-        "Micro-Average LLM Accuracy": global_llm_judge_accuracy
+        "Macro-Average Cat1 Accuracy": macro_cat1_acc,
+        "Macro-Average Cat2 Accuracy": macro_cat2_acc,
+        "Macro-Average Cat3 Accuracy": macro_cat3_acc,
+        "Macro-Average Cat4 Accuracy": macro_cat4_acc,
+        "Macro-Average Cat5 Accuracy": macro_cat5_acc
     }])
     df_global.to_excel(writer, sheet_name='Global Averages', index=False)
     

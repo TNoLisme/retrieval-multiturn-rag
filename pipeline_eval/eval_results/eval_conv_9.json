@@ -1,0 +1,5020 @@
+{
+  "summary": {
+    "conversation_index": 9,
+    "sample_id": "conv-50",
+    "total_qa": 204,
+    "bm25_hit_rate_at1": 0.6181,
+    "bm25_hit_rate_at3": 0.7782,
+    "bm25_hit_rate_at5": 0.828,
+    "llm_judge_accuracy": 0.6471,
+    "llm_judge_passes": 132
+  },
+  "results": [
+    {
+      "qa_index": 0,
+      "category": 2,
+      "original_question": "When did Calvin first travel to Tokyo?",
+      "ambiguous_query": "When did he first travel to Tokyo?",
+      "q_final": "When did Calvin first travel to Tokyo?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        3,
+        15,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 1,
+      "category": 1,
+      "original_question": "What items did Calvin buy in March 2023?",
+      "ambiguous_query": "What items did he buy in March 2023?",
+      "q_final": "What items did Dave buy in March 2023?",
+      "evidence": [
+        "D1:3",
+        "D2:1"
+      ],
+      "gold_sections": [
+        1,
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        1,
+        22,
+        6,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 2,
+      "category": 2,
+      "original_question": "When did Dave see Aerosmith perform live?",
+      "ambiguous_query": "When did he see Aerosmith perform live?",
+      "q_final": "When did Aerosmith perform live for him?",
+      "evidence": [
+        "D2:10"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        7,
+        23,
+        24,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 3,
+      "category": 1,
+      "original_question": "Which bands has Dave enjoyed listening to?",
+      "ambiguous_query": "Which bands has he enjoyed listening to?",
+      "q_final": "Which bands has he enjoyed listening to?",
+      "evidence": [
+        "D2:10",
+        "D23:9"
+      ],
+      "gold_sections": [
+        2,
+        23
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        5,
+        9,
+        19
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 4,
+      "category": 3,
+      "original_question": "Which country do Calvin and Dave want to meet in?",
+      "ambiguous_query": "Which country do Calvin and he want to meet in?",
+      "q_final": "Which country do Calvin and Dave want to meet in?",
+      "evidence": [
+        "D3:9",
+        "D3:10"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        26,
+        30,
+        17,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 5,
+      "category": 1,
+      "original_question": "What are Dave's dreams?",
+      "ambiguous_query": "What are his dreams?",
+      "q_final": "What are Dave's dreams?",
+      "evidence": [
+        "D4:5",
+        "D4:5",
+        "D5:5"
+      ],
+      "gold_sections": [
+        4,
+        5
+      ],
+      "retrieved_sections": [
+        4,
+        12,
+        2,
+        5,
+        22
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 6,
+      "category": 1,
+      "original_question": "Which types of cars does Dave like the most?",
+      "ambiguous_query": "Which types of cars does him like the most?",
+      "q_final": "Which types of cars does Dave like the most?",
+      "evidence": [
+        "D4:5",
+        "D1:2",
+        "D3:12",
+        "D4:7"
+      ],
+      "gold_sections": [
+        1,
+        3,
+        4
+      ],
+      "retrieved_sections": [
+        28,
+        4,
+        22,
+        7,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 7,
+      "category": 3,
+      "original_question": "Does Dave's shop employ a lot of people?",
+      "ambiguous_query": "Does his shop employ a lot of people?",
+      "q_final": "Does Dave employ a lot of people at his shop?",
+      "evidence": [
+        "D4:17"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        3,
+        18,
+        19,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 8,
+      "category": 2,
+      "original_question": "When did Dave start his car maintenance shop?",
+      "ambiguous_query": "When did he start his car maintenance shop?",
+      "q_final": "When did he start his car maintenance shop?",
+      "evidence": [
+        "D4:1"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        23,
+        28,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 9,
+      "category": 2,
+      "original_question": "When did a mishap occur with Calvin's musical gear and favorite mic?",
+      "ambiguous_query": "When did a mishap occur with his musical gear and favorite mic?",
+      "q_final": "When did a mishap occur with his musical gear and favorite mic?",
+      "evidence": [
+        "D6:3"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        10,
+        2,
+        1,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 10,
+      "category": 2,
+      "original_question": "When did Calvin's place get flooded in Tokyo?",
+      "ambiguous_query": "When did his place get flooded in Tokyo?",
+      "q_final": "When did his place get flooded in Tokyo?",
+      "evidence": [
+        "D6:3"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        11,
+        9,
+        25,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 11,
+      "category": 1,
+      "original_question": "What mishaps has Calvin run into?",
+      "ambiguous_query": "What mishaps has he run into?",
+      "q_final": "Your question is unclear because it refers to 'he' but the conversation context is missing. Could you please specify the exact subject, person, or topic you are referring to?",
+      "evidence": [
+        "D6:1",
+        "D9:1"
+      ],
+      "gold_sections": [
+        6,
+        9
+      ],
+      "retrieved_sections": [
+        23,
+        25,
+        30,
+        24,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 12,
+      "category": 2,
+      "original_question": "When was Calvin's concert in Tokyo?",
+      "ambiguous_query": "When was his concert in Tokyo?",
+      "q_final": "When was his concert in Tokyo?",
+      "evidence": [
+        "D6:11",
+        "D7:1"
+      ],
+      "gold_sections": [
+        6,
+        7
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        15,
+        3,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 13,
+      "category": 3,
+      "original_question": "Would Calvin enjoy performing at the Hollywood Bowl?",
+      "ambiguous_query": "Would he enjoy performing at the Hollywood Bowl?",
+      "q_final": "Would [USER] enjoy performing at the Hollywood Bowl?",
+      "evidence": [
+        "D7:11"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        24,
+        7,
+        30,
+        5,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 14,
+      "category": 2,
+      "original_question": "When did Calvin meet with the creative team for his new album?",
+      "ambiguous_query": "When did he meet with the creative team for his new album?",
+      "q_final": "When did he meet with the creative team for his new album?",
+      "evidence": [
+        "D8:1"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        5,
+        27,
+        28,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 15,
+      "category": 1,
+      "original_question": "Why does Dave regularly visit parks?",
+      "ambiguous_query": "Why does he regularly visit parks?",
+      "q_final": "Why does Dave regularly visit parks?",
+      "evidence": [
+        "D8:4",
+        "D1:16"
+      ],
+      "gold_sections": [
+        1,
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        10,
+        3,
+        24,
+        1
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 16,
+      "category": 2,
+      "original_question": "When did Dave take a trip to mountainous regions?",
+      "ambiguous_query": "When did he take a trip to mountainous regions?",
+      "q_final": "When did Calvin take a trip to mountainous regions?",
+      "evidence": [
+        "D8:10"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        17,
+        1,
+        11,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 17,
+      "category": 2,
+      "original_question": "When did Calvin have a car incident?",
+      "ambiguous_query": "When did he have a car incident?",
+      "q_final": "When did he have a car incident?",
+      "evidence": [
+        "D9:1"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        6,
+        4,
+        13,
+        28,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 18,
+      "category": 1,
+      "original_question": "How many times has Calvin had to deal with insurance paperwork?",
+      "ambiguous_query": "How many times has he had to deal with insurance paperwork?",
+      "q_final": "How many times has Melanie had to deal with insurance paperwork?",
+      "evidence": [
+        "D6:5",
+        "D9:1"
+      ],
+      "gold_sections": [
+        6,
+        9
+      ],
+      "retrieved_sections": [
+        9,
+        2,
+        15,
+        23,
+        25
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 19,
+      "category": 1,
+      "original_question": "Which places or events has Calvin visited in Tokyo?",
+      "ambiguous_query": "Which places or events has he visited in Tokyo?",
+      "q_final": "Which places or events has he visited in Tokyo?",
+      "evidence": [
+        "D3:1",
+        "D12:7",
+        "D24:19"
+      ],
+      "gold_sections": [
+        3,
+        12,
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        3,
+        15,
+        1
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 20,
+      "category": 1,
+      "original_question": "Who inspired Dave's passion for car engineering?",
+      "ambiguous_query": "Who inspired his passion for car engineering?",
+      "q_final": "Who inspired his passion for car engineering?",
+      "evidence": [
+        "D12:2",
+        "D12:4",
+        "D26:6"
+      ],
+      "gold_sections": [
+        12,
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        28,
+        13,
+        25,
+        22
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 21,
+      "category": 3,
+      "original_question": "Does Calvin wish to become more popular?",
+      "ambiguous_query": "Does he wish to become more popular?",
+      "q_final": "Does Dave wish to become more popular?",
+      "evidence": [
+        "D12:11",
+        "D27:1"
+      ],
+      "gold_sections": [
+        12,
+        27
+      ],
+      "retrieved_sections": [
+        25,
+        3,
+        6,
+        21,
+        24
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 22,
+      "category": 1,
+      "original_question": "Does Calvin want to expand his brand?",
+      "ambiguous_query": "Does he want to expand his brand?",
+      "q_final": "Does Calvin want to expand his brand?",
+      "evidence": [
+        "D12:11",
+        "D18:7"
+      ],
+      "gold_sections": [
+        12,
+        18
+      ],
+      "retrieved_sections": [
+        12,
+        18,
+        24,
+        26,
+        6
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 23,
+      "category": 1,
+      "original_question": "What is Dave's main passion?",
+      "ambiguous_query": "What is his main passion?",
+      "q_final": "What is his main passion?",
+      "evidence": [
+        "D13:3",
+        "D5:5",
+        "D4:5",
+        "D3:12"
+      ],
+      "gold_sections": [
+        3,
+        4,
+        5,
+        13
+      ],
+      "retrieved_sections": [
+        4,
+        13,
+        28,
+        22,
+        5
+      ],
+      "recall_at1": 0.25,
+      "recall_at3": 0.5,
+      "recall_at5": 0.75,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 24,
+      "category": 1,
+      "original_question": "Can Dave work with engines?",
+      "ambiguous_query": "Can he work with engines?",
+      "q_final": "Can he work with engines?",
+      "evidence": [
+        "D13:7",
+        "D22:5",
+        "D20:1"
+      ],
+      "gold_sections": [
+        13,
+        20,
+        22
+      ],
+      "retrieved_sections": [
+        4,
+        21,
+        13,
+        12,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 25,
+      "category": 2,
+      "original_question": "When did Dave host a card-playing night with his friends?",
+      "ambiguous_query": "When did he host a card-playing night with his friends?",
+      "q_final": "When did he host a card-playing night with his friends?",
+      "evidence": [
+        "D15:1"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        28,
+        6,
+        29,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 26,
+      "category": 2,
+      "original_question": "When did Calvin record a podcast with his friends?",
+      "ambiguous_query": "When did he record a podcast with his friends?",
+      "q_final": "When did Dave record a podcast with his friends?",
+      "evidence": [
+        "D15:12"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        29,
+        10,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 27,
+      "category": 2,
+      "original_question": "Which city was Calvin visiting in August 2023?",
+      "ambiguous_query": "Which city was he visiting in August 2023?",
+      "q_final": "Which city was Dave visiting in August 2023?",
+      "evidence": [
+        "D16:6"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        24,
+        3,
+        6,
+        10,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 28,
+      "category": 1,
+      "original_question": "What does Calvin do to relax?",
+      "ambiguous_query": "What does he do to relax?",
+      "q_final": "What does he do to relax?",
+      "evidence": [
+        "D5:8",
+        "D5:10",
+        "D7:5"
+      ],
+      "gold_sections": [
+        5,
+        7
+      ],
+      "retrieved_sections": [
+        5,
+        21,
+        28,
+        7,
+        8
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 29,
+      "category": 1,
+      "original_question": "What are Dave's hobbies other than fixing cars?",
+      "ambiguous_query": "What are his hobbies other than fixing cars?",
+      "q_final": "What are his hobbies other than fixing cars?",
+      "evidence": [
+        "D5:9",
+        "D5:11",
+        "D8:8",
+        "D27:2"
+      ],
+      "gold_sections": [
+        5,
+        8,
+        27
+      ],
+      "retrieved_sections": [
+        7,
+        22,
+        5,
+        12,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 30,
+      "category": 1,
+      "original_question": "What kind of music does Dave listen to?",
+      "ambiguous_query": "What kind of music does him listen to?",
+      "q_final": "What kind of music does Dave listen to?",
+      "evidence": [
+        "D2:10",
+        "D28:40",
+        "D10:11"
+      ],
+      "gold_sections": [
+        2,
+        10,
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        18,
+        25,
+        23,
+        11
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 31,
+      "category": 2,
+      "original_question": "Where was Dave in the last two weeks of August 2023?",
+      "ambiguous_query": "Where was he in the last two weeks of August 2023?",
+      "q_final": "Where was he in the last two weeks of August 2023?",
+      "evidence": [
+        "D14:1",
+        "D17:1"
+      ],
+      "gold_sections": [
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        28,
+        6,
+        13,
+        2,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 32,
+      "category": 1,
+      "original_question": "Where did Dave return from with new knowledge of different techniques of car restoration?",
+      "ambiguous_query": "Where did he return from with new knowledge of different techniques of car restoration?",
+      "q_final": "Where did he return from with new knowledge of different techniques of car restoration?",
+      "evidence": [
+        "D17:1",
+        "D14:1"
+      ],
+      "gold_sections": [
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        17,
+        27,
+        4
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 33,
+      "category": 1,
+      "original_question": "What was Dave doing in San Francisco?",
+      "ambiguous_query": "What was he doing in San Francisco?",
+      "q_final": "What was Calvin doing in San Francisco?",
+      "evidence": [
+        "D17:1",
+        "D14:1"
+      ],
+      "gold_sections": [
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        14,
+        17,
+        13,
+        1,
+        2
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 34,
+      "category": 2,
+      "original_question": "When did Dave return from San Francisco?",
+      "ambiguous_query": "When did he return from San Francisco?",
+      "q_final": "When did he return from San Francisco?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        14,
+        17,
+        13,
+        1,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 35,
+      "category": 2,
+      "original_question": "When did Calvin book flight tickets to Boston?",
+      "ambiguous_query": "When did he book flight tickets to Boston?",
+      "q_final": "When did he book flight tickets to Boston?",
+      "evidence": [
+        "D17:6"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        3,
+        8,
+        30,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 36,
+      "category": 2,
+      "original_question": "When was Calvin's album released?",
+      "ambiguous_query": "When was his album released?",
+      "q_final": "When was Calvin's album released?",
+      "evidence": [
+        "D18:1"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        28,
+        8,
+        16,
+        27
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 37,
+      "category": 3,
+      "original_question": "Does Calvin love music tours?",
+      "ambiguous_query": "Does he love music tours?",
+      "q_final": "Does Dave love music tours?",
+      "evidence": [
+        "D18:7",
+        "D16:2",
+        "D7:1"
+      ],
+      "gold_sections": [
+        7,
+        16,
+        18
+      ],
+      "retrieved_sections": [
+        18,
+        28,
+        3,
+        25,
+        7
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 0.3333333333333333,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 38,
+      "category": 2,
+      "original_question": "When did Dave have a great jam session with his band?",
+      "ambiguous_query": "When did he have a great jam session with his band?",
+      "q_final": "When did Calvin have a great jam session with his band?",
+      "evidence": [
+        "D19:1"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        3,
+        2,
+        20,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 39,
+      "category": 3,
+      "original_question": "Would Dave prefer working on a Dodge Charger or a Subaru Forester?",
+      "ambiguous_query": "Would he prefer working on a Dodge Charger or a Subaru Forester?",
+      "q_final": "Would Dave prefer working on a Dodge Charger or a Subaru Forester?",
+      "evidence": [],
+      "gold_sections": [],
+      "retrieved_sections": [
+        21,
+        20,
+        14,
+        4,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 40,
+      "category": 1,
+      "original_question": "What was the artists Calvin used to listen to when he was a kid?",
+      "ambiguous_query": "What was the artists he used to listen to when he was a kid?",
+      "q_final": "What artists did he use to listen to when he was a kid?",
+      "evidence": [
+        "D20:8",
+        "D20:6"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        29,
+        21,
+        28,
+        10,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 41,
+      "category": 1,
+      "original_question": "Which of their family member do Calvin and Dave have nostalgic memories about?",
+      "ambiguous_query": "Which of their family member do Calvin and he have nostalgic memories about?",
+      "q_final": "Which of their family member do Melanie and she have nostalgic memories about?",
+      "evidence": [
+        "D12:2",
+        "D20:6"
+      ],
+      "gold_sections": [
+        12,
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        28,
+        12,
+        11,
+        17
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 42,
+      "category": 3,
+      "original_question": "Based on the conversation, did Calvin and Dave have a meeting in Boston between August and November 2023? Answer in yes or no.",
+      "ambiguous_query": "Based on the conversation, did Calvin and he have a meeting in Boston between August and November 2023? Answer in yes or no.",
+      "q_final": "Did Melanie and she have a meeting in Boston between August and November 2023?",
+      "evidence": [],
+      "gold_sections": [],
+      "retrieved_sections": [
+        15,
+        30,
+        17,
+        24,
+        21
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 43,
+      "category": 2,
+      "original_question": "Which city was Calvin at on October 3, 2023?",
+      "ambiguous_query": "Which city was he at on October 3, 2023?",
+      "q_final": "Which city was he at on October 3, 2023?",
+      "evidence": [
+        "D21:1"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        22,
+        24,
+        17,
+        5,
+        9
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 44,
+      "category": 2,
+      "original_question": "When did Calvin met with local artists in Boston?",
+      "ambiguous_query": "When did he met with local artists in Boston?",
+      "q_final": "When did Dave meet with local artists in Boston?",
+      "evidence": [
+        "D21:1"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        29,
+        30,
+        8,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 45,
+      "category": 1,
+      "original_question": "What shared activities do Dave and Calvin have?",
+      "ambiguous_query": "What shared activities do he and Calvin have?",
+      "q_final": "What shared activities do Calvin and he have?",
+      "evidence": [
+        "D21:3",
+        "D21:4"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        5,
+        23,
+        28,
+        7,
+        30
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 46,
+      "category": 1,
+      "original_question": "What is Dave's favorite activity?",
+      "ambiguous_query": "What is his favorite activity?",
+      "q_final": "What is his favorite activity?",
+      "evidence": [
+        "D21:4",
+        "D22:7",
+        "D19:7"
+      ],
+      "gold_sections": [
+        19,
+        21,
+        22
+      ],
+      "retrieved_sections": [
+        23,
+        5,
+        7,
+        28,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.3333333333333333,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 47,
+      "category": 1,
+      "original_question": "How many car shows has Dave attended?",
+      "ambiguous_query": "How many car shows has him attended?",
+      "q_final": "How many car shows has Dave attended?",
+      "evidence": [
+        "D3:12",
+        "D22:1"
+      ],
+      "gold_sections": [
+        3,
+        22
+      ],
+      "retrieved_sections": [
+        1,
+        2,
+        3,
+        22,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 48,
+      "category": 2,
+      "original_question": "What was Dave doing in the first weekend of October 2023?",
+      "ambiguous_query": "What was he doing in the first weekend of October 2023?",
+      "q_final": "What was Calvin doing in the first weekend of October 2023?",
+      "evidence": [
+        "D22:1"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        2,
+        17,
+        26,
+        21,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 49,
+      "category": 1,
+      "original_question": "When Dave was a child, what did he and his father do in the garage?",
+      "ambiguous_query": "When he was a child, what did he and his father do in the garage?",
+      "q_final": "When he was a child, what did his father and he do in the garage?",
+      "evidence": [
+        "D12:2",
+        "D12:4",
+        "D22:5"
+      ],
+      "gold_sections": [
+        12,
+        22
+      ],
+      "retrieved_sections": [
+        22,
+        18,
+        5,
+        25,
+        28
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 0.5,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 50,
+      "category": 2,
+      "original_question": "When did Calvin buy his second Ferrari?",
+      "ambiguous_query": "When did he buy his second Ferrari?",
+      "q_final": "When did he buy his second Ferrari?",
+      "evidence": [
+        "D23:16"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        2,
+        12,
+        7,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 51,
+      "category": 2,
+      "original_question": "When did Calvin and Frank Ocean start collaborating?",
+      "ambiguous_query": "When did he and Frank Ocean start collaborating?",
+      "q_final": "When did he and Frank Ocean start collaborating?",
+      "evidence": [
+        "D24:5",
+        "D15:2"
+      ],
+      "gold_sections": [
+        15,
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        7,
+        25,
+        11
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 52,
+      "category": 2,
+      "original_question": "When did Calvin plan on travelling to Tokyo the second time?",
+      "ambiguous_query": "When did he plan on travelling to Tokyo the second time?",
+      "q_final": "When did he plan on travelling to Tokyo the second time?",
+      "evidence": [
+        "D24:17"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        3,
+        9,
+        10,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 53,
+      "category": 1,
+      "original_question": "Who supports Calvin in tough times?",
+      "ambiguous_query": "Who supports he in tough times?",
+      "q_final": "Who supports him in tough times?",
+      "evidence": [
+        "D25:6",
+        "D29:7"
+      ],
+      "gold_sections": [
+        25,
+        29
+      ],
+      "retrieved_sections": [
+        29,
+        25,
+        30,
+        22,
+        12
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 54,
+      "category": 1,
+      "original_question": "What does help Calvin stay connected to the creative process?",
+      "ambiguous_query": "What does help him stay connected to the creative process?",
+      "q_final": "What does help Dave stay connected to the creative process?",
+      "evidence": [
+        "D25:8",
+        "D28:31"
+      ],
+      "gold_sections": [
+        25,
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        25,
+        5,
+        1,
+        6
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 55,
+      "category": 2,
+      "original_question": "When did Calvin visit some of the sights in Boston with a former high school friend?",
+      "ambiguous_query": "When did he visit some of the sights in Boston with a former high school friend?",
+      "q_final": "When did [USER] visit some of the sights in Boston with a former high school friend?",
+      "evidence": [
+        "D26:1"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        29,
+        3,
+        15,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 56,
+      "category": 1,
+      "original_question": "Which cities did Dave travel to in 2023?",
+      "ambiguous_query": "Which cities did he travel to in 2023?",
+      "q_final": "Which cities did Calvin travel to in 2023?",
+      "evidence": [
+        "D14:1",
+        "D26:2"
+      ],
+      "gold_sections": [
+        14,
+        26
+      ],
+      "retrieved_sections": [
+        3,
+        8,
+        24,
+        6,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 57,
+      "category": 2,
+      "original_question": "Which hobby did Dave pick up in October 2023?",
+      "ambiguous_query": "Which hobby did he pick up in October 2023?",
+      "q_final": "Which hobby did Dave pick up in October 2023?",
+      "evidence": [
+        "D27:2"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        21,
+        12,
+        19,
+        5,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 58,
+      "category": 1,
+      "original_question": "Which events in Dave's life inspired him to take up auto engineering?",
+      "ambiguous_query": "Which events in his life inspired him to take up auto engineering?",
+      "q_final": "Which events in his life inspired him to take up auto engineering?",
+      "evidence": [
+        "D26:6",
+        "D25:12",
+        "D12:2",
+        "D12:4"
+      ],
+      "gold_sections": [
+        12,
+        25,
+        26
+      ],
+      "retrieved_sections": [
+        1,
+        25,
+        26,
+        13,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.6666666666666666,
+      "recall_at5": 0.6666666666666666,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 59,
+      "category": 1,
+      "original_question": "How many Ferraris does Calvin own?",
+      "ambiguous_query": "How many Ferraris does he own?",
+      "q_final": "How many Ferraris does Calvin own?",
+      "evidence": [
+        "D2:1",
+        "D23:16"
+      ],
+      "gold_sections": [
+        2,
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        12,
+        2,
+        1,
+        25
+      ],
+      "recall_at1": 0.5,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 60,
+      "category": 1,
+      "original_question": "What gifts has Calvin received from his artist friends?",
+      "ambiguous_query": "What gifts has he received from his artist friends?",
+      "q_final": "What gifts has Calvin received from his artist friends?",
+      "evidence": [
+        "D4:24",
+        "D4:26",
+        "D16:14"
+      ],
+      "gold_sections": [
+        4,
+        16
+      ],
+      "retrieved_sections": [
+        29,
+        4,
+        21,
+        28,
+        16
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.5,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 61,
+      "category": 2,
+      "original_question": "How long did Dave's work on the Ford Mustang take?",
+      "ambiguous_query": "How long did his work on the Ford Mustang take?",
+      "q_final": "How long did Dave's work on the Ford Mustang take?",
+      "evidence": [
+        "D14:11",
+        "D20:1",
+        "D21:4"
+      ],
+      "gold_sections": [
+        14,
+        20,
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        20,
+        14,
+        4,
+        5
+      ],
+      "recall_at1": 0.3333333333333333,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 62,
+      "category": 2,
+      "original_question": "How long was the car modification workshop in San Francisco?",
+      "ambiguous_query": "How long was the car modification workshop in San Francisco?",
+      "q_final": "How long was the car modification workshop in San Francisco?",
+      "evidence": [
+        "D14:1",
+        "D17:1"
+      ],
+      "gold_sections": [
+        14,
+        17
+      ],
+      "retrieved_sections": [
+        13,
+        14,
+        17,
+        4,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 63,
+      "category": 1,
+      "original_question": "What style of guitars does Calvin own?",
+      "ambiguous_query": "What style of guitars does him own?",
+      "q_final": "What style of guitars does Calvin own?",
+      "evidence": [
+        "D16:13",
+        "D16:4",
+        "D16:18",
+        "D16:19"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        13,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 64,
+      "category": 1,
+      "original_question": "What activities has Dave participated in with his friends?",
+      "ambiguous_query": "What activities has he participated in with his friends?",
+      "q_final": "What activities has Calvin participated in with his friends?",
+      "evidence": [
+        "D10:3",
+        "D11:1",
+        "D6:8",
+        "D15:1"
+      ],
+      "gold_sections": [
+        6,
+        10,
+        11,
+        15
+      ],
+      "retrieved_sections": [
+        23,
+        28,
+        7,
+        5,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 65,
+      "category": 2,
+      "original_question": "When did Dave take a photo of a Boston clock tower?",
+      "ambiguous_query": "When did he take a photo of a Boston clock tower?",
+      "q_final": "When did Dave take a photo of a Boston clock tower?",
+      "evidence": [
+        "D27:6"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        27,
+        3,
+        24,
+        8,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 66,
+      "category": 1,
+      "original_question": "Do all of Dave's car restoration projects go smoothly?",
+      "ambiguous_query": "Do all of his car restoration projects go smoothly?",
+      "q_final": "Do all of his car restoration projects go smoothly?",
+      "evidence": [
+        "D27:10",
+        "D13:7",
+        "D25:17",
+        "D20:1"
+      ],
+      "gold_sections": [
+        13,
+        20,
+        25,
+        27
+      ],
+      "retrieved_sections": [
+        28,
+        25,
+        26,
+        11,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.25,
+      "recall_at5": 0.5,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 67,
+      "category": 2,
+      "original_question": "Where was Calvin located in the last week of October 2023?",
+      "ambiguous_query": "Where was he located in the last week of October 2023?",
+      "q_final": "Where was he located in the last week of October 2023?",
+      "evidence": [
+        "D28:1"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        6,
+        2,
+        9,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 68,
+      "category": 2,
+      "original_question": "When did Dave find the car he repaired and started sharing in his blog?",
+      "ambiguous_query": "When did he find the car he repaired and started sharing in his blog?",
+      "q_final": "When did he find the car he repaired and started sharing in his blog?",
+      "evidence": [
+        "D28:20"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        9,
+        5,
+        12,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 69,
+      "category": 2,
+      "original_question": "When did Dave buy a vintage camera?",
+      "ambiguous_query": "When did he buy a vintage camera?",
+      "q_final": "When did Calvin buy a vintage camera?",
+      "evidence": [
+        "D30:05"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        23,
+        19,
+        20,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 70,
+      "category": 2,
+      "original_question": "When did Calvin attend a gala in Boston?",
+      "ambiguous_query": "When did he attend a gala in Boston?",
+      "q_final": "When did Calvin attend a gala in Boston?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        3,
+        26,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 71,
+      "category": 4,
+      "original_question": "How long did Calvin plan to stay in Japan?",
+      "ambiguous_query": "How long did he plan to stay in Japan?",
+      "q_final": "How long did Dave plan to stay in Japan?",
+      "evidence": [
+        "D1:15"
+      ],
+      "gold_sections": [
+        1
+      ],
+      "retrieved_sections": [
+        1,
+        10,
+        5,
+        9,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 72,
+      "category": 4,
+      "original_question": "Which band was Dave's favorite at the music festival in April 2023?",
+      "ambiguous_query": "Which band was his favorite at the music festival in April 2023?",
+      "q_final": "Which band was his favorite at the music festival in April 2023?",
+      "evidence": [
+        "D2:10"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        2,
+        3,
+        28,
+        23,
+        15
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 73,
+      "category": 4,
+      "original_question": "Where did Calvin attend a music festival in April 2023?",
+      "ambiguous_query": "Where did he attend a music festival in April 2023?",
+      "q_final": "Where did he attend a music festival in April 2023?",
+      "evidence": [
+        "D3:1"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        2,
+        23,
+        15,
+        26
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 74,
+      "category": 4,
+      "original_question": "What advice did Calvin receive from the producer at the music festival?",
+      "ambiguous_query": "What advice did he receive from the producer at the music festival?",
+      "q_final": "What advice did Calvin receive from the producer at the music festival?",
+      "evidence": [
+        "D3:7"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        23,
+        15,
+        2,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 75,
+      "category": 4,
+      "original_question": "What is Dave's new business venture as of 1 May, 2023?",
+      "ambiguous_query": "What is his new business venture as of 1 May, 2023?",
+      "q_final": "What is his new business venture as of 1 May, 2023?",
+      "evidence": [
+        "D4:1"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        5,
+        2,
+        4,
+        28,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 76,
+      "category": 4,
+      "original_question": "What type of cars does Dave work on at his shop?",
+      "ambiguous_query": "What type of cars does him work on at his shop?",
+      "q_final": "What type of cars does Dave work on at his shop?",
+      "evidence": [
+        "D4:19"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        9,
+        6,
+        23,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 77,
+      "category": 4,
+      "original_question": "What did Calvin receive as a gift from another artist?",
+      "ambiguous_query": "What did he receive as a gift from another artist?",
+      "q_final": "What gift did another artist receive from him?",
+      "evidence": [
+        "D4:26"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        10,
+        29,
+        21,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 78,
+      "category": 4,
+      "original_question": "What was the necklace Calvin received meant to remind him of?",
+      "ambiguous_query": "What was the necklace he received meant to remind him of?",
+      "q_final": "What was the necklace he received meant to remind him of?",
+      "evidence": [
+        "D4:26"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        11,
+        3,
+        18,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 79,
+      "category": 4,
+      "original_question": "What does Dave do when he feels his creativity is frozen?",
+      "ambiguous_query": "What does he do when he feels his creativity is frozen?",
+      "q_final": "What does he do when he feels his creativity is frozen?",
+      "evidence": [
+        "D5:11"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        23,
+        7,
+        28,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 80,
+      "category": 4,
+      "original_question": "How does Calvin plan to jumpstart his inspiration?",
+      "ambiguous_query": "How does he plan to jumpstart his inspiration?",
+      "q_final": "How does he plan to jumpstart his inspiration?",
+      "evidence": [
+        "D5:11"
+      ],
+      "gold_sections": [
+        5
+      ],
+      "retrieved_sections": [
+        5,
+        28,
+        1,
+        3,
+        9
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 81,
+      "category": 4,
+      "original_question": "What did Calvin manage to save during the flood incident?",
+      "ambiguous_query": "What did he manage to save during the flood incident?",
+      "q_final": "What did Calvin manage to save during the flood incident?",
+      "evidence": [
+        "D6:3"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        6,
+        25,
+        1,
+        2,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 82,
+      "category": 4,
+      "original_question": "What did Dave open in May 2023?",
+      "ambiguous_query": "What did he open in May 2023?",
+      "q_final": "What did Dave open in May 2023?",
+      "evidence": [
+        "D6:8"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        5,
+        7,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 83,
+      "category": 4,
+      "original_question": "What gives Dave a sense of achievement and purpose?",
+      "ambiguous_query": "What gives he a sense of achievement and purpose?",
+      "q_final": "What gives Dave a sense of achievement and purpose?",
+      "evidence": [
+        "D7:6"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        17,
+        12,
+        13,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 84,
+      "category": 4,
+      "original_question": "What fuels Calvin's soul?",
+      "ambiguous_query": "What fuels his soul?",
+      "q_final": "What fuels Calvin's soul?",
+      "evidence": [
+        "D7:11"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        15,
+        28,
+        16,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 85,
+      "category": 4,
+      "original_question": "What is Dave doing to relax on weekends?",
+      "ambiguous_query": "What is he doing to relax on weekends?",
+      "q_final": "What is he doing to relax on weekends?",
+      "evidence": [
+        "D8:4"
+      ],
+      "gold_sections": [
+        8
+      ],
+      "retrieved_sections": [
+        8,
+        5,
+        21,
+        28,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 86,
+      "category": 4,
+      "original_question": "What sports activity is Calvin planning to try after the tour with Frank Ocean?",
+      "ambiguous_query": "What sports activity is he planning to try after the tour with Frank Ocean?",
+      "q_final": "What sports activity is he planning to try after the tour with Frank Ocean?",
+      "evidence": [
+        "D9:15"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        3,
+        7,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 87,
+      "category": 4,
+      "original_question": "What was Calvin excited to do after getting his car fixed on 7 July, 2023?",
+      "ambiguous_query": "What was he excited to do after getting his car fixed on 7 July, 2023?",
+      "q_final": "What was Calvin excited to do after getting his car fixed on 7 July, 2023?",
+      "evidence": [
+        "D10:1"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        7,
+        13,
+        9,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 88,
+      "category": 4,
+      "original_question": "What did Calvin and his friends arrange for in the park?",
+      "ambiguous_query": "What did he and his friends arrange for in the park?",
+      "q_final": "What did Calvin and his friends arrange for in the park?",
+      "evidence": [
+        "D10:3"
+      ],
+      "gold_sections": [
+        10
+      ],
+      "retrieved_sections": [
+        10,
+        8,
+        15,
+        29,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 89,
+      "category": 4,
+      "original_question": "What kind of music has Calvin been creating lately?",
+      "ambiguous_query": "What kind of music has him been creating lately?",
+      "q_final": "What kind of music has Calvin been creating lately?",
+      "evidence": [
+        "D11:6"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        18,
+        11,
+        28,
+        6,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 90,
+      "category": 4,
+      "original_question": "How does Calvin describe his process of adding electronic elements to his songs?",
+      "ambiguous_query": "How does he describe his process of adding electronic elements to his songs?",
+      "q_final": "How does Dave describe his process of adding electronic elements to his songs?",
+      "evidence": [
+        "D11:6"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        20,
+        15,
+        28,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 91,
+      "category": 4,
+      "original_question": "What car brand does Calvin own that he is proud of?",
+      "ambiguous_query": "What car brand does he own that he is proud of?",
+      "q_final": "What car brand does Calvin own that he is proud of?",
+      "evidence": [
+        "D12:7"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        17,
+        4,
+        13,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 92,
+      "category": 4,
+      "original_question": "What is Calvin's biggest current goal?",
+      "ambiguous_query": "What is his biggest current goal?",
+      "q_final": "What is his biggest current goal?",
+      "evidence": [
+        "D12:11"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        11,
+        21,
+        25,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 93,
+      "category": 4,
+      "original_question": "What is Dave's advice to Calvin regarding his dreams?",
+      "ambiguous_query": "What is his advice to Calvin regarding his dreams?",
+      "q_final": "What is Dave's advice to Calvin regarding his dreams?",
+      "evidence": [
+        "D12:14"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        3,
+        5,
+        4,
+        12,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 94,
+      "category": 4,
+      "original_question": "What workshop did Dave get picked for on 11 August, 2023?",
+      "ambiguous_query": "What workshop did he get picked for on 11 August, 2023?",
+      "q_final": "What workshop did Calvin get picked for on 11 August, 2023?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        14,
+        15,
+        18,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 95,
+      "category": 4,
+      "original_question": "What kind of modifications has Dave been working on in the car mod workshop?",
+      "ambiguous_query": "What kind of modifications has him been working on in the car mod workshop?",
+      "q_final": "What kind of modifications has Dave been working on in the car mod workshop?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        4,
+        28,
+        22,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 96,
+      "category": 4,
+      "original_question": "What type of car did Dave work on during the workshop?",
+      "ambiguous_query": "What type of car did him work on during the workshop?",
+      "q_final": "What type of car did Dave work on during the workshop?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        14,
+        4,
+        28,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 97,
+      "category": 4,
+      "original_question": "What does Dave say is important for making his custom cars unique?",
+      "ambiguous_query": "What does he say is important for making his custom cars unique?",
+      "q_final": "What does Dave say is important for making his custom cars unique?",
+      "evidence": [
+        "D13:11"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        5,
+        19,
+        4,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 98,
+      "category": 4,
+      "original_question": "How did the audience in Tokyo react when Calvin sang one of his songs?",
+      "ambiguous_query": "How did the audience in Tokyo react when he sang one of his songs?",
+      "q_final": "How did the audience in Tokyo react when Calvin sang one of his songs?",
+      "evidence": [
+        "D14:6"
+      ],
+      "gold_sections": [
+        14
+      ],
+      "retrieved_sections": [
+        14,
+        24,
+        6,
+        20,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 99,
+      "category": 4,
+      "original_question": "How did Calvin meet Frank Ocean?",
+      "ambiguous_query": "How did he meet Frank Ocean?",
+      "q_final": "How did he meet Frank Ocean?",
+      "evidence": [
+        "D15:4"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        24,
+        7,
+        25,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 100,
+      "category": 4,
+      "original_question": "Where did Calvin and Frank Ocean record a song together?",
+      "ambiguous_query": "Where did he and Frank Ocean record a song together?",
+      "q_final": "Where did he and Frank Ocean record a song together?",
+      "evidence": [
+        "D15:4"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        24,
+        20,
+        7,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 101,
+      "category": 4,
+      "original_question": "What did Calvin and his friends record in August 2023?",
+      "ambiguous_query": "What did he and his friends record in August 2023?",
+      "q_final": "What did Dave and his friends record in August 2023?",
+      "evidence": [
+        "D15:12"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        13,
+        26,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 102,
+      "category": 4,
+      "original_question": "Where did Calvin start shooting a video for his new album?",
+      "ambiguous_query": "Where did he start shooting a video for his new album?",
+      "q_final": "Where did he start shooting a video for his new album?",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        28,
+        19,
+        8,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 103,
+      "category": 4,
+      "original_question": "What design is featured on Calvin's guitar?",
+      "ambiguous_query": "What design is featured on his guitar?",
+      "q_final": "What design is featured on his guitar?",
+      "evidence": [
+        "D16:14"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        4,
+        13,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 104,
+      "category": 4,
+      "original_question": "Why did Calvin get his guitar customized with a shiny finish?",
+      "ambiguous_query": "Why did he get his guitar customized with a shiny finish?",
+      "q_final": "Why did Calvin get his guitar customized with a shiny finish?",
+      "evidence": [
+        "D16:20"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        13,
+        28,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 105,
+      "category": 4,
+      "original_question": "What color glow did Calvin customize his guitar with?",
+      "ambiguous_query": "What color glow did he customize his guitar with?",
+      "q_final": "What color glow did Calvin customize his guitar with?",
+      "evidence": [
+        "D16:20"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        27,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 106,
+      "category": 4,
+      "original_question": "Where did Dave come back from with insights on car modification on 1st September 2023?",
+      "ambiguous_query": "Where did he come back from with insights on car modification on 1st September 2023?",
+      "q_final": "Where did Dave come back from with insights on car modification on 1st September 2023?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        28,
+        13,
+        21,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 107,
+      "category": 4,
+      "original_question": "What emotion does Dave mention feeling when he sees the relief of someone whose car he fixed?",
+      "ambiguous_query": "What emotion does he mention feeling when he sees the relief of someone whose car he fixed?",
+      "q_final": "What emotion does Calvin mention feeling when he sees the relief of someone whose car he fixed?",
+      "evidence": [
+        "D17:5"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        7,
+        9,
+        25,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 108,
+      "category": 4,
+      "original_question": "What did Calvin book a flight ticket for on 1st September 2023?",
+      "ambiguous_query": "What did he book a flight ticket for on 1st September 2023?",
+      "q_final": "What flight ticket did he book on 1st September 2023?",
+      "evidence": [
+        "D17:6"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        8,
+        18,
+        19,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 109,
+      "category": 4,
+      "original_question": "What is Calvin excited about after the tour?",
+      "ambiguous_query": "What is he excited about after the tour?",
+      "q_final": "What is he excited about after the tour?",
+      "evidence": [
+        "D18:7"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        24,
+        18,
+        7,
+        14,
+        6
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 110,
+      "category": 4,
+      "original_question": "What plans do Calvin and Dave have for when Calvin visits Boston?",
+      "ambiguous_query": "What plans do Calvin and he have for when Calvin visits Boston?",
+      "q_final": "What plans do **Calvin** and he have for when **Calvin** visits Boston?",
+      "evidence": [
+        "D18:11"
+      ],
+      "gold_sections": [
+        18
+      ],
+      "retrieved_sections": [
+        3,
+        30,
+        24,
+        26,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 111,
+      "category": 4,
+      "original_question": "Which Disney movie did Dave mention as one of his favorites?",
+      "ambiguous_query": "Which Disney movie did he mention as one of his favorites?",
+      "q_final": "Which Disney movie did Calvin mention as one of his favorites?",
+      "evidence": [
+        "D19:6"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        16,
+        26,
+        2,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 112,
+      "category": 4,
+      "original_question": "How does Dave feel about the reactions of people when they see the finished restoration project?",
+      "ambiguous_query": "How does he feel about the reactions of people when they see the finished restoration project?",
+      "q_final": "How does Calvin feel about the reactions of people when they see the finished restoration project?",
+      "evidence": [
+        "D19:9"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        14,
+        19,
+        28,
+        4,
+        29
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 113,
+      "category": 4,
+      "original_question": "What activity did Calvin enjoy during his summer drives?",
+      "ambiguous_query": "What activity did he enjoy during his summer drives?",
+      "q_final": "What activity did Dave enjoy during his summer drives?",
+      "evidence": [
+        "D20:4"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        5,
+        23,
+        7,
+        28,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 114,
+      "category": 4,
+      "original_question": "Which song from the childhood of Calvin brings back memories of a road trip with his dad?",
+      "ambiguous_query": "Which song from the childhood of him brings back memories of a road trip with his dad?",
+      "q_final": "Which song from my childhood brings back memories of a road trip with my dad?",
+      "evidence": [
+        "D20:6",
+        "D20:8"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        28,
+        11,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 115,
+      "category": 4,
+      "original_question": "What project did Calvin work on to chill out?",
+      "ambiguous_query": "What project did he work on to chill out?",
+      "q_final": "What project did Dave work on to chill out?",
+      "evidence": [
+        "D21:3"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        13,
+        28,
+        12,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 116,
+      "category": 4,
+      "original_question": "What car did Dave work on in the junkyard?",
+      "ambiguous_query": "What car did he work on in the junkyard?",
+      "q_final": "What car did Dave work on in the junkyard?",
+      "evidence": [
+        "D21:4"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        4,
+        28,
+        13,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 117,
+      "category": 4,
+      "original_question": "What does Dave find satisfying about restoring old cars?",
+      "ambiguous_query": "What does he find satisfying about restoring old cars?",
+      "q_final": "What does Dave find satisfying about restoring old cars?",
+      "evidence": [
+        "D21:10"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        12,
+        21,
+        19,
+        25,
+        17
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 118,
+      "category": 4,
+      "original_question": "What do Calvin and Dave use to reach their goals?",
+      "ambiguous_query": "What do Calvin and he use to reach their goals?",
+      "q_final": "What do Dave and he use to reach their goals?",
+      "evidence": [
+        "D21:15"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        12,
+        21,
+        22,
+        3,
+        11
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 119,
+      "category": 4,
+      "original_question": "What does working on cars represent for Dave?",
+      "ambiguous_query": "What does working on cars represent for him?",
+      "q_final": "What does working on cars represent for Dave?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        4,
+        28,
+        13,
+        21,
+        10
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 120,
+      "category": 4,
+      "original_question": "What does Dave aim to do with his passion for cars?",
+      "ambiguous_query": "What does he aim to do with his passion for cars?",
+      "q_final": "What does Dave aim to do with his passion for cars?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        4,
+        13,
+        22
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 121,
+      "category": 4,
+      "original_question": "What did Calvin recently get that is a \"masterpiece on wheels\"?",
+      "ambiguous_query": "What did he recently get that is a \"masterpiece on wheels\"?",
+      "q_final": "What did he recently get that is a \"masterpiece on wheels\"?",
+      "evidence": [
+        "D23:16"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        28,
+        2,
+        25,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 122,
+      "category": 4,
+      "original_question": "Who headlined the music festival that Dave attended in October?",
+      "ambiguous_query": "Who headlined the music festival that he attended in October?",
+      "q_final": "Who headlined the music festival that he attended in October?",
+      "evidence": [
+        "D23:9"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        3,
+        26,
+        2,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 123,
+      "category": 4,
+      "original_question": "How does Calvin stay motivated when faced with setbacks?",
+      "ambiguous_query": "How does he stay motivated when faced with setbacks?",
+      "q_final": "How does Dave stay motivated when faced with setbacks?",
+      "evidence": [
+        "D23:4"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        21,
+        3,
+        11,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 124,
+      "category": 4,
+      "original_question": "What activity does Dave find fulfilling, similar to Calvin's passion for music festivals?",
+      "ambiguous_query": "What activity does he find fulfilling, similar to Calvin's passion for music festivals?",
+      "q_final": "What activity does Dave find fulfilling, similar to Calvin's passion for music festivals?",
+      "evidence": [
+        "D23:11"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        28,
+        3,
+        25,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 125,
+      "category": 4,
+      "original_question": "Where did Calvin and Dave meet Frank Ocean to start collaborating?",
+      "ambiguous_query": "Where did Calvin and he meet Frank Ocean to start collaborating?",
+      "q_final": "Where did Calvin and he meet Frank Ocean to start collaborating?",
+      "evidence": [
+        "D24:5"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        7,
+        25,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 126,
+      "category": 4,
+      "original_question": "Which part of Tokyo is described as Tokyo's Times Square by Calvin?",
+      "ambiguous_query": "Which part of Tokyo is described as Tokyo's Times Square by him?",
+      "q_final": "Which part of Tokyo is described as Tokyo's Times Square by him?",
+      "evidence": [
+        "D24:19"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        6,
+        3,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 127,
+      "category": 4,
+      "original_question": "What specific location in Tokyo does Calvin mention being excited to explore?",
+      "ambiguous_query": "What specific location in Tokyo does he mention being excited to explore?",
+      "q_final": "What specific location in Tokyo does Calvin mention being excited to explore?",
+      "evidence": [
+        "D24:19"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        3,
+        15,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 128,
+      "category": 4,
+      "original_question": "What dish does Dave recommend Calvin to try in Tokyo?",
+      "ambiguous_query": "What dish does he recommend Calvin to try in Tokyo?",
+      "q_final": "What dish does Dave recommend Calvin to try in Tokyo?",
+      "evidence": [
+        "D24:20"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        3,
+        6,
+        15,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 129,
+      "category": 4,
+      "original_question": "What does Calvin find energizing during the tour?",
+      "ambiguous_query": "What does he find energizing during the tour?",
+      "q_final": "What does he find energizing during the tour?",
+      "evidence": [
+        "D25:2"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        7,
+        25,
+        24,
+        18,
+        3
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 130,
+      "category": 4,
+      "original_question": "How does Calvin balance his job and personal life?",
+      "ambiguous_query": "How does he balance his job and personal life?",
+      "q_final": "How does Dave balance his job and personal life?",
+      "evidence": [
+        "D25:4"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        21,
+        22,
+        1,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 131,
+      "category": 4,
+      "original_question": "What inspired Calvin's recent music?",
+      "ambiguous_query": "What inspired his recent music?",
+      "q_final": "What inspired his recent music?",
+      "evidence": [
+        "D25:10"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        28,
+        3,
+        6,
+        18,
+        25
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 132,
+      "category": 4,
+      "original_question": "How does Calvin describe his music in relation to capturing feelings?",
+      "ambiguous_query": "How does he describe his music in relation to capturing feelings?",
+      "q_final": "How does Dave describe his music in relation to capturing feelings?",
+      "evidence": [
+        "D25:12"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        30,
+        19,
+        28,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 133,
+      "category": 4,
+      "original_question": "Why did Dave start working on cars?",
+      "ambiguous_query": "Why did he start working on cars?",
+      "q_final": "Why did he start working on cars?",
+      "evidence": [
+        "D25:15"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        28,
+        25,
+        20,
+        4,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 134,
+      "category": 4,
+      "original_question": "What is the toughest part of car restoration according to Dave?",
+      "ambiguous_query": "What is the toughest part of car restoration according to him?",
+      "q_final": "What is the toughest part of car restoration according to Dave?",
+      "evidence": [
+        "D25:19"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        13,
+        28,
+        4,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 135,
+      "category": 4,
+      "original_question": "What does Calvin believe makes an artist create something extraordinary?",
+      "ambiguous_query": "What does he believe makes an artist create something extraordinary?",
+      "q_final": "What does he believe makes an artist create something extraordinary?",
+      "evidence": [
+        "D25:22"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        25,
+        10,
+        29,
+        4,
+        12
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 136,
+      "category": 4,
+      "original_question": "When did Dave sell the car he restored last year?",
+      "ambiguous_query": "When did he sell the car he restored last year?",
+      "q_final": "When did Dave sell the car he restored last year?",
+      "evidence": [
+        "D25:17"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        4,
+        25,
+        28,
+        3,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 137,
+      "category": 4,
+      "original_question": "When did Calvin first get interested in cars?",
+      "ambiguous_query": "When did he first get interested in cars?",
+      "q_final": "When did he first get interested in cars?",
+      "evidence": [
+        "D26:6"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        2,
+        28,
+        9,
+        10,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 138,
+      "category": 4,
+      "original_question": "How did Calvin feel about performing with someone he admires?",
+      "ambiguous_query": "How did he feel about performing with someone he admires?",
+      "q_final": "How did Calvin feel about performing with someone he admires?",
+      "evidence": [
+        "D26:9"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        2,
+        7,
+        23,
+        24
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 139,
+      "category": 4,
+      "original_question": "What realization did the nightclub experience bring to Calvin?",
+      "ambiguous_query": "What realization did the nightclub experience bring to him?",
+      "q_final": "What realization did Dave's nightclub experience bring to him?",
+      "evidence": [
+        "D26:9"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        21,
+        7,
+        24,
+        15,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 140,
+      "category": 4,
+      "original_question": "What do Dave and Calvin agree on regarding their pursuits?",
+      "ambiguous_query": "What do he and Calvin agree on regarding their pursuits?",
+      "q_final": "What do Calvin and Dave agree on regarding their pursuits?",
+      "evidence": [
+        "D26:11"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        26,
+        29,
+        30,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 141,
+      "category": 4,
+      "original_question": "Which city is featured in the photograph Dave showed Calvin?",
+      "ambiguous_query": "Which city is featured in the photograph he showed Calvin?",
+      "q_final": "Which city is featured in the photograph he showed Calvin?",
+      "evidence": [
+        "D27:6"
+      ],
+      "gold_sections": [
+        27
+      ],
+      "retrieved_sections": [
+        3,
+        24,
+        2,
+        6,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 142,
+      "category": 4,
+      "original_question": "What did Calvin do recently at his Japanese house?",
+      "ambiguous_query": "What did he do recently at his Japanese house?",
+      "q_final": "What did Dave do recently at his Japanese house?",
+      "evidence": [
+        "D28:1"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        1,
+        10,
+        28,
+        11,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 143,
+      "category": 4,
+      "original_question": "What did Dave recently start a blog about?",
+      "ambiguous_query": "What did he recently start a blog about?",
+      "q_final": "What did he recently start a blog about?",
+      "evidence": [
+        "D28:8"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        26,
+        23,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 144,
+      "category": 4,
+      "original_question": "What is Dave's way to share his passion with others?",
+      "ambiguous_query": "What is his way to share his passion with others?",
+      "q_final": "What is Calvin's way to share his passion with others?",
+      "evidence": [
+        "D28:8"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        23,
+        13,
+        4,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 145,
+      "category": 4,
+      "original_question": "What type of videos does Calvin usually watch on his television?",
+      "ambiguous_query": "What type of videos does him usually watch on his television?",
+      "q_final": "What type of videos does he usually watch on his television?",
+      "evidence": [
+        "D28:31"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        16,
+        19,
+        5,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 146,
+      "category": 4,
+      "original_question": "What type of music has Dave been getting into lately?",
+      "ambiguous_query": "What type of music has him been getting into lately?",
+      "q_final": "What type of music has Calvin been getting into lately?",
+      "evidence": [
+        "D28:40"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        6,
+        29,
+        18,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 147,
+      "category": 4,
+      "original_question": "What tools does Calvin use to boost his motivation for music?",
+      "ambiguous_query": "What tools does he use to boost his motivation for music?",
+      "q_final": "What tools does Calvin use to boost his motivation for music?",
+      "evidence": [
+        "D28:34"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        18,
+        30,
+        12,
+        3
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 148,
+      "category": 4,
+      "original_question": "What type of content does Dave post on his blog that inspired others to start their own DIY projects?",
+      "ambiguous_query": "What type of content does him post on his blog that inspired others to start their own DIY projects?",
+      "q_final": "What type of content does Melanie post on her blog that inspired others to start their own DIY projects?",
+      "evidence": [
+        "D28:10"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        26,
+        14,
+        5,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 149,
+      "category": 4,
+      "original_question": "What kind of impact does Dave's blog on car mods have on people?",
+      "ambiguous_query": "What kind of impact does his blog on car mods have on people?",
+      "q_final": "What kind of impact does Dave's blog on car mods have on people?",
+      "evidence": [
+        "D28:10"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        17,
+        19,
+        25,
+        4
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 150,
+      "category": 4,
+      "original_question": "Who did Calvin invite to see him perform in Boston on 13 November, 2023?",
+      "ambiguous_query": "Who did he invite to see him perform in Boston on 13 November, 2023?",
+      "q_final": "Who did he invite to see him perform in Boston on 13 November, 2023?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        30,
+        2,
+        24,
+        7,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 151,
+      "category": 4,
+      "original_question": "What hobby did Calvin take up recently?",
+      "ambiguous_query": "What hobby did he take up recently?",
+      "q_final": "What hobby did Dave take up recently?",
+      "evidence": [
+        "D30:1"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        7,
+        19,
+        12,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 152,
+      "category": 4,
+      "original_question": "What new item did Dave buy recently?",
+      "ambiguous_query": "What new item did he buy recently?",
+      "q_final": "What new item did Calvin buy recently?",
+      "evidence": [
+        "D30:5"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        2,
+        30,
+        23,
+        1,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 153,
+      "category": 4,
+      "original_question": "What type of photos does Dave like to capture with his new camera?",
+      "ambiguous_query": "What type of photos does him like to capture with his new camera?",
+      "q_final": "What type of photos does Dave like to capture with his new camera?",
+      "evidence": [
+        "D30:9"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        24,
+        28,
+        2,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 154,
+      "category": 4,
+      "original_question": "What event did Calvin attend in Boston?",
+      "ambiguous_query": "What event did he attend in Boston?",
+      "q_final": "What event did Dave attend in Boston?",
+      "evidence": [
+        "D30:2"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        1,
+        3,
+        26,
+        30,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 155,
+      "category": 4,
+      "original_question": "What did Calvin discuss with the cool artist he met at the gala?",
+      "ambiguous_query": "What did he discuss with the cool artist he met at the gala?",
+      "q_final": "What did he discuss with the cool artist he met at the gala?",
+      "evidence": [
+        "D30:4"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        29,
+        27,
+        28,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 156,
+      "category": 4,
+      "original_question": "Where did Dave take a stunning photo of a waterfall?",
+      "ambiguous_query": "Where did he take a stunning photo of a waterfall?",
+      "q_final": "Where did Dave take a stunning photo of a waterfall?",
+      "evidence": [
+        "D30:15"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        27,
+        6,
+        24,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 157,
+      "category": 4,
+      "original_question": "What positive impact does Calvin mention nature has on tough times?",
+      "ambiguous_query": "What positive impact does he mention nature has on tough times?",
+      "q_final": "What positive impact does nature have on tough times for Calvin?",
+      "evidence": [
+        "D30:12"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        18,
+        6,
+        25,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 158,
+      "category": 5,
+      "original_question": "Which DJ was Dave's favorite at the music festival in April 2023?",
+      "ambiguous_query": "Which DJ was his favorite at the music festival in April 2023?",
+      "q_final": "Which DJ was his favorite at the music festival in April 2023?",
+      "evidence": [
+        "D2:10"
+      ],
+      "gold_sections": [
+        2
+      ],
+      "retrieved_sections": [
+        3,
+        2,
+        23,
+        15,
+        5
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 159,
+      "category": 5,
+      "original_question": "What advice did Calvin receive from the chef at the music festival?",
+      "ambiguous_query": "What advice did he receive from the chef at the music festival?",
+      "q_final": "What advice did Calvin receive from the chef at the music festival?",
+      "evidence": [
+        "D3:7"
+      ],
+      "gold_sections": [
+        3
+      ],
+      "retrieved_sections": [
+        3,
+        23,
+        15,
+        2,
+        5
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 160,
+      "category": 5,
+      "original_question": "What is Calvin's new business venture as of 1 May, 2023?",
+      "ambiguous_query": "What is his new business venture as of 1 May, 2023?",
+      "q_final": "What is his new business venture as of 1 May, 2023?",
+      "evidence": [
+        "D4:1"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        5,
+        2,
+        4,
+        28,
+        1
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 161,
+      "category": 5,
+      "original_question": "What type of cars does Calvin work on at his shop?",
+      "ambiguous_query": "What type of cars does him work on at his shop?",
+      "q_final": "What type of cars does Dave work on at his shop?",
+      "evidence": [
+        "D4:19"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        9,
+        6,
+        23,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 162,
+      "category": 5,
+      "original_question": "What did Dave receive as a gift from another artist?",
+      "ambiguous_query": "What did he receive as a gift from another artist?",
+      "q_final": "What gift did another artist receive from him?",
+      "evidence": [
+        "D4:26"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        10,
+        29,
+        21,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 163,
+      "category": 5,
+      "original_question": "What was the necklace Dave received meant to remind him of?",
+      "ambiguous_query": "What was the necklace he received meant to remind him of?",
+      "q_final": "What was the necklace he received meant to remind him of?",
+      "evidence": [
+        "D4:26"
+      ],
+      "gold_sections": [
+        4
+      ],
+      "retrieved_sections": [
+        4,
+        11,
+        3,
+        18,
+        22
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 164,
+      "category": 5,
+      "original_question": "What did Calvin open in May 2023?",
+      "ambiguous_query": "What did he open in May 2023?",
+      "q_final": "What did Dave open in May 2023?",
+      "evidence": [
+        "D6:8"
+      ],
+      "gold_sections": [
+        6
+      ],
+      "retrieved_sections": [
+        4,
+        6,
+        5,
+        7,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 165,
+      "category": 5,
+      "original_question": "What gives Calvin a sense of achievement and purpose?",
+      "ambiguous_query": "What gives he a sense of achievement and purpose?",
+      "q_final": "What gives Dave a sense of achievement and purpose?",
+      "evidence": [
+        "D7:6"
+      ],
+      "gold_sections": [
+        7
+      ],
+      "retrieved_sections": [
+        7,
+        17,
+        12,
+        13,
+        16
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 166,
+      "category": 5,
+      "original_question": "What sports activity is Dave planning to try after the tour with Frank Ocean?",
+      "ambiguous_query": "What sports activity is he planning to try after the tour with Frank Ocean?",
+      "q_final": "What sports activity is he planning to try after the tour with Frank Ocean?",
+      "evidence": [
+        "D9:15"
+      ],
+      "gold_sections": [
+        9
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        3,
+        7,
+        23
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 167,
+      "category": 5,
+      "original_question": "How does Calvin describe his process of adding acoustic elements to his songs?",
+      "ambiguous_query": "How does he describe his process of adding acoustic elements to his songs?",
+      "q_final": "How does Dave describe his process of adding acoustic elements to his songs?",
+      "evidence": [
+        "D11:6"
+      ],
+      "gold_sections": [
+        11
+      ],
+      "retrieved_sections": [
+        11,
+        20,
+        15,
+        28,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 168,
+      "category": 5,
+      "original_question": "What clothing brand does Calvin own that he is proud of?",
+      "ambiguous_query": "What clothing brand does he own that he is proud of?",
+      "q_final": "What clothing brand does Calvin own that he is proud of?",
+      "evidence": [
+        "D12:7"
+      ],
+      "gold_sections": [
+        12
+      ],
+      "retrieved_sections": [
+        12,
+        14,
+        17,
+        18,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 169,
+      "category": 5,
+      "original_question": "What workshop did Calvin get picked for on 11 August, 2023?",
+      "ambiguous_query": "What workshop did he get picked for on 11 August, 2023?",
+      "q_final": "What workshop did Calvin get picked for on 11 August, 2023?",
+      "evidence": [
+        "D13:1"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        14,
+        15,
+        18,
+        6
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 170,
+      "category": 5,
+      "original_question": "What kind of modifications has Calvin been working on in the car mod workshop?",
+      "ambiguous_query": "What kind of modifications has him been working on in the car mod workshop?",
+      "q_final": "What kind of modifications has Dave been working on in the car mod workshop?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        4,
+        28,
+        22,
+        14
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 171,
+      "category": 5,
+      "original_question": "What type of car did Calvin work on during the workshop?",
+      "ambiguous_query": "What type of car did him work on during the workshop?",
+      "q_final": "What type of car did Dave work on during the workshop?",
+      "evidence": [
+        "D13:7"
+      ],
+      "gold_sections": [
+        13
+      ],
+      "retrieved_sections": [
+        13,
+        14,
+        4,
+        28,
+        21
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 172,
+      "category": 5,
+      "original_question": "What did Dave and his friends record in August 2023?",
+      "ambiguous_query": "What did he and his friends record in August 2023?",
+      "q_final": "What did Dave and his friends record in August 2023?",
+      "evidence": [
+        "D15:12"
+      ],
+      "gold_sections": [
+        15
+      ],
+      "retrieved_sections": [
+        15,
+        11,
+        13,
+        26,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 173,
+      "category": 5,
+      "original_question": "Where did Dave start shooting a video for his new album?",
+      "ambiguous_query": "Where did he start shooting a video for his new album?",
+      "q_final": "Where did he start shooting a video for his new album?",
+      "evidence": [
+        "D16:8"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        28,
+        19,
+        8,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 174,
+      "category": 5,
+      "original_question": "What design is featured on Dave's guitar?",
+      "ambiguous_query": "What design is featured on his guitar?",
+      "q_final": "What design is featured on his guitar?",
+      "evidence": [
+        "D16:14"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        4,
+        13,
+        1
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 175,
+      "category": 5,
+      "original_question": "Why did Dave get his guitar customized with a shiny finish?",
+      "ambiguous_query": "Why did he get his guitar customized with a shiny finish?",
+      "q_final": "Why did Calvin get his guitar customized with a shiny finish?",
+      "evidence": [
+        "D16:20"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        13,
+        28,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 176,
+      "category": 5,
+      "original_question": "What color glow did Dave customize his guitar with?",
+      "ambiguous_query": "What color glow did he customize his guitar with?",
+      "q_final": "What color glow did Calvin customize his guitar with?",
+      "evidence": [
+        "D16:20"
+      ],
+      "gold_sections": [
+        16
+      ],
+      "retrieved_sections": [
+        16,
+        9,
+        27,
+        1,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 177,
+      "category": 5,
+      "original_question": "Where did Calvin come back from with insights on car modification on 1st September 2023?",
+      "ambiguous_query": "Where did he come back from with insights on car modification on 1st September 2023?",
+      "q_final": "Where did Dave come back from with insights on car modification on 1st September 2023?",
+      "evidence": [
+        "D17:1"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        28,
+        13,
+        21,
+        19
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 178,
+      "category": 5,
+      "original_question": "What emotion does Calvin mention feeling when he sees the relief of someone whose car he fixed?",
+      "ambiguous_query": "What emotion does he mention feeling when he sees the relief of someone whose car he fixed?",
+      "q_final": "What emotion does Calvin mention feeling when he sees the relief of someone whose car he fixed?",
+      "evidence": [
+        "D17:5"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        7,
+        9,
+        25,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 179,
+      "category": 5,
+      "original_question": "What did Dave book a flight ticket for on 1st September 2023?",
+      "ambiguous_query": "What did he book a flight ticket for on 1st September 2023?",
+      "q_final": "What flight ticket did he book on 1st September 2023?",
+      "evidence": [
+        "D17:6"
+      ],
+      "gold_sections": [
+        17
+      ],
+      "retrieved_sections": [
+        17,
+        8,
+        18,
+        19,
+        20
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 180,
+      "category": 5,
+      "original_question": "Which horror movie did Dave mention as one of his favorites?",
+      "ambiguous_query": "Which horror movie did he mention as one of his favorites?",
+      "q_final": "Which horror movie did Dave mention as one of his favorites?",
+      "evidence": [
+        "D19:6"
+      ],
+      "gold_sections": [
+        19
+      ],
+      "retrieved_sections": [
+        19,
+        16,
+        26,
+        2,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 181,
+      "category": 5,
+      "original_question": "Which song from the childhood of Dave brings back memories of a road trip with his dad?",
+      "ambiguous_query": "Which song from the childhood of him brings back memories of a road trip with his dad?",
+      "q_final": "Which song from his childhood brings back memories of a road trip with his dad?",
+      "evidence": [
+        "D20:6",
+        "D20:8"
+      ],
+      "gold_sections": [
+        20
+      ],
+      "retrieved_sections": [
+        20,
+        28,
+        11,
+        12,
+        17
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 182,
+      "category": 5,
+      "original_question": "What car did Calvin work on in the junkyard?",
+      "ambiguous_query": "What car did he work on in the junkyard?",
+      "q_final": "What car did Dave work on in the junkyard?",
+      "evidence": [
+        "D21:4"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        21,
+        4,
+        28,
+        13,
+        10
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 183,
+      "category": 5,
+      "original_question": "What does Dave find satisfying about destroying old cars?",
+      "ambiguous_query": "What does he find satisfying about destroying old cars?",
+      "q_final": "What does Calvin find satisfying about destroying old cars?",
+      "evidence": [
+        "D21:10"
+      ],
+      "gold_sections": [
+        21
+      ],
+      "retrieved_sections": [
+        12,
+        25,
+        17,
+        21,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 184,
+      "category": 5,
+      "original_question": "What does working on boats represent for Dave?",
+      "ambiguous_query": "What does working on boats represent for him?",
+      "q_final": "What does working on boats represent for him?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        4,
+        21,
+        13,
+        12,
+        28
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 185,
+      "category": 5,
+      "original_question": "What does Dave aim to do with his passion for cooking?",
+      "ambiguous_query": "What does he aim to do with his passion for cooking?",
+      "q_final": "What does he aim to do with his passion for cooking?",
+      "evidence": [
+        "D22:5"
+      ],
+      "gold_sections": [
+        22
+      ],
+      "retrieved_sections": [
+        4,
+        14,
+        28,
+        13,
+        26
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 186,
+      "category": 5,
+      "original_question": "What did Calvin recently get that is a \"masterpiece on canvas\"?",
+      "ambiguous_query": "What did he recently get that is a \"masterpiece on canvas\"?",
+      "q_final": "What did he recently get that is a \"masterpiece on canvas\"?",
+      "evidence": [
+        "D23:16"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        28,
+        25,
+        1,
+        2,
+        7
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 187,
+      "category": 5,
+      "original_question": "Who headlined the music festival that Calvin attended in October?",
+      "ambiguous_query": "Who headlined the music festival that he attended in October?",
+      "q_final": "Who headlined the music festival that he attended in October?",
+      "evidence": [
+        "D23:9"
+      ],
+      "gold_sections": [
+        23
+      ],
+      "retrieved_sections": [
+        23,
+        3,
+        26,
+        2,
+        25
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 188,
+      "category": 5,
+      "original_question": "Which part of Tokyo is described as Tokyo's Times Square by Dave?",
+      "ambiguous_query": "Which part of Tokyo is described as Tokyo's Times Square by him?",
+      "q_final": "Which part of Tokyo is described as Tokyo's Times Square by him?",
+      "evidence": [
+        "D24:19"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        15,
+        6,
+        3,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 189,
+      "category": 5,
+      "original_question": "What specific location in Tokyo does Calvin mention being excited to avoid?",
+      "ambiguous_query": "What specific location in Tokyo does he mention being excited to avoid?",
+      "q_final": "What specific location in Tokyo does Calvin mention being excited to avoid?",
+      "evidence": [
+        "D24:19"
+      ],
+      "gold_sections": [
+        24
+      ],
+      "retrieved_sections": [
+        24,
+        6,
+        15,
+        3,
+        7
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 190,
+      "category": 5,
+      "original_question": "When did Calvin sell the car he restored last year?",
+      "ambiguous_query": "When did he sell the car he restored last year?",
+      "q_final": "When did Dave sell the car he restored last year?",
+      "evidence": [
+        "D25:17"
+      ],
+      "gold_sections": [
+        25
+      ],
+      "retrieved_sections": [
+        4,
+        25,
+        28,
+        3,
+        13
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 191,
+      "category": 5,
+      "original_question": "When did Calvin first get interested in motorcycles?",
+      "ambiguous_query": "When did he first get interested in motorcycles?",
+      "q_final": "When did he first get interested in motorcycles?",
+      "evidence": [
+        "D26:6"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        2,
+        11,
+        6,
+        10,
+        18
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 192,
+      "category": 5,
+      "original_question": "What realization did the nightclub experience bring to Dave?",
+      "ambiguous_query": "What realization did the nightclub experience bring to him?",
+      "q_final": "What realization did Dave's nightclub experience bring to him?",
+      "evidence": [
+        "D26:9"
+      ],
+      "gold_sections": [
+        26
+      ],
+      "retrieved_sections": [
+        21,
+        7,
+        24,
+        15,
+        2
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 193,
+      "category": 5,
+      "original_question": "What did Dave do recently at his Japanese house?",
+      "ambiguous_query": "What did he do recently at his Japanese house?",
+      "q_final": "What did Dave do recently at his Japanese house?",
+      "evidence": [
+        "D28:1"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        1,
+        10,
+        28,
+        11,
+        27
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 194,
+      "category": 5,
+      "original_question": "What did Calvin recently start a blog about?",
+      "ambiguous_query": "What did he recently start a blog about?",
+      "q_final": "What did he recently start a blog about?",
+      "evidence": [
+        "D28:8"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        14,
+        26,
+        23,
+        30
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 195,
+      "category": 5,
+      "original_question": "What type of videos does Dave usually watch on his television?",
+      "ambiguous_query": "What type of videos does him usually watch on his television?",
+      "q_final": "What type of videos does he usually watch on his television?",
+      "evidence": [
+        "D28:31"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        16,
+        19,
+        5,
+        8
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 196,
+      "category": 5,
+      "original_question": "What type of art has Dave been getting into lately?",
+      "ambiguous_query": "What type of art has him been getting into lately?",
+      "q_final": "What type of art has Dave been getting into lately?",
+      "evidence": [
+        "D28:40"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        25,
+        28,
+        1,
+        5,
+        14
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 197,
+      "category": 5,
+      "original_question": "What type of content does Dave post on his blog that inspired others to start their own cooking projects?",
+      "ambiguous_query": "What type of content does him post on his blog that inspired others to start their own cooking projects?",
+      "q_final": "What type of content does Melanie post on her blog that inspired others to start their own cooking projects?",
+      "evidence": [
+        "D28:10"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        26,
+        14,
+        5,
+        11
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 198,
+      "category": 5,
+      "original_question": "What kind of impact does Dave's blog on vegan recipes have on people?",
+      "ambiguous_query": "What kind of impact does his blog on vegan recipes have on people?",
+      "q_final": "What kind of impact does Melanie's blog on vegan recipes have on people?",
+      "evidence": [
+        "D28:10"
+      ],
+      "gold_sections": [
+        28
+      ],
+      "retrieved_sections": [
+        28,
+        23,
+        3,
+        12,
+        18
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 199,
+      "category": 5,
+      "original_question": "Who did Dave invite to see him perform in Boston on 13 November, 2023?",
+      "ambiguous_query": "Who did he invite to see him perform in Boston on 13 November, 2023?",
+      "q_final": "Who did he invite to see him perform in Boston on 13 November, 2023?",
+      "evidence": [
+        "D29:1"
+      ],
+      "gold_sections": [
+        29
+      ],
+      "retrieved_sections": [
+        30,
+        2,
+        24,
+        7,
+        19
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 0.0,
+      "recall_at5": 0.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 200,
+      "category": 5,
+      "original_question": "What new item did Calvin buy recently?",
+      "ambiguous_query": "What new item did he buy recently?",
+      "q_final": "What new item did Calvin buy recently?",
+      "evidence": [
+        "D30:5"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        2,
+        30,
+        23,
+        1,
+        8
+      ],
+      "recall_at1": 0.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 201,
+      "category": 5,
+      "original_question": "What type of photos does Calvin like to capture with his new camera?",
+      "ambiguous_query": "What type of photos does him like to capture with his new camera?",
+      "q_final": "What type of photos does Dave like to capture with his new camera?",
+      "evidence": [
+        "D30:9"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        24,
+        28,
+        2,
+        29
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": false
+    },
+    {
+      "qa_index": 202,
+      "category": 5,
+      "original_question": "What did Dave discuss with the cool artist he met at the gala?",
+      "ambiguous_query": "What did he discuss with the cool artist he met at the gala?",
+      "q_final": "What did he discuss with the cool artist he met at the gala?",
+      "evidence": [
+        "D30:4"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        29,
+        27,
+        28,
+        2
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    },
+    {
+      "qa_index": 203,
+      "category": 5,
+      "original_question": "Where did Calvin take a stunning photo of a waterfall?",
+      "ambiguous_query": "Where did he take a stunning photo of a waterfall?",
+      "q_final": "Where did he take a stunning photo of a waterfall?",
+      "evidence": [
+        "D30:15"
+      ],
+      "gold_sections": [
+        30
+      ],
+      "retrieved_sections": [
+        30,
+        27,
+        6,
+        24,
+        28
+      ],
+      "recall_at1": 1.0,
+      "recall_at3": 1.0,
+      "recall_at5": 1.0,
+      "llm_judge_pass": true
+    }
+  ]
+}
